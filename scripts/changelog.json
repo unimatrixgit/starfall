@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.69.0",
+    "date": "2026-10-13",
+    "title": "Command time display",
+    "synopsis": "A clear header time box shows the current tick, next tick countdown and 24-hour UTC clock.",
+    "changes": [
+      "Tick values and countdown use a readable theme-aware header box.",
+      "A live UTC HH:mm:ss clock updates every second and uses military time.",
+      "Tick interval progress freezes on pause and restarts with the ticker.",
+      "The header compares local and synchronized server UTC clocks and shows page load and server round-trip milliseconds."
+    ]
+  },
+  {
     "version": "0.68.0",
     "date": "2026-10-13",
     "title": "Live universe banner",
