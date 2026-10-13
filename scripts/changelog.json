@@ -1,5 +1,18 @@
 [
   {
+    "version": "0.66.0",
+    "date": "2026-10-13",
+    "title": "Staff tabs and article editing",
+    "synopsis": "Staff tools are organized into tabs with a published article list and edit/save controls.",
+    "changes": [
+      "Staff tabs group round controls, users, news articles and round reset.",
+      "Staff-made articles appear below the editor; Edit loads an article and Save changes updates its existing entry.",
+      "Portal assets use versioned URLs to avoid stale publishing controls.",
+      "Article storage initializes safely when its migration has not run yet.",
+      "Covert results have their own blue news category and icon."
+    ]
+  },
+  {
     "version": "0.65.0",
     "date": "2026-10-13",
     "title": "Covert command",
