@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.59.0",
+    "date": "2026-10-13",
+    "title": "Round state reset control",
+    "synopsis": "Round state has a separate Reset round panel with an explicit confirmation.",
+    "changes": [
+      "Round state includes a dedicated game-admin Reset round box.",
+      "Reset opens Are you sure? and requires typing RESET before the entire round is regenerated.",
+      "Apply changes buttons in the planet modules have improved theme contrast."
+    ]
+  },
+  {
     "version": "0.58.0",
     "date": "2026-10-13",
     "title": "Complete round reset defaults",
