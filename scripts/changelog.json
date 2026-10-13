@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.101.0",
+    "date": "2026-10-13",
+    "title": "Alliance creation and global keyholder audit",
+    "synopsis": "Configure new alliance messages and optional Owner-authorised disclosure at creation; staff keyholders now span every alliance.",
+    "changes": [
+      "Create alliance includes description, recruitment message, MOTD and an optional 12–128 character disclosure passphrase. The creator receives Owner rank and an encrypted personal key.",
+      "Alliance Controlcenter Keyholders lists all alliances, including archived registrations, independently of the selected alliance.",
+      "Each reveal uses the exact alliance and Owner pair and requires the holder-provided passphrase. Secrets remain hidden by default."
+    ]
+  },
+  {
     "version": "0.100.0",
     "date": "2026-10-13",
     "title": "Multihunter fleet farming analysis",
