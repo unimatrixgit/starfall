@@ -69,7 +69,7 @@ export default {async fetch(request,env){
   const path=url.pathname==='/'?'/portal.html':game?'/index.html':url.pathname;
   const asset=ASSETS[path];if(!asset)return new Response('Not found',{status:404});
   const bytes=Uint8Array.from(atob(asset.data),c=>c.charCodeAt(0));
-  return new Response(request.method==='HEAD'?null:bytes,{headers:{'Content-Type':asset.type,'Cache-Control':path.endsWith('.html')||path.endsWith('.js')?'no-cache':'public, max-age=86400','X-Content-Type-Options':'nosniff'}});
+  return new Response(request.method==='HEAD'?null:bytes,{headers:{'Content-Type':asset.type,'Cache-Control':path.endsWith('.html')||path.endsWith('.js')||path.endsWith('.css')?'no-cache':'public, max-age=86400','X-Content-Type-Options':'nosniff'}});
 }};
 export {sanitizeScan,calculateRetention};
 function calculateRetention(){return RETENTION;}
