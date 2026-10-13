@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.86.0",
+    "date": "2026-10-13",
+    "title": "Themed manual chapters",
+    "synopsis": "The entire manual is reorganized into illustrated chapters with larger pictograms and shaded subsections.",
+    "changes": [
+      "Large theme-specific pictograms mark every chapter, with artwork and compact reference headers.",
+      "Top-level subsections use alternating shading and custom instruction panels.",
+      "Navigation, tables, flow cards and race profiles follow the current portal theme."
+    ]
+  },
+  {
     "version": "0.85.0",
     "date": "2026-10-13",
     "title": "Race encyclopedia",
