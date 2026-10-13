@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.67.0",
+    "date": "2026-10-13",
+    "title": "Reset sharing preferences",
+    "synopsis": "Quick actions uses one preference box with sharing and alliance tax off after reset.",
+    "changes": [
+      "Alliance tax, alliance scan sharing and public sharing reset to unchecked.",
+      "The three Quick actions controls share one box.",
+      "Personal scans remain available when alliance sharing is disabled.",
+      "Staff-written articles now join the portal News posts cards, sorted with version news by publication date."
+    ]
+  },
+  {
     "version": "0.66.0",
     "date": "2026-10-13",
     "title": "Staff tabs and article editing",
@@ -9,7 +21,8 @@
       "Staff-made articles appear below the editor; Edit loads an article and Save changes updates its existing entry.",
       "Portal assets use versioned URLs to avoid stale publishing controls.",
       "Article storage initializes safely when its migration has not run yet.",
-      "Covert results have their own blue news category and icon."
+      "Covert results have their own blue news category and icon.",
+      "Quick actions merges tax and both scan-sharing controls into one box; all start unchecked after round reset."
     ]
   },
   {
