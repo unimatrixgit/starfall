@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.98.0",
+    "date": "2026-10-13",
+    "title": "Profile audio controls",
+    "synopsis": "Portal audio controls move into User Profile theme settings.",
+    "changes": [
+      "The top-of-page audio controller is hidden.",
+      "Mute and volume controls are available under User Profile → Theme settings.",
+      "Portal playback and the separate opt-in game setting remain available."
+    ]
+  },
+  {
     "version": "0.97.0",
     "date": "2026-10-13",
     "title": "Desert-space ambience",
