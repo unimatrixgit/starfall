@@ -1,5 +1,15 @@
 [
   {
+    "version": "0.68.0",
+    "date": "2026-10-13",
+    "title": "Live universe banner",
+    "synopsis": "The portal banner shows central planet, asteroid and alliance totals.",
+    "changes": [
+      "An integrated theme-aware status box displays current shared universe counts.",
+      "Public aggregate statistics refresh every 30 seconds without exposing private planet data."
+    ]
+  },
+  {
     "version": "0.67.0",
     "date": "2026-10-13",
     "title": "Reset sharing preferences",
