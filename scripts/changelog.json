@@ -8,7 +8,9 @@
       "Every supported quest displays its lore and reward before completion.",
       "Claimed rewards enter a persistent bonus bank under Quests; resource and asteroid rewards are accepted explicitly.",
       "Research and construction allocations support partial progress and multiple completions with budget and cap validation.",
-      "Staff article editor fills the module width, with bold, italic, font and size controls and a right-aligned publish button."
+      "Staff article editor fills the module width, with bold, italic, font and size controls and a right-aligned publish button.",
+      "News Log distinguishes green research, orange production and light-red battle reports.",
+      "Battle reports have a dedicated on/off news category filter."
     ]
   },
   {
