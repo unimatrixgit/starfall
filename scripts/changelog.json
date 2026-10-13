@@ -9,7 +9,8 @@
       "Nicknames are stored centrally for your alliance and follow intel edit and visible-field permissions.",
       "Nickname labels do not change actual alliance membership or planet assignments.",
       "Users can set their public game username beneath Planet display name; login credentials are unchanged.",
-      "Galaxy Browser Intel overlay mirrors alliance intel nickname, alliance, relation and scan columns in display-only mode."
+      "Galaxy Browser Intel overlay mirrors alliance intel nickname, alliance, relation and scan columns in display-only mode.",
+      "Apply to order # assigns the chosen factories to the active ship order without resetting progress or changing queued orders."
     ]
   },
   {
