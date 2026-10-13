@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.65.0",
+    "date": "2026-10-13",
+    "title": "Covert command",
+    "synopsis": "Military gains a covert operations console with agents, guards, stealth, missions and instant reports.",
+    "changes": [
+      "Nine operations unlock through the existing covert research branch and apply to practice target snapshots.",
+      "Mission costs, stealth, success checks, target alert and operation effects use Planetarion manual rules.",
+      "Personnel training and wages use explicitly labelled Starfall practice rates.",
+      "Quest bonus tab imports a one-time race-adjusted Planetarion startup grant and shows current balances."
+    ]
+  },
+  {
     "version": "0.64.0",
     "date": "2026-10-13",
     "title": "Quest reward bank",
@@ -10,7 +22,9 @@
       "Research and construction allocations support partial progress and multiple completions with budget and cap validation.",
       "Staff article editor fills the module width, with bold, italic, font and size controls and a right-aligned publish button.",
       "News Log distinguishes green research, orange production and light-red battle reports.",
-      "Battle reports have a dedicated on/off news category filter."
+      "Battle reports have a dedicated on/off news category filter.",
+      "Quest board and Bonuses are separate tabs in the same tab bar style as Alliance.",
+      "Planetarion startup bonuses are imported once, adjusted by race, and displayed as current unused balances; no unverified loyalty bonus is added."
     ]
   },
   {
