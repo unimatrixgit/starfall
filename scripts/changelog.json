@@ -1,5 +1,18 @@
 [
   {
+    "version": "0.70.0",
+    "date": "2026-10-13",
+    "title": "Ticker confirmations",
+    "synopsis": "Ticker start, pause and stop are highlighted in Recent signals and Game updates news.",
+    "changes": [
+      "Round state has a separate Stop control alongside Start, Pause and Run one tick.",
+      "Every ticker state change confirms with a toast and prominent yellow/black news event.",
+      "Game updates is a dedicated on/off news filter category.",
+      "First start, stop and restart each unlock a unique lore quest awarding one asteroid of each type, claimable once through Bonuses.",
+      "Initial rendering waits until all feature definitions are loaded."
+    ]
+  },
+  {
     "version": "0.69.0",
     "date": "2026-10-13",
     "title": "Command time display",
