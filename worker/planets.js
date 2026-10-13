@@ -3,10 +3,10 @@ function validDirectoryCoords(value,kind){const text=String(value||'');const par
 function safeDirectoryName(value,max=80){return typeof value==='string'&&value.length>0&&value.length<=max&&!/[<>]/.test(value);}
 async function centralAllianceAccess(user,env){
  const owned=await env.DB.prepare("SELECT data_json FROM planet_directory WHERE owner_id=? AND kind='planet'").bind(user.id).all();
- for(const row of owned.results||[]){const planet=JSON.parse(row.data_json),aRow=await env.DB.prepare('SELECT data_json FROM planet_alliances WHERE name=?').bind(planet.alliance).first();if(!aRow)continue;const alliance=repairDirectoryMemberships([planet],[JSON.parse(aRow.data_json)])[0],member=(alliance.members||[]).find(m=>m.planet===planet.name||m.planetId===planet.id);if(member)return {alliance,member};}
+ for(const row of owned.results||[]){const planet=JSON.parse(row.data_json);if(!planet.alliance||planet.alliance==='Unaffiliated')continue;const aRow=await env.DB.prepare('SELECT data_json FROM planet_alliances WHERE name=?').bind(planet.alliance).first();if(!aRow)continue;const alliance=repairDirectoryMemberships([planet],[JSON.parse(aRow.data_json)])[0],member=(alliance.members||[]).find(m=>m.planet===planet.name||m.planetId===planet.id);if(member)return {alliance,member};}
  return null;
 }
-function centralIntelPermission(access,key){if(!access)return false;const rank=access.member.rank,defaults=['Owner','HC'].includes(rank)||key==='intel'||(key==='intelNotes'&&['Officer','Scanner'].includes(rank));return access.alliance.rankPermissions?.[rank]?.[key]??defaults;}
+function centralIntelPermission(access,key){if(!access)return false;const rank=access.member.rank,defaults=['Owner','HC'].includes(rank)||(['fleetStatus','launchBay'].includes(key)&&rank==='Officer')||key==='intel'||(key==='intelNotes'&&['Officer','Scanner'].includes(rank));return access.alliance.rankPermissions?.[rank]?.[key]??defaults;}
 async function planetDirectoryAPI(request,env){
  const user=await portalUser(request,env);if(!user)return json({error:'Sign in to view the shared planet directory.'},401);
  if(request.method==='GET'){

@@ -1,5 +1,36 @@
 [
   {
+    "version": "0.95.0",
+    "date": "2026-10-13",
+    "title": "Staff controlcenters and private forum achievements",
+    "synopsis": "Dedicated staff subpages and private alliance and galaxy discussions.",
+    "changes": [
+      "Admin Controlcenter groups Round & ticker, Planet Editor, Stats Editor, Planet tools and Havoc in a shared submenu.",
+      "Alliance Controlcenter groups Overview, Settings, Members, Ranks, Funds and Structures with an alliance selector for staff.",
+      "Staff dummy assignments and planet alliance membership move to the Alliance Controlcenter Members page.",
+      "Multihunters has matching Overview, Case queue, Reports and Tools placeholders; no investigation or ban actions are active.",
+      "Private Alliance Forums and Galaxy Forum have dedicated menu entries and author-specific forum achievements.",
+      "Staff alliance edits remain server-authorised; personal Owner passkeys are not exposed to staff.",
+      "All portal and in-game manuals include the new navigation, permissions, fleet controls and forum workflows."
+    ]
+  },
+  {
+    "version": "0.94.0",
+    "date": "2026-10-13",
+    "title": "Alliance Launch Bay and officer readiness",
+    "synopsis": "A permanent fourth fleet, private member readiness cards and configurable command permissions.",
+    "changes": [
+      "Alliance Fleet is a fourth deployable slot permanently controlled from Alliance Launch Bay.",
+      "Officers can view private member idle-fleet reports by ship type in separate themed cards under Defence.",
+      "Fleet readiness and Launch Bay are independent rank permissions, enabled by default for Owner, HC and Officer.",
+      "Central launch orders are validated by membership and permissions and delivered to the member’s open practice game.",
+      "Round reset clears fleet reports and pending launch orders. Unknown and stale snapshots are labelled explicitly.",
+      "Portal and in-game manuals cover all new fleet operations, vendor sales, government effects, support tickets, theme cycling and longer scored cinematic clips.",
+      "Alliance Forums is an alliance submenu with private topics and replies linked to the alliance-forum achievement.",
+      "Galaxy Forum is private to the current galaxy and linked to its own forum achievement."
+    ]
+  },
+  {
     "version": "0.93.0",
     "date": "2026-10-13",
     "title": "Fleet operations and cinematic soundtrack",
@@ -11,7 +42,8 @@
       "Ship Analysis displays primary-target normal damage, EMP shots and stealing damage.",
       "Vendor sales lock Base ships for twelve ticks and keep their value until settlement; the practice buyback rate is clearly stated.",
       "Government mining, research and construction effects now modify the practice output rates.",
-      "Three battle concepts are 24 seconds each; the montage lasts 80 seconds and all include an original generated cinematic soundtrack."
+      "Three battle concepts are 24 seconds each; the montage lasts 80 seconds and all include an original generated cinematic soundtrack.",
+      "User Profile Theme settings can cycle through all six portal themes on every reload; Remember setting controls persistence."
     ]
   },
   {
