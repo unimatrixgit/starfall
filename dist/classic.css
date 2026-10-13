@@ -1,0 +1,15 @@
+/* Classic: compact old-school space-strategy skin, with existing game artwork. */
+body[data-skin="Classic"]{--skin-accent:#b9dbea;--skin-edge:#9aa7ad;--panel:#27546c;--mono:Arial,sans-serif;--display:Arial,sans-serif;background:#111b24;font:12px/1.4 Arial,sans-serif;color:#f2f4f5}
+body[data-skin="Classic"] .side{background:linear-gradient(#1a1c25,#420c15)!important;border:4px ridge #9ca5aa!important;box-shadow:none!important}
+body[data-skin="Classic"] .panel,body[data-skin="Classic"] .settings-card,body[data-skin="Classic"] .card,body[data-skin="Classic"] .subhead{border:3px ridge #a4afb4!important;border-radius:0!important;background:#285b73!important;box-shadow:none!important}
+body[data-skin="Classic"] .panel .ph,body[data-skin="Classic"] .section-bar{background:linear-gradient(#c1c4c6,#687079)!important;color:#fff!important;border-radius:0!important;border-bottom:3px ridge #a3adb3!important}
+body[data-skin="Classic"] .table th{background:#364854!important;color:#e8ebef;font:bold 11px Arial!important;border-bottom:2px ridge #a5afb5}
+body[data-skin="Classic"] .table td{background:#234f65;font:12px Arial!important;border-bottom:1px solid #8299a6!important}
+body[data-skin="Classic"] .table tr:nth-child(even) td{background:#285b73}
+body[data-skin="Classic"] .btn,body[data-skin="Classic"] .alliance-tabs>button{border:2px outset #bec5c9!important;border-radius:0!important;background:linear-gradient(#bac0c4,#69737a)!important;color:#fff!important;text-shadow:0 1px #263640;box-shadow:none!important;font:bold 11px Arial!important;letter-spacing:0!important}
+body[data-skin="Classic"] .btn:active{border-style:inset!important}
+body[data-skin="Classic"] .nav button{font:11px Arial!important;color:#fff!important;background:transparent;border-radius:0}
+body[data-skin="Classic"] .nav button.active{background:#6f2633!important;border-left:3px solid #d3d3d3}
+body[data-skin="Classic"] .theme-nameplate{border-radius:0!important;background:linear-gradient(#222937,#651829)!important}
+body[data-skin="Classic"] input,body[data-skin="Classic"] select,body[data-skin="Classic"] textarea{border:2px inset #a2adb4!important;border-radius:0!important;background:#183c52!important;color:#fff!important}
+body[data-skin="Classic"] .hero h1,body[data-skin="Classic"] h2{font-family:Arial,sans-serif!important;letter-spacing:0!important}

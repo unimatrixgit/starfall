@@ -1,5 +1,21 @@
 [
   {
+    "version": "0.99.0",
+    "date": "2026-10-13",
+    "title": "Arcade and Classic skins, Network Hub and fleet calculator",
+    "synopsis": "Nyan Cat portal art, Classic game styling and clearer fleet command tools.",
+    "changes": [
+      "Nyan Cat adds generated pixel artwork, rainbow frames and an arcade starfield to portal and manual themes; it joins all-theme cycling.",
+      "Classic adds a compact old-school in-game skin with red navigation, blue panels and bevel buttons.",
+      "Fleet Add to Calc loads that fleet as attacker and opens the calculator while preserving defender inputs.",
+      "Galaxy Forum appears under Foreign Affairs. Galaxy Status is renamed Network Hub across navigation and documentation.",
+      "Network Hub separates incoming, outgoing and returning fleets with an optional permission-aware alliance intel overlay.",
+      "Alliance Controlcenter Keyholders supports Owner-authorised passphrase disclosure to staff; rotating a key invalidates its previous disclosure phrase.",
+      "Multihunters has separate Raw access log and Multi subpages with staff-only access, account IP history and 30-day retention.",
+      "User Profile labels its portal appearance submenu Portal theme settings."
+    ]
+  },
+  {
     "version": "0.98.0",
     "date": "2026-10-13",
     "title": "Profile audio controls",

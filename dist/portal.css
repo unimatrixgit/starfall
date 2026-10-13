@@ -120,3 +120,15 @@ body[data-portal-skin="Cathaar"] .hero{border-radius:34px 4px 34px 4px}body[data
 .portal-music-toolbar{max-width:1500px;margin:auto;padding:10px 22px;display:flex;align-items:center;justify-content:flex-end;gap:16px;flex-wrap:wrap;border:1px solid var(--line);background:linear-gradient(120deg,var(--race-panel),#07131d);font:11px var(--mono)}.portal-music-toolbar .button{padding:8px 14px;min-height:32px}.portal-music-toolbar label{display:flex;align-items:center;gap:10px}.portal-music-toolbar input{width:95px;accent-color:var(--accent)}
 
 .portal-music-toolbar[hidden]{display:none!important}.profile-theme-section .portal-music-toolbar{justify-content:flex-start;margin:18px 0;padding:20px;border:1px solid var(--line)}
+/* Nyan Cat: arcade nebula skin. */
+body[data-portal-skin="NyanCat"]{--accent:#ff87df;--race-panel:#171443;--race-glow:#ec4ecf;--line:#807be7;--text:#fff3fd;--muted:#c6c5ff;--skin-accent:#ff87df;--skin-edge:#807be7;background:radial-gradient(circle at 10% 20%,#92ebff 0 1px,transparent 2px) 0 0/53px 67px,radial-gradient(circle at 80% 50%,#fff 0 1px,transparent 2px) 0 0/97px 79px,#080c2b!important}
+body[data-portal-skin="NyanCat"] header,body[data-portal-skin="NyanCat"] footer{background:linear-gradient(135deg,#26225a,#11143c)!important;border-color:#d97cff!important}
+body[data-portal-skin="NyanCat"] main{background:linear-gradient(145deg,#141637ee,#24215be8)!important;border:4px solid #9b7aff!important}
+body[data-portal-skin="NyanCat"] .hero{background:linear-gradient(90deg,#080e31ee 0%,#080e3155 58%,transparent),url('/assets/media/nyan-cat-portal.webp') right center/cover!important;border:3px solid #ff93df!important;border-radius:18px!important;min-height:360px;box-shadow:0 0 35px #ff71da55!important}
+body[data-portal-skin="NyanCat"] .section-bar{border-image:linear-gradient(90deg,#ff7373,#ffc366,#fff578,#86f5a9,#7cc8ff,#bd91ff) 1!important;background:linear-gradient(90deg,#39215c,#172951)!important;letter-spacing:.09em}
+body[data-portal-skin="NyanCat"] .card{background:linear-gradient(100deg,#09102de8,#20143ba8),url('/assets/media/nyan-cat-portal.webp') center/cover!important;border-color:#9c9eff!important;border-radius:14px!important}
+body[data-portal-skin="NyanCat"] .manual-section,body[data-portal-skin="NyanCat"] .profile-theme-box{background:linear-gradient(140deg,#242044,#122342)!important;border-color:#dd8be4!important}
+body[data-portal-skin="NyanCat"] .button,body[data-portal-skin="NyanCat"] button{border-color:#ff97e6!important;box-shadow:0 0 12px #ea75dd22;color:#fff!important}
+body[data-portal-skin="NyanCat"] .brand,body[data-portal-skin="NyanCat"] h1,body[data-portal-skin="NyanCat"] h2{font-family:monospace;letter-spacing:.025em;color:#fff5ff}
+body[data-portal-skin="NyanCat"] .theme-icon{color:#8beeff!important;border-color:#fdb0e4!important;background:#351953!important}
+body[data-portal-skin="NyanCat"] .manual-subsection:nth-child(3n){border-color:#7ce6d0!important}body[data-portal-skin="NyanCat"] .manual-subsection:nth-child(3n+1){border-color:#ffd788!important}
