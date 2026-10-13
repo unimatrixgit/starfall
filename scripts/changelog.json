@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.108.0",
+    "date": "2026-10-13",
+    "title": "Alliance attack claims and fleet worksheet",
+    "synopsis": "Private attack coordination, spreadsheet-style calculator inputs and stopped ticker after reset.",
+    "changes": [
+      "Alliance Attack tool adds private targets and one active claim per player; administrators cannot bypass claim limits or claim permissions.",
+      "Owner, HC and Officer can manage operations by default; Members can claim targets. Recruitment ranks cannot claim by default.",
+      "Calculator uses one compact ship worksheet with Attacker and Defender columns, class colours, arrow-key navigation and spreadsheet paste.",
+      "Fresh game state explicitly stops the ticker and clears the scheduled start; resetting a round clears attack targets and claims."
+    ]
+  },
+  {
     "version": "0.107.0",
     "date": "2026-10-13",
     "title": "Control panels, account ranks and player-only round",
