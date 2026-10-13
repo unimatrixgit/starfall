@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.78.0",
+    "date": "2026-10-13",
+    "title": "Release ledger and bulk quest claims",
+    "synopsis": "The changelog is a separate statistical portal module and completed quests can be claimed in groups.",
+    "changes": [
+      "Release ledger displays latest version, recorded releases and change counts with a statistical visual style.",
+      "Each quest category can claim all reached, unclaimed goals at once.",
+      "A final Claim all completed quests button collects all available rewards without bypassing objectives."
+    ]
+  },
+  {
     "version": "0.77.0",
     "date": "2026-10-13",
     "title": "Illustrated field manual",
