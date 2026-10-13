@@ -1,5 +1,15 @@
 [
   {
+    "version": "0.58.0",
+    "date": "2026-10-13",
+    "title": "Complete round reset defaults",
+    "synopsis": "A reset restores the default race, fleet catalogue and support panels correctly.",
+    "changes": [
+      "Fresh rounds explicitly initialize race, galaxy fund, quest claims and news filters.",
+      "The shared directory normalizes fleet identifiers after a reset so the base fleet editor displays the correct ships."
+    ]
+  },
+  {
     "version": "0.57.0",
     "date": "2026-10-13",
     "title": "Independent planet editor modules",
