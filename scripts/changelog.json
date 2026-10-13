@@ -1,5 +1,15 @@
 [
   {
+    "version": "0.84.0",
+    "date": "2026-10-13",
+    "title": "Portal footer navigation",
+    "synopsis": "A themed footer provides five future navigation slots.",
+    "changes": [
+      "About, Support, Rules, Privacy and Contact are placeholders in the portal footer.",
+      "Placeholder links show a Coming soon notice without navigating to missing pages."
+    ]
+  },
+  {
     "version": "0.83.0",
     "date": "2026-10-13",
     "title": "Header layout repair",

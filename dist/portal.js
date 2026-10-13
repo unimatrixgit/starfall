@@ -29,3 +29,5 @@ function sortAndPinStaffNews(cards){const now=Date.now();for(const card of cards
 setInterval(()=>document.querySelectorAll('#portalNewsCards,#staffNewsCards').forEach(sortAndPinStaffNews),60000);
 
 async function refreshPortalUniverse(){if(!document.getElementById('portalPlanetCount'))return;try{const data=await portalRequest('worldstats');document.getElementById('portalPlanetCount').textContent=Number(data.planets).toLocaleString();document.getElementById('portalAsteroidCount').textContent=Number(data.asteroids).toLocaleString();document.getElementById('portalAllianceCount').textContent=Number(data.alliances).toLocaleString();document.getElementById('portalUniverseStatus').textContent='SHARED UNIVERSE · LIVE DATABASE';}catch(error){document.getElementById('portalUniverseStatus').textContent='Universe status temporarily unavailable.';}}refreshPortalUniverse();setInterval(refreshPortalUniverse,30000);
+
+document.addEventListener('click',e=>{const link=e.target.closest('[data-footer-placeholder]');if(link){e.preventDefault();document.getElementById('portalFooterStatus').textContent=link.dataset.footerPlaceholder+' — coming soon.';}});
