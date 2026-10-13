@@ -1,0 +1,1 @@
+ALTER TABLE alliance_intel ADD COLUMN nickname TEXT NOT NULL DEFAULT '';

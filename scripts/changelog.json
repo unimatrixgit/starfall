@@ -1,5 +1,18 @@
 [
   {
+    "version": "0.53.0",
+    "date": "2026-10-13",
+    "title": "Intel nicknames",
+    "synopsis": "Alliance intel now supports nicknames and suggestions for members awaiting planet assignment.",
+    "changes": [
+      "Nickname column provides a free-text box with suggestions for unassigned alliance members.",
+      "Nicknames are stored centrally for your alliance and follow intel edit and visible-field permissions.",
+      "Nickname labels do not change actual alliance membership or planet assignments.",
+      "Users can set their public game username beneath Planet display name; login credentials are unchanged.",
+      "Galaxy Browser Intel overlay mirrors alliance intel nickname, alliance, relation and scan columns in display-only mode."
+    ]
+  },
+  {
     "version": "0.52.0",
     "date": "2026-10-13",
     "title": "Command news archive",
