@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.100.0",
+    "date": "2026-10-13",
+    "title": "Multihunter fleet farming analysis",
+    "synopsis": "Staff can review fleet activity between two planets with transparent evidence and data limitations.",
+    "changes": [
+      "Multihunters adds Fleet farming analysis with two planet selectors and a tick range.",
+      "Authenticated launch and battle reports record mission direction, fleet size, losses and captured asteroids with duplicate protection and round separation.",
+      "The report distinguishes insufficient evidence, repeated profitable raids and mutual profitable raids; staff review is required and no automatic sanctions are applied.",
+      "Practice-browser reporting starts with this release; missing or historical events remain unknown."
+    ]
+  },
+  {
     "version": "0.99.0",
     "date": "2026-10-13",
     "title": "Arcade and Classic skins, Network Hub and fleet calculator",

@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS fleet_movement_audit(user_id TEXT NOT NULL,mission_id TEXT NOT NULL,generation INTEGER NOT NULL,origin_id TEXT NOT NULL,target_id TEXT NOT NULL,mission TEXT NOT NULL,launch_tick INTEGER NOT NULL,ships INTEGER NOT NULL,result_tick INTEGER,captured INTEGER,attacker_lost INTEGER,defender_lost INTEGER,created_at INTEGER NOT NULL,updated_at INTEGER NOT NULL,PRIMARY KEY(user_id,mission_id,generation));
+CREATE INDEX IF NOT EXISTS fleet_movement_pair ON fleet_movement_audit(generation,origin_id,target_id,launch_tick);
