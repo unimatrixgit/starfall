@@ -1,5 +1,31 @@
 [
   {
+    "version": "0.63.0",
+    "date": "2026-10-13",
+    "title": "Staff news publishing",
+    "synopsis": "Create categorized articles from the staff panel with dedicated icons and public archive links.",
+    "changes": [
+      "Game admins can publish titles, synopses and article text to the central database.",
+      "Five update categories each have a theme icon on the editor, news cards and article pages.",
+      "Public portal and news archive display staff articles newest first; article text is rendered safely."
+    ]
+  },
+  {
+    "version": "0.62.0",
+    "date": "2026-10-13",
+    "title": "Draft orders and fleet delivery",
+    "synopsis": "Build a multi-ship draft, confirm it with Order all, and choose where each ship is delivered.",
+    "changes": [
+      "Ship cards separate Order now from Add to order.",
+      "Add to order saves a draft without charging resources; Order all validates and confirms the complete draft atomically.",
+      "Each ship has a Base / Fleet 1–3 delivery choice, applied when production finishes.",
+      "Drafts can be reviewed, removed or cleared and survive reloads.",
+      "Adaptive sidebar spacing, structured combat news and calculator import.",
+      "Round state ticker start, pause, step and speed controls for the browser practice round.",
+      "Alliance news has a distinct icon and theme accent in both signal lists; Quick actions preferences have quests."
+    ]
+  },
+  {
     "version": "0.61.0",
     "date": "2026-10-13",
     "title": "Population and government ship production",

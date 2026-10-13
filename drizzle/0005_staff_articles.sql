@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS portal_articles (id TEXT PRIMARY KEY,title TEXT NOT NULL,synopsis TEXT NOT NULL,category TEXT NOT NULL,body TEXT NOT NULL,author_id TEXT NOT NULL,published_at INTEGER NOT NULL);
