@@ -1,5 +1,28 @@
 [
   {
+    "version": "0.103.0",
+    "date": "2026-10-13",
+    "title": "Staff structure workspace and simulated battle lab",
+    "synopsis": "Visible structure slots, staff generation and test battles connect the Uplink, Journal and calculator.",
+    "changes": [
+      "Alliance Controlcenter Structures shows slots 11–15, current occupants and construction progress, plus a staff generator for the selected alliance.",
+      "Staff can queue a three-tick build or immediately activate a timed structure. Occupied slots, invalid coordinates and duplicate active types are rejected.",
+      "Satelite Uplink includes a random simulated battle lab. Reports also appear in Journal and load the original fleets into the battle calculator.",
+      "Simulation changes no real fleets, resources, asteroids or Multihunter movement evidence."
+    ]
+  },
+  {
+    "version": "0.102.0",
+    "date": "2026-10-13",
+    "title": "Portal account access and requested alliance reset",
+    "synopsis": "Account signup and sign-in are easier to find; the requested alliance reset clears old registrations and keys.",
+    "changes": [
+      "User Profile includes Create account. Portal has a themed right-side login/registration prompt and signed-in account links.",
+      "Requested one-time alliance reset removes alliance registrations, Owner keys and disclosure phrases; accounts and planet/ruler identities are preserved.",
+      "Planet affiliations become Unaffiliated and stale alliance UI is cleared when central data refreshes."
+    ]
+  },
+  {
     "version": "0.101.0",
     "date": "2026-10-13",
     "title": "Alliance creation and global keyholder audit",
