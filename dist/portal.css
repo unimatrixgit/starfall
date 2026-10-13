@@ -47,3 +47,5 @@ main{border:1px solid var(--line);border-inline:4px double var(--line);backgroun
 footer{background:#071320;border:1px solid var(--line);border-top:2px solid var(--accent)}
 @media(max-width:760px){.portal-hero{padding:24px;min-height:260px}.portal-hero:after{width:140px;height:140px;right:6%;top:22%;opacity:.3}.portal-hero h1{font-size:36px}.manual-section h2{font-size:19px}.manual-nav{border-left-width:2px}}
 @media(prefers-reduced-motion:reduce){.card,.race-profile,.manual-nav a{transition:none}}
+
+.portal-news{margin:24px 0;padding:22px;background:linear-gradient(125deg,#102d3d,#09141f);border:1px solid var(--skin-edge,#536b75)}.portal-news article{padding:12px 0 20px;border-bottom:1px solid #365464}.portal-news details{margin:10px 0;border:1px solid #365464;background:#091824;padding:12px}.portal-news summary{cursor:pointer;color:var(--skin-accent,#a7c9d5)}.portal-news time{float:right;font-size:11px}.portal-news li{margin:7px 0;line-height:1.6}

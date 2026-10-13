@@ -1,0 +1,34 @@
+[
+  {
+    "version": "0.51.0",
+    "date": "2026-10-13",
+    "title": "Alliance intel and fleet launch",
+    "changes": [
+      "Alliance dropdowns list all in-game alliances without changing actual membership.",
+      "Relation selectors color intel rows: Ally green, War red, NAP orange.",
+      "Latest available scans appear as linked type letters, respecting rank visibility.",
+      "Portal News posts and a versioned changelog added below Command Operations.",
+      "Fixed Fleet 1–3 launch selections; missions now move ships into outbound orders with ETA and return correctly."
+    ]
+  },
+  {
+    "version": "0.50.0",
+    "date": "2026-10-13",
+    "title": "Shared command network",
+    "changes": [
+      "Central planet directory shared by the ordinary and alliance intel browsers.",
+      "Central alliance intel with rank permissions, visible field controls and galaxy overlay.",
+      "Version notification beneath the left game menu.",
+      "Alliance fund donation and exchange with 5% loss and minimum reserve controls.",
+      "Alliance statistics replace creation after founding; futuristic portal and manual styles."
+    ]
+  },
+  {
+    "version": "0.49.0",
+    "date": "2026-10-13",
+    "title": "Fleet reference",
+    "changes": [
+      "Dedicated Shipstats manual page with race table colors, ship artwork and resource icons."
+    ]
+  }
+]
