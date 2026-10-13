@@ -1,5 +1,38 @@
 [
   {
+    "version": "0.81.0",
+    "date": "2026-10-13",
+    "title": "Quest automation settings",
+    "synopsis": "Planet Settings can automatically claim completed rewards into the bonus bank.",
+    "changes": [
+      "A centered Quest automation box sits below tax and sharing controls.",
+      "Auto-claim is off by default and after reset; enabling it collects only completed, unclaimed objectives.",
+      "Resource and point allocation remains manual on the Bonuses tab."
+    ]
+  },
+  {
+    "version": "0.80.0",
+    "date": "2026-10-13",
+    "title": "Universe alliance intel filtering",
+    "synopsis": "Universe alliances and filters appear only through an authorized, enabled intel overlay.",
+    "changes": [
+      "Apply alliance intel controls alliance visibility and filter options.",
+      "Alliance names come only from alliance intel records, with Unknown for missing reports.",
+      "Directory alliance membership is excluded from universe search and alliance statistics when overlay is off."
+    ]
+  },
+  {
+    "version": "0.79.0",
+    "date": "2026-10-13",
+    "title": "Structured news transmissions",
+    "synopsis": "News Log uses illustrated event cards with separate report and metadata boxes.",
+    "changes": [
+      "Each event has a graphical icon header, readable transmission body and individual tick/date/category boxes.",
+      "Existing research, production, battle, covert and Game updates color identities remain visible.",
+      "Battle details and calculator links remain structured inside the event card."
+    ]
+  },
+  {
     "version": "0.78.0",
     "date": "2026-10-13",
     "title": "Release ledger and bulk quest claims",
