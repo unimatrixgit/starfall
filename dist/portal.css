@@ -59,3 +59,4 @@ footer{background:#071320;border:1px solid var(--line);border-top:2px solid var(
 [hidden]{display:none!important}.login-card select,.manual-section input,.manual-section select{background:#0b1d29;border:1px solid var(--skin-edge,#536b75);padding:10px;color:var(--text);max-width:100%}.manual-section form{display:flex;flex-wrap:wrap;align-items:center;gap:12px}.manual-section .table select{max-width:230px}
 
 header nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}header nav a{white-space:nowrap}
+

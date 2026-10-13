@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.57.0",
+    "date": "2026-10-13",
+    "title": "Independent planet editor modules",
+    "synopsis": "Each planet editor module applies its own changes without modifying other fields.",
+    "changes": [
+      "Separate identity, location, alliance, resources, asteroids, base fleet, experience, structures and status modules.",
+      "Every module has an Apply changes button and its own confirmation status.",
+      "Applying one module preserves unsaved values in the other modules."
+    ]
+  },
+  {
     "version": "0.56.0",
     "date": "2026-10-13",
     "title": "Portal account and round controls",
