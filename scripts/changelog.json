@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.106.0",
+    "date": "2026-10-13",
+    "title": "Portal-themed staff tools and alliance confirmation",
+    "synopsis": "Staff workspaces follow portal appearance; alliance creation and restoration are clearer.",
+    "changes": [
+      "Staff workspaces match the current portal theme and keep the gameplay theme separate.",
+      "Restore an alliance is always expanded. Successful alliance creation shows an Owner confirmation box with disclosure status.",
+      "The standalone Reset round tab is removed from Staff panel; round controls remain in Admin Controlcenter.",
+      "Staff workspace bootstrap is bundled into the established portal and game loading paths."
+    ]
+  },
+  {
     "version": "0.105.0",
     "date": "2026-10-13",
     "title": "Compact portal release ledger",
