@@ -7,7 +7,8 @@
     "changes": [
       "Top-right box shows home coordinates, planet name, ruler and current tick.",
       "The box updates after planet edits, relocation and tick progression, and adapts to narrow screens.",
-      "Whole-round reset also clears claimed quest rewards and restores quest progress to the default round."
+      "Whole-round reset also clears claimed quest rewards and restores quest progress to the default round.",
+      "Quest checkmarks follow claimed rewards and all clear when the round is reset."
     ]
   },
   {
