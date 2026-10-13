@@ -1,5 +1,59 @@
 [
   {
+    "version": "0.75.0",
+    "date": "2026-10-13",
+    "title": "Illustrated development navigation",
+    "synopsis": "Mining, Construction, Research, Population and Planet Settings become illustrated theme-aware cards.",
+    "changes": [
+      "Development cards use the active skin artwork with activity imagery, readable title strips and illuminated icons.",
+      "All eleven skins receive matching artwork and hover/selected treatments."
+    ]
+  },
+  {
+    "version": "0.74.0",
+    "date": "2026-10-13",
+    "title": "Asteroid draft orders",
+    "synopsis": "Mining supports Order now, Add to order and a combined Order all confirmation.",
+    "changes": [
+      "Asteroid drafts are saved without charging resources and can be removed or cleared.",
+      "Order all validates every type and confirms the complete rising-cost bill atomically.",
+      "Independent orders remain available and existing mining limits are preserved."
+    ]
+  },
+  {
+    "version": "0.73.0",
+    "date": "2026-10-13",
+    "title": "Theme artwork and scheduled ticker",
+    "synopsis": "Every skin has dedicated header artwork; automatic ticker starts use a saved date/time without quest credit.",
+    "changes": [
+      "The old breadcrumb and skin badge are replaced by theme-matched header artwork.",
+      "Round state can schedule or cancel a browser-practice auto-start using local date and time.",
+      "Automatic starts create a Game updates notice but never award ticker quest progress.",
+      "The tick progress bar is more visible and shows its percentage."
+    ]
+  },
+  {
+    "version": "0.72.0",
+    "date": "2026-10-13",
+    "title": "Planet command metrics",
+    "synopsis": "The planet header displays Score, XP and Value in a polished theme-aware command panel.",
+    "changes": [
+      "Current Score, XP and Value update with the planet name, ruler, coordinates and tick.",
+      "The header uses a compact metric grid, illuminated theme borders and clear number alignment."
+    ]
+  },
+  {
+    "version": "0.71.0",
+    "date": "2026-10-13",
+    "title": "Quest insignia and medals",
+    "synopsis": "Theme-specific goal icons, reward badges and completion medals decorate the quest board.",
+    "changes": [
+      "Quest goal symbols use custom frames for every interface skin.",
+      "Resource, research, construction and asteroid rewards display matching icon badges.",
+      "Completed objectives display a medal; claimed rewards upgrade it to gold."
+    ]
+  },
+  {
     "version": "0.70.0",
     "date": "2026-10-13",
     "title": "Ticker confirmations",
