@@ -8,7 +8,8 @@
       "Portal news posts use the same themed card layout as Command Operations.",
       "Each news card includes a short synopsis and a link to its complete article.",
       "The news archive lists releases by date, newest first, with version numbers.",
-      "Alliance Intel relations are read-only text, with War in bold red. The redundant Open Intel column is removed; planet names and scan letters open dossiers."
+      "Alliance Intel relations are read-only text, with War in bold red. The redundant Open Intel column is removed; planet names and scan letters open dossiers.",
+      "News cards include sci-fi background illustrations with dark overlays for readable text."
     ]
   },
   {
