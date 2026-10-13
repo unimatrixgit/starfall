@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.87.0",
+    "date": "2026-10-13",
+    "title": "Compact race profiles",
+    "synopsis": "Five centred race cards open detailed profiles through their plus controls.",
+    "changes": [
+      "Five compact race cards share a centred desktop row.",
+      "Plus controls reveal doctrine, traits, bonus references and fleet artwork.",
+      "Expanded profiles close on pointer exit, Escape or focus leaving the card; touch users can toggle the plus button."
+    ]
+  },
+  {
     "version": "0.86.0",
     "date": "2026-10-13",
     "title": "Themed manual chapters",
