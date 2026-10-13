@@ -1,5 +1,18 @@
 [
   {
+    "version": "0.89.0",
+    "date": "2026-10-13",
+    "title": "Universe analysis and continuous viewscreen",
+    "synopsis": "KIA-inspired universe modules and a continuous RTS command viewscreen.",
+    "changes": [
+      "Universe has modular top planets, top galaxies, civilisation distribution, size gains/losses, value ratios, crashers, combat activity and tick history.",
+      "History tracks observed ticks, with a maximum 24-tick comparison window; private alliance modules require the permitted intel overlay.",
+      "The RTS-style viewscreen extends from the themed left menu through the artwork and development controls to the planet box at the right edge, for every theme.",
+      "Overview identity updates immediately from Planet Settings.",
+      "Round reset preserves planet name, ruler name and public username while retaining account-owned alliance ranks."
+    ]
+  },
+  {
     "version": "0.88.0",
     "date": "2026-10-13",
     "title": "Universe feeds and command profiles",
