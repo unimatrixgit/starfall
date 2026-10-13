@@ -1,5 +1,18 @@
 [
   {
+    "version": "0.90.0",
+    "date": "2026-10-13",
+    "title": "Alliance construction and portal theme frames",
+    "synopsis": "Three-tick alliance construction and stronger illustrated portal themes.",
+    "changes": [
+      "All five alliance structures take three ticks to build and reserve their placement slot while queued.",
+      "Construction costs are paid once; effects and cooldowns start after completion.",
+      "Overview has a separate themed alliance-structures module with construction and active-effect progress bars.",
+      "Portal themes use larger artwork areas, illuminated sci-fi frames and inset synopsis, profile, lore and action boxes.",
+      "Alliance permissions continue to follow the account-owned planet after identity changes."
+    ]
+  },
+  {
     "version": "0.89.0",
     "date": "2026-10-13",
     "title": "Universe analysis and continuous viewscreen",
