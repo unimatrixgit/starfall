@@ -62,19 +62,22 @@ async function api(request,env){
 async function serveRequest(request,env){
   const url=new URL(request.url);
   if(url.pathname.startsWith('/botfiles/')){try{return await gameDumpAPI(request,env);}catch{return json({error:'The gamedump is temporarily unavailable.'},503);}}
-  if(['/game','/game/','/index.html'].includes(url.pathname)&&url.searchParams.get('staff_workspace')==='1'){const user=await portalUser(request,env);if(user?.role!=='admin')return json({error:'Staff access required.'},403);}
+  if(['/game','/game/','/index.html'].includes(url.pathname)&&url.searchParams.get('staff_workspace')==='1'){const user=await portalUser(request,env);if(!(user?.role==='admin'||url.searchParams.get('staff_tool')==='multihunters'&&portalStaffPermission(user,'multihunter')))return json({error:'Staff access required.'},403);}
+  if(url.pathname==='/api/admin/planet-audit')return staffPlanetAuditAPI(request,env);
+  if(url.pathname==='/api/admin/account-ranks')return accountRanksAPI(request,env);
+  if(url.pathname==='/api/portal/alliance-manager'){try{return await portalAllianceManagerAPI(request,env);}catch{return json({error:'Alliance manager could not complete this request.'},503);}}
   if(url.pathname==='/api/fleet-movements')return movementAuditAPI(request,env);
   if(url.pathname==='/api/admin/access-logs')return accessLogAPI(request,env);
   if(url.pathname==='/api/alliance-fleets'){try{return await allianceFleetAPI(request,env);}catch{return json({error:'The alliance fleet service is unavailable.'},503);}}
   if(url.pathname==='/api/tickets'){try{return await ticketAPI(request,env);}catch{return json({error:'The support system could not complete this request.'},503);}}
   if(url.pathname==='/api/forums'){try{return await forumAPI(request,env);}catch{return json({error:'The forum could not complete this request.'},503);}}
   if(url.pathname.startsWith('/api/alliance-control/')){try{return await allianceControlAPI(request,env);}catch{return json({error:'The alliance could not complete this operation.'},503);}}
-  if(url.pathname==='/api/version')return json({version:'0.106.0',serverTime:Date.now()});
+  if(url.pathname==='/api/version')return json({version:'0.107.0',serverTime:Date.now()});
   if(['/api/planets','/api/alliance-intel','/api/alliance-settings'].includes(url.pathname)){try{return await (url.pathname==='/api/planets'?planetDirectoryAPI:url.pathname==='/api/alliance-settings'?allianceSettingsAPI:allianceIntelAPI)(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid request.':'The central planet database is unavailable.'},error instanceof SyntaxError?400:503);}}
   if(url.pathname.startsWith('/api/portal/')){try{return await portalAPI(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid request.':'The portal could not complete this request. Try again.'},error instanceof SyntaxError?400:503);}}
   if(url.pathname.startsWith('/api/miday/')){try{return await api(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid JSON request.':'The scan database could not complete this request. Try again.'},error instanceof SyntaxError?400:503);}}
   if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405});
-  if(['/profile.html','/staff.html','/forums.html'].includes(url.pathname)){const user=await portalUser(request,env);if(!user)return Response.redirect(url.origin+'/login.html',302);if(url.pathname==='/staff.html'&&user.role!=='admin')return new Response('Staff access required',{status:403});}
+  if(['/profile.html','/staff.html','/forums.html'].includes(url.pathname)){const user=await portalUser(request,env);if(!user)return Response.redirect(url.origin+'/login.html',302);if(url.pathname==='/staff.html'&&!isPortalStaff(user))return new Response('Staff access required',{status:403});}
   const game=['/game','/game/','/index.html'].includes(url.pathname);
   if(game&&!await portalUser(request,env))return Response.redirect(url.origin+'/login.html',302);
   const path=url.pathname==='/'?'/portal.html':game?'/index.html':url.pathname;

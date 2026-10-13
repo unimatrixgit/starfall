@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS alliance_reservations(user_id TEXT NOT NULL,slot INTEGER NOT NULL CHECK(slot BETWEEN 1 AND 5),alliance_id TEXT NOT NULL UNIQUE,created_at INTEGER NOT NULL,PRIMARY KEY(user_id,slot));

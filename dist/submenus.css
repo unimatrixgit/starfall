@@ -6,3 +6,7 @@
 body[data-portal-skin]:not([data-skin]) :where(.alliance-tabs,.profile-tabs,.staff-tabs,.admin-subpages,.forum-tabs,.submenu){--skin-accent:var(--accent);--skin-edge:var(--line)}
 :where(.alliance-tabs,.profile-tabs,.staff-tabs,.admin-subpages,.forum-tabs,.submenu)[hidden]{display:none!important}
 @media(max-width:650px){:where(.alliance-tabs,.profile-tabs,.staff-tabs,.admin-subpages,.forum-tabs,.submenu){gap:5px}:where(.alliance-tabs,.profile-tabs,.staff-tabs,.admin-subpages,.forum-tabs,.submenu)>:is(button,a){flex:1 1 auto;min-height:40px;padding:10px 12px!important}}
+
+/* Keep every game page inside its centered workspace without compressing tables. */
+.app{width:calc(100% - 32px);margin-inline:auto}.shell,.workspace,.content{min-width:0}.content>section,.page{min-width:0}.table-wrap{max-width:100%;overflow-x:auto}.settings-grid,.grid{gap:16px}.panel,.card{min-width:0}.content input,.content select,.content textarea{max-width:100%}.content label{line-height:1.5}.content .actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+@media(max-width:720px){.app{width:100%}.content{padding:16px 12px}.alliance-tabs,.admin-subpages,.forum-tabs{gap:6px}}

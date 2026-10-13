@@ -1,5 +1,22 @@
 [
   {
+    "version": "0.107.0",
+    "date": "2026-10-13",
+    "title": "Control panels, account ranks and player-only round",
+    "synopsis": "Native portal staff headers, private alliance reservations, account roles and field-level planet audit.",
+    "changes": [
+      "User control panel and Staff control panel have clear, non-duplicated submenus. The portal header aligns with the main content and account box.",
+      "Staff workspaces use native portal banners; game banners and ornate frames are removed. Fields, KPI boxes, keyholder controls and structure artwork are spaced consistently.",
+      "Alliance manager reserves up to five inactive alliances with encrypted personal keys, edits the current active alliance and adds up to two additional keyholders.",
+      "Account ranks include Player, Support, Multihunter and Administrator; only Administrators change ranks and at least one must remain.",
+      "Staff planet audit records committed field changes, previous/new values and the actor. Support and Multihunter can read the audit.",
+      "Requested cleanup removes non-player planets and alliances while preserving personal reservations. Practice planets no longer automatically return.",
+      "Reset leaves the ticker stopped with the previous schedule cleared. Manual or newly scheduled starts can enable it.",
+      "Battle calculator outputs simulated news reports only on its own page, without adding them to Journal. Uplink test reports remain in their test module.",
+      "Archive Forums lists only the current galaxy and alliance forums. The Foreign Affairs Galaxy Forum link is removed."
+    ]
+  },
+  {
     "version": "0.106.0",
     "date": "2026-10-13",
     "title": "Portal-themed staff tools and alliance confirmation",

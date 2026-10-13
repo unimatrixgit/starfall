@@ -1,0 +1,12 @@
+ALTER TABLE planet_directory_meta ADD COLUMN player_only INTEGER NOT NULL DEFAULT 0;
+DELETE FROM planet_directory WHERE kind='planet' AND owner_id IS NULL;
+DELETE FROM planet_alliances WHERE name NOT IN (SELECT json_extract(data_json,'$.alliance') FROM planet_directory WHERE kind='planet' AND owner_id IS NOT NULL);
+DELETE FROM planet_directory WHERE kind='structure' AND json_extract(data_json,'$.alliance') NOT IN (SELECT name FROM planet_alliances);
+DELETE FROM alliance_fleet_commands WHERE alliance_name NOT IN (SELECT name FROM planet_alliances);
+DELETE FROM alliance_fleet_readiness WHERE alliance_name NOT IN (SELECT name FROM planet_alliances);
+DELETE FROM alliance_intel WHERE alliance_name NOT IN (SELECT name FROM planet_alliances);
+DELETE FROM forum_posts WHERE thread_id IN (SELECT id FROM forum_threads WHERE scope='alliance' AND alliance_name NOT IN (SELECT name FROM planet_alliances));
+DELETE FROM forum_threads WHERE scope='alliance' AND alliance_name NOT IN (SELECT name FROM planet_alliances);
+DELETE FROM alliance_registry WHERE alliance_id NOT IN (SELECT alliance_id FROM alliance_owner_keys WHERE owner_user_id IN (SELECT id FROM portal_users)) AND alliance_id NOT IN (SELECT alliance_id FROM alliance_reservations) AND alliance_id NOT IN (SELECT json_extract(data_json,'$.registryId') FROM planet_alliances WHERE json_extract(data_json,'$.registryId') IS NOT NULL);
+UPDATE planet_directory_meta SET player_only=1,revision=revision+1 WHERE id=1;
+UPDATE planet_alliances AS a SET data_json=json_set(a.data_json,'$.members',json(COALESCE((SELECT json_group_array(json(m.value)) FROM json_each(a.data_json,'$.members') m WHERE EXISTS(SELECT 1 FROM planet_directory p WHERE p.kind='planet' AND p.owner_id IS NOT NULL AND (p.id=json_extract(m.value,'$.planetId') OR json_extract(p.data_json,'$.name')=json_extract(m.value,'$.planet')))),'[]')));
