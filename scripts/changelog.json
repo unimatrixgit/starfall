@@ -1,5 +1,20 @@
 [
   {
+    "version": "0.93.0",
+    "date": "2026-10-13",
+    "title": "Fleet operations and cinematic soundtrack",
+    "synopsis": "Personalised fleets, prelaunch orders, vendor sales and longer scored battle concepts.",
+    "changes": [
+      "Fleet names accept distinct 3–15 character alphanumeric names.",
+      "Fleet missions support 0–12 tick delayed launch and immediate cancellation before departure. Fake Defence recalls at ETA one.",
+      "Fleet travel now considers class, travel research, same-alliance defence and fixed five-tick in-galaxy defence.",
+      "Ship Analysis displays primary-target normal damage, EMP shots and stealing damage.",
+      "Vendor sales lock Base ships for twelve ticks and keep their value until settlement; the practice buyback rate is clearly stated.",
+      "Government mining, research and construction effects now modify the practice output rates.",
+      "Three battle concepts are 24 seconds each; the montage lasts 80 seconds and all include an original generated cinematic soundtrack."
+    ]
+  },
+  {
     "version": "0.92.0",
     "date": "2026-10-13",
     "title": "Command center, support and cinematic archive",

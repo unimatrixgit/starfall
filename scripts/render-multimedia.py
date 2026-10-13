@@ -18,7 +18,15 @@ def audio_file(name,duration,events):
     path=CACHE/f'{name}.wav';rng=random.Random(32);rate=44100;data=bytearray();filtered=0
     for i in range(int(duration*rate)):
         t=i/rate;noise=rng.uniform(-1,1);filtered=.93*filtered+.07*noise
-        value=.014*math.sin(t*math.tau*48)+.009*math.sin(t*math.tau*73)
+        # Original cinematic score: minor-key pads, bass, pulse and a sparse lead.
+        chords=[(110,130.81,164.81),(87.31,110,130.81),(98,123.47,146.83),(82.41,98,123.47)]
+        chord=chords[int(t/6)%4];fade=min(1,t/2,(duration-t)/2)
+        pad=sum(math.sin(math.tau*f*t)+.35*math.sin(math.tau*f*1.002*t) for f in chord)*.027
+        bass=.065*math.sin(math.tau*chord[0]/2*t)
+        pulse=.035*math.sin(math.tau*chord[int(t*2)%3]*2*t)*math.exp(-(t% .5)*8)
+        lead_notes=[329.63,392,440,523.25,440,392,329.63,293.66]
+        lead=.024*math.sin(math.tau*lead_notes[int(t/1.5)%8]*t)*math.sin(math.pi*(t%1.5)/1.5)**2
+        value=(pad+bass+pulse+lead)*max(0,fade)
         for e in events:
             age=t-e
             if 0<age<1.6:value+=(filtered*1.5+math.sin(math.tau*(65-20*age)*age)*.20)*math.exp(-age*3.5)
@@ -37,7 +45,7 @@ def frame(key,title,color,impact,t,duration,ui=False):
             phase=(t*.9+n*.23)%1;start=(int(W*(.12+n*.025)),int(H*(.17+n*.14)));end=(int(impact[0]+n*20),int(impact[1]+n*13))
             px=int(start[0]+(end[0]-start[0])*phase);py=int(start[1]+(end[1]-start[1])*phase)
             d.line((px-35,py+9,px+30,py-9),fill=(*color,210),width=3)
-        for event in [2.2,5.4]:
+        for event in [2.2,5.4,9.2,13.6,17.8,21.2]:
             age=t-event
             if 0<=age<1.5:
                 radius=int(15+age*145);alpha=int(210*math.exp(-age*2.2));cx,cy=impact
@@ -63,7 +71,7 @@ def frame(key,title,color,impact,t,duration,ui=False):
 def encode(name,parts):
     duration=sum(part[5] for part in parts);events=[];offset=0
     for part in parts:
-        if not part[6]:events.extend([offset+2.2,offset+min(5.4,part[5]-1)])
+        if not part[6]:events.extend(offset+e for e in [2.2,5.4,9.2,13.6,17.8,21.2] if e<part[5]-1)
         offset+=part[5]
     audio=audio_file(name,duration,events);path=OUT/f'{name}.mp4'
     command=[FFMPEG,'-y','-loglevel','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-i',str(audio),'-c:v','libx264','-preset','fast','-crf','29','-maxrate','1100k','-bufsize','2200k','-c:a','aac','-b:a','64k','-pix_fmt','yuv420p','-movflags','+faststart','-shortest',str(path)]
@@ -83,8 +91,8 @@ def encode(name,parts):
 metadata=[]
 for key,name,title,color,impact in SCENES:
     BASES[key].save(OUT/f'{name}.webp',quality=83)
-    metadata.append(encode(name,[(key,title,color,impact,0,8,False)]))
+    metadata.append(encode(name,[(key,title,color,impact,0,24,False)]))
 UI.save(OUT/'starfall-command-montage.webp',quality=83)
-parts=[('ui','YOUR WORLD / YOUR COMMAND',(145,205,228),(0,0),0,4,True)]+[(key,title,color,impact,0,6,False) for key,name,title,color,impact in SCENES]
+parts=[('ui','YOUR WORLD / YOUR COMMAND',(145,205,228),(0,0),0,8,True)]+[(key,title,color,impact,0,24,False) for key,name,title,color,impact in SCENES]
 metadata.append(encode('starfall-command-montage',parts))
 (OUT/'metadata.json').write_text(json.dumps(metadata,indent=2))
