@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.82.0",
+    "date": "2026-10-13",
+    "title": "Structured ship order cards",
+    "synopsis": "Production cards separate combat stats, target priorities, prices and order controls.",
+    "changes": [
+      "A brief combat profile lists initiative, guns, per-gun damage, armour, ETA and role.",
+      "Target priorities and a full Shipstats link appear in their own summary.",
+      "Unit costs, quantity, autofill, fleet destination and order buttons use clearer spacing and subpanels.",
+      "Portal module 02 Race command profiles sits immediately above the Version changelog."
+    ]
+  },
+  {
     "version": "0.81.0",
     "date": "2026-10-13",
     "title": "Quest automation settings",
