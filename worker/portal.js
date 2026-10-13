@@ -6,7 +6,7 @@ function equalHash(a,b){if(a.length!==b.length)return false;let difference=0;for
 async function portalUser(request,env){const token=(request.headers.get('Cookie')||'').match(/(?:^|;\s*)starfall_session=([a-f0-9]{64})(?:;|$)/)?.[1];if(!token||!env.DB)return null;return env.DB.prepare('SELECT u.id,u.username,u.role FROM portal_sessions s JOIN portal_users u ON u.id=s.user_id WHERE s.token_hash=? AND s.expires_at>?').bind(await digest(token),Date.now()).first();}
 async function portalAPI(request,env){
   const url=new URL(request.url),action=url.pathname.split('/').pop();if(!env.DB)return json({error:'The portal database is unavailable.'},503);
-  if(!request.headers.get('oai-authenticated-user-id'))return json({error:'Sign in with ChatGPT to access this site.'},401);
+  // Sites dispatch enforces the existing owner-private audience for visitors and service callers.
   if(request.method==='GET'&&action==='session'){const user=await portalUser(request,env);const row=await env.DB.prepare('SELECT COUNT(*) AS count FROM portal_users').first();return json({user,setupRequired:row.count===0});}
   if(request.method!=='POST')return json({error:'Method not allowed.'},405);
   if(request.headers.get('Origin')!==url.origin)return json({error:'Invalid request origin.'},403);

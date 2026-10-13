@@ -14,8 +14,8 @@ function sanitizeScan(scan,now){
   return {scanId:scan.id,type:scan.type,name:text(scan.name,80),targetName:text(scan.targetName,100),coords:anonymous?'':coords,report,tick:Math.max(0,Math.min(1000000,Math.trunc(Number(scan.tick)||0))),savedAt,expiresAt:savedAt+RETENTION,anonymous:anonymous?1:0};
 }
 async function api(request,env){
-  const url=new URL(request.url),path=url.pathname,identity=request.headers.get('oai-authenticated-user-id');
-  const user=identity?(await portalUser(request,env))?.id:null;
+  const url=new URL(request.url),path=url.pathname;
+  const user=(await portalUser(request,env))?.id;
   if(!user)return json({error:'Sign in with ChatGPT to use the Miday array.'},401);
   if(!env.DB)return json({error:'The central scan database is unavailable.'},503);
   if(request.method!=='GET'&&request.headers.get('Origin')!==url.origin)return json({error:'Invalid request origin.'},403);
