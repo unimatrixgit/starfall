@@ -6,7 +6,8 @@
     "synopsis": "Your planet identity and current tick are grouped in a theme-matched top-right command box.",
     "changes": [
       "Top-right box shows home coordinates, planet name, ruler and current tick.",
-      "The box updates after planet edits, relocation and tick progression, and adapts to narrow screens."
+      "The box updates after planet edits, relocation and tick progression, and adapts to narrow screens.",
+      "Whole-round reset also clears claimed quest rewards and restores quest progress to the default round."
     ]
   },
   {
