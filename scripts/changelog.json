@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.83.0",
+    "date": "2026-10-13",
+    "title": "Header layout repair",
+    "synopsis": "The artwork header keeps the page grid, right rail and development navigation correctly aligned.",
+    "changes": [
+      "The header wrapper is restored after replacing the breadcrumb with artwork.",
+      "Header artwork and command boxes wrap within the available width instead of displacing the resource rail.",
+      "Theme nameplate text no longer splits a race name mid-word.",
+      "The Vesper Chronicles module is placed above the Version changelog, after Race command profiles."
+    ]
+  },
+  {
     "version": "0.82.0",
     "date": "2026-10-13",
     "title": "Structured ship order cards",
