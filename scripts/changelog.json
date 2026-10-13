@@ -8,7 +8,8 @@
       "Relation selectors color intel rows: Ally green, War red, NAP orange.",
       "Latest available scans appear as linked type letters, respecting rank visibility.",
       "Portal News posts and a versioned changelog added below Command Operations.",
-      "Fixed Fleet 1–3 launch selections; missions now move ships into outbound orders with ETA and return correctly."
+      "Fixed Fleet 1–3 launch selections; missions now move ships into outbound orders with ETA and return correctly.",
+      "Galaxy Scan uses radio buttons and All scans, charging once for the complete sweep of unlocked scan types."
     ]
   },
   {
