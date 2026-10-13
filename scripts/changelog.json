@@ -1,5 +1,30 @@
 [
   {
+    "version": "0.97.0",
+    "date": "2026-10-13",
+    "title": "Desert-space ambience",
+    "synopsis": "Original cinematic portal ambience with an optional in-game soundtrack.",
+    "changes": [
+      "The portal has a 96-second original generated desert-space score with mute and volume controls.",
+      "In-game music defaults off and can be enabled under Planet Settings → Ambient soundtrack.",
+      "The soundtrack pauses during portal video playback and while its browser tab is hidden.",
+      "Browser autoplay restrictions are handled with a clear starts-after-click status."
+    ]
+  },
+  {
+    "version": "0.96.0",
+    "date": "2026-10-13",
+    "title": "Unified round control workspace",
+    "synopsis": "One round-settings and ticker workspace with duplicate controls removed.",
+    "changes": [
+      "Round settings and Ticker & state become one continuous Round & ticker workspace.",
+      "Tick interval is configured once; Run one tick appears only in ticker controls.",
+      "Planet-tool shortcuts and duplicate reset-default controls are removed from round configuration; their own subpages retain those functions.",
+      "The two extra section-navigation buttons are removed while the main Admin Controlcenter submenu remains.",
+      "Portal, game, profile, forums, staff and achievement submenus share one themed tab style."
+    ]
+  },
+  {
     "version": "0.95.0",
     "date": "2026-10-13",
     "title": "Staff controlcenters and private forum achievements",

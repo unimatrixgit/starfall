@@ -1,6 +1,6 @@
 const fs=require('fs'),path=require('path'),zlib=require('zlib');
 const root=path.resolve(__dirname,'..'),assets={};
-const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.webp':'image/webp','.png':'image/png','.css':'text/css; charset=utf-8','.mp4':'video/mp4','.json':'application/json; charset=utf-8'};
+const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.webp':'image/webp','.png':'image/png','.css':'text/css; charset=utf-8','.mp4':'video/mp4','.mp3':'audio/mpeg','.json':'application/json; charset=utf-8'};
 function collect(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){if(['server','.openai'].includes(entry.name))continue;const full=path.join(dir,entry.name);if(entry.isDirectory())collect(full);else{if(entry.name.endsWith('.png')&&fs.existsSync(full.replace(/\.png$/,'.webp')))continue;const url='/'+path.relative(path.join(root,'dist'),full).replaceAll('\\','/');assets[url]={data:fs.readFileSync(full).toString('base64'),type:mime[path.extname(full)]||'application/octet-stream'};}}}
 collect(path.join(root,'dist'));
 const output=path.join(root,'dist/server');fs.mkdirSync(output,{recursive:true});

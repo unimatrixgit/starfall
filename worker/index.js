@@ -66,7 +66,7 @@ export default {async fetch(request,env){
   if(url.pathname==='/api/tickets'){try{return await ticketAPI(request,env);}catch{return json({error:'The support system could not complete this request.'},503);}}
   if(url.pathname==='/api/forums'){try{return await forumAPI(request,env);}catch{return json({error:'The forum could not complete this request.'},503);}}
   if(url.pathname.startsWith('/api/alliance-control/')){try{return await allianceControlAPI(request,env);}catch{return json({error:'The alliance could not complete this operation.'},503);}}
-  if(url.pathname==='/api/version')return json({version:'0.95.0',serverTime:Date.now()});
+  if(url.pathname==='/api/version')return json({version:'0.97.0',serverTime:Date.now()});
   if(['/api/planets','/api/alliance-intel','/api/alliance-settings'].includes(url.pathname)){try{return await (url.pathname==='/api/planets'?planetDirectoryAPI:url.pathname==='/api/alliance-settings'?allianceSettingsAPI:allianceIntelAPI)(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid request.':'The central planet database is unavailable.'},error instanceof SyntaxError?400:503);}}
   if(url.pathname.startsWith('/api/portal/')){try{return await portalAPI(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid request.':'The portal could not complete this request. Try again.'},error instanceof SyntaxError?400:503);}}
   if(url.pathname.startsWith('/api/miday/')){try{return await api(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid JSON request.':'The scan database could not complete this request. Try again.'},error instanceof SyntaxError?400:503);}}
