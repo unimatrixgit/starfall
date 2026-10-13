@@ -1,5 +1,21 @@
 [
   {
+    "version": "0.91.0",
+    "date": "2026-10-13",
+    "title": "Alliance ownership and community controls",
+    "synopsis": "Owner ranks, secure alliance recovery, forums and refined theme controls.",
+    "changes": [
+      "Alliance creators receive Owner rank; only Owners or staff can add or remove an Owner.",
+      "Alliance Settings has separate name, description, recruitment message and MOTD editors.",
+      "Personal Owner passkeys are encrypted in the central database and allow reserved-name recovery and rank-projected private intel feeds.",
+      "Account-owned alliance settings survive a reset; gameplay resources, structures, scans and intel remain reset.",
+      "Community and private alliance forums support topics and replies. Discord chat is prepared with YouSMP configuration placeholders.",
+      "Portal themes move to the User Profile Theme settings tab with Remember setting. Theme changes reload portal or game.",
+      "Buttons inherit the selected theme with clearer text; Resource uplink no longer follows page scrolling.",
+      "Navigation uses Satelite Uplink, Journal, Achievements, Current Round Setup, Planet Editor and Stats Editor throughout."
+    ]
+  },
+  {
     "version": "0.90.0",
     "date": "2026-10-13",
     "title": "Alliance construction and portal theme frames",
