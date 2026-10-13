@@ -1,5 +1,15 @@
 [
   {
+    "version": "0.105.0",
+    "date": "2026-10-13",
+    "title": "Compact portal release ledger",
+    "synopsis": "The portal changelog displays the ten newest versions, while the news archive retains older releases.",
+    "changes": [
+      "Portal version changelog shows only the latest ten releases.",
+      "Historical release articles remain available through the news archive."
+    ]
+  },
+  {
     "version": "0.104.0",
     "date": "2026-10-13",
     "title": "Portal staff workspaces and optional original view",
