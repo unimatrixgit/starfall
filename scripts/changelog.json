@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.104.0",
+    "date": "2026-10-13",
+    "title": "Portal staff workspaces and optional original view",
+    "synopsis": "Administration moves to the portal so staff can keep playing their own planet.",
+    "changes": [
+      "Staff panel owns Admin Controlcenter, Alliance Controlcenter, Multihunters and support alongside users and news administration.",
+      "Dedicated staff workspaces use a separate browser save and do not automatically advance the staff gameplay planet or submit its fleet snapshots.",
+      "The ingame Administration menu is hidden by default. Staff panel provides a toggle and link to the original ingame staff view.",
+      "Existing administrator API permissions still protect every staff operation."
+    ]
+  },
+  {
     "version": "0.103.0",
     "date": "2026-10-13",
     "title": "Staff structure workspace and simulated battle lab",

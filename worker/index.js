@@ -62,6 +62,7 @@ async function api(request,env){
 async function serveRequest(request,env){
   const url=new URL(request.url);
   if(url.pathname.startsWith('/botfiles/')){try{return await gameDumpAPI(request,env);}catch{return json({error:'The gamedump is temporarily unavailable.'},503);}}
+  if(['/game','/game/','/index.html'].includes(url.pathname)&&url.searchParams.get('staff_workspace')==='1'){const user=await portalUser(request,env);if(user?.role!=='admin')return json({error:'Staff access required.'},403);}
   if(url.pathname==='/api/fleet-movements')return movementAuditAPI(request,env);
   if(url.pathname==='/api/admin/access-logs')return accessLogAPI(request,env);
   if(url.pathname==='/api/alliance-fleets'){try{return await allianceFleetAPI(request,env);}catch{return json({error:'The alliance fleet service is unavailable.'},503);}}

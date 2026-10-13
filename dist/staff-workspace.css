@@ -1,0 +1,6 @@
+body.staff-workspace .sidebar,body.staff-workspace header,body.staff-workspace .game-header,body.staff-workspace .topbar,body.staff-workspace #commandRail,body.staff-workspace #developmentBanner,body.staff-workspace .round-footer,body.staff-workspace .header-command-banner{display:none!important}
+body.staff-workspace .game-layout,body.staff-workspace .app,body.staff-workspace .main-layout{display:block!important;max-width:none;margin:0;padding:0}
+body.staff-workspace main,body.staff-workspace .main,body.staff-workspace .content{width:100%;max-width:none;margin:0!important;padding:12px;min-width:0}
+body.staff-workspace .page{display:none!important}body.staff-workspace #page-admin{display:block!important}
+body.staff-workspace{min-height:0;background:var(--bg,#0b1822)}
+body.staff-workspace .side{display:none!important}body.staff-workspace .main{display:block!important;width:100%;margin:0!important}
