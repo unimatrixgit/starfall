@@ -1,5 +1,27 @@
 [
   {
+    "version": "0.77.0",
+    "date": "2026-10-13",
+    "title": "Illustrated field manual",
+    "synopsis": "The manual documents current features with artwork, operational flow cards and visual reference tables.",
+    "changes": [
+      "New chapters explain draft orders, bonus allocation, ticker scheduling and staff news publishing.",
+      "Manual artwork, icon headings, step cards and category color keys improve navigation and reading.",
+      "Practice-only systems and server-backed records are clearly distinguished."
+    ]
+  },
+  {
+    "version": "0.76.0",
+    "date": "2026-10-13",
+    "title": "News category artwork",
+    "synopsis": "Article categories have dedicated backgrounds and recognizable color hues.",
+    "changes": [
+      "Mechanics is purple, round updates blue, stats green, errors red and pause/resume yellow.",
+      "Category backgrounds and icon accents apply to portal news cards, the archive and staff article pages.",
+      "Pinned cards retain their 24-hour emphasis within their category color scheme."
+    ]
+  },
+  {
     "version": "0.75.0",
     "date": "2026-10-13",
     "title": "Illustrated development navigation",
