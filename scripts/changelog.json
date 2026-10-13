@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.64.0",
+    "date": "2026-10-13",
+    "title": "Quest reward bank",
+    "synopsis": "Review quest lore and rewards, then allocate unused resources, asteroids, research and construction bonuses.",
+    "changes": [
+      "Every supported quest displays its lore and reward before completion.",
+      "Claimed rewards enter a persistent bonus bank under Quests; resource and asteroid rewards are accepted explicitly.",
+      "Research and construction allocations support partial progress and multiple completions with budget and cap validation."
+    ]
+  },
+  {
     "version": "0.63.0",
     "date": "2026-10-13",
     "title": "Staff news publishing",
