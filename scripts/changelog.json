@@ -1,5 +1,23 @@
 [
   {
+    "version": "0.88.0",
+    "date": "2026-10-13",
+    "title": "Universe feeds and command profiles",
+    "synopsis": "Text gamedumps, compact race profiles and clearer commander settings.",
+    "changes": [
+      "The Universe Status panel offers planet, galaxy and alliance text dumps, plus a rank-protected private intel export.",
+      "Expanded race profiles use a wider layout without an internal scrollbar.",
+      "Manual navigation expands to its full height and scrolls with the page.",
+      "Planet Settings uses separate centred identity, sharing, quest, relocation and theme boxes.",
+      "Fleet transfers support all ships or individual ship classes.",
+      "Round reset clears opt-in checkboxes while preserving public usernames.",
+      "Race names and matching theme labels are updated throughout the interface.",
+      "Staff article editing is divided into identity, typography and body boxes.",
+      "News categories have distinct hues; section separators and command headers carry more themed artwork.",
+      "Planet and ruler names have independent save controls, restricted to the account-owned planet."
+    ]
+  },
+  {
     "version": "0.87.0",
     "date": "2026-10-13",
     "title": "Compact race profiles",
