@@ -1,5 +1,29 @@
 [
   {
+    "version": "0.56.0",
+    "date": "2026-10-13",
+    "title": "Portal account and round controls",
+    "synopsis": "Registration, user profiles and staff controls join the portal navigation.",
+    "changes": [
+      "Top navigation includes Shipstats and News, plus Register / Sign up for guests and User profile for signed-in commanders.",
+      "Admin-only staff controls list accounts and assign available planets.",
+      "Users can save their public name and portal theme through User profile.",
+      "Admin round reset clears and regenerates shared planets, alliances, intel, scans and browser news while preserving accounts and passwords.",
+      "Reset generations prevent stale clients from re-uploading scans from a previous round."
+    ]
+  },
+  {
+    "version": "0.55.0",
+    "date": "2026-10-13",
+    "title": "Admin alliance membership repair",
+    "synopsis": "Admin-assigned planets now appear in the correct alliance roster, including after reload.",
+    "changes": [
+      "Member rosters are reconciled with centrally assigned planets for every alliance.",
+      "Stable planet IDs retain roles across planet renames and remove memberships from the old alliance when moved.",
+      "Existing missing member records are repaired when loading the shared directory."
+    ]
+  },
+  {
     "version": "0.54.0",
     "date": "2026-10-13",
     "title": "Version list and code references",

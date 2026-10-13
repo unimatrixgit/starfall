@@ -38,7 +38,7 @@ async function api(request,env){
   if(request.method==='POST'){
     if(Number(request.headers.get('Content-Length')||0)>3500000)return json({error:'Scan upload is too large.'},413);
     const raw=await request.text();if(raw.length>3500000)return json({error:'Scan upload is too large.'},413);
-    const body=JSON.parse(raw);if(!Array.isArray(body.scans)||body.scans.length>100)return json({error:'Upload up to 100 scans at a time.'},400);
+    const body=JSON.parse(raw);const generation=await env.DB.prepare('SELECT reset_generation FROM planet_directory_meta WHERE id=1').first();if((generation?.reset_generation||0)!==(body.resetGeneration||0))return json({error:'The round was reset. Reload before saving scans.'},409);if(!Array.isArray(body.scans)||body.scans.length>100)return json({error:'Upload up to 100 scans at a time.'},400);
     await env.DB.prepare('INSERT INTO scan_sharing (owner_id,enabled,updated_at) VALUES (?,0,?) ON CONFLICT(owner_id) DO NOTHING').bind(user,now).run();
     let scans;try{scans=body.scans.map(scan=>sanitizeScan(scan,now));}catch(error){return json({error:error.message},400);}
     const statements=scans.map(scan=>env.DB.prepare('INSERT INTO shared_scans (id,owner_id,scan_id,type,name,target_name,coords,report,tick,saved_at,expires_at,anonymous) VALUES (?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(owner_id,scan_id) DO UPDATE SET type=excluded.type,name=excluded.name,target_name=excluded.target_name,coords=excluded.coords,report=excluded.report,tick=excluded.tick,saved_at=excluded.saved_at,expires_at=excluded.expires_at,anonymous=excluded.anonymous').bind(crypto.randomUUID(),user,scan.scanId,scan.type,scan.name,scan.targetName,scan.coords,scan.report,scan.tick,scan.savedAt,scan.expiresAt,scan.anonymous));
@@ -61,11 +61,12 @@ async function api(request,env){
 }
 export default {async fetch(request,env){
   const url=new URL(request.url);
-  if(url.pathname==='/api/version')return json({version:'0.54.0'});
+  if(url.pathname==='/api/version')return json({version:'0.56.0'});
   if(['/api/planets','/api/alliance-intel','/api/alliance-settings'].includes(url.pathname)){try{return await (url.pathname==='/api/planets'?planetDirectoryAPI:url.pathname==='/api/alliance-settings'?allianceSettingsAPI:allianceIntelAPI)(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid request.':'The central planet database is unavailable.'},error instanceof SyntaxError?400:503);}}
   if(url.pathname.startsWith('/api/portal/')){try{return await portalAPI(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid request.':'The portal could not complete this request. Try again.'},error instanceof SyntaxError?400:503);}}
   if(url.pathname.startsWith('/api/miday/')){try{return await api(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid JSON request.':'The scan database could not complete this request. Try again.'},error instanceof SyntaxError?400:503);}}
   if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405});
+  if(['/profile.html','/staff.html'].includes(url.pathname)){const user=await portalUser(request,env);if(!user)return Response.redirect(url.origin+'/login.html',302);if(url.pathname==='/staff.html'&&user.role!=='admin')return new Response('Staff access required',{status:403});}
   const game=['/game','/game/','/index.html'].includes(url.pathname);
   if(game&&!await portalUser(request,env))return Response.redirect(url.origin+'/login.html',302);
   const path=url.pathname==='/'?'/portal.html':game?'/index.html':url.pathname;

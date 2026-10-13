@@ -7,12 +7,12 @@ function refreshSharingControl(){const input=document.getElementById('shareScans
 async function initializeMiday(){midayPreferences();try{const result=await midayAPI('sharing');state.userSettings.shareScansToAll=result.enabled;midayReady=true;midaySyncError='';save();refreshSharingControl();await syncCentralScans();}catch(error){midaySyncError=error.message;refreshSharingControl();}}
 function queueCentralScanSync(){if(!midayReady)return;clearTimeout(midaySyncTimer);midaySyncTimer=setTimeout(()=>syncCentralScans(),250);}
 async function syncCentralScans(){
-  if(!midayReady||midaySyncing)return;
+  if(!midayReady||midaySyncing||(typeof planetDirectoryReady!=='undefined'&&!planetDirectoryReady))return;
   const cutoff=Date.now()-14*24*60*60*1000;
   const scans=state.waves.scans.filter(sc=>!sc.savedAt||sc.savedAt>cutoff).map(sc=>({...sc,savedAt:sc.savedAt||Date.now()}));
   for(const sc of scans){const local=state.waves.scans.find(x=>x.id===sc.id);if(local&&!local.savedAt)local.savedAt=sc.savedAt;}
   const signature=JSON.stringify(scans),sourceVersion=JSON.stringify(state.waves.scans);if(signature===midayLastSync)return;
-  midaySyncing=true;try{await midayAPI('scans',{method:'POST',body:JSON.stringify({scans})});midayLastSync=signature;midaySyncError='';if(document.getElementById('page-miday')?.classList.contains('active'))await loadMidayScans();}catch(error){midaySyncError=error.message;}finally{midaySyncing=false;refreshSharingControl();if(sourceVersion!==JSON.stringify(state.waves.scans))queueCentralScanSync();}
+  midaySyncing=true;try{for(let offset=0;offset<scans.length;offset+=100)await midayAPI('scans',{method:'POST',body:JSON.stringify({scans:scans.slice(offset,offset+100),resetGeneration:state.centralResetGeneration||0})});midayLastSync=signature;midaySyncError='';if(document.getElementById('page-miday')?.classList.contains('active'))await loadMidayScans();}catch(error){midaySyncError=error.message;}finally{midaySyncing=false;refreshSharingControl();if(sourceVersion!==JSON.stringify(state.waves.scans))queueCentralScanSync();}
 }
 async function setSharingToAll(enabled){
   if(!midayReady)return;
