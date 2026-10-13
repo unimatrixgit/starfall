@@ -1,5 +1,15 @@
 [
   {
+    "version": "0.60.0",
+    "date": "2026-10-13",
+    "title": "Planet command header",
+    "synopsis": "Your planet identity and current tick are grouped in a theme-matched top-right command box.",
+    "changes": [
+      "Top-right box shows home coordinates, planet name, ruler and current tick.",
+      "The box updates after planet edits, relocation and tick progression, and adapts to narrow screens."
+    ]
+  },
+  {
     "version": "0.59.0",
     "date": "2026-10-13",
     "title": "Round state reset control",
