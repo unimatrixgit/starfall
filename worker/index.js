@@ -62,6 +62,7 @@ async function api(request,env){
 export default {async fetch(request,env){
   const url=new URL(request.url);
   if(url.pathname.startsWith('/botfiles/')){try{return await gameDumpAPI(request,env);}catch{return json({error:'The gamedump is temporarily unavailable.'},503);}}
+  if(url.pathname==='/api/tickets'){try{return await ticketAPI(request,env);}catch{return json({error:'The support system could not complete this request.'},503);}}
   if(url.pathname==='/api/forums'){try{return await forumAPI(request,env);}catch{return json({error:'The forum could not complete this request.'},503);}}
   if(url.pathname.startsWith('/api/alliance-control/')){try{return await allianceControlAPI(request,env);}catch{return json({error:'The alliance could not complete this operation.'},503);}}
   if(url.pathname==='/api/version')return json({version:'0.91.0',serverTime:Date.now()});
@@ -75,6 +76,7 @@ export default {async fetch(request,env){
   const path=url.pathname==='/'?'/portal.html':game?'/index.html':url.pathname;
   const asset=ASSETS[path];if(!asset)return new Response('Not found',{status:404});
   const bytes=Uint8Array.from(atob(asset.data),c=>c.charCodeAt(0));
+  if(asset.type==='video/mp4'){const range=request.headers.get('Range');if(range){const match=/^bytes=(\d*)-(\d*)$/.exec(range);if(!match||(!match[1]&&!match[2]))return new Response(null,{status:416,headers:{'Content-Range':'bytes */'+bytes.length}});const start=match[1]?Number(match[1]):Math.max(0,bytes.length-Number(match[2])),end=match[1]?(match[2]?Math.min(bytes.length-1,Number(match[2])):bytes.length-1):bytes.length-1;if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start>=bytes.length||end<start)return new Response(null,{status:416,headers:{'Content-Range':'bytes */'+bytes.length}});return new Response(request.method==='HEAD'?null:bytes.slice(start,end+1),{status:206,headers:{'Content-Type':'video/mp4','Accept-Ranges':'bytes','Content-Range':'bytes '+start+'-'+end+'/'+bytes.length,'Content-Length':String(end-start+1),'Cache-Control':'public, max-age=86400'}});}return new Response(request.method==='HEAD'?null:bytes,{headers:{'Content-Type':'video/mp4','Accept-Ranges':'bytes','Content-Length':String(bytes.length),'Cache-Control':'public, max-age=86400'}});}
   return new Response(request.method==='HEAD'?null:bytes,{headers:{'Content-Type':asset.type,'Cache-Control':path.endsWith('.html')||path.endsWith('.js')||path.endsWith('.css')?'no-cache':'public, max-age=86400','X-Content-Type-Options':'nosniff'}});
 }};
 export {sanitizeScan,calculateRetention};

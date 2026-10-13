@@ -1,0 +1,34 @@
+[
+  {
+    "file": "helion-velari.mp4",
+    "seconds": 8,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "bytes": 845619
+  },
+  {
+    "file": "nexari-kryth.mp4",
+    "seconds": 8,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "bytes": 770923
+  },
+  {
+    "file": "auralis-defense.mp4",
+    "seconds": 8,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "bytes": 841482
+  },
+  {
+    "file": "starfall-command-montage.mp4",
+    "seconds": 22,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "bytes": 2429045
+  }
+]

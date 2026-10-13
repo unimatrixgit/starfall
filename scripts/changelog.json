@@ -1,5 +1,18 @@
 [
   {
+    "version": "0.92.0",
+    "date": "2026-10-13",
+    "title": "Command center, support and cinematic archive",
+    "synopsis": "A unified Admin Controlcenter, private support tickets and a themed multimedia archive.",
+    "changes": [
+      "Current Round Setup and Round State now share Admin Controlcenter with separate configuration, ticker, snapshot and reset boxes.",
+      "User Profile has private staff-support and ban-appeal tickets with a staff queue.",
+      "Portal multimedia sits above Command Operations and contains an interface montage plus three animated AI battle concept clips.",
+      "A dedicated Rules page is linked from the footer. Non-neutral portal themes receive brighter sci-fi framing and artwork.",
+      "Waves and Satelite Uplink receive themed graphics and clearer sections; the manual documents ownership and community support."
+    ]
+  },
+  {
     "version": "0.91.0",
     "date": "2026-10-13",
     "title": "Alliance ownership and community controls",
