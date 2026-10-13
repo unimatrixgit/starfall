@@ -8,3 +8,5 @@ function applyPortalSkin(skin){if(!['Neutral','Terran','Cathaar','Xandathrii','Z
 if(document.getElementById('portalTheme')){let skin='Neutral';try{skin=localStorage.getItem('starfall-portal-skin')||skin;}catch{}applyPortalSkin(skin);}
 document.addEventListener('change',event=>{if(event.target.id==='portalTheme')applyPortalSkin(event.target.value);if(event.target.id==='manualShipRace'){const race=event.target.value;document.querySelectorAll('[data-ship-race]').forEach(card=>card.hidden=race!=='all'&&card.dataset.shipRace!==race);}});
 document.addEventListener('click',event=>{const button=event.target.closest('[data-preview-race]');if(button)applyPortalSkin(button.dataset.previewRace);});
+
+document.addEventListener('change',event=>{if(event.target.id==='manualStatsRace')document.querySelectorAll('[data-stat-race]').forEach(table=>table.hidden=event.target.value!=='all'&&table.dataset.statRace!==event.target.value);});
