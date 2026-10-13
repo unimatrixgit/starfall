@@ -1,5 +1,17 @@
 [
   {
+    "version": "0.61.0",
+    "date": "2026-10-13",
+    "title": "Population and government ship production",
+    "synopsis": "Running ship orders now apply population and government production bonuses with a manual lookup.",
+    "changes": [
+      "Shipwright allocation and government output bonuses add together and immediately update active order rates and ETA.",
+      "Population includes a government selector and a linked manual lookup.",
+      "Democracy and Totalitarianism cost discounts apply to new ship orders without repricing paid orders.",
+      "Government changes use a 72-tick revolution production penalty."
+    ]
+  },
+  {
     "version": "0.60.0",
     "date": "2026-10-13",
     "title": "Planet command header",
