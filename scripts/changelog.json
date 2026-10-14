@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.120.4",
+    "date": "2026-10-14",
+    "title": "Bugfix · Galaxy elections and ministers stay local",
+    "synopsis": "Galactic Commander candidates and minister choices now show only planets in your own galaxy, including your own planet.",
+    "promptIds": [
+      "SF-060"
+    ],
+    "changes": [
+      "Election candidates, ballots and minister choices are constrained to the current home galaxy.",
+      "Moving or exiling a planet clears its old votes and minister offices; stale server appointments are cleaned through the existing revision guard.",
+      "Galaxy identity and local politics no longer follow you into another galaxy. No round reset is performed."
+    ]
+  },
+  {
     "version": "0.120.3",
     "date": "2026-10-14",
     "title": "Bugfix · Clear account registration feedback",

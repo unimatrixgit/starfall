@@ -433,16 +433,48 @@
       "priority": "BUGFIX",
       "originalPriority": "P2",
       "title": "Account registration feedback and safe form startup",
-      "status": "verified"
+      "status": "live",
+      "release": "0.120.3"
     },
     {
       "id": "SF-055",
       "priority": "P2",
       "title": "Smooth game theme transitions without mixed themes",
       "status": "open"
+    },
+    {
+      "id": "SF-056",
+      "priority": "BUGFIX",
+      "title": "Check reported ordinary registration in1:1",
+      "status": "not_a_bug",
+      "resolution": "Screenshot coordinates are1:2:1, outside galaxy1:1."
+    },
+    {
+      "id": "SF-057",
+      "priority": "P0",
+      "title": "Shared beta branch; reviewed main releases",
+      "status": "done"
+    },
+    {
+      "id": "SF-058",
+      "priority": "P2",
+      "title": "Expand delegated implementation work",
+      "status": "done"
+    },
+    {
+      "id": "SF-059",
+      "priority": "P2",
+      "title": "Three independent resource exchange modules",
+      "status": "open"
+    },
+    {
+      "id": "SF-060",
+      "priority": "BUGFIX",
+      "title": "Galaxy-scoped elections and ministers",
+      "status": "verified"
     }
   ],
-  "nextId": 56,
+  "nextId": 61,
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -573,7 +605,7 @@
   ],
   "nextGroupId": 12,
   "openOrder": [
-    "SF-054",
+    "SF-060",
     "G-001",
     "G-002",
     "SF-012",
@@ -585,11 +617,13 @@
     "G-011",
     "SF-052",
     "SF-055",
+    "SF-059",
     "G-004"
   ],
   "colleagueReviews": {
     "battlegroups": "https://github.com/unimatrixgit/mcdune/blob/5f02adf/docs/STARFALL-BATTLEGROUP-ANALYSIS.md",
     "repoSplit": "https://github.com/unimatrixgit/mcdune/blob/c767de6/docs/STARFALL-PORTAL-GAME-MIGRATION.md",
     "stronghold": "https://github.com/unimatrixgit/mcdune/tree/da7d21e/proposals/stronghold-policy"
-  }
+  },
+  "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match."
 }
