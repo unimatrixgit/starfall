@@ -141,4 +141,5 @@ for(const file of fs.readdirSync(path.join(root,"dist")).filter(f=>f.endsWith(".
 
 for(const file of fs.readdirSync(path.join(root,'dist')).filter(f=>f.endsWith('.html'))){const target=path.join(root,'dist',file);let html=fs.readFileSync(target,'utf8');html=html.replace(/@import\s+url\(['"]?https:\/\/fonts\.googleapis\.com[^;]+;\s*/g,'').replace(/<link[^>]+href=["']https:\/\/fonts\.googleapis\.com[^>]+>/g,'');html=html.replace(/<video\b([^>]*)>/g,(_,attrs)=>'<video'+attrs.replace(/\sautoplay(?:=["'][^"']*["'])?/g,'').replace(/\spreload=["'][^"']*["']/g,'')+' preload="none" controls>');fs.writeFileSync(target,html);}
 
+require('./build-contributor-tribute.cjs')({fs,path,root,layout,esc,releases});
 require('./build-diagnostic-page.cjs');

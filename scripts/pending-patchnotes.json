@@ -4,6 +4,47 @@
   "completed": [],
   "published": [
     {
+      "version": "0.120.0",
+      "tasks": [
+        {
+          "id": "SF-018",
+          "title": "Contribution archive and original Unimatrix memorial artwork.",
+          "priority": "P2",
+          "completedAt": "2026-10-14T14:20:33.584Z"
+        },
+        {
+          "id": "SF-019",
+          "title": "Responsive staff roster with role cards and responsibilities.",
+          "priority": "P2",
+          "completedAt": "2026-10-14T14:20:33.585Z"
+        },
+        {
+          "id": "SF-021",
+          "title": "Separate AI tribute plaque and Omega Order medal.",
+          "priority": "P2",
+          "completedAt": "2026-10-14T14:20:33.585Z"
+        },
+        {
+          "id": "SF-020",
+          "title": "Separate Portal and Game diagnostics with independent progress and labelled saved reports.",
+          "priority": "P2",
+          "completedAt": "2026-10-14T14:20:33.585Z"
+        },
+        {
+          "id": "SF-022",
+          "title": "Compact colonial charter confirmation retaining its complete survey.",
+          "priority": "P2",
+          "completedAt": "2026-10-14T14:20:33.585Z"
+        },
+        {
+          "id": "SF-023",
+          "title": "Government workforce and ministry panel spacing.",
+          "priority": "P2",
+          "completedAt": "2026-10-14T14:20:33.585Z"
+        }
+      ]
+    },
+    {
       "version": "0.119.0",
       "tasks": [
         {

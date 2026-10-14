@@ -1,5 +1,6 @@
 require('./build-portal-runtime.cjs');
 require('./build-game-runtime.cjs');
+require('./build-game-diagnostic.cjs');
 const fs=require('fs'),path=require('path'),zlib=require('zlib');
 const root=path.resolve(__dirname,'..'),assets={};
 const mime={'.svg':'image/svg+xml','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.webp':'image/webp','.png':'image/png','.css':'text/css; charset=utf-8','.mp4':'video/mp4','.mp3':'audio/mpeg','.json':'application/json; charset=utf-8'};

@@ -1,5 +1,53 @@
 [
   {
+    "version": "0.120.1",
+    "date": "2026-10-14",
+    "title": "Bugfix · Registered planets and alliance creation",
+    "synopsis": "Removes generated fake galaxy planets, restores the alliance creation form and repairs zero-price research levels. A requested round reset clears existing colony state.",
+    "promptIds": [
+      "SF-048",
+      "SF-050",
+      "SF-051"
+    ],
+    "changes": [
+      "Empty galaxies stay empty; cached fixture rows remain hidden while connecting to the central directory.",
+      "The unaffiliated alliance creation form is visible and opens correctly.",
+      "Unfinished research levels use a positive RP cost, including Infrastructure level three.",
+      "One authorised round reset returns players to colony registration; accounts and reserved alliance Owner keys remain."
+    ]
+  },
+  {
+    "version": "0.120.0",
+    "date": "2026-10-14",
+    "title": "Command roster and split diagnostics",
+    "synopsis": "Six completed improvements to staff presentation, saved diagnostics and compact game layouts.",
+    "promptIds": [
+      "SF-018",
+      "SF-019",
+      "SF-021",
+      "SF-020",
+      "SF-022",
+      "SF-023",
+      "SF-015"
+    ],
+    "taskIds": [
+      "SF-018",
+      "SF-019",
+      "SF-021",
+      "SF-020",
+      "SF-022",
+      "SF-023"
+    ],
+    "changes": [
+      "Contribution archive and original Unimatrix memorial artwork.",
+      "Responsive staff roster with role cards and responsibilities.",
+      "Separate AI tribute plaque and Omega Order medal.",
+      "Separate Portal and Game diagnostics with independent progress and labelled saved reports.",
+      "Compact colonial charter confirmation retaining its complete survey.",
+      "Government workforce and ministry panel spacing."
+    ]
+  },
+  {
     "version": "0.119.1",
     "date": "2026-10-14",
     "title": "Bugfix · Reserve galaxy 1:1 for staff",

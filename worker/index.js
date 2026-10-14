@@ -1,4 +1,4 @@
-const STARFALL_VERSION='0.119.1';
+const STARFALL_VERSION='0.120.1';
 const TYPES=new Set(['planet','landing','development','unit','news','incoming','jumpgate','advanced']);
 const RETENTION=14*24*60*60*1000;
 function json(value,status=200){return Response.json(value,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});}
@@ -63,7 +63,7 @@ async function api(request,env){
 async function serveRequest(request,env){
   const url=new URL(request.url);
   if(url.pathname==='/api/staff/diagnostics')return diagnosticsAPI(request,env);
-  if(url.pathname==='/diagnostics.html'){const user=await portalUser(request,env);if(!user)return Response.redirect(url.origin+'/login.html',302);if(!portalStaffPermission(user,'diagnostics'))return json({error:'Diagnostics permission required.'},403);}
+  if(['/diagnostics.html','/game-diagnostic.html'].includes(url.pathname)){const user=await portalUser(request,env);if(!user)return Response.redirect(url.origin+'/login.html',302);if(!portalStaffPermission(user,'diagnostics'))return json({error:'Diagnostics permission required.'},403);}
   if(url.pathname.startsWith('/botfiles/')){try{return await gameDumpAPI(request,env);}catch{return json({error:'The gamedump is temporarily unavailable.'},503);}}
   if(['/game','/game/','/index.html'].includes(url.pathname)&&url.searchParams.get('staff_workspace')==='1'){const user=await portalUser(request,env);if(!portalStaffPermission(user,({control:'adminControl',alliances:'allianceAdmin',multihunters:'multihunter',bank:'bank'})[url.searchParams.get('staff_tool')]||'adminControl'))return json({error:'Staff access required.'},403);}
   if(url.pathname==='/api/admin/planet-audit')return staffPlanetAuditAPI(request,env);
@@ -101,7 +101,7 @@ async function serveRequest(request,env){
   if(game||url.pathname==='/onboarding.html'){const user=await portalUser(request,env);if(!user)return Response.redirect(url.origin+'/login.html',302);if(game&&!(isPortalStaff(user)&&(url.searchParams.get('staff')==='1'||url.searchParams.get('legacy_staff')==='1'||url.searchParams.get('staff_workspace')==='1'))){const owned=await env.DB.prepare("SELECT id FROM planet_directory WHERE owner_id=? AND kind='planet' LIMIT 1").bind(user.id).first();if(!owned)return Response.redirect(url.origin+'/onboarding.html',302);}}
   const path=url.pathname==='/'?'/portal.html':game?'/index.html':url.pathname;
   const asset=ASSETS[path];if(!asset)return new Response('Not found',{status:404});
-  const protectedPage=game||['/onboarding.html','/profile.html','/staff.html','/diagnostics.html'].includes(path),headers=staticAssetHeaders(path,asset,protectedPage);if(!protectedPage&&request.headers.get('If-None-Match')===headers.ETag)return new Response(null,{status:304,headers});const bytes=cachedAssetBytes(path,asset);
+  const protectedPage=game||['/onboarding.html','/profile.html','/staff.html','/diagnostics.html','/game-diagnostic.html'].includes(path),headers=staticAssetHeaders(path,asset,protectedPage);if(!protectedPage&&request.headers.get('If-None-Match')===headers.ETag)return new Response(null,{status:304,headers});const bytes=cachedAssetBytes(path,asset);
   if(asset.type==='video/mp4'){const range=request.headers.get('Range');if(range){const match=/^bytes=(\d*)-(\d*)$/.exec(range);if(!match||(!match[1]&&!match[2]))return new Response(null,{status:416,headers:{'Content-Range':'bytes */'+bytes.length}});const start=match[1]?Number(match[1]):Math.max(0,bytes.length-Number(match[2])),end=match[1]?(match[2]?Math.min(bytes.length-1,Number(match[2])):bytes.length-1):bytes.length-1;if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start>=bytes.length||end<start)return new Response(null,{status:416,headers:{'Content-Range':'bytes */'+bytes.length}});return new Response(request.method==='HEAD'?null:bytes.slice(start,end+1),{status:206,headers:{'Content-Type':'video/mp4','Accept-Ranges':'bytes','Content-Range':'bytes '+start+'-'+end+'/'+bytes.length,'Content-Length':String(end-start+1),'Cache-Control':'public, max-age=60, must-revalidate'}});}return new Response(request.method==='HEAD'?null:bytes,{headers:{'Content-Type':'video/mp4','Accept-Ranges':'bytes','Content-Length':String(bytes.length),'Cache-Control':'public, max-age=60, must-revalidate'}});}
   return new Response(request.method==='HEAD'?null:bytes,{headers});
 }
