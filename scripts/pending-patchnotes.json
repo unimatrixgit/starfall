@@ -113,5 +113,137 @@
         }
       ]
     }
+  ],
+  "prepared": [
+    {
+      "version": "0.121.0",
+      "part": 1,
+      "tasks": [
+        {
+          "id": "G-001",
+          "promptIds": [
+            "SF-007",
+            "SF-008",
+            "SF-009"
+          ],
+          "title": "Shared spacing rules across game pages and themes.",
+          "priority": "P2"
+        },
+        {
+          "id": "G-002",
+          "promptIds": [
+            "SF-010",
+            "SF-011"
+          ],
+          "title": "Four total construction and research slots, including the active project, with queued progression and cancellation.",
+          "priority": "P2"
+        },
+        {
+          "id": "SF-012",
+          "promptIds": [
+            "SF-012"
+          ],
+          "title": "The actual Info box now sits beside Planet Settings with its data and clocks.",
+          "priority": "P2"
+        },
+        {
+          "id": "G-011",
+          "promptIds": [
+            "SF-046",
+            "SF-049"
+          ],
+          "title": "Exclusive stronghold claims, retained inactive reservations, two-party empty transfers and audited conflict resolution.",
+          "priority": "P2"
+        },
+        {
+          "id": "G-005",
+          "promptIds": [
+            "SF-034",
+            "SF-035"
+          ],
+          "title": "Galaxy 1:1 uses player slots 1–10, ghost slots 11–15 and structure slots 16–20 only under its stronghold policy; existing occupied slots remain protected.",
+          "priority": "P2"
+        },
+        {
+          "id": "G-008",
+          "promptIds": [
+            "SF-037",
+            "SF-038"
+          ],
+          "title": "Personal reset is instant before the ticker starts, preserving alliance membership; afterwards it waits 72 hours and removes only the resetting player from the alliance.",
+          "priority": "P2"
+        },
+        {
+          "id": "SF-032",
+          "promptIds": [
+            "SF-032"
+          ],
+          "title": "Battlegroup membership, approvals, leadership and attack-booking linkage with current permission and revision guards.",
+          "priority": "P2"
+        }
+      ]
+    },
+    {
+      "version": "0.121.0",
+      "part": 2,
+      "tasks": [
+        {
+          "id": "SF-052",
+          "promptIds": [
+            "SF-052"
+          ],
+          "title": "Bounded public-data caching, content ETags and omission of unreferenced old portal runtime bundles while retaining live-page compatibility.",
+          "priority": "P2"
+        },
+        {
+          "id": "SF-055",
+          "promptIds": [
+            "SF-055"
+          ],
+          "title": "Game startup waits for the runtime and authoritative theme before showing the command interface.",
+          "priority": "P2"
+        },
+        {
+          "id": "SF-059",
+          "promptIds": [
+            "SF-059"
+          ],
+          "title": "Three separate Metal, Crystal and Eonium exchange panels with independent inputs, quotes and feedback.",
+          "priority": "P2"
+        },
+        {
+          "id": "SF-061",
+          "promptIds": [
+            "SF-061"
+          ],
+          "title": "The duplicate Planet sidebar section is removed while the five main navigation tiles remain.",
+          "priority": "P2"
+        },
+        {
+          "id": "SF-041",
+          "promptIds": [
+            "SF-041"
+          ],
+          "title": "Twelve canonical portal, game and shared frontend inputs have separate source folders and one composed build; game seed generation is separated from portal pages.",
+          "priority": "P2"
+        },
+        {
+          "id": "SF-043",
+          "promptIds": [
+            "SF-043"
+          ],
+          "title": "Compact defender/attacker battle planning with four fleets per side, display filters, scan-count import and saved browser drafts; existing Starfall combat rules remain.",
+          "priority": "P2"
+        },
+        {
+          "id": "SF-063",
+          "promptIds": [
+            "SF-063"
+          ],
+          "title": "Tax and central stronghold changes deliver atomic alliance news and mail to current members, including the actor.",
+          "priority": "P2"
+        }
+      ]
+    }
   ]
 }

@@ -48,58 +48,64 @@
       "id": "SF-007",
       "priority": "P2",
       "title": "Spacing across all themes",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-001",
         "G-013"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-008",
       "priority": "P2",
       "title": "Spacing across all game pages",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-001",
         "G-013"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-009",
       "priority": "P2",
       "title": "Compact or expand game page spacing appropriately",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-001",
         "G-013"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-010",
       "priority": "P2",
       "title": "Research queue four; construction queue four",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-002"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-011",
       "priority": "P2",
       "title": "Queue projects while another project runs",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-002"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-012",
       "priority": "P2",
       "title": "Info module beside Planet Settings across themes",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-013"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-013",
@@ -250,11 +256,12 @@
       "id": "SF-032",
       "priority": "P2",
       "title": "Port battlegroup system and add Alliance Battlegroup page",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-006",
         "G-012"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-033",
@@ -269,7 +276,7 @@
       "id": "SF-034",
       "priority": "P2",
       "title": "Expand only galaxy 1:1 stronghold capacity to twenty",
-      "status": "open",
+      "status": "verified",
       "layout": {
         "galaxy": "1:1",
         "playerSlots": [
@@ -289,7 +296,8 @@
       "groups": [
         "G-005",
         "G-012"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-000",
@@ -302,12 +310,13 @@
       "id": "SF-035",
       "priority": "P2",
       "title": "Show expanded 1:1 slots only while 1:1 is a stronghold",
-      "status": "open",
+      "status": "verified",
       "position": 9,
       "groups": [
         "G-005",
         "G-012"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-036",
@@ -320,22 +329,24 @@
       "id": "SF-037",
       "priority": "P2",
       "title": "Personal Planet reset module; keep alliance intact",
-      "status": "open",
+      "status": "verified",
       "position": 10,
       "groups": [
         "G-008",
         "G-012"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-038",
       "priority": "P2",
       "title": "After ticker start, personal reset waits72h and also clears own alliance membership",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-008",
         "G-012"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-039",
@@ -359,10 +370,11 @@
       "id": "SF-041",
       "priority": "P2",
       "title": "Separate portal/game/shared sources on GitHub",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-014"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-042",
@@ -374,7 +386,8 @@
       "id": "SF-043",
       "priority": "P2",
       "title": "Resemble the shared Planetarion battle calculator",
-      "status": "open"
+      "status": "verified",
+      "release": "0.121.0"
     },
     {
       "id": "SF-044",
@@ -393,10 +406,11 @@
       "id": "SF-046",
       "priority": "P2",
       "title": "Stronghold conflict policy",
-      "status": "approved",
+      "status": "verified",
       "groups": [
         "G-012"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-047",
@@ -415,10 +429,11 @@
       "id": "SF-049",
       "priority": "P2",
       "title": "Implement approved stronghold policy with delegated help",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-012"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-050",
@@ -438,11 +453,12 @@
       "id": "SF-052",
       "priority": "P2",
       "title": "Joint portal/game efficiency audit and improvements",
-      "status": "reviewed",
+      "status": "verified",
       "analysis": "https://github.com/unimatrixgit/mcdune/blob/1a6fb6a/docs/STARFALL-EFFICIENCY-REVIEW.md",
       "groups": [
         "G-014"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-053",
@@ -463,10 +479,11 @@
       "id": "SF-055",
       "priority": "P2",
       "title": "Smooth game theme transitions without mixed themes",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-013"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-056",
@@ -491,10 +508,11 @@
       "id": "SF-059",
       "priority": "P2",
       "title": "Three independent resource exchange modules",
-      "status": "open",
+      "status": "verified",
       "groups": [
         "G-013"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-060",
@@ -507,10 +525,11 @@
       "id": "SF-061",
       "priority": "P2",
       "title": "Remove duplicate Planet sidebar section",
-      "status": "prepared",
+      "status": "verified",
       "groups": [
         "G-013"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-062",
@@ -524,7 +543,8 @@
       "id": "SF-063",
       "priority": "P2",
       "title": "Alliance events in alliance news and delivery to all members",
-      "status": "open"
+      "status": "verified",
+      "release": "0.121.0"
     },
     {
       "id": "SF-064",
@@ -542,7 +562,9 @@
       "id": "SF-066",
       "priority": "BUGFIX",
       "title": "Keep Spacing Bank Collective visible across galaxy fund updates",
-      "status": "in_progress"
+      "status": "live",
+      "release": "0.120.6",
+      "validation": "241 release tests,105 page audit zero findings"
     }
   ],
   "nextId": 67,
@@ -559,7 +581,8 @@
         "SF-008",
         "SF-009"
       ],
-      "status": "open"
+      "status": "verified",
+      "release": "0.121.0"
     },
     {
       "id": "G-002",
@@ -568,7 +591,8 @@
         "SF-010",
         "SF-011"
       ],
-      "status": "open"
+      "status": "verified",
+      "release": "0.121.0"
     },
     {
       "id": "G-003",
@@ -599,7 +623,7 @@
         "SF-034",
         "SF-035"
       ],
-      "status": "open",
+      "status": "verified",
       "layout": {
         "playerSlots": [
           1,
@@ -614,7 +638,8 @@
           20
         ],
         "visibleOnlyWhenStronghold": true
-      }
+      },
+      "release": "0.121.0"
     },
     {
       "id": "G-006",
@@ -623,7 +648,8 @@
         "SF-016",
         "SF-032"
       ],
-      "status": "partial"
+      "status": "verified",
+      "release": "0.121.0"
     },
     {
       "id": "G-007",
@@ -647,9 +673,10 @@
         "SF-037",
         "SF-038"
       ],
-      "status": "open",
+      "status": "verified",
       "beforeFirstTick": "instant, preserve alliance membership",
-      "afterFirstTick": "72hours from request, clear own alliance membership; preserve shared alliance"
+      "afterFirstTick": "72hours from request, clear own alliance membership; preserve shared alliance",
+      "release": "0.121.0"
     },
     {
       "id": "G-009",
@@ -671,7 +698,8 @@
         "SF-046",
         "SF-049"
       ],
-      "status": "in_progress"
+      "status": "verified",
+      "release": "0.121.0"
     },
     {
       "id": "G-012",
@@ -690,8 +718,9 @@
         "G-005",
         "G-008"
       ],
-      "status": "in_progress",
-      "note": "Integrate stronghold claims and galaxy slots before battlegroups and reset guards; share generation and permission checks."
+      "status": "verified",
+      "note": "Integrate stronghold claims and galaxy slots before battlegroups and reset guards; share generation and permission checks.",
+      "release": "0.121.0"
     },
     {
       "id": "G-013",
@@ -708,8 +737,9 @@
       "subgroups": [
         "G-001"
       ],
-      "status": "in_progress",
-      "note": "Remove duplicate menu and place actual Info box before one spacing/theme verification pass."
+      "status": "verified",
+      "note": "Remove duplicate menu and place actual Info box before one spacing/theme verification pass.",
+      "release": "0.121.0"
     },
     {
       "id": "G-014",
@@ -718,19 +748,13 @@
         "SF-041",
         "SF-052"
       ],
-      "status": "in_progress",
-      "note": "Set source ownership and build paths together; evaluate manifest/cache once after layout and new modules."
+      "status": "verified",
+      "note": "Set source ownership and build paths together; evaluate manifest/cache once after layout and new modules.",
+      "release": "0.121.0"
     }
   ],
   "nextGroupId": 15,
   "openOrder": [
-    "SF-066",
-    "G-002",
-    "G-012",
-    "G-013",
-    "G-014",
-    "SF-043",
-    "SF-063",
     "G-004"
   ],
   "colleagueReviews": {
@@ -739,5 +763,14 @@
     "stronghold": "https://github.com/unimatrixgit/mcdune/tree/da7d21e/proposals/stronghold-policy"
   },
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
-  "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final."
+  "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
+  "validation": {
+    "release": "0.121.0",
+    "tests": 362,
+    "pages": 107,
+    "linksAndAssets": 3203,
+    "findings": 0,
+    "sourceFolders": 12,
+    "omittedRuntimeBytes": 1337507
+  }
 }

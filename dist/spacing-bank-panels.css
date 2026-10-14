@@ -1,0 +1,11 @@
+#spacingBankModule .bank-exchange-panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}
+#spacingBankModule .bank-exchange-panel{display:flex;flex-direction:column;gap:12px;min-width:0;padding:16px;border:1px solid var(--line,rgba(150,195,210,.45));border-radius:8px;background:var(--panel,rgba(0,12,20,.2))}
+#spacingBankModule .bank-exchange-panel h3,#spacingBankModule .bank-exchange-panel p{margin:0}
+#spacingBankModule .bank-offer-label{font-size:12px;opacity:.8}
+#spacingBankModule .bank-exchange-fields{display:grid;grid-template-columns:minmax(0,1fr) minmax(100px,.7fr);gap:10px}
+#spacingBankModule .bank-exchange-fields .field{min-width:0}
+#spacingBankModule .bank-exchange-fields input,#spacingBankModule .bank-exchange-fields select{width:100%;min-width:0;box-sizing:border-box}
+#spacingBankModule .bank-exchange-quote{padding:12px;line-height:1.6;flex:1}
+#spacingBankModule .bank-exchange-panel .btn{width:100%;white-space:normal}
+#spacingBankModule .bank-exchange-message:empty{display:none}
+@media(max-width:1000px){#spacingBankModule .bank-exchange-panels{grid-template-columns:1fr}}

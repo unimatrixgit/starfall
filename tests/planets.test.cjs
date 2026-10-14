@@ -3,9 +3,9 @@ async function enrol(db,user='player-a',values={}){const draft=(await api(db,'/a
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const {DatabaseSync}=require('node:sqlite');
 const portalSource=fs.readFileSync(path.join(__dirname,'../worker/portal.js'),'utf8');
-const source=fs.readFileSync(path.join(__dirname,'../worker/planet-types.js'),'utf8')+'\n'+'const DEFAULT_ROUND='+fs.readFileSync(path.join(__dirname,'../worker/default-round.json'),'utf8')+';\n'+'const ASSETS={"/portal.html":{type:"text/html",data:"'+Buffer.from('<h1>Starfall</h1>').toString('base64')+'"}};\n'+portalSource+'\n'+fs.readFileSync(path.join(__dirname,'../worker/alliance.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/attack-operations.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/forums.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/access.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/movement-audit.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/fleets.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/tickets.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/accounts.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/planets.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/communications.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/population-development.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/enrolment.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/alliance-applications.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/ship-costs.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/special-worlds.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/spacing-bank.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/round-history.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/site-management.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/diagnostics.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/cache.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/index.js'),'utf8');
+const source=fs.readFileSync(path.join(__dirname,'../worker/planet-types.js'),'utf8')+'\n'+'const DEFAULT_ROUND='+fs.readFileSync(path.join(__dirname,'../worker/default-round.json'),'utf8')+';\n'+'const ASSETS={"/portal.html":{type:"text/html",data:"'+Buffer.from('<h1>Starfall</h1>').toString('base64')+'"}};\n'+portalSource+'\n'+fs.readFileSync(path.join(__dirname,'../worker/alliance.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/attack-operations.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/forums.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/access.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/movement-audit.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/fleets.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/tickets.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/accounts.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/planets.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/communications.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/population-development.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/enrolment.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/alliance-applications.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/ship-costs.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/special-worlds.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/spacing-bank.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/round-history.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/site-management.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/diagnostics.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/cache.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/stronghold-policy.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/alliance-events.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/strongholds.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/galaxy-slots.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/battlegroups.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/planet-reset.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../worker/index.js'),'utf8');
 const workerPromise=import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
-function database(withUsers=true){const sqlite=new DatabaseSync(':memory:');sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0000_miday_array.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0001_planet_directory.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0002_intel_affiliations.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0003_intel_nicknames.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0004_portal_controls.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0005_staff_articles.sql'),'utf8'));if(withUsers)for(const [id,letter] of [['player-a','a'],['player-b','b']]){sqlite.prepare('INSERT INTO portal_users(id,username,password_hash,password_salt,created_at) VALUES(?,?,?,?,?)').run(id,id,'fixture','fixture',Date.now());sqlite.prepare('INSERT INTO portal_sessions VALUES(?,?,?)').run(require('node:crypto').createHash('sha256').update(letter.repeat(64)).digest('hex'),id,Date.now()+86400000);}return {sqlite,prepare(sql){let values=[];const statement=sqlite.prepare(sql);return {bind(...args){values=args;return this;},async first(){return statement.get(...values)||null;},async all(){return {results:statement.all(...values)};},async run(){return statement.run(...values);}};},async batch(statements){sqlite.exec('BEGIN');try{const results=[];for(const s of statements)results.push(await s.run());sqlite.exec('COMMIT');return results;}catch(error){sqlite.exec('ROLLBACK');throw error;}}};}
+function database(withUsers=true){const sqlite=new DatabaseSync(':memory:');sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0035_alliance_events.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0017_communications.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0033_personal_reset.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0034_battlegroups.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0032_stronghold_claims.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0000_miday_array.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0001_planet_directory.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0002_intel_affiliations.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0003_intel_nicknames.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0004_portal_controls.sql'),'utf8'));sqlite.exec(fs.readFileSync(path.join(__dirname,'../drizzle/0005_staff_articles.sql'),'utf8'));if(withUsers)for(const [id,letter] of [['player-a','a'],['player-b','b']]){sqlite.prepare('INSERT INTO portal_users(id,username,password_hash,password_salt,created_at) VALUES(?,?,?,?,?)').run(id,id,'fixture','fixture',Date.now());sqlite.prepare('INSERT INTO portal_sessions VALUES(?,?,?)').run(require('node:crypto').createHash('sha256').update(letter.repeat(64)).digest('hex'),id,Date.now()+86400000);}return {sqlite,prepare(sql){let values=[];const statement=sqlite.prepare(sql);return {bind(...args){values=args;return this;},async first(){return statement.get(...values)||null;},async all(){return {results:statement.all(...values)};},async run(){return statement.run(...values);}};},async batch(statements){sqlite.exec('BEGIN');try{const results=[];for(const s of statements)results.push(await s.run());sqlite.exec('COMMIT');return results;}catch(error){sqlite.exec('ROLLBACK');throw error;}}};}
 async function api(db,path,method='GET',body,user='player-a',origin='https://starfall.test'){const {default:worker}=await workerPromise;const headers={};if(user){headers['oai-authenticated-user-id']=user;headers.Cookie='starfall_session='+(user==='player-b'?'b':'a').repeat(64);}if(method!=='GET'){headers.Origin=origin;headers['Content-Type']='application/json';}const response=await worker.fetch(new Request('https://starfall.test'+path,{method,headers,body:method==='GET'?undefined:JSON.stringify(body)}),{DB:db,ALLIANCE_KEY_SECRET:Buffer.alloc(32,7).toString('base64')});const raw=await response.text();let data;try{data=JSON.parse(raw);}catch{data={error:raw};}return {status:response.status,data};}
 
 const world=()=>({revision:0,planets:[{id:'home',name:'Home',ruler:'Admin',race:'Terran',alliance:'Pact',coords:'07:04:01',player:true,resources:{metal:123}}],structures:[],alliances:[{name:'Pact',members:[{planet:'Home',rank:'HC'}]}]});
@@ -120,4 +120,156 @@ test('legacy target imports preserve claims once without reopening closed operat
 test('Portal and Game diagnostic reports retain distinct scopes in stored history',async()=>{const db=database();await seed(db);for(const scope of ['portal','game']){const report=await api(db,'/api/staff/diagnostics','POST',{scope,observations:[],sampledPages:scope==='game'?8:6});assert.equal(report.status,200);assert.equal(report.data.report.scope,scope);assert.equal(report.data.report.sampleMode,scope==='game'?'isolated-read-only':'portal-pages');assert.equal((await api(db,'/api/staff/diagnostics?id='+report.data.report.id)).data.report.scope,scope);}const reports=(await api(db,'/api/staff/diagnostics')).data.reports;assert.deepEqual(reports.map(r=>r.scope).sort(),['game','portal']);assert.equal((await api(db,'/api/staff/diagnostics','POST',{scope:'invented'})).status,400);assert.equal((await api(db,'/game-diagnostic.html','GET',null,'player-b')).status,403);});
 
 test('ordinary enrolment skips galaxy1:1 while staff enrolment may use its free slots',async()=>{const db=database();const first=await enrol(db);assert.equal(first.data.coords,'01:02:01');db.sqlite.prepare("UPDATE portal_users SET role='multihunter' WHERE id='player-b'").run();const second=await enrol(db,'player-b',{ruler:'Staff ruler',planetName:'Staff colony'});assert.equal(second.data.coords,'01:01:01');});
+
+// SF-049 authoritative integration tests (real SQLite constraints + Worker routing).
+async function shRead(db,user='player-a'){return (await api(db,'/api/strongholds','GET',null,user)).data;}
+test('a disputed legacy claim permits ordinary directory edits but freezes assets and keeps reservations',async()=>{
+ const db=await shFixture();for(const name of ['Pact','Other']){const a=JSON.parse(db.sqlite.prepare('SELECT data_json FROM planet_alliances WHERE name=?').get(name).data_json);a.fortress={strongholdGalaxy:'07:04'};db.sqlite.prepare('UPDATE planet_alliances SET data_json=? WHERE name=?').run(JSON.stringify(a),name);}
+ let full=(await api(db,'/api/planets')).data;full.planets[0].name='Renamed Colony';
+ assert.equal((await api(db,'/api/planets','POST',{revision:full.revision,planets:full.planets,structures:full.structures,alliances:full.alliances})).status,200);
+ const claims=await shRead(db);assert.equal(claims.claims.length,2);assert.ok(claims.claims.every(c=>c.status==='disputed'));
+ full=(await api(db,'/api/planets')).data;full.structures.push({id:'forged-dispute',alliance:'Pact',name:'Forbidden Structure',coords:'07:04:11',race:'Terran'});
+ assert.equal((await api(db,'/api/planets','POST',{revision:full.revision,planets:full.planets,structures:full.structures,alliances:full.alliances})).status,409);
+});
+test('removing the last stronghold asset atomically makes the reservation inactive without an enemy takeover',async()=>{
+ const db=await shFixture();let s=await shRead(db);const id=s.alliances.find(a=>a.name==='Pact').id;
+ assert.equal((await shWrite(db,s,{action:'claim',allianceId:id,galaxy:'7:4'})).status,200);
+ let full=(await api(db,'/api/planets')).data;full.structures.push({id:'last-asset',alliance:'Pact',name:'Last Structure',coords:'07:04:11',race:'Terran'});full.alliances.find(a=>a.name==='Pact').structures={active:[{id:'last-asset',slot:11}],buildQueue:[]};
+ assert.equal((await api(db,'/api/planets','POST',{revision:full.revision,planets:full.planets,structures:full.structures,alliances:full.alliances})).status,200);
+ full=(await api(db,'/api/planets')).data;full.structures=[];full.alliances.find(a=>a.name==='Pact').structures={active:[],buildQueue:[]};
+ assert.equal((await api(db,'/api/planets','POST',{revision:full.revision,planets:full.planets,structures:full.structures,alliances:full.alliances})).status,200);
+ s=await shRead(db);assert.equal(s.claims[0].status,'inactive');assert.equal(s.claims[0].assetCount,0);assert.equal(db.sqlite.prepare('SELECT status FROM stronghold_claims').get().status,'inactive');
+ const other=s.alliances.find(a=>a.name==='Other').id;assert.equal((await shWrite(db,s,{action:'claim',allianceId:other,galaxy:'7:4'},'player-b')).status,409);
+ assert.equal((await api(db,'/api/planets')).data.alliances.find(a=>a.name==='Pact').fortress.strongholdGalaxy,'');
+});
+async function shWrite(db,snapshot,fields,user='player-a'){
+ return api(db,'/api/strongholds','POST',{generation:snapshot.generation,revision:snapshot.revision,operationId:require('node:crypto').randomUUID(),...fields},user);
+}
+async function shFixture(){
+ const db=database();await seed(db);seedOtherAlliance(db);
+ const row=db.sqlite.prepare('SELECT data_json FROM planet_directory WHERE id=?').get('other-home'),p=JSON.parse(row.data_json);p.coords='07:04:02';p.race='Terran';db.sqlite.prepare('UPDATE planet_directory SET coords=?,data_json=? WHERE id=?').run(p.coords,JSON.stringify(p),'other-home');return db;
+}
+test('stronghold API claims exclusively, checks origin and trusted leadership, and replays one operation',async()=>{
+ const db=await shFixture(),snapshot=await shRead(db),a=snapshot.alliances.find(a=>a.name==='Pact');
+ assert.equal((await shWrite(db,snapshot,{action:'claim',allianceId:a.id,galaxy:'07:04'},'player-b')).status,403);
+ const payload={action:'claim',allianceId:a.id,galaxy:'07:04',generation:snapshot.generation,revision:snapshot.revision,operationId:'claim-operation-one'};
+ assert.equal((await api(db,'/api/strongholds','POST',payload,'player-a','https://evil.test')).status,403);
+ assert.equal((await api(db,'/api/strongholds','POST',payload)).status,200);
+ assert.equal((await api(db,'/api/strongholds','POST',payload)).status,200);
+ assert.equal((await api(db,'/api/strongholds','POST',{...payload,galaxy:'7:5'})).status,409);
+ const next=await shRead(db,'player-b'),b=next.alliances.find(a=>a.name==='Other');
+ assert.equal((await shWrite(db,next,{action:'claim',allianceId:b.id,galaxy:'7:4'},'player-b')).status,409);
+ const full=(await api(db,'/api/planets')).data;
+ assert.equal(full.alliances.find(a=>a.name==='Pact').fortress.claimStatus,'active');
+ assert.equal(full.planets.find(p=>p.id==='other-home').alliance,'Other');
+ assert.equal(JSON.parse(db.sqlite.prepare('SELECT data_json FROM planet_directory WHERE id=?').get('home').data_json).resources.metal,123);
+});
+test('stronghold stale CAS gates every state, index, audit and alliance write',async()=>{
+ const db=await shFixture(),snapshot=await shRead(db),id=snapshot.alliances.find(a=>a.name==='Pact').id;
+ const before=db.sqlite.prepare('SELECT data_json FROM planet_alliances WHERE name=?').get('Pact').data_json;
+ db.sqlite.prepare('UPDATE planet_directory_meta SET revision=revision+1').run();
+ assert.equal((await shWrite(db,snapshot,{action:'claim',allianceId:id,galaxy:'7:4'})).status,409);
+ assert.equal(db.sqlite.prepare('SELECT COUNT(*) n FROM stronghold_states').get().n,0);
+ assert.equal(db.sqlite.prepare('SELECT COUNT(*) n FROM stronghold_claims').get().n,0);
+ assert.equal(db.sqlite.prepare('SELECT COUNT(*) n FROM stronghold_audit').get().n,0);
+ assert.equal(db.sqlite.prepare('SELECT data_json FROM planet_alliances WHERE name=?').get('Pact').data_json,before);
+});
+test('stronghold empty transfer requires current two-party approval and release retains history',async()=>{
+ const db=await shFixture();let s=await shRead(db);const a=s.alliances.find(a=>a.name==='Pact').id,b=s.alliances.find(a=>a.name==='Other').id;
+ assert.equal((await shWrite(db,s,{action:'claim',allianceId:a,galaxy:'7:4'})).status,200);
+ s=await shRead(db);const claimId=s.claims[0].id;
+ assert.equal((await shWrite(db,s,{action:'transfer',claimId,targetAllianceId:b},'player-b')).status,403);
+ assert.equal((await shWrite(db,s,{action:'offerTransfer',claimId,targetAllianceId:b})).status,200);
+ db.sqlite.prepare('UPDATE planet_directory_meta SET revision=revision+1').run(); // unrelated write must not revoke stored source approval
+ s=await shRead(db,'player-b');assert.equal((await shWrite(db,s,{action:'transfer',claimId,targetAllianceId:b},'player-b')).status,200);
+ s=await shRead(db,'player-b');assert.equal(s.claims[0].allianceId,b);
+ assert.equal((await shWrite(db,s,{action:'release',claimId},'player-b')).status,200);
+ s=await shRead(db);assert.equal(s.claims[0].status,'released');
+ const planets=(await api(db,'/api/planets')).data.planets;assert.equal(planets.find(p=>p.id==='home').alliance,'Pact');
+});
+test('legacy conflicts freeze bonuses and assets until explicit staff adjudication',async()=>{
+ const db=await shFixture();for(const name of ['Pact','Other']){const a=JSON.parse(db.sqlite.prepare('SELECT data_json FROM planet_alliances WHERE name=?').get(name).data_json);a.fortress={strongholdGalaxy:'07:04'};db.sqlite.prepare('UPDATE planet_alliances SET data_json=? WHERE name=?').run(JSON.stringify(a),name);}
+ const structure={id:'legacy-s',alliance:'Other',coords:'07:04:11',name:'Legacy asset'};
+ db.sqlite.prepare('INSERT INTO planet_directory VALUES(?,?,?,?,?,?)').run(structure.id,'structure',structure.coords,null,JSON.stringify(structure),1);
+ let s=await shRead(db);assert.ok(s.claims.every(c=>c.status==='disputed'));
+ const projection=(await api(db,'/api/planets')).data;assert.ok(projection.alliances.every(a=>a.fortress.strongholdGalaxy===''));
+ const pact=s.claims.find(c=>c.allianceId===s.alliances.find(a=>a.name==='Pact').id);
+ assert.equal((await shWrite(db,s,{action:'resolve',winnerClaimId:pact.id,winnerStatus:'active',staffOverride:true,reason:'Reviewed conflict'})).status,409);
+ const other=s.claims.find(c=>c.id!==pact.id);
+ assert.equal((await shWrite(db,s,{action:'resolve',winnerClaimId:other.id,winnerStatus:'active',staffOverride:true,reason:'Reviewed conflict'})).status,200);
+ assert.equal(db.sqlite.prepare('SELECT COUNT(*) n FROM planet_directory WHERE kind=?').get('structure').n,1);
+ s=await shRead(db,'player-b');assert.equal((await shWrite(db,s,{action:'release',claimId:other.id},'player-b')).status,409);
+});
+test('directory POST cannot forge fortress, stable IDs or unclaimed structure assets',async()=>{
+ const db=await shFixture();let full=(await api(db,'/api/planets')).data;
+ const body={revision:full.revision,planets:full.planets,structures:full.structures,alliances:full.alliances};
+ body.alliances.find(a=>a.name==='Pact').fortress.strongholdGalaxy='07:04';assert.equal((await api(db,'/api/planets','POST',body)).status,409);
+ full=(await api(db,'/api/planets')).data;
+ const forged={revision:full.revision,planets:full.planets,structures:[{id:'forged',alliance:'Pact',name:'Fake',coords:'07:04:11',race:'Terran'}],alliances:full.alliances};
+ assert.equal((await api(db,'/api/planets','POST',forged)).status,409);
+ assert.equal(db.sqlite.prepare('SELECT COUNT(*) n FROM planet_directory WHERE kind=?').get('structure').n,0);
+});
+test('claimed staff structure sync preserves valid existing editing and blocks cross-galaxy writes',async()=>{
+ const db=await shFixture();let s=await shRead(db),id=s.alliances.find(a=>a.name==='Pact').id;
+ await shWrite(db,s,{action:'claim',allianceId:id,galaxy:'7:4'});
+ let full=(await api(db,'/api/planets')).data;
+ const body={revision:full.revision,planets:full.planets,structures:[{id:'built',alliance:'Pact',name:'Structure',coords:'07:04:11',race:'Terran'}],alliances:full.alliances};
+ body.alliances.find(a=>a.name==='Pact').structures={active:[{id:'built',slot:11}],buildQueue:[]};
+ assert.equal((await api(db,'/api/planets','POST',body)).status,200);
+ s=await shRead(db);assert.equal(s.claims[0].assetCount,2);assert.equal((await shWrite(db,s,{action:'release',claimId:s.claims[0].id})).status,409);
+ full=(await api(db,'/api/planets')).data;
+ const wrong={revision:full.revision,planets:full.planets,structures:full.structures.map(p=>({...p,coords:'07:05:11'})),alliances:full.alliances};
+ assert.equal((await api(db,'/api/planets','POST',wrong)).status,409);
+});
+test('stronghold generation isolates old claims and SQL uniqueness backs policy',async()=>{
+ const db=await shFixture();let s=await shRead(db),id=s.alliances.find(a=>a.name==='Pact').id;
+ await shWrite(db,s,{action:'claim',allianceId:id,galaxy:'7:4'});
+ assert.throws(()=>db.sqlite.prepare('INSERT INTO stronghold_claims VALUES(?,?,?,?,?)').run(s.generation,'forged','7:4','other','active'),/UNIQUE/);
+ await api(db,'/api/portal/reset','POST',{confirmation:'RESET'});
+ const fresh=await shRead(db);assert.notEqual(fresh.generation,s.generation);assert.equal(fresh.claims.length,0);
+ assert.equal((await shWrite(db,s,{action:'release',claimId:'missing'})).status,409);
+});
+test('stronghold optimistic concurrent requests choose one winner without side effects',async()=>{
+ const db=await shFixture(),snapshot=await shRead(db);let chain=Promise.resolve();const batch=db.batch.bind(db);
+ db.batch=statements=>{const result=chain.then(()=>batch(statements));chain=result.catch(()=>{});return result;};
+ const make=name=>({action:'claim',allianceId:snapshot.alliances.find(a=>a.name===name).id,galaxy:'7:4'});
+ const results=await Promise.all([shWrite(db,snapshot,make('Pact')),shWrite(db,snapshot,make('Other'),'player-b')]);
+ assert.deepEqual(results.map(r=>r.status).sort(),[200,409]);
+ assert.equal(db.sqlite.prepare('SELECT COUNT(*) n FROM stronghold_claims WHERE status=?').get('active').n,1);
+ assert.equal(db.sqlite.prepare('SELECT COUNT(*) n FROM stronghold_audit').get().n,1);
+});
+
+test('empty stronghold move is atomic, retains old claim and never moves residents',async()=>{
+ const db=await shFixture();let s=await shRead(db),id=s.alliances.find(a=>a.name==='Pact').id;
+ await shWrite(db,s,{action:'claim',allianceId:id,galaxy:'7:4'});
+ const p={id:'remote',name:'Remote',alliance:'Pact',coords:'07:06:01',race:'Terran',publicTick:5};
+ db.sqlite.prepare('INSERT INTO planet_directory VALUES(?,?,?,?,?,?)').run(p.id,'planet',p.coords,null,JSON.stringify(p),1);
+ s=await shRead(db);const original=s.claims[0].id;
+ assert.equal((await shWrite(db,s,{action:'move',claimId:original,galaxy:'7:6'})).status,200);
+ s=await shRead(db);assert.equal(s.claims.find(c=>c.id===original).status,'released');assert.equal(s.claims.find(c=>c.status==='active').galaxy,'7:6');
+ assert.equal(db.sqlite.prepare('SELECT coords FROM planet_directory WHERE id=?').get('home').coords,'07:04:01');
+ assert.equal(db.sqlite.prepare('SELECT coords FROM planet_directory WHERE id=?').get('other-home').coords,'07:04:02');
+});
+test('stronghold CAS rechecks stored permissions even if a legacy writer forgot revision',async()=>{
+ const db=await shFixture(),s=await shRead(db),id=s.alliances.find(a=>a.name==='Other').id;
+ const batch=db.batch.bind(db);let intercept=true;
+ db.batch=async statements=>{if(intercept){intercept=false;const a=JSON.parse(db.sqlite.prepare('SELECT data_json FROM planet_alliances WHERE name=?').get('Other').data_json);a.members[0].rank='Recruit';db.sqlite.prepare('UPDATE planet_alliances SET data_json=? WHERE name=?').run(JSON.stringify(a),'Other');}return batch(statements);};
+ assert.equal((await shWrite(db,s,{action:'claim',allianceId:id,galaxy:'7:4'},'player-b')).status,409);
+ assert.equal(db.sqlite.prepare('SELECT COUNT(*) n FROM stronghold_audit').get().n,0);
+ assert.equal(db.sqlite.prepare('SELECT COUNT(*) n FROM stronghold_states').get().n,0);
+});
+test('unique constraint failure rolls back every stronghold write in the atomic batch',async()=>{
+ const db=await shFixture(),s=await shRead(db),id=s.alliances.find(a=>a.name==='Pact').id;
+ const batch=db.batch.bind(db);let intercept=true;
+ db.batch=async statements=>{if(intercept){intercept=false;statements.push(db.prepare('INSERT INTO stronghold_claims VALUES(?,?,?,?,?)').bind(s.generation,'collision','7:4','different','active'));}return batch(statements);};
+ assert.equal((await shWrite(db,s,{action:'claim',allianceId:id,galaxy:'7:4'})).status,409);
+ assert.equal(db.sqlite.prepare('SELECT revision FROM planet_directory_meta WHERE id=1').get().revision,s.revision);
+ for(const table of ['stronghold_audit','stronghold_operations','stronghold_states','stronghold_claims'])assert.equal(db.sqlite.prepare('SELECT COUNT(*) n FROM '+table).get().n,0);
+});
+
 test('each galaxy has local commander candidates, ballots and minister rights after departures',async()=>{const db=database();await seed(db);seedOtherAlliance(db);const update=(id,coords,ruler)=>{const data=JSON.parse(db.sqlite.prepare('SELECT data_json FROM planet_directory WHERE id=?').get(id).data_json);data.coords=coords;data.ruler=ruler;db.sqlite.prepare('UPDATE planet_directory SET coords=?,data_json=? WHERE id=?').run(coords,JSON.stringify(data),id);};update('home','01:01:01','Paul');update('other-home','01:02:01','LordCharles');let d=(await api(db,'/api/galaxy-development','GET',null,'player-b')).data;assert.equal(d.galaxy,'01:02');assert.equal(d.gc,'LordCharles');assert.equal((await api(db,'/api/galaxy-development','POST',{action:'vote',target:'Paul',generation:0},'player-b')).status,400);const ministers={communication:'',development:'Paul',war:'',economics:'',scanner:''};assert.equal((await api(db,'/api/galaxy-development','POST',{action:'ministers',ministers,generation:0},'player-b')).status,400);ministers.development='LordCharles';assert.equal((await api(db,'/api/galaxy-development','POST',{action:'ministers',ministers,generation:0},'player-b')).status,200);assert.equal((await api(db,'/api/galaxy-development','POST',{action:'vote',target:'LordCharles',generation:0},'player-b')).status,200);update('home','01:02:02','Paul');update('other-home','01:03:01','LordCharles');d=(await api(db,'/api/galaxy-development')).data;assert.equal(d.galaxy,'01:02');assert.equal(d.gc,'');assert.equal(d.ministers.development,'');assert.equal(Object.keys(d.votes).length,0);assert.equal(d.canView,false);assert.equal(d.canEdit,false);assert.equal((await api(db,'/api/galaxy-development','POST',{action:'tax',rate:1,generation:0})).status,403);const elsewhere=(await api(db,'/api/galaxy-development','GET',null,'player-b')).data;assert.equal(elsewhere.galaxy,'01:03');assert.equal(elsewhere.gc,'LordCharles');assert.equal(elsewhere.ministers.development,'');});
+async function specialStrongholdFixture(){const db=await shFixture();for(const id of ['home','other-home']){const p=JSON.parse(db.sqlite.prepare('SELECT data_json FROM planet_directory WHERE id=?').get(id).data_json);p.coords=id==='home'?'01:01:01':'01:01:02';db.sqlite.prepare('UPDATE planet_directory SET coords=?,data_json=? WHERE id=?').run(p.coords,JSON.stringify(p),id);}let s=await shRead(db);assert.equal((await shWrite(db,s,{action:'claim',allianceId:s.alliances.find(a=>a.name==='Pact').id,galaxy:'1:1'})).status,200);return db;}
+async function postStructureSlots(db,slots,galaxy='01:01'){const full=(await api(db,'/api/planets')).data;full.structures=slots.map(slot=>({id:'special-'+slot,alliance:'Pact',name:'Structure '+slot,coords:galaxy+':'+String(slot).padStart(2,'0'),slot,race:'Terran'}));full.alliances.find(a=>a.name==='Pact').structures={active:slots.map(slot=>({id:'special-'+slot,slot})),buildQueue:[]};return api(db,'/api/planets','POST',{revision:full.revision,planets:full.planets,structures:full.structures,alliances:full.alliances});}
+test('active 1:1 stronghold accepts every structure slot 16–20 and rejects its ghost slots',async()=>{const db=await specialStrongholdFixture();assert.equal((await postStructureSlots(db,[16,17,18,19,20])).status,200);for(const slot of [11,12,13,14,15])assert.equal((await postStructureSlots(db,[slot])).status,409);assert.deepEqual((await api(db,'/api/planets')).data.structures.map(p=>Number(p.coords.split(':')[2])),[16,17,18,19,20]);});
+test('extended structure slots are rejected outside 1:1 even with a valid active claim',async()=>{const db=await shFixture();const s=await shRead(db);assert.equal((await shWrite(db,s,{action:'claim',allianceId:s.alliances.find(a=>a.name==='Pact').id,galaxy:'7:4'})).status,200);for(const slot of [16,17,18,19,20])assert.equal((await postStructureSlots(db,[slot],'07:04')).status,400);assert.equal((await api(db,'/api/planets')).data.structures.length,0);});
+test('inactive and disputed special claims retain occupied 16–20 assets during ordinary directory edits',async()=>{for(const status of ['inactive','disputed']){const db=await specialStrongholdFixture();assert.equal((await postStructureSlots(db,[16,20])).status,200);const saved=JSON.parse(db.sqlite.prepare('SELECT data_json FROM stronghold_states').get().data_json);saved.claims[0].status=status;db.sqlite.prepare('UPDATE stronghold_states SET data_json=?').run(JSON.stringify(saved));db.sqlite.prepare('UPDATE stronghold_claims SET status=?').run(status);const full=(await api(db,'/api/planets')).data;full.planets[0].name='Ordinary colony edit';const result=await api(db,'/api/planets','POST',{revision:full.revision,planets:full.planets,structures:full.structures,alliances:full.alliances});assert.equal(result.status,200,result.data.error);const retained=(await api(db,'/api/planets')).data.structures;assert.deepEqual(retained.map(p=>p.coords),['01:01:16','01:01:20']);assert.equal((await shRead(db)).claims[0].status,status);}});

@@ -6,7 +6,7 @@ async function ensureAttackOperations(env){
 }
 function attackOperationPhase(op,now=Date.now()){return op.closed?'Closed':!op.releaseAt||op.releaseAt<=now?'Open':op.prereleaseAt&&op.prereleaseAt<=now?'Prereleased':'Scheduled';}
 function attackCoordinateOrder(a,b){const x=a.coords.split(':').map(Number),y=b.coords.split(':').map(Number);return x[0]-y[0]||x[1]-y[1]||x[2]-y[2];}
-function attackBooking(id,tick){return {id,landTick:tick,ownerId:null,ownerName:'',users:[],notes:'',battleCalc:'',group:'',status:'none'};}
+function attackBooking(id,tick){return {id,landTick:tick,ownerId:null,ownerName:'',users:[],notes:'',battleCalc:'',group:'',groupId:null,status:'none'};}
 async function attackOperationMembers(env,alliance){return (await env.DB.prepare("SELECT DISTINCT u.id,u.username FROM portal_users u JOIN planet_directory p ON p.owner_id=u.id WHERE p.kind='planet' AND json_extract(p.data_json,'$.alliance')=? ORDER BY u.username").bind(alliance).all()).results;}
 async function importLegacyAttackTargets(env,allianceId,generation){
  const exists=await env.DB.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name='alliance_attack_targets'").first();if(!exists)return;
@@ -21,7 +21,9 @@ async function attackOperationsAPI(request,env){
  if(request.method==='GET'){
   await importLegacyAttackTargets(env,allianceId,generation);const rows=(await env.DB.prepare('SELECT * FROM alliance_attack_operations WHERE alliance_id=? AND generation=? ORDER BY created_at DESC LIMIT 100').bind(allianceId,generation).all()).results;
   const operations=rows.map(r=>({...JSON.parse(r.data_json),revision:r.revision,phase:attackOperationPhase(JSON.parse(r.data_json))})).map(op=>op.phase==='Scheduled'&&!canManage?{id:op.id,title:op.title,releaseAt:op.releaseAt,prereleaseAt:op.prereleaseAt,landTick:op.landTick,waves:op.waves,phase:op.phase,revision:op.revision,targets:[],notes:''}:op);
-  return json({generation,userId:user.id,canManage,canClaim,members,operations,source:{name:'pa-tools',url:'https://bitbucket.org/liamrigg/pa-tools',commit:'564f02157c7c028beb57c16b4c8a2c02869b35ba'}});
+  const groupRow=await env.DB.prepare('SELECT data_json FROM alliance_battlegroups WHERE alliance_id=? AND generation=?').bind(allianceId,generation).first(),battlegroups=groupRow?JSON.parse(groupRow.data_json):[];
+  for(const operation of operations)for(const target of operation.targets)for(const booking of target.bookings)if(booking.groupId)booking.group=battlegroups.find(g=>g.id===booking.groupId)?.name||'Unavailable battlegroup';
+  return json({generation,userId:user.id,canManage,canClaim,members,operations,battlegroups:battlegroups.filter(g=>g.members.some(m=>m.userId===user.id&&m.status==='accepted')).map(g=>({id:g.id,name:g.name})),source:{name:'pa-tools',url:'https://bitbucket.org/liamrigg/pa-tools',commit:'564f02157c7c028beb57c16b4c8a2c02869b35ba'}});
  }
  if(request.method!=='POST')return json({error:'Method not allowed.'},405);
  if(request.headers.get('Origin')!==new URL(request.url).origin)return json({error:'Invalid origin.'},403);
@@ -39,7 +41,7 @@ async function attackOperationsAPI(request,env){
  }
  const row=await env.DB.prepare('SELECT * FROM alliance_attack_operations WHERE id=? AND alliance_id=? AND generation=?').bind(String(body.id||''),allianceId,generation).first();if(!row)return json({error:'Operation not found.'},404);
  if(body.revision!==row.revision)return json({error:'The booking changed. Refresh and review.'},409);
- const op=JSON.parse(row.data_json),phase=attackOperationPhase(op);if(phase==='Closed'&&body.action!=='reopen')return json({error:'This operation is closed.'},409);
+ const op=JSON.parse(row.data_json),phase=attackOperationPhase(op);let groupFence=null;if(phase==='Closed'&&body.action!=='reopen')return json({error:'This operation is closed.'},409);
  if(['close','reopen','release','wave','removeWave','edit','targets','removeTarget'].includes(body.action)){
   if(!canManage)return json({error:'Attack management permission required.'},403);
   if(body.action==='close')op.closed=true;if(body.action==='reopen')op.closed=false;if(body.action==='release'){op.releaseAt=null;op.prereleaseAt=null;}
@@ -55,11 +57,19 @@ async function attackOperationsAPI(request,env){
   if(body.action==='claim'){if(!canClaim)return json({error:'Your alliance rank cannot book waves.'},403);if(booking.ownerId)return json({error:'This wave has already been claimed.'},409);booking.ownerId=user.id;booking.ownerName=user.username;booking.status='none';}
   else{
    const owner=booking.ownerId===user.id,participant=owner||booking.users.includes(user.id);if(!participant)return json({error:'Only the owner or shared booking users can edit this booking.'},403);
-   if(body.action==='drop'){if(!owner){booking.users=booking.users.filter(id=>id!==user.id);}else{if(booking.users.length)return json({error:'Transfer ownership before dropping a shared booking.'},409);Object.assign(booking,{ownerId:null,ownerName:'',status:'none',notes:'',battleCalc:'',group:''});}}
-   if(body.action==='transfer'){if(!owner||!memberIds.has(body.userId)||body.userId===user.id)return json({error:'Only the owner can transfer to another current alliance member.'},403);booking.users=[...new Set([...booking.users.filter(id=>id!==body.userId),user.id])];booking.ownerId=body.userId;booking.ownerName=members.find(m=>m.id===body.userId).username;}
+   if(body.action==='drop'){if(!owner){booking.users=booking.users.filter(id=>id!==user.id);}else{if(booking.users.length)return json({error:'Transfer ownership before dropping a shared booking.'},409);Object.assign(booking,{ownerId:null,ownerName:'',status:'none',notes:'',battleCalc:'',group:'',groupId:null});}}
+   if(body.action==='transfer'){if(!owner||!memberIds.has(body.userId)||body.userId===user.id)return json({error:'Only the owner can transfer to another current alliance member.'},403);if(booking.groupId){try{const link=await battlegroupBookingLink(env,allianceId,generation,booking.groupId,body.userId,memberIds);groupFence=link.registryRevision;booking.group=link.group;}catch(e){return json({error:e.message},e.status||400);}}booking.users=[...new Set([...booking.users.filter(id=>id!==body.userId),user.id])];booking.ownerId=body.userId;booking.ownerName=members.find(m=>m.id===body.userId).username;}
    if(body.action==='share'){if(!owner||!Array.isArray(body.users)||body.users.length>20||body.users.some(id=>!memberIds.has(id)||id===user.id))return json({error:'The owner may share with up to twenty current alliance members.'},400);booking.users=[...new Set(body.users)];}
-   if(body.action==='booking'){if(!['none','land','recall'].includes(body.status)||typeof body.notes!=='string'||body.notes.length>2000||typeof body.group!=='string'||body.group.length>80||typeof body.battleCalc!=='string'||body.battleCalc.length>2000)return json({error:'Use a booking status and bounded notes, group and calculator reference.'},400);booking.status=body.status;booking.notes=body.notes;booking.group=body.group;booking.battleCalc=body.battleCalc;}
+   if(body.action==='booking'){
+    if(!['none','land','recall'].includes(body.status)||typeof body.notes!=='string'||body.notes.length>2000||typeof body.battleCalc!=='string'||body.battleCalc.length>2000||body.group!==undefined&&(typeof body.group!=='string'||body.group.length>80))return json({error:'Use a booking status and bounded notes, group and calculator reference.'},400);
+    const desired=body.groupId===undefined?(booking.groupId||null):body.groupId;
+    if(!owner&&desired!==(booking.groupId||null))return json({error:'Only the booking owner may change its battlegroup.'},403);
+    if(desired){try{const link=await battlegroupBookingLink(env,allianceId,generation,desired,booking.ownerId,memberIds);groupFence=link.registryRevision;booking.groupId=link.groupId;booking.group=link.group;}catch(e){return json({error:e.message},e.status||400);}}
+    else{booking.groupId=null;if(body.groupId!==undefined)booking.group='';else if(body.group!==undefined)booking.group=body.group;}
+    booking.status=body.status;booking.notes=body.notes;booking.battleCalc=body.battleCalc;
+   }
   }
  }
- const result=await env.DB.prepare('UPDATE alliance_attack_operations SET revision=revision+1,data_json=?,updated_at=? WHERE id=? AND alliance_id=? AND generation=? AND revision=? AND EXISTS(SELECT 1 FROM planet_directory_meta WHERE id=1 AND reset_generation=?)').bind(JSON.stringify(op),Date.now(),row.id,allianceId,generation,row.revision,generation).run();if(!(result.meta?.changes??result.changes))return json({error:'The booking or round changed. Refresh and review.'},409);return json({ok:true,revision:row.revision+1});
+ const fence=groupFence===null?'':' AND EXISTS(SELECT 1 FROM alliance_battlegroups WHERE alliance_id=? AND generation=? AND revision=?)',args=[JSON.stringify(op),Date.now(),row.id,allianceId,generation,row.revision,generation];if(groupFence!==null)args.push(allianceId,generation,groupFence);
+ const result=await env.DB.prepare('UPDATE alliance_attack_operations SET revision=revision+1,data_json=?,updated_at=? WHERE id=? AND alliance_id=? AND generation=? AND revision=? AND EXISTS(SELECT 1 FROM planet_directory_meta WHERE id=1 AND reset_generation=?)'+fence).bind(...args).run();if(!(result.meta?.changes??result.changes))return json({error:'The booking, battlegroup or round changed. Refresh and review.'},409);return json({ok:true,revision:row.revision+1});
 }

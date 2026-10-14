@@ -1,4 +1,4 @@
-const STARFALL_VERSION='0.120.6';
+const STARFALL_VERSION='0.121.0';
 const TYPES=new Set(['planet','landing','development','unit','news','incoming','jumpgate','advanced']);
 const RETENTION=14*24*60*60*1000;
 function json(value,status=200){return Response.json(value,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});}
@@ -62,6 +62,11 @@ async function api(request,env){
 }
 async function serveRequest(request,env){
   const url=new URL(request.url);
+  if(url.pathname==='/api/battlegroups')return battlegroupsAPI(request,env);
+  if(url.pathname==='/api/planet-reset')return planetResetAPI(request,env);
+  if(url.pathname==='/api/alliance-events')return allianceEventsAPI(request,env);
+  if(url.pathname==='/api/alliance-policy')return alliancePolicyAPI(request,env);
+  if(url.pathname==='/api/strongholds')return strongholdAPI(request,env);
   if(url.pathname==='/api/staff/diagnostics')return diagnosticsAPI(request,env);
   if(['/diagnostics.html','/game-diagnostic.html'].includes(url.pathname)){const user=await portalUser(request,env);if(!user)return Response.redirect(url.origin+'/login.html',302);if(!portalStaffPermission(user,'diagnostics'))return json({error:'Diagnostics permission required.'},403);}
   if(url.pathname.startsWith('/botfiles/')){try{return await gameDumpAPI(request,env);}catch{return json({error:'The gamedump is temporarily unavailable.'},503);}}

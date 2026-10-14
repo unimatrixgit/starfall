@@ -1,0 +1,19 @@
+/* Initial gate is present in HTML before the first paint. */
+html[data-command-boot="pending"] .app,
+html[data-command-boot="error"] .app { visibility:hidden; }
+html[data-command-boot="pending"] body::before {
+  content:"Connecting to planetary command…";position:fixed;inset:0;display:grid;place-items:center;
+  background:#07131b;color:#d9eef5;font:16px system-ui,sans-serif;z-index:2147483000;
+}
+html[data-command-boot-ui] body::before {display:none;}
+.command-boot {position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;padding:24px;background:#07131b;color:#d9eef5;font:16px/1.5 system-ui,sans-serif;box-sizing:border-box;}
+.command-boot[hidden] {display:none;}
+.command-boot-card {width:min(100%,420px);padding:26px;border:1px solid #497585;border-radius:12px;background:#0d202b;box-sizing:border-box;}
+.command-boot h1 {font-size:20px;margin:0 0 12px;}
+.command-boot p {margin:0 0 16px;color:#afc9d5;}
+.command-boot button {padding:10px 16px;font:inherit;color:#07131b;background:#a3d8e9;border:1px solid #d6f3fc;border-radius:5px;cursor:pointer;}
+.command-boot button:focus-visible {outline:3px solid #ffdd7c;outline-offset:4px;}
+.command-boot-mark {display:block;width:32px;height:32px;margin-bottom:18px;border:3px solid #294752;border-top-color:#a3d8e9;border-radius:50%;animation:command-boot-turn 1.4s linear infinite;}
+html[data-command-boot="error"] .command-boot-mark {animation:none;border-color:#d7ac78;}
+@keyframes command-boot-turn {to {transform:rotate(360deg);}}
+@media(prefers-reduced-motion:reduce) {.command-boot-mark {animation:none;border-color:#a3d8e9;}}

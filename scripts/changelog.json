@@ -1,5 +1,61 @@
 [
   {
+    "version": "0.121.0",
+    "date": "2026-10-14",
+    "part": 1,
+    "title": "Command foundation · Part 1 of 2",
+    "synopsis": "Seven completed tasks covering development queues, galaxy ownership, personal resets and alliance fleet organisation.",
+    "promptIds": [
+      "SF-007",
+      "SF-008",
+      "SF-009",
+      "SF-010",
+      "SF-011",
+      "SF-012",
+      "SF-046",
+      "SF-049",
+      "SF-034",
+      "SF-035",
+      "SF-037",
+      "SF-038",
+      "SF-032"
+    ],
+    "changes": [
+      "Shared spacing rules across game pages and themes.",
+      "Four total construction and research slots, including the active project, with queued progression and cancellation.",
+      "The actual Info box now sits beside Planet Settings with its data and clocks.",
+      "Exclusive stronghold claims, retained inactive reservations, two-party empty transfers and audited conflict resolution.",
+      "Galaxy 1:1 uses player slots 1–10, ghost slots 11–15 and structure slots 16–20 only under its stronghold policy; existing occupied slots remain protected.",
+      "Personal reset is instant before the ticker starts, preserving alliance membership; afterwards it waits 72 hours and removes only the resetting player from the alliance.",
+      "Battlegroup membership, approvals, leadership and attack-booking linkage with current permission and revision guards."
+    ]
+  },
+  {
+    "version": "0.121.0",
+    "date": "2026-10-14",
+    "part": 2,
+    "title": "Command interface and delivery · Part 2 of 2",
+    "synopsis": "Seven completed tasks covering performance, themes, resource exchange, source ownership, battle planning and alliance news.",
+    "promptIds": [
+      "SF-052",
+      "SF-055",
+      "SF-059",
+      "SF-061",
+      "SF-041",
+      "SF-043",
+      "SF-063"
+    ],
+    "changes": [
+      "Bounded public-data caching, content ETags and omission of unreferenced old portal runtime bundles while retaining live-page compatibility.",
+      "Game startup waits for the runtime and authoritative theme before showing the command interface.",
+      "Three separate Metal, Crystal and Eonium exchange panels with independent inputs, quotes and feedback.",
+      "The duplicate Planet sidebar section is removed while the five main navigation tiles remain.",
+      "Twelve canonical portal, game and shared frontend inputs have separate source folders and one composed build; game seed generation is separated from portal pages.",
+      "Compact defender/attacker battle planning with four fleets per side, display filters, scan-count import and saved browser drafts; existing Starfall combat rules remain.",
+      "Tax and central stronghold changes deliver atomic alliance news and mail to current members, including the actor."
+    ]
+  },
+  {
     "version": "0.120.6",
     "date": "2026-10-14",
     "title": "Bugfix · Spacing Bank stays visible",
