@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.120.2",
+    "date": "2026-10-14",
+    "title": "Bugfix · Unfolded navigation stays accessible",
+    "synopsis": "The expanded game menu scrolls independently and no longer disappears behind the sidebar footer.",
+    "promptIds": [
+      "SF-053"
+    ],
+    "changes": [
+      "The navigation uses its own scroll area while the footer keeps its own space.",
+      "Portal, Support, Manual and Sign out no longer overlap expanded menu entries.",
+      "The fix applies across game themes, including smaller viewports. No round reset is performed."
+    ]
+  },
+  {
     "version": "0.120.1",
     "date": "2026-10-14",
     "title": "Bugfix · Registered planets and alliance creation",

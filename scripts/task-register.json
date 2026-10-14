@@ -112,11 +112,12 @@
       "id": "SF-015",
       "priority": "P2",
       "title": "Hero of The Omega order title and medal on AI staff plaque",
-      "status": "open",
+      "status": "live",
       "groups": [
         "G-003",
         "G-007"
-      ]
+      ],
+      "release": "0.120.0"
     },
     {
       "id": "SF-016",
@@ -139,47 +140,53 @@
       "id": "SF-018",
       "priority": "P2",
       "title": "Tribute artwork and contribution archive",
-      "status": "open",
+      "status": "live",
       "groups": [
         "G-007"
-      ]
+      ],
+      "release": "0.120.0"
     },
     {
       "id": "SF-019",
       "priority": "P2",
       "title": "Staff roster cosmetics",
-      "status": "open",
+      "status": "live",
       "groups": [
         "G-007"
-      ]
+      ],
+      "release": "0.120.0"
     },
     {
       "id": "SF-020",
       "priority": "P2",
       "title": "Separate portal/game diagnostics with labelled stored reports",
-      "status": "open"
+      "status": "live",
+      "release": "0.120.0"
     },
     {
       "id": "SF-021",
       "priority": "P2",
       "title": "AI plaque on staff roster",
-      "status": "open",
+      "status": "live",
       "groups": [
         "G-003",
         "G-007"
-      ]
+      ],
+      "release": "0.120.0"
     },
     {
       "id": "SF-022",
       "priority": "P2",
       "title": "Compact final charter confirmation",
-      "status": "open"
+      "status": "live",
+      "release": "0.120.0"
     },
     {
       "id": "SF-023",
       "priority": "P2",
       "title": "Government spacing",
-      "status": "open"
+      "status": "live",
+      "release": "0.120.0"
     },
     {
       "id": "SF-024",
@@ -384,7 +391,8 @@
       "id": "SF-048",
       "priority": "BUGFIX",
       "title": "Positive RP for unfinished research levels",
-      "status": "verified"
+      "status": "live",
+      "release": "0.120.1"
     },
     {
       "id": "SF-049",
@@ -396,16 +404,31 @@
       "id": "SF-050",
       "priority": "BUGFIX",
       "title": "Remove fake galaxy planets and requested reset",
-      "status": "verified"
+      "status": "live",
+      "release": "0.120.1"
     },
     {
       "id": "SF-051",
       "priority": "BUGFIX",
       "title": "Restore alliance creation form",
+      "status": "live",
+      "release": "0.120.1"
+    },
+    {
+      "id": "SF-052",
+      "priority": "P2",
+      "title": "Joint portal/game efficiency audit and improvements",
+      "status": "reviewed",
+      "analysis": "https://github.com/unimatrixgit/mcdune/blob/1a6fb6a/docs/STARFALL-EFFICIENCY-REVIEW.md"
+    },
+    {
+      "id": "SF-053",
+      "priority": "BUGFIX",
+      "title": "Unfolded sidebar footer overlap",
       "status": "verified"
     }
   ],
-  "nextId": 52,
+  "nextId": 54,
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -437,8 +460,9 @@
         "SF-021",
         "SF-015"
       ],
-      "status": "in-progress",
-      "parent": "G-007"
+      "status": "live",
+      "parent": "G-007",
+      "release": "0.120.0"
     },
     {
       "id": "G-004",
@@ -493,10 +517,11 @@
         "SF-021",
         "SF-015"
       ],
-      "status": "in-progress",
+      "status": "live",
       "subgroups": [
         "G-003"
-      ]
+      ],
+      "release": "0.120.0"
     },
     {
       "id": "G-008",
@@ -521,14 +546,20 @@
       "branch": "main",
       "confirmedCommit": "5f02adf",
       "analysis": "https://github.com/unimatrixgit/mcdune/blob/5f02adf/docs/STARFALL-BATTLEGROUP-ANALYSIS.md"
+    },
+    {
+      "id": "G-011",
+      "title": "Stronghold ownership policy and implementation",
+      "members": [
+        "SF-046",
+        "SF-049"
+      ],
+      "status": "in_progress"
     }
   ],
   "nextGroupId": 12,
   "openOrder": [
-    "G-007",
-    "SF-020",
-    "SF-022",
-    "SF-023",
+    "SF-053",
     "G-001",
     "G-002",
     "SF-012",
@@ -537,16 +568,13 @@
     "G-008",
     "SF-041",
     "SF-043",
+    "G-011",
+    "SF-052",
     "G-004"
   ],
   "colleagueReviews": {
     "battlegroups": "https://github.com/unimatrixgit/mcdune/blob/5f02adf/docs/STARFALL-BATTLEGROUP-ANALYSIS.md",
     "repoSplit": "https://github.com/unimatrixgit/mcdune/blob/c767de6/docs/STARFALL-PORTAL-GAME-MIGRATION.md",
     "stronghold": "https://github.com/unimatrixgit/mcdune/tree/da7d21e/proposals/stronghold-policy"
-  },
-  "currentOrder": [
-    "SF-048",
-    "SF-050",
-    "SF-051"
-  ]
+  }
 }
