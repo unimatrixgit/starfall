@@ -1,5 +1,47 @@
 [
   {
+    "version": "0.120.6",
+    "date": "2026-10-14",
+    "title": "Bugfix · Spacing Bank stays visible",
+    "synopsis": "The Spacing Bank Collective remains available when the Galaxy Fund refreshes instead of briefly appearing and disappearing.",
+    "promptIds": [
+      "SF-066"
+    ],
+    "changes": [
+      "Ordinary game updates preserve the bank module and its entered exchange values.",
+      "Bank loading is guarded against stale account or page responses, and load failures remain visible with retry.",
+      "The fix preserves transaction permissions and revision checks. No round reset."
+    ]
+  },
+  {
+    "version": "0.120.5",
+    "date": "2026-10-14",
+    "title": "Bugfix · Correct production and development timing",
+    "synopsis": "Ship production uses the documented factory formula instead of raw resource totals; construction and research use racial base rates and additive bonuses.",
+    "promptIds": [
+      "SF-062"
+    ],
+    "changes": [
+      "Matching Light, Medium and Heavy factory pools include preparation work and pause when no relevant factories are assigned. Cruisers use Heavy factories.",
+      "Construction and research rates use documented race bases, additive workforce/government bonuses and a capped laboratory percentage. Starfall population and round modifiers remain.",
+      "Existing paid orders retain quantities, destinations, costs and completion percentage through a one-time migration. Historical mixed-order cost splits are approximated from their preserved total. No round reset."
+    ]
+  },
+  {
+    "version": "0.120.4",
+    "date": "2026-10-14",
+    "title": "Bugfix · Galaxy elections and ministers stay local",
+    "synopsis": "Galactic Commander candidates and minister choices now show only planets in your own galaxy, including your own planet.",
+    "promptIds": [
+      "SF-060"
+    ],
+    "changes": [
+      "Election candidates, ballots and minister choices are constrained to the current home galaxy.",
+      "Moving or exiling a planet clears its old votes and minister offices; stale server appointments are cleaned through the existing revision guard.",
+      "Galaxy identity and local politics no longer follow you into another galaxy. No round reset is performed."
+    ]
+  },
+  {
     "version": "0.120.3",
     "date": "2026-10-14",
     "title": "Bugfix · Clear account registration feedback",

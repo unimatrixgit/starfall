@@ -1,0 +1,13 @@
+# SF-062: production, construction and research formula correction
+
+Verified primary sources on 2026-10-14: https://game.planetarion.com/manual.pl?page=formulae , ?page=production , ?page=construction , ?page=races , ?page=governments. Formula page has no edition date. Changes page heads Round119, but race page retains legacy five-race data; rates follow that documented baseline corresponding to this project's existing internal race IDs.
+
+Production uses sqrt(paidResources)*ln(paidResources^2), plus10000 preparation units per assigned relevant factory; each pool outputs floor((4000*factoryCount)^0.98*(1+(shipwright+government+race)/100)*roundMultiplier). Separate Light/Medium/Heavy pools progress together; entire order completes when all finish. Zero relevant factories or zero production multiplier pauses that pool. Additional factories incur preparation work; already prepared factories are not repeatedly charged after reducing/reapplying allocation. Cruiser/Battleship use Heavy.
+
+CU uses racial base times additive builders/government percentage. RP uses racial base times additive scientist/lab/government percentage, lab ratio capped20%, then round multiplier. Light/Medium/Heavy construction costs500CU each. Racial CU/RP/productivity: Terran125/95/10%, Cathaar105/110/0%, Xandathrii100/105/5%, Zikonian115/95/15%, Eitraides110/100/0%.
+
+Existing paid ship orders migrate once (formulaVersion2): paid costs, ship quantities and destinations remain unchanged; old completion fraction applies to new total work including preparation. No refund, recharge, ships or completion granted by migration. Legacy mixed orders stored only aggregate paid cost, so distribute that fixed amount across relevant factory pools proportional to catalog resource costs; this is an approximation of the lost historical per-type paid breakdown. New orders persist exact per-factory paid totals. Existing construction orders similarly preserve completion fraction against corrected CU amounts once (workFormulaVersion2). RP already accumulated remains exact and unchanged.
+
+Intentional Starfall extensions retained: flat1CU/RP per full100residents; round research/production multipliers; planet-holder cost discounts; local sequential active+queued ship scheduling; custom habitat/quest/technology mechanics. No universe cost variance added. Historical progress-fraction conversion is a compatibility policy, not an official Planetarion migration rule. Formula amounts retain fractional work and floor per-tick outputs.
+
+Example:100Lumen under Democracy costs41600 after per-resource rounding;3LightFactories,0shipwrights,Terran10% productivity yields4338.595PU+30000preparation,10939PU/tick,4ticks. Old linear calculation41600/185 incorrectly yielded225.
