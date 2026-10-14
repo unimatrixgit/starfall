@@ -1,5 +1,20 @@
 [
   {
+    "version": "0.110.0",
+    "date": "2026-10-14",
+    "title": "Order refresh, fleet roster and achievement receipts",
+    "synopsis": "Clearer orders, resource income, building capacity and itemised achievement reward receipts.",
+    "changes": [
+      "Successful asteroid, ship, construction, research and alliance structure orders save and reload the current game page. Draft edits and rejected orders do not reload.",
+      "Mining begins with Income per tick, styled like the Resource Bank and showing owned asteroid counts per resource.",
+      "Construction lists owned buildings, queued reservations, free slots, affordable quantities, next costs and bonus information.",
+      "All Ships moves the entire selected source fleet. Amount is ignored for that option; source and destination selections persist. Deployed fleets cannot transfer.",
+      "Fleet Roster lists ship names with separate Class, Target 1, Target 2 and Target 3 columns. Missing targets are blank.",
+      "Manual, bulk and automatic Achievement claims produce a festive receipt with claimed objectives, gold claim medals and exact totals by reward type.",
+      "New and reset rounds assign 0% workforce. Department limits are 25/50/35/60/50%; the available pool starts at 50% and reaches 100% through Population Management research."
+    ]
+  },
+  {
     "version": "0.109.0",
     "date": "2026-10-14",
     "title": "Alliance fleet readiness and command interface",
