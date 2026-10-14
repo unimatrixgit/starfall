@@ -1,0 +1,7169 @@
+{
+  "retrieved": "2026-10-14",
+  "sources": [
+    "https://memory-alpha.fandom.com/wiki/Category:Planets",
+    "https://dune.fandom.com/wiki/Category:Planets"
+  ],
+  "trek": [
+    {
+      "pageid": 71780,
+      "ns": 0,
+      "title": "Planetary classification"
+    },
+    {
+      "pageid": 23051,
+      "ns": 0,
+      "title": "Planet 10 (DIM-8)"
+    },
+    {
+      "pageid": 13196,
+      "ns": 0,
+      "title": "Planet 1865-Alpha"
+    },
+    {
+      "pageid": 291896,
+      "ns": 0,
+      "title": "40 Eridani A I"
+    },
+    {
+      "pageid": 284946,
+      "ns": 0,
+      "title": "Planet 0042692"
+    },
+    {
+      "pageid": 15188,
+      "ns": 0,
+      "title": "892-IV"
+    },
+    {
+      "pageid": 93814,
+      "ns": 0,
+      "title": "Aaamazzara"
+    },
+    {
+      "pageid": 319747,
+      "ns": 0,
+      "title": "Aamaarazan homeworld"
+    },
+    {
+      "pageid": 9835,
+      "ns": 0,
+      "title": "Acamar III"
+    },
+    {
+      "pageid": 14071,
+      "ns": 0,
+      "title": "Achrady VII"
+    },
+    {
+      "pageid": 304910,
+      "ns": 0,
+      "title": "Acibus X"
+    },
+    {
+      "pageid": 7891,
+      "ns": 0,
+      "title": "Adarak Prime"
+    },
+    {
+      "pageid": 12121,
+      "ns": 0,
+      "title": "Adelphous IV"
+    },
+    {
+      "pageid": 12208,
+      "ns": 0,
+      "title": "Adigeon Prime"
+    },
+    {
+      "pageid": 80805,
+      "ns": 0,
+      "title": "Agaron"
+    },
+    {
+      "pageid": 80756,
+      "ns": 0,
+      "title": "Ahmedeen"
+    },
+    {
+      "pageid": 253590,
+      "ns": 0,
+      "title": "Aia"
+    },
+    {
+      "pageid": 229643,
+      "ns": 0,
+      "title": "Ajilon Prime"
+    },
+    {
+      "pageid": 288807,
+      "ns": 0,
+      "title": "Aklion VII"
+    },
+    {
+      "pageid": 9021,
+      "ns": 0,
+      "title": "Akritiri"
+    },
+    {
+      "pageid": 6114,
+      "ns": 0,
+      "title": "Alastria"
+    },
+    {
+      "pageid": 240554,
+      "ns": 0,
+      "title": "Alcor IV"
+    },
+    {
+      "pageid": 12212,
+      "ns": 0,
+      "title": "Aldea"
+    },
+    {
+      "pageid": 319796,
+      "ns": 0,
+      "title": "Aldebaran (planet)"
+    },
+    {
+      "pageid": 9476,
+      "ns": 0,
+      "title": "Aldebaran III"
+    },
+    {
+      "pageid": 21715,
+      "ns": 0,
+      "title": "Aldebaron III"
+    },
+    {
+      "pageid": 11999,
+      "ns": 0,
+      "title": "Alderaan"
+    },
+    {
+      "pageid": 310194,
+      "ns": 0,
+      "title": "Aldus Prime"
+    },
+    {
+      "pageid": 304895,
+      "ns": 0,
+      "title": "Alera"
+    },
+    {
+      "pageid": 304901,
+      "ns": 0,
+      "title": "Alfa 117"
+    },
+    {
+      "pageid": 11019,
+      "ns": 0,
+      "title": "Alfa 177"
+    },
+    {
+      "pageid": 70469,
+      "ns": 0,
+      "title": "Algeron IV"
+    },
+    {
+      "pageid": 280280,
+      "ns": 0,
+      "title": "Algol I"
+    },
+    {
+      "pageid": 313750,
+      "ns": 0,
+      "title": "Algol II"
+    },
+    {
+      "pageid": 313751,
+      "ns": 0,
+      "title": "Algol III"
+    },
+    {
+      "pageid": 313752,
+      "ns": 0,
+      "title": "Algol IV"
+    },
+    {
+      "pageid": 313755,
+      "ns": 0,
+      "title": "Algol V"
+    },
+    {
+      "pageid": 48315,
+      "ns": 0,
+      "title": "Alondra"
+    },
+    {
+      "pageid": 280199,
+      "ns": 0,
+      "title": "Alpha I"
+    },
+    {
+      "pageid": 12066,
+      "ns": 0,
+      "title": "Alpha III"
+    },
+    {
+      "pageid": 193570,
+      "ns": 0,
+      "title": "Alpha VII"
+    },
+    {
+      "pageid": 193484,
+      "ns": 0,
+      "title": "Alpha Balder IV"
+    },
+    {
+      "pageid": 281539,
+      "ns": 0,
+      "title": "Alpha Braga IV"
+    },
+    {
+      "pageid": 193496,
+      "ns": 0,
+      "title": "Alpha Braga VII"
+    },
+    {
+      "pageid": 12103,
+      "ns": 0,
+      "title": "Alpha Carinae II"
+    },
+    {
+      "pageid": 189983,
+      "ns": 0,
+      "title": "Alpha Carinae V"
+    },
+    {
+      "pageid": 230202,
+      "ns": 0,
+      "title": "Alpha Centauri (planet)"
+    },
+    {
+      "pageid": 189984,
+      "ns": 0,
+      "title": "Alpha Cygnus IX"
+    },
+    {
+      "pageid": 174393,
+      "ns": 0,
+      "title": "Alpha Delphi IX"
+    },
+    {
+      "pageid": 7432,
+      "ns": 0,
+      "title": "Alpha Eridani II"
+    },
+    {
+      "pageid": 12179,
+      "ns": 0,
+      "title": "Alpha Laputa IV"
+    },
+    {
+      "pageid": 12186,
+      "ns": 0,
+      "title": "Alpha Majoris I"
+    },
+    {
+      "pageid": 313906,
+      "ns": 0,
+      "title": "Alpha Majoris II"
+    },
+    {
+      "pageid": 313909,
+      "ns": 0,
+      "title": "Alpha Majoris III"
+    },
+    {
+      "pageid": 313912,
+      "ns": 0,
+      "title": "Alpha Majoris IV"
+    },
+    {
+      "pageid": 313914,
+      "ns": 0,
+      "title": "Alpha Majoris V"
+    },
+    {
+      "pageid": 313915,
+      "ns": 0,
+      "title": "Alpha Majoris VI"
+    },
+    {
+      "pageid": 12190,
+      "ns": 0,
+      "title": "Alpha Omicron VII"
+    },
+    {
+      "pageid": 15429,
+      "ns": 0,
+      "title": "Alpha Onias III"
+    },
+    {
+      "pageid": 317889,
+      "ns": 0,
+      "title": "Alpherat"
+    },
+    {
+      "pageid": 274106,
+      "ns": 0,
+      "title": "Alshain IV"
+    },
+    {
+      "pageid": 12213,
+      "ns": 0,
+      "title": "Altair III"
+    },
+    {
+      "pageid": 20884,
+      "ns": 0,
+      "title": "Altair IV"
+    },
+    {
+      "pageid": 11020,
+      "ns": 0,
+      "title": "Altair VI"
+    },
+    {
+      "pageid": 210680,
+      "ns": 0,
+      "title": "Altamid"
+    },
+    {
+      "pageid": 7451,
+      "ns": 0,
+      "title": "Alture VII"
+    },
+    {
+      "pageid": 305429,
+      "ns": 0,
+      "title": "Alva IV"
+    },
+    {
+      "pageid": 19525,
+      "ns": 0,
+      "title": "Amerind"
+    },
+    {
+      "pageid": 7831,
+      "ns": 0,
+      "title": "Amleth Prime"
+    },
+    {
+      "pageid": 12744,
+      "ns": 0,
+      "title": "Andevian II"
+    },
+    {
+      "pageid": 180337,
+      "ns": 0,
+      "title": "Andoria Prime"
+    },
+    {
+      "pageid": 287785,
+      "ns": 0,
+      "title": "Andreus V"
+    },
+    {
+      "pageid": 50534,
+      "ns": 0,
+      "title": "Andros III"
+    },
+    {
+      "pageid": 1122,
+      "ns": 0,
+      "title": "Angel I"
+    },
+    {
+      "pageid": 14019,
+      "ns": 0,
+      "title": "Angosia III"
+    },
+    {
+      "pageid": 74445,
+      "ns": 0,
+      "title": "Antede III"
+    },
+    {
+      "pageid": 809,
+      "ns": 0,
+      "title": "Antica"
+    },
+    {
+      "pageid": 166053,
+      "ns": 0,
+      "title": "Antica IV"
+    },
+    {
+      "pageid": 166073,
+      "ns": 0,
+      "title": "Antide Prime"
+    },
+    {
+      "pageid": 17756,
+      "ns": 0,
+      "title": "Antos IV"
+    },
+    {
+      "pageid": 270315,
+      "ns": 0,
+      "title": "Apergos"
+    },
+    {
+      "pageid": 3232,
+      "ns": 0,
+      "title": "AR-558"
+    },
+    {
+      "pageid": 67710,
+      "ns": 0,
+      "title": "Arakis Prime"
+    },
+    {
+      "pageid": 317786,
+      "ns": 0,
+      "title": "Arbazan (planet)"
+    },
+    {
+      "pageid": 23228,
+      "ns": 0,
+      "title": "Archanis IV"
+    },
+    {
+      "pageid": 11942,
+      "ns": 0,
+      "title": "Archer IV"
+    },
+    {
+      "pageid": 24759,
+      "ns": 0,
+      "title": "Archer's Planet"
+    },
+    {
+      "pageid": 317800,
+      "ns": 0,
+      "title": "Arcturus (planet)"
+    },
+    {
+      "pageid": 12543,
+      "ns": 0,
+      "title": "Ardana"
+    },
+    {
+      "pageid": 283811,
+      "ns": 0,
+      "title": "Areolus"
+    },
+    {
+      "pageid": 4884,
+      "ns": 0,
+      "title": "Argelius II"
+    },
+    {
+      "pageid": 288260,
+      "ns": 0,
+      "title": "Argelius IV"
+    },
+    {
+      "pageid": 262903,
+      "ns": 0,
+      "title": "Argeth"
+    },
+    {
+      "pageid": 13218,
+      "ns": 0,
+      "title": "Argo (planet)"
+    },
+    {
+      "pageid": 71728,
+      "ns": 0,
+      "title": "Argona II"
+    },
+    {
+      "pageid": 41004,
+      "ns": 0,
+      "title": "Argratha"
+    },
+    {
+      "pageid": 323861,
+      "ns": 0,
+      "title": "Argus I"
+    },
+    {
+      "pageid": 323863,
+      "ns": 0,
+      "title": "Argus II"
+    },
+    {
+      "pageid": 323864,
+      "ns": 0,
+      "title": "Argus III"
+    },
+    {
+      "pageid": 323865,
+      "ns": 0,
+      "title": "Argus IV"
+    },
+    {
+      "pageid": 16599,
+      "ns": 0,
+      "title": "Argus X"
+    },
+    {
+      "pageid": 11021,
+      "ns": 0,
+      "title": "Ariannus"
+    },
+    {
+      "pageid": 14902,
+      "ns": 0,
+      "title": "Arkaria"
+    },
+    {
+      "pageid": 13240,
+      "ns": 0,
+      "title": "Arlington IV"
+    },
+    {
+      "pageid": 70998,
+      "ns": 0,
+      "title": "Arloff IX"
+    },
+    {
+      "pageid": 12759,
+      "ns": 0,
+      "title": "Armus IX"
+    },
+    {
+      "pageid": 120894,
+      "ns": 0,
+      "title": "Arnold's Planet"
+    },
+    {
+      "pageid": 80189,
+      "ns": 0,
+      "title": "Arret"
+    },
+    {
+      "pageid": 36394,
+      "ns": 0,
+      "title": "Arret (negative)"
+    },
+    {
+      "pageid": 7463,
+      "ns": 0,
+      "title": "Arvada III"
+    },
+    {
+      "pageid": 8427,
+      "ns": 0,
+      "title": "Aschelan V"
+    },
+    {
+      "pageid": 299165,
+      "ns": 0,
+      "title": "Ashalon IV"
+    },
+    {
+      "pageid": 278037,
+      "ns": 0,
+      "title": "Asp XXVII"
+    },
+    {
+      "pageid": 317802,
+      "ns": 0,
+      "title": "Astral V"
+    },
+    {
+      "pageid": 12641,
+      "ns": 0,
+      "title": "Atalia VII"
+    },
+    {
+      "pageid": 7889,
+      "ns": 0,
+      "title": "Atbar Prime"
+    },
+    {
+      "pageid": 287239,
+      "ns": 0,
+      "title": "Athan Prime"
+    },
+    {
+      "pageid": 8413,
+      "ns": 0,
+      "title": "Athos IV"
+    },
+    {
+      "pageid": 50009,
+      "ns": 0,
+      "title": "Atifs IV"
+    },
+    {
+      "pageid": 22576,
+      "ns": 0,
+      "title": "Atlec"
+    },
+    {
+      "pageid": 49679,
+      "ns": 0,
+      "title": "Atrea IV"
+    },
+    {
+      "pageid": 15822,
+      "ns": 0,
+      "title": "'aucdet IX"
+    },
+    {
+      "pageid": 103567,
+      "ns": 0,
+      "title": "Avenal VII"
+    },
+    {
+      "pageid": 8605,
+      "ns": 0,
+      "title": "Avery III"
+    },
+    {
+      "pageid": 4050,
+      "ns": 0,
+      "title": "Axanar (planet)"
+    },
+    {
+      "pageid": 4822,
+      "ns": 0,
+      "title": "Azati Prime"
+    },
+    {
+      "pageid": 37716,
+      "ns": 0,
+      "title": "B'Saari II"
+    },
+    {
+      "pageid": 229698,
+      "ns": 0,
+      "title": "Ba'ku (planet)"
+    },
+    {
+      "pageid": 534,
+      "ns": 0,
+      "title": "Babel"
+    },
+    {
+      "pageid": 9088,
+      "ns": 0,
+      "title": "Bajor"
+    },
+    {
+      "pageid": 107789,
+      "ns": 0,
+      "title": "Bajor I"
+    },
+    {
+      "pageid": 107790,
+      "ns": 0,
+      "title": "Bajor II"
+    },
+    {
+      "pageid": 168163,
+      "ns": 0,
+      "title": "Bajor III"
+    },
+    {
+      "pageid": 168164,
+      "ns": 0,
+      "title": "Bajor IV"
+    },
+    {
+      "pageid": 107791,
+      "ns": 0,
+      "title": "Bajor V"
+    },
+    {
+      "pageid": 168165,
+      "ns": 0,
+      "title": "Bajor VI"
+    },
+    {
+      "pageid": 57576,
+      "ns": 0,
+      "title": "Bajor VII"
+    },
+    {
+      "pageid": 9339,
+      "ns": 0,
+      "title": "Bajor VIII"
+    },
+    {
+      "pageid": 168166,
+      "ns": 0,
+      "title": "Bajor IX"
+    },
+    {
+      "pageid": 168167,
+      "ns": 0,
+      "title": "Bajor X"
+    },
+    {
+      "pageid": 168168,
+      "ns": 0,
+      "title": "Bajor XII"
+    },
+    {
+      "pageid": 168170,
+      "ns": 0,
+      "title": "Bajor XIII"
+    },
+    {
+      "pageid": 168171,
+      "ns": 0,
+      "title": "Bajor XIV"
+    },
+    {
+      "pageid": 9568,
+      "ns": 0,
+      "title": "Balancar"
+    },
+    {
+      "pageid": 294631,
+      "ns": 0,
+      "title": "Balkus 9"
+    },
+    {
+      "pageid": 13573,
+      "ns": 0,
+      "title": "Balosnee VI"
+    },
+    {
+      "pageid": 19650,
+      "ns": 0,
+      "title": "Banea (planet)"
+    },
+    {
+      "pageid": 8461,
+      "ns": 0,
+      "title": "Barisa Prime"
+    },
+    {
+      "pageid": 28850,
+      "ns": 0,
+      "title": "Barkon IV"
+    },
+    {
+      "pageid": 302726,
+      "ns": 0,
+      "title": "Barnett's World"
+    },
+    {
+      "pageid": 8785,
+      "ns": 0,
+      "title": "Barradas III"
+    },
+    {
+      "pageid": 23111,
+      "ns": 0,
+      "title": "Barson II"
+    },
+    {
+      "pageid": 12313,
+      "ns": 0,
+      "title": "Barzan II"
+    },
+    {
+      "pageid": 305087,
+      "ns": 0,
+      "title": "Baxter's Planet"
+    },
+    {
+      "pageid": 53738,
+      "ns": 0,
+      "title": "Bayard's Planet"
+    },
+    {
+      "pageid": 319161,
+      "ns": 0,
+      "title": "Beithir V"
+    },
+    {
+      "pageid": 23340,
+      "ns": 0,
+      "title": "Beltane IX"
+    },
+    {
+      "pageid": 11023,
+      "ns": 0,
+      "title": "Benecia"
+    },
+    {
+      "pageid": 6860,
+      "ns": 0,
+      "title": "Benev Selec"
+    },
+    {
+      "pageid": 264427,
+      "ns": 0,
+      "title": "Benthos IV"
+    },
+    {
+      "pageid": 3565,
+      "ns": 0,
+      "title": "Benzar"
+    },
+    {
+      "pageid": 11024,
+      "ns": 0,
+      "title": "Berengaria VII"
+    },
+    {
+      "pageid": 120912,
+      "ns": 0,
+      "title": "Bergman's Planet"
+    },
+    {
+      "pageid": 189528,
+      "ns": 0,
+      "title": "Bernay Prime"
+    },
+    {
+      "pageid": 23379,
+      "ns": 0,
+      "title": "Bersallis III"
+    },
+    {
+      "pageid": 11933,
+      "ns": 0,
+      "title": "Beta III"
+    },
+    {
+      "pageid": 166054,
+      "ns": 0,
+      "title": "Beta V"
+    },
+    {
+      "pageid": 45341,
+      "ns": 0,
+      "title": "Beta VI"
+    },
+    {
+      "pageid": 27378,
+      "ns": 0,
+      "title": "Beta XII-A"
+    },
+    {
+      "pageid": 49863,
+      "ns": 0,
+      "title": "Beta Agni II"
+    },
+    {
+      "pageid": 33222,
+      "ns": 0,
+      "title": "Beta Antares IV"
+    },
+    {
+      "pageid": 52482,
+      "ns": 0,
+      "title": "Beta Aquilae II"
+    },
+    {
+      "pageid": 193493,
+      "ns": 0,
+      "title": "Beta Berman I"
+    },
+    {
+      "pageid": 6953,
+      "ns": 0,
+      "title": "Beta Canopus"
+    },
+    {
+      "pageid": 193533,
+      "ns": 0,
+      "title": "Beta Eminiar VII"
+    },
+    {
+      "pageid": 189756,
+      "ns": 0,
+      "title": "Beta Penthe I"
+    },
+    {
+      "pageid": 189757,
+      "ns": 0,
+      "title": "Beta Penthe II"
+    },
+    {
+      "pageid": 189758,
+      "ns": 0,
+      "title": "Beta Penthe III"
+    },
+    {
+      "pageid": 189759,
+      "ns": 0,
+      "title": "Beta Penthe IV"
+    },
+    {
+      "pageid": 189760,
+      "ns": 0,
+      "title": "Beta Penthe V"
+    },
+    {
+      "pageid": 189761,
+      "ns": 0,
+      "title": "Beta Penthe VII"
+    },
+    {
+      "pageid": 175706,
+      "ns": 0,
+      "title": "Beta Tottoro IV"
+    },
+    {
+      "pageid": 48647,
+      "ns": 0,
+      "title": "Beta Ursae Minor II"
+    },
+    {
+      "pageid": 189793,
+      "ns": 0,
+      "title": "Beta'Elan Minor"
+    },
+    {
+      "pageid": 699,
+      "ns": 0,
+      "title": "Betazed"
+    },
+    {
+      "pageid": 317790,
+      "ns": 0,
+      "title": "Betelgeuse (planet)"
+    },
+    {
+      "pageid": 23222,
+      "ns": 0,
+      "title": "Beth Delta I"
+    },
+    {
+      "pageid": 168956,
+      "ns": 0,
+      "title": "Bezride"
+    },
+    {
+      "pageid": 306739,
+      "ns": 0,
+      "title": "Bhungar V"
+    },
+    {
+      "pageid": 33604,
+      "ns": 0,
+      "title": "Bilana III"
+    },
+    {
+      "pageid": 317890,
+      "ns": 0,
+      "title": "Bilaren"
+    },
+    {
+      "pageid": 287793,
+      "ns": 0,
+      "title": "Binar III"
+    },
+    {
+      "pageid": 324220,
+      "ns": 0,
+      "title": "Bindar XII"
+    },
+    {
+      "pageid": 253918,
+      "ns": 0,
+      "title": "Blue Horizon"
+    },
+    {
+      "pageid": 54779,
+      "ns": 0,
+      "title": "Bokara VI"
+    },
+    {
+      "pageid": 5774,
+      "ns": 0,
+      "title": "Bolarus IX"
+    },
+    {
+      "pageid": 211435,
+      "ns": 0,
+      "title": "Bootes III"
+    },
+    {
+      "pageid": 9684,
+      "ns": 0,
+      "title": "Bopak III"
+    },
+    {
+      "pageid": 10851,
+      "ns": 0,
+      "title": "Boraal II"
+    },
+    {
+      "pageid": 72042,
+      "ns": 0,
+      "title": "Boradis III"
+    },
+    {
+      "pageid": 47444,
+      "ns": 0,
+      "title": "Boranis III"
+    },
+    {
+      "pageid": 23112,
+      "ns": 0,
+      "title": "Boreal III"
+    },
+    {
+      "pageid": 8812,
+      "ns": 0,
+      "title": "Boreth"
+    },
+    {
+      "pageid": 70740,
+      "ns": 0,
+      "title": "Bozel Prime"
+    },
+    {
+      "pageid": 13575,
+      "ns": 0,
+      "title": "Bracas V"
+    },
+    {
+      "pageid": 318827,
+      "ns": 0,
+      "title": "Braslota (planet)"
+    },
+    {
+      "pageid": 10391,
+      "ns": 0,
+      "title": "Brax (planet)"
+    },
+    {
+      "pageid": 24373,
+      "ns": 0,
+      "title": "Bre'el IV"
+    },
+    {
+      "pageid": 5673,
+      "ns": 0,
+      "title": "Breen (planet)"
+    },
+    {
+      "pageid": 23842,
+      "ns": 0,
+      "title": "Brekka"
+    },
+    {
+      "pageid": 33614,
+      "ns": 0,
+      "title": "Brentalia"
+    },
+    {
+      "pageid": 120326,
+      "ns": 0,
+      "title": "Breton's Planet"
+    },
+    {
+      "pageid": 839,
+      "ns": 0,
+      "title": "Bringloid V"
+    },
+    {
+      "pageid": 120321,
+      "ns": 0,
+      "title": "Brookshire's Planet"
+    },
+    {
+      "pageid": 12745,
+      "ns": 0,
+      "title": "Browder IV"
+    },
+    {
+      "pageid": 3391,
+      "ns": 0,
+      "title": "Bryma"
+    },
+    {
+      "pageid": 120905,
+      "ns": 0,
+      "title": "Buckley's Planet"
+    },
+    {
+      "pageid": 65103,
+      "ns": 0,
+      "title": "Burala Prime"
+    },
+    {
+      "pageid": 14920,
+      "ns": 0,
+      "title": "Bynaus"
+    },
+    {
+      "pageid": 20872,
+      "ns": 0,
+      "title": "Caere"
+    },
+    {
+      "pageid": 317805,
+      "ns": 0,
+      "title": "Cairn (planet)"
+    },
+    {
+      "pageid": 290872,
+      "ns": 0,
+      "title": "Cajitar IV"
+    },
+    {
+      "pageid": 243810,
+      "ns": 0,
+      "title": "Cal Rae"
+    },
+    {
+      "pageid": 8831,
+      "ns": 0,
+      "title": "Calder II"
+    },
+    {
+      "pageid": 9692,
+      "ns": 0,
+      "title": "Caldik Prime"
+    },
+    {
+      "pageid": 13118,
+      "ns": 0,
+      "title": "Caldonia"
+    },
+    {
+      "pageid": 7561,
+      "ns": 0,
+      "title": "Caldos"
+    },
+    {
+      "pageid": 13898,
+      "ns": 0,
+      "title": "Caleb IV"
+    },
+    {
+      "pageid": 9325,
+      "ns": 0,
+      "title": "Callinon VII"
+    },
+    {
+      "pageid": 298235,
+      "ns": 0,
+      "title": "Callor V"
+    },
+    {
+      "pageid": 75571,
+      "ns": 0,
+      "title": "Calondia IV"
+    },
+    {
+      "pageid": 50978,
+      "ns": 0,
+      "title": "Camor V"
+    },
+    {
+      "pageid": 39291,
+      "ns": 0,
+      "title": "Campor III"
+    },
+    {
+      "pageid": 11025,
+      "ns": 0,
+      "title": "Camus II"
+    },
+    {
+      "pageid": 229114,
+      "ns": 0,
+      "title": "Cancri IV"
+    },
+    {
+      "pageid": 11026,
+      "ns": 0,
+      "title": "Canopus III"
+    },
+    {
+      "pageid": 166065,
+      "ns": 0,
+      "title": "Canopus Major"
+    },
+    {
+      "pageid": 12104,
+      "ns": 0,
+      "title": "Canopus Planet"
+    },
+    {
+      "pageid": 9295,
+      "ns": 0,
+      "title": "Capella IV"
+    },
+    {
+      "pageid": 519,
+      "ns": 0,
+      "title": "Cardassia Prime"
+    },
+    {
+      "pageid": 166182,
+      "ns": 0,
+      "title": "Cardassia I"
+    },
+    {
+      "pageid": 3679,
+      "ns": 0,
+      "title": "Cardassia III"
+    },
+    {
+      "pageid": 3678,
+      "ns": 0,
+      "title": "Cardassia IV"
+    },
+    {
+      "pageid": 3677,
+      "ns": 0,
+      "title": "Cardassia V"
+    },
+    {
+      "pageid": 11391,
+      "ns": 0,
+      "title": "Carema III"
+    },
+    {
+      "pageid": 26872,
+      "ns": 0,
+      "title": "Carinae Delta V"
+    },
+    {
+      "pageid": 211434,
+      "ns": 0,
+      "title": "Carpi"
+    },
+    {
+      "pageid": 302735,
+      "ns": 0,
+      "title": "Carr's Planet"
+    },
+    {
+      "pageid": 18055,
+      "ns": 0,
+      "title": "Carraya IV"
+    },
+    {
+      "pageid": 10624,
+      "ns": 0,
+      "title": "Casperia Prime"
+    },
+    {
+      "pageid": 13473,
+      "ns": 0,
+      "title": "Castal I"
+    },
+    {
+      "pageid": 16334,
+      "ns": 0,
+      "title": "Catulla"
+    },
+    {
+      "pageid": 82672,
+      "ns": 0,
+      "title": "Celes II"
+    },
+    {
+      "pageid": 9301,
+      "ns": 0,
+      "title": "Celtris III"
+    },
+    {
+      "pageid": 271512,
+      "ns": 0,
+      "title": "Centauri IV"
+    },
+    {
+      "pageid": 11461,
+      "ns": 0,
+      "title": "Centauri VII"
+    },
+    {
+      "pageid": 35584,
+      "ns": 0,
+      "title": "Centre Minor"
+    },
+    {
+      "pageid": 11687,
+      "ns": 0,
+      "title": "Cerberus"
+    },
+    {
+      "pageid": 37544,
+      "ns": 0,
+      "title": "Cerberus II"
+    },
+    {
+      "pageid": 322929,
+      "ns": 0,
+      "title": "Cesnar"
+    },
+    {
+      "pageid": 249081,
+      "ns": 0,
+      "title": "Cestus III"
+    },
+    {
+      "pageid": 271509,
+      "ns": 0,
+      "title": "Ceti Alpha IV"
+    },
+    {
+      "pageid": 1114,
+      "ns": 0,
+      "title": "Ceti Alpha V"
+    },
+    {
+      "pageid": 5830,
+      "ns": 0,
+      "title": "Ceti Alpha VI"
+    },
+    {
+      "pageid": 10065,
+      "ns": 0,
+      "title": "Chalna"
+    },
+    {
+      "pageid": 5967,
+      "ns": 0,
+      "title": "Chaltok IV"
+    },
+    {
+      "pageid": 45475,
+      "ns": 0,
+      "title": "Chandra V"
+    },
+    {
+      "pageid": 15035,
+      "ns": 0,
+      "title": "Chaya VII"
+    },
+    {
+      "pageid": 27064,
+      "ns": 0,
+      "title": "Cheron"
+    },
+    {
+      "pageid": 41535,
+      "ns": 0,
+      "title": "Cirrus IV"
+    },
+    {
+      "pageid": 261498,
+      "ns": 0,
+      "title": "The Colony"
+    },
+    {
+      "pageid": 11054,
+      "ns": 0,
+      "title": "Coltar IV"
+    },
+    {
+      "pageid": 64903,
+      "ns": 0,
+      "title": "Coopersworld"
+    },
+    {
+      "pageid": 253614,
+      "ns": 0,
+      "title": "Coppelius"
+    },
+    {
+      "pageid": 12476,
+      "ns": 0,
+      "title": "Cor Caroli V"
+    },
+    {
+      "pageid": 3564,
+      "ns": 0,
+      "title": "Coridan"
+    },
+    {
+      "pageid": 11554,
+      "ns": 0,
+      "title": "Corinth IV"
+    },
+    {
+      "pageid": 292553,
+      "ns": 0,
+      "title": "Crivo"
+    },
+    {
+      "pageid": 120907,
+      "ns": 0,
+      "title": "Cybulski's Planet"
+    },
+    {
+      "pageid": 12092,
+      "ns": 0,
+      "title": "Cygnet XIV"
+    },
+    {
+      "pageid": 60426,
+      "ns": 0,
+      "title": "Cygnia Minor"
+    },
+    {
+      "pageid": 80757,
+      "ns": 0,
+      "title": "Cytrax"
+    },
+    {
+      "pageid": 283655,
+      "ns": 0,
+      "title": "Da'Karo"
+    },
+    {
+      "pageid": 283656,
+      "ns": 0,
+      "title": "Da'Karo Prime"
+    },
+    {
+      "pageid": 302737,
+      "ns": 0,
+      "title": "Dahm Prime"
+    },
+    {
+      "pageid": 19450,
+      "ns": 0,
+      "title": "Dakala"
+    },
+    {
+      "pageid": 27343,
+      "ns": 0,
+      "title": "Daled IV"
+    },
+    {
+      "pageid": 168760,
+      "ns": 0,
+      "title": "Daled V"
+    },
+    {
+      "pageid": 318943,
+      "ns": 0,
+      "title": "Daliwaka"
+    },
+    {
+      "pageid": 27043,
+      "ns": 0,
+      "title": "Dalvos Prime"
+    },
+    {
+      "pageid": 263860,
+      "ns": 0,
+      "title": "Dannus I"
+    },
+    {
+      "pageid": 263861,
+      "ns": 0,
+      "title": "Dannus II"
+    },
+    {
+      "pageid": 263864,
+      "ns": 0,
+      "title": "Dannus III"
+    },
+    {
+      "pageid": 263865,
+      "ns": 0,
+      "title": "Dannus IV"
+    },
+    {
+      "pageid": 263827,
+      "ns": 0,
+      "title": "Dannus V"
+    },
+    {
+      "pageid": 263866,
+      "ns": 0,
+      "title": "Dannus VI"
+    },
+    {
+      "pageid": 272055,
+      "ns": 0,
+      "title": "Dansk"
+    },
+    {
+      "pageid": 33813,
+      "ns": 0,
+      "title": "Danula II"
+    },
+    {
+      "pageid": 11028,
+      "ns": 0,
+      "title": "Daran V"
+    },
+    {
+      "pageid": 15574,
+      "ns": 0,
+      "title": "Davlos III"
+    },
+    {
+      "pageid": 35132,
+      "ns": 0,
+      "title": "Dayos IV"
+    },
+    {
+      "pageid": 16877,
+      "ns": 0,
+      "title": "Decos Prime"
+    },
+    {
+      "pageid": 12977,
+      "ns": 0,
+      "title": "Dedestris"
+    },
+    {
+      "pageid": 12642,
+      "ns": 0,
+      "title": "Deinonychus VII"
+    },
+    {
+      "pageid": 33788,
+      "ns": 0,
+      "title": "Dekendi III"
+    },
+    {
+      "pageid": 12746,
+      "ns": 0,
+      "title": "Delb II"
+    },
+    {
+      "pageid": 23648,
+      "ns": 0,
+      "title": "Delinia II"
+    },
+    {
+      "pageid": 80071,
+      "ns": 0,
+      "title": "Delios VII"
+    },
+    {
+      "pageid": 7458,
+      "ns": 0,
+      "title": "Delos IV"
+    },
+    {
+      "pageid": 39533,
+      "ns": 0,
+      "title": "Delphi Ardu IV"
+    },
+    {
+      "pageid": 6103,
+      "ns": 0,
+      "title": "Delta IV"
+    },
+    {
+      "pageid": 193527,
+      "ns": 0,
+      "title": "Delta IX"
+    },
+    {
+      "pageid": 280307,
+      "ns": 0,
+      "title": "Delta Scorpii VII"
+    },
+    {
+      "pageid": 14965,
+      "ns": 0,
+      "title": "Delta Theta III"
+    },
+    {
+      "pageid": 166868,
+      "ns": 0,
+      "title": "Delta Vega"
+    },
+    {
+      "pageid": 115223,
+      "ns": 0,
+      "title": "Delta Vega (Vulcan system)"
+    },
+    {
+      "pageid": 285246,
+      "ns": 0,
+      "title": "Denaxi"
+    },
+    {
+      "pageid": 7550,
+      "ns": 0,
+      "title": "Deneb II"
+    },
+    {
+      "pageid": 59717,
+      "ns": 0,
+      "title": "Deneb IV"
+    },
+    {
+      "pageid": 1204,
+      "ns": 0,
+      "title": "Deneb V"
+    },
+    {
+      "pageid": 47466,
+      "ns": 0,
+      "title": "Deneb XX"
+    },
+    {
+      "pageid": 13088,
+      "ns": 0,
+      "title": "Deneva"
+    },
+    {
+      "pageid": 8481,
+      "ns": 0,
+      "title": "Denius III"
+    },
+    {
+      "pageid": 168981,
+      "ns": 0,
+      "title": "Denkir II"
+    },
+    {
+      "pageid": 169390,
+      "ns": 0,
+      "title": "Denkir IV"
+    },
+    {
+      "pageid": 4385,
+      "ns": 0,
+      "title": "Denobula"
+    },
+    {
+      "pageid": 319571,
+      "ns": 0,
+      "title": "Denobula Prime"
+    },
+    {
+      "pageid": 45287,
+      "ns": 0,
+      "title": "Deriben V"
+    },
+    {
+      "pageid": 12627,
+      "ns": 0,
+      "title": "Dessica II"
+    },
+    {
+      "pageid": 46282,
+      "ns": 0,
+      "title": "Detria II"
+    },
+    {
+      "pageid": 46283,
+      "ns": 0,
+      "title": "Detria VI"
+    },
+    {
+      "pageid": 294994,
+      "ns": 0,
+      "title": "Detrion 9"
+    },
+    {
+      "pageid": 22346,
+      "ns": 0,
+      "title": "Devidia II"
+    },
+    {
+      "pageid": 9708,
+      "ns": 0,
+      "title": "Devos II"
+    },
+    {
+      "pageid": 306520,
+      "ns": 0,
+      "title": "Dilmer III"
+    },
+    {
+      "pageid": 20768,
+      "ns": 0,
+      "title": "Dimorus"
+    },
+    {
+      "pageid": 26768,
+      "ns": 0,
+      "title": "Dinaal"
+    },
+    {
+      "pageid": 226286,
+      "ns": 0,
+      "title": "Doctari Alpha"
+    },
+    {
+      "pageid": 322257,
+      "ns": 0,
+      "title": "Dol'drm (planet)"
+    },
+    {
+      "pageid": 18925,
+      "ns": 0,
+      "title": "Donatu V"
+    },
+    {
+      "pageid": 261986,
+      "ns": 0,
+      "title": "Donatu VII"
+    },
+    {
+      "pageid": 31779,
+      "ns": 0,
+      "title": "Doraf I"
+    },
+    {
+      "pageid": 11315,
+      "ns": 0,
+      "title": "Dorvan V"
+    },
+    {
+      "pageid": 10795,
+      "ns": 0,
+      "title": "Dozaria"
+    },
+    {
+      "pageid": 12629,
+      "ns": 0,
+      "title": "Draken IV"
+    },
+    {
+      "pageid": 16746,
+      "ns": 0,
+      "title": "Dramia"
+    },
+    {
+      "pageid": 16744,
+      "ns": 0,
+      "title": "Dramia II"
+    },
+    {
+      "pageid": 49887,
+      "ns": 0,
+      "title": "Drayan II"
+    },
+    {
+      "pageid": 10849,
+      "ns": 0,
+      "title": "Draygo IV"
+    },
+    {
+      "pageid": 3896,
+      "ns": 0,
+      "title": "Draylax"
+    },
+    {
+      "pageid": 85903,
+      "ns": 0,
+      "title": "Drema V"
+    },
+    {
+      "pageid": 3158,
+      "ns": 0,
+      "title": "Dreon VII"
+    },
+    {
+      "pageid": 282765,
+      "ns": 0,
+      "title": "Dulaine"
+    },
+    {
+      "pageid": 31794,
+      "ns": 0,
+      "title": "Dulisian IV"
+    },
+    {
+      "pageid": 19032,
+      "ns": 0,
+      "title": "Durenia IV"
+    },
+    {
+      "pageid": 730,
+      "ns": 0,
+      "title": "Dytallix B"
+    },
+    {
+      "pageid": 20577,
+      "ns": 0,
+      "title": "Earth"
+    },
+    {
+      "pageid": 87228,
+      "ns": 0,
+      "title": "Earth Colony II"
+    },
+    {
+      "pageid": 68945,
+      "ns": 0,
+      "title": "Eblar Prime"
+    },
+    {
+      "pageid": 12542,
+      "ns": 0,
+      "title": "Eden"
+    },
+    {
+      "pageid": 36509,
+      "ns": 0,
+      "title": "Edos"
+    },
+    {
+      "pageid": 245638,
+      "ns": 0,
+      "title": "Edrin II"
+    },
+    {
+      "pageid": 13330,
+      "ns": 0,
+      "title": "Ekos"
+    },
+    {
+      "pageid": 13162,
+      "ns": 0,
+      "title": "El-Adrel IV"
+    },
+    {
+      "pageid": 9093,
+      "ns": 0,
+      "title": "Elas"
+    },
+    {
+      "pageid": 13714,
+      "ns": 0,
+      "title": "Elba II"
+    },
+    {
+      "pageid": 299785,
+      "ns": 0,
+      "title": "Elpanah"
+    },
+    {
+      "pageid": 318987,
+      "ns": 0,
+      "title": "Elworth V"
+    },
+    {
+      "pageid": 14950,
+      "ns": 0,
+      "title": "Emila II"
+    },
+    {
+      "pageid": 12240,
+      "ns": 0,
+      "title": "Eminiar VII"
+    },
+    {
+      "pageid": 9394,
+      "ns": 0,
+      "title": "Enara Prime"
+    },
+    {
+      "pageid": 260047,
+      "ns": 0,
+      "title": "Endicronimas V"
+    },
+    {
+      "pageid": 97610,
+      "ns": 0,
+      "title": "Ennan VI"
+    },
+    {
+      "pageid": 13113,
+      "ns": 0,
+      "title": "Epsilon IV"
+    },
+    {
+      "pageid": 18603,
+      "ns": 0,
+      "title": "Epsilon Ashanti III"
+    },
+    {
+      "pageid": 16399,
+      "ns": 0,
+      "title": "Epsilon Canaris III"
+    },
+    {
+      "pageid": 322485,
+      "ns": 0,
+      "title": "Epsilon Delta V"
+    },
+    {
+      "pageid": 10394,
+      "ns": 0,
+      "title": "Epsilon Hydra VII"
+    },
+    {
+      "pageid": 50808,
+      "ns": 0,
+      "title": "Epsilon Indi II"
+    },
+    {
+      "pageid": 313481,
+      "ns": 0,
+      "title": "Epsilon Indi III"
+    },
+    {
+      "pageid": 263840,
+      "ns": 0,
+      "title": "Epsilon Indi IV"
+    },
+    {
+      "pageid": 193483,
+      "ns": 0,
+      "title": "Epsilon Wiltz IV"
+    },
+    {
+      "pageid": 10396,
+      "ns": 0,
+      "title": "Erabus Prime"
+    },
+    {
+      "pageid": 282016,
+      "ns": 0,
+      "title": "Erb'oh"
+    },
+    {
+      "pageid": 282015,
+      "ns": 0,
+      "title": "Eresa"
+    },
+    {
+      "pageid": 229116,
+      "ns": 0,
+      "title": "Eridani D"
+    },
+    {
+      "pageid": 241206,
+      "ns": 0,
+      "title": "Errikang VII"
+    },
+    {
+      "pageid": 14951,
+      "ns": 0,
+      "title": "Evadne IV"
+    },
+    {
+      "pageid": 12549,
+      "ns": 0,
+      "title": "Excalbia"
+    },
+    {
+      "pageid": 7412,
+      "ns": 0,
+      "title": "Exo III"
+    },
+    {
+      "pageid": 10535,
+      "ns": 0,
+      "title": "Fahleena III"
+    },
+    {
+      "pageid": 189529,
+      "ns": 0,
+      "title": "Faralos III"
+    },
+    {
+      "pageid": 6011,
+      "ns": 0,
+      "title": "Farius Prime"
+    },
+    {
+      "pageid": 120337,
+      "ns": 0,
+      "title": "Farrar's World"
+    },
+    {
+      "pageid": 8727,
+      "ns": 0,
+      "title": "Felton Prime"
+    },
+    {
+      "pageid": 10733,
+      "ns": 0,
+      "title": "Fendaus V"
+    },
+    {
+      "pageid": 252743,
+      "ns": 0,
+      "title": "Fenris"
+    },
+    {
+      "pageid": 667,
+      "ns": 0,
+      "title": "Ferenginar"
+    },
+    {
+      "pageid": 166029,
+      "ns": 0,
+      "title": "Ferris VI"
+    },
+    {
+      "pageid": 29983,
+      "ns": 0,
+      "title": "Fina Prime"
+    },
+    {
+      "pageid": 281025,
+      "ns": 0,
+      "title": "Finibus I"
+    },
+    {
+      "pageid": 281026,
+      "ns": 0,
+      "title": "Finibus II"
+    },
+    {
+      "pageid": 280969,
+      "ns": 0,
+      "title": "Finibus III"
+    },
+    {
+      "pageid": 281024,
+      "ns": 0,
+      "title": "Finibus IV"
+    },
+    {
+      "pageid": 281027,
+      "ns": 0,
+      "title": "Finibus V"
+    },
+    {
+      "pageid": 281028,
+      "ns": 0,
+      "title": "Finibus VI"
+    },
+    {
+      "pageid": 35325,
+      "ns": 0,
+      "title": "Finnea Prime"
+    },
+    {
+      "pageid": 50132,
+      "ns": 0,
+      "title": "Folnar III"
+    },
+    {
+      "pageid": 7884,
+      "ns": 0,
+      "title": "Forcas III"
+    },
+    {
+      "pageid": 28193,
+      "ns": 0,
+      "title": "Forlat III"
+    },
+    {
+      "pageid": 9718,
+      "ns": 0,
+      "title": "Free Haven"
+    },
+    {
+      "pageid": 251926,
+      "ns": 0,
+      "title": "Freecloud"
+    },
+    {
+      "pageid": 271236,
+      "ns": 0,
+      "title": "Frylon IV"
+    },
+    {
+      "pageid": 15579,
+      "ns": 0,
+      "title": "Gagarin IV"
+    },
+    {
+      "pageid": 16708,
+      "ns": 0,
+      "title": "Gaia"
+    },
+    {
+      "pageid": 75567,
+      "ns": 0,
+      "title": "Galador II"
+    },
+    {
+      "pageid": 269453,
+      "ns": 0,
+      "title": "Galardon"
+    },
+    {
+      "pageid": 10095,
+      "ns": 0,
+      "title": "Galdonterre"
+    },
+    {
+      "pageid": 312159,
+      "ns": 0,
+      "title": "Galdonterre I"
+    },
+    {
+      "pageid": 312160,
+      "ns": 0,
+      "title": "Galdonterre II"
+    },
+    {
+      "pageid": 312161,
+      "ns": 0,
+      "title": "Galdonterre IV"
+    },
+    {
+      "pageid": 312162,
+      "ns": 0,
+      "title": "Galdonterre V"
+    },
+    {
+      "pageid": 7660,
+      "ns": 0,
+      "title": "Galen IV"
+    },
+    {
+      "pageid": 318868,
+      "ns": 0,
+      "title": "Gallima"
+    },
+    {
+      "pageid": 13147,
+      "ns": 0,
+      "title": "Gallos II"
+    },
+    {
+      "pageid": 323734,
+      "ns": 0,
+      "title": "Galor III"
+    },
+    {
+      "pageid": 50874,
+      "ns": 0,
+      "title": "Galor IV"
+    },
+    {
+      "pageid": 47441,
+      "ns": 0,
+      "title": "Galorda Prime"
+    },
+    {
+      "pageid": 229675,
+      "ns": 0,
+      "title": "Galorndon Core"
+    },
+    {
+      "pageid": 291640,
+      "ns": 0,
+      "title": "Galt (planet)"
+    },
+    {
+      "pageid": 12633,
+      "ns": 0,
+      "title": "Galvin V"
+    },
+    {
+      "pageid": 22318,
+      "ns": 0,
+      "title": "Gamelan V"
+    },
+    {
+      "pageid": 165017,
+      "ns": 0,
+      "title": "Gamma Argus II"
+    },
+    {
+      "pageid": 27795,
+      "ns": 0,
+      "title": "Gamma Hromi II"
+    },
+    {
+      "pageid": 35591,
+      "ns": 0,
+      "title": "Gamma Hydra II"
+    },
+    {
+      "pageid": 5833,
+      "ns": 0,
+      "title": "Gamma Hydra IV"
+    },
+    {
+      "pageid": 743,
+      "ns": 0,
+      "title": "Gamma Tauri IV"
+    },
+    {
+      "pageid": 189988,
+      "ns": 0,
+      "title": "Gamma Trianguli IV"
+    },
+    {
+      "pageid": 18923,
+      "ns": 0,
+      "title": "Gamma Trianguli VI"
+    },
+    {
+      "pageid": 19994,
+      "ns": 0,
+      "title": "Gamma Vertis IV"
+    },
+    {
+      "pageid": 23436,
+      "ns": 0,
+      "title": "Ganalda IV"
+    },
+    {
+      "pageid": 32286,
+      "ns": 0,
+      "title": "Garadius IV"
+    },
+    {
+      "pageid": 16288,
+      "ns": 0,
+      "title": "Garon II"
+    },
+    {
+      "pageid": 92386,
+      "ns": 0,
+      "title": "Gaspar VII"
+    },
+    {
+      "pageid": 24563,
+      "ns": 0,
+      "title": "Gault"
+    },
+    {
+      "pageid": 13191,
+      "ns": 0,
+      "title": "Gedi Prime"
+    },
+    {
+      "pageid": 258809,
+      "ns": 0,
+      "title": "Gelrak V"
+    },
+    {
+      "pageid": 8601,
+      "ns": 0,
+      "title": "Gema IV"
+    },
+    {
+      "pageid": 14072,
+      "ns": 0,
+      "title": "Gemaris V"
+    },
+    {
+      "pageid": 27046,
+      "ns": 0,
+      "title": "Gemulon V"
+    },
+    {
+      "pageid": 305112,
+      "ns": 0,
+      "title": "Gene's World"
+    },
+    {
+      "pageid": 3470,
+      "ns": 0,
+      "title": "Genesis (planet)"
+    },
+    {
+      "pageid": 24602,
+      "ns": 0,
+      "title": "Ghorusda"
+    },
+    {
+      "pageid": 20044,
+      "ns": 0,
+      "title": "Gideon (planet)"
+    },
+    {
+      "pageid": 305113,
+      "ns": 0,
+      "title": "Glavinworld"
+    },
+    {
+      "pageid": 294633,
+      "ns": 0,
+      "title": "Glish"
+    },
+    {
+      "pageid": 316896,
+      "ns": 0,
+      "title": "Goja V"
+    },
+    {
+      "pageid": 9720,
+      "ns": 0,
+      "title": "Golana"
+    },
+    {
+      "pageid": 70736,
+      "ns": 0,
+      "title": "Golos Prime"
+    },
+    {
+      "pageid": 13642,
+      "ns": 0,
+      "title": "Gonal IV"
+    },
+    {
+      "pageid": 68625,
+      "ns": 0,
+      "title": "Goralis III"
+    },
+    {
+      "pageid": 101036,
+      "ns": 0,
+      "title": "Gorath"
+    },
+    {
+      "pageid": 8709,
+      "ns": 0,
+      "title": "Gothos"
+    },
+    {
+      "pageid": 18747,
+      "ns": 0,
+      "title": "Gravesworld"
+    },
+    {
+      "pageid": 68387,
+      "ns": 0,
+      "title": "Grazer"
+    },
+    {
+      "pageid": 294635,
+      "ns": 0,
+      "title": "Grottonus"
+    },
+    {
+      "pageid": 44660,
+      "ns": 0,
+      "title": "Ha'Dara"
+    },
+    {
+      "pageid": 8421,
+      "ns": 0,
+      "title": "Hakton VII"
+    },
+    {
+      "pageid": 298923,
+      "ns": 0,
+      "title": "Halem'no"
+    },
+    {
+      "pageid": 321977,
+      "ns": 0,
+      "title": "Halka"
+    },
+    {
+      "pageid": 318870,
+      "ns": 0,
+      "title": "Hanolan (planet)"
+    },
+    {
+      "pageid": 8607,
+      "ns": 0,
+      "title": "Hanon IV"
+    },
+    {
+      "pageid": 9609,
+      "ns": 0,
+      "title": "Hanoran II"
+    },
+    {
+      "pageid": 49874,
+      "ns": 0,
+      "title": "Hansen's Planet"
+    },
+    {
+      "pageid": 232198,
+      "ns": 0,
+      "title": "Harlak"
+    },
+    {
+      "pageid": 118774,
+      "ns": 0,
+      "title": "Harod IV"
+    },
+    {
+      "pageid": 45394,
+      "ns": 0,
+      "title": "Harrakis V"
+    },
+    {
+      "pageid": 120325,
+      "ns": 0,
+      "title": "Harstedt's Planet"
+    },
+    {
+      "pageid": 229626,
+      "ns": 0,
+      "title": "H'atoria"
+    },
+    {
+      "pageid": 65174,
+      "ns": 0,
+      "title": "Haven"
+    },
+    {
+      "pageid": 305114,
+      "ns": 0,
+      "title": "Hawkins' Planet"
+    },
+    {
+      "pageid": 12361,
+      "ns": 0,
+      "title": "Hekaras II"
+    },
+    {
+      "pageid": 312864,
+      "ns": 0,
+      "title": "Helicon Gamma"
+    },
+    {
+      "pageid": 25015,
+      "ns": 0,
+      "title": "Hemikek IV"
+    },
+    {
+      "pageid": 280694,
+      "ns": 0,
+      "title": "Hetemit IX"
+    },
+    {
+      "pageid": 46966,
+      "ns": 0,
+      "title": "Heva VII"
+    },
+    {
+      "pageid": 261220,
+      "ns": 0,
+      "title": "Hima"
+    },
+    {
+      "pageid": 243811,
+      "ns": 0,
+      "title": "Hindmar"
+    },
+    {
+      "pageid": 318134,
+      "ns": 0,
+      "title": "Hirogen Prime"
+    },
+    {
+      "pageid": 15950,
+      "ns": 0,
+      "title": "Hispaniola Minor"
+    },
+    {
+      "pageid": 10397,
+      "ns": 0,
+      "title": "Hoek IV"
+    },
+    {
+      "pageid": 11030,
+      "ns": 0,
+      "title": "Holberg 917G"
+    },
+    {
+      "pageid": 47443,
+      "ns": 0,
+      "title": "Holna IV"
+    },
+    {
+      "pageid": 297895,
+      "ns": 0,
+      "title": "Hornish (planet)"
+    },
+    {
+      "pageid": 262906,
+      "ns": 0,
+      "title": "Hunhau"
+    },
+    {
+      "pageid": 308268,
+      "ns": 0,
+      "title": "Hupyria V"
+    },
+    {
+      "pageid": 10553,
+      "ns": 0,
+      "title": "Hurada III"
+    },
+    {
+      "pageid": 322475,
+      "ns": 0,
+      "title": "Hurk'ah"
+    },
+    {
+      "pageid": 28828,
+      "ns": 0,
+      "title": "Hurkos III"
+    },
+    {
+      "pageid": 272056,
+      "ns": 0,
+      "title": "Hysperia"
+    },
+    {
+      "pageid": 229660,
+      "ns": 0,
+      "title": "Iconia"
+    },
+    {
+      "pageid": 12749,
+      "ns": 0,
+      "title": "Icor IX"
+    },
+    {
+      "pageid": 9399,
+      "ns": 0,
+      "title": "Ilari (planet)"
+    },
+    {
+      "pageid": 12511,
+      "ns": 0,
+      "title": "Ilidaria"
+    },
+    {
+      "pageid": 291116,
+      "ns": 0,
+      "title": "Illyria"
+    },
+    {
+      "pageid": 49323,
+      "ns": 0,
+      "title": "Ilyra VI"
+    },
+    {
+      "pageid": 12984,
+      "ns": 0,
+      "title": "Inavar Prime"
+    },
+    {
+      "pageid": 8364,
+      "ns": 0,
+      "title": "Indri VIII"
+    },
+    {
+      "pageid": 10785,
+      "ns": 0,
+      "title": "Inferna Prime"
+    },
+    {
+      "pageid": 11010,
+      "ns": 0,
+      "title": "Ingraham B"
+    },
+    {
+      "pageid": 26738,
+      "ns": 0,
+      "title": "Invernia II"
+    },
+    {
+      "pageid": 13251,
+      "ns": 0,
+      "title": "Iota Geminorum IV"
+    },
+    {
+      "pageid": 83688,
+      "ns": 0,
+      "title": "Iraatan V"
+    },
+    {
+      "pageid": 37548,
+      "ns": 0,
+      "title": "Isis III"
+    },
+    {
+      "pageid": 262910,
+      "ns": 0,
+      "title": "Iso VII"
+    },
+    {
+      "pageid": 10782,
+      "ns": 0,
+      "title": "Itamish III"
+    },
+    {
+      "pageid": 284586,
+      "ns": 0,
+      "title": "Itamish I"
+    },
+    {
+      "pageid": 9858,
+      "ns": 0,
+      "title": "Ivor Prime"
+    },
+    {
+      "pageid": 25134,
+      "ns": 0,
+      "title": "Iyar"
+    },
+    {
+      "pageid": 1205,
+      "ns": 0,
+      "title": "Izar"
+    },
+    {
+      "pageid": 212833,
+      "ns": 0,
+      "title": "Jaffeworld"
+    },
+    {
+      "pageid": 11031,
+      "ns": 0,
+      "title": "Janus VI"
+    },
+    {
+      "pageid": 10778,
+      "ns": 0,
+      "title": "Japori II"
+    },
+    {
+      "pageid": 27228,
+      "ns": 0,
+      "title": "Jaros II"
+    },
+    {
+      "pageid": 264745,
+      "ns": 0,
+      "title": "Jaxxa Prime"
+    },
+    {
+      "pageid": 282948,
+      "ns": 0,
+      "title": "Jengus IV"
+    },
+    {
+      "pageid": 102255,
+      "ns": 0,
+      "title": "J'naii (planet)"
+    },
+    {
+      "pageid": 1280,
+      "ns": 0,
+      "title": "Jouret IV"
+    },
+    {
+      "pageid": 8424,
+      "ns": 0,
+      "title": "Juhraya"
+    },
+    {
+      "pageid": 3695,
+      "ns": 0,
+      "title": "Jupiter"
+    },
+    {
+      "pageid": 13029,
+      "ns": 0,
+      "title": "Jura'assic IV"
+    },
+    {
+      "pageid": 317789,
+      "ns": 0,
+      "title": "K'Normia"
+    },
+    {
+      "pageid": 260316,
+      "ns": 0,
+      "title": "K'Tuevon Prime"
+    },
+    {
+      "pageid": 70037,
+      "ns": 0,
+      "title": "Kabatris"
+    },
+    {
+      "pageid": 8944,
+      "ns": 0,
+      "title": "Kabrel I"
+    },
+    {
+      "pageid": 8942,
+      "ns": 0,
+      "title": "Kabrel II"
+    },
+    {
+      "pageid": 18314,
+      "ns": 0,
+      "title": "Kaelon II"
+    },
+    {
+      "pageid": 262902,
+      "ns": 0,
+      "title": "Kaijur XII"
+    },
+    {
+      "pageid": 288039,
+      "ns": 0,
+      "title": "Kalara V"
+    },
+    {
+      "pageid": 10548,
+      "ns": 0,
+      "title": "Kaldra IV"
+    },
+    {
+      "pageid": 23452,
+      "ns": 0,
+      "title": "Kalla III"
+    },
+    {
+      "pageid": 233321,
+      "ns": 0,
+      "title": "Kaminar"
+    },
+    {
+      "pageid": 13144,
+      "ns": 0,
+      "title": "Kanda IV"
+    },
+    {
+      "pageid": 10761,
+      "ns": 0,
+      "title": "Kantare (planet)"
+    },
+    {
+      "pageid": 289500,
+      "ns": 0,
+      "title": "Kaphar Prime"
+    },
+    {
+      "pageid": 48589,
+      "ns": 0,
+      "title": "Karemma (planet)"
+    },
+    {
+      "pageid": 284588,
+      "ns": 0,
+      "title": "Karzil"
+    },
+    {
+      "pageid": 270528,
+      "ns": 0,
+      "title": "Karzill IV"
+    },
+    {
+      "pageid": 313179,
+      "ns": 0,
+      "title": "Kasar"
+    },
+    {
+      "pageid": 23095,
+      "ns": 0,
+      "title": "Kataan"
+    },
+    {
+      "pageid": 54146,
+      "ns": 0,
+      "title": "Kavaria"
+    },
+    {
+      "pageid": 36446,
+      "ns": 0,
+      "title": "Kavis Alpha IV"
+    },
+    {
+      "pageid": 9676,
+      "ns": 0,
+      "title": "Kei"
+    },
+    {
+      "pageid": 232916,
+      "ns": 0,
+      "title": "Kelfour VI"
+    },
+    {
+      "pageid": 298661,
+      "ns": 0,
+      "title": "Kellerun (planet)"
+    },
+    {
+      "pageid": 14979,
+      "ns": 0,
+      "title": "Kelva"
+    },
+    {
+      "pageid": 47228,
+      "ns": 0,
+      "title": "Kelvas Prime"
+    },
+    {
+      "pageid": 8232,
+      "ns": 0,
+      "title": "Kelvas V"
+    },
+    {
+      "pageid": 287788,
+      "ns": 0,
+      "title": "Kemiyo"
+    },
+    {
+      "pageid": 7459,
+      "ns": 0,
+      "title": "Kenda II"
+    },
+    {
+      "pageid": 312354,
+      "ns": 0,
+      "title": "Kenfori"
+    },
+    {
+      "pageid": 37066,
+      "ns": 0,
+      "title": "Kentanna"
+    },
+    {
+      "pageid": 263830,
+      "ns": 0,
+      "title": "Kepler-174d"
+    },
+    {
+      "pageid": 281222,
+      "ns": 0,
+      "title": "Kepler-22b"
+    },
+    {
+      "pageid": 291771,
+      "ns": 0,
+      "title": "Kerkhov"
+    },
+    {
+      "pageid": 22184,
+      "ns": 0,
+      "title": "Kesprytt III"
+    },
+    {
+      "pageid": 312181,
+      "ns": 0,
+      "title": "Kessik I"
+    },
+    {
+      "pageid": 312182,
+      "ns": 0,
+      "title": "Kessik II"
+    },
+    {
+      "pageid": 312183,
+      "ns": 0,
+      "title": "Kessik III"
+    },
+    {
+      "pageid": 13612,
+      "ns": 0,
+      "title": "Kessik IV"
+    },
+    {
+      "pageid": 312184,
+      "ns": 0,
+      "title": "Kessik V"
+    },
+    {
+      "pageid": 312185,
+      "ns": 0,
+      "title": "Kessik VI"
+    },
+    {
+      "pageid": 312186,
+      "ns": 0,
+      "title": "Kessik VII"
+    },
+    {
+      "pageid": 33161,
+      "ns": 0,
+      "title": "Keto-Enol"
+    },
+    {
+      "pageid": 84556,
+      "ns": 0,
+      "title": "Khefka IV"
+    },
+    {
+      "pageid": 316927,
+      "ns": 0,
+      "title": "Khionia"
+    },
+    {
+      "pageid": 4610,
+      "ns": 0,
+      "title": "Khitomer"
+    },
+    {
+      "pageid": 48660,
+      "ns": 0,
+      "title": "Khosla II"
+    },
+    {
+      "pageid": 259962,
+      "ns": 0,
+      "title": "Khwopa"
+    },
+    {
+      "pageid": 280218,
+      "ns": 0,
+      "title": "Kiley 279"
+    },
+    {
+      "pageid": 18306,
+      "ns": 0,
+      "title": "Klaestron IV"
+    },
+    {
+      "pageid": 27533,
+      "ns": 0,
+      "title": "Klavdia III"
+    },
+    {
+      "pageid": 36873,
+      "ns": 0,
+      "title": "Klendth"
+    },
+    {
+      "pageid": 305649,
+      "ns": 0,
+      "title": "Klowahka"
+    },
+    {
+      "pageid": 302742,
+      "ns": 0,
+      "title": "Knoll's Planet"
+    },
+    {
+      "pageid": 213528,
+      "ns": 0,
+      "title": "Kobliad (planet)"
+    },
+    {
+      "pageid": 1190,
+      "ns": 0,
+      "title": "Kolarus III"
+    },
+    {
+      "pageid": 11792,
+      "ns": 0,
+      "title": "Kora II"
+    },
+    {
+      "pageid": 29530,
+      "ns": 0,
+      "title": "Koralis III"
+    },
+    {
+      "pageid": 317902,
+      "ns": 0,
+      "title": "Korat"
+    },
+    {
+      "pageid": 7832,
+      "ns": 0,
+      "title": "Korma"
+    },
+    {
+      "pageid": 54366,
+      "ns": 0,
+      "title": "Korris I"
+    },
+    {
+      "pageid": 43515,
+      "ns": 0,
+      "title": "Kostolain"
+    },
+    {
+      "pageid": 10759,
+      "ns": 0,
+      "title": "Kotara Barath"
+    },
+    {
+      "pageid": 10791,
+      "ns": 0,
+      "title": "Kotati"
+    },
+    {
+      "pageid": 18713,
+      "ns": 0,
+      "title": "Kraus IV"
+    },
+    {
+      "pageid": 28688,
+      "ns": 0,
+      "title": "Kreetassa"
+    },
+    {
+      "pageid": 229736,
+      "ns": 0,
+      "title": "Krios Prime"
+    },
+    {
+      "pageid": 292148,
+      "ns": 0,
+      "title": "Krulmuth-B"
+    },
+    {
+      "pageid": 16647,
+      "ns": 0,
+      "title": "Ktaria VII"
+    },
+    {
+      "pageid": 16649,
+      "ns": 0,
+      "title": "Ktaris"
+    },
+    {
+      "pageid": 215120,
+      "ns": 0,
+      "title": "Kurill Prime"
+    },
+    {
+      "pageid": 19230,
+      "ns": 0,
+      "title": "Kurl"
+    },
+    {
+      "pageid": 278531,
+      "ns": 0,
+      "title": "Kwejian (planet)"
+    },
+    {
+      "pageid": 9065,
+      "ns": 0,
+      "title": "Kyana Prime"
+    },
+    {
+      "pageid": 12975,
+      "ns": 0,
+      "title": "Kylata II"
+    },
+    {
+      "pageid": 294632,
+      "ns": 0,
+      "title": "Kyron 4"
+    },
+    {
+      "pageid": 11032,
+      "ns": 0,
+      "title": "Kzin"
+    },
+    {
+      "pageid": 51889,
+      "ns": 0,
+      "title": "L-374 I"
+    },
+    {
+      "pageid": 51890,
+      "ns": 0,
+      "title": "L-374 II"
+    },
+    {
+      "pageid": 9201,
+      "ns": 0,
+      "title": "L-374 III"
+    },
+    {
+      "pageid": 9235,
+      "ns": 0,
+      "title": "L-374 IV"
+    },
+    {
+      "pageid": 42135,
+      "ns": 0,
+      "title": "L-S VI"
+    },
+    {
+      "pageid": 11033,
+      "ns": 0,
+      "title": "Lactra VII"
+    },
+    {
+      "pageid": 70069,
+      "ns": 0,
+      "title": "Lamenda Prime"
+    },
+    {
+      "pageid": 47473,
+      "ns": 0,
+      "title": "Landris II"
+    },
+    {
+      "pageid": 272906,
+      "ns": 0,
+      "title": "Lapeeria"
+    },
+    {
+      "pageid": 10728,
+      "ns": 0,
+      "title": "Lappa IV"
+    },
+    {
+      "pageid": 12766,
+      "ns": 0,
+      "title": "Largo V"
+    },
+    {
+      "pageid": 120315,
+      "ns": 0,
+      "title": "Latonaworld"
+    },
+    {
+      "pageid": 166076,
+      "ns": 0,
+      "title": "Lauren III"
+    },
+    {
+      "pageid": 83122,
+      "ns": 0,
+      "title": "Lav'oti V"
+    },
+    {
+      "pageid": 33498,
+      "ns": 0,
+      "title": "Ledonia III"
+    },
+    {
+      "pageid": 42239,
+      "ns": 0,
+      "title": "Ledos"
+    },
+    {
+      "pageid": 7728,
+      "ns": 0,
+      "title": "Legara IV"
+    },
+    {
+      "pageid": 292278,
+      "ns": 0,
+      "title": "Lembatta V"
+    },
+    {
+      "pageid": 33606,
+      "ns": 0,
+      "title": "Lemma II"
+    },
+    {
+      "pageid": 13148,
+      "ns": 0,
+      "title": "Lerishi IV"
+    },
+    {
+      "pageid": 74631,
+      "ns": 0,
+      "title": "Lessek Prime"
+    },
+    {
+      "pageid": 13049,
+      "ns": 0,
+      "title": "Levinius V"
+    },
+    {
+      "pageid": 23221,
+      "ns": 0,
+      "title": "Ligobis X"
+    },
+    {
+      "pageid": 806,
+      "ns": 0,
+      "title": "Ligon II"
+    },
+    {
+      "pageid": 27691,
+      "ns": 0,
+      "title": "Ligos VII"
+    },
+    {
+      "pageid": 26917,
+      "ns": 0,
+      "title": "Lilliput IX"
+    },
+    {
+      "pageid": 12165,
+      "ns": 0,
+      "title": "Lissepia"
+    },
+    {
+      "pageid": 294997,
+      "ns": 0,
+      "title": "Locarno"
+    },
+    {
+      "pageid": 305118,
+      "ns": 0,
+      "title": "Longo World"
+    },
+    {
+      "pageid": 12319,
+      "ns": 0,
+      "title": "Loracus Prime"
+    },
+    {
+      "pageid": 8365,
+      "ns": 0,
+      "title": "Loren III"
+    },
+    {
+      "pageid": 268188,
+      "ns": 0,
+      "title": "Loresworld"
+    },
+    {
+      "pageid": 7893,
+      "ns": 0,
+      "title": "Loval"
+    },
+    {
+      "pageid": 284424,
+      "ns": 0,
+      "title": "LT-358"
+    },
+    {
+      "pageid": 177841,
+      "ns": 0,
+      "title": "Ludovko IX"
+    },
+    {
+      "pageid": 17933,
+      "ns": 0,
+      "title": "Luria"
+    },
+    {
+      "pageid": 313271,
+      "ns": 0,
+      "title": "Lutani II"
+    },
+    {
+      "pageid": 313272,
+      "ns": 0,
+      "title": "Lutani III"
+    },
+    {
+      "pageid": 313274,
+      "ns": 0,
+      "title": "Lutani V"
+    },
+    {
+      "pageid": 313275,
+      "ns": 0,
+      "title": "Lutani VI"
+    },
+    {
+      "pageid": 313182,
+      "ns": 0,
+      "title": "Lutani VII"
+    },
+    {
+      "pageid": 313276,
+      "ns": 0,
+      "title": "Lutani VIII"
+    },
+    {
+      "pageid": 313277,
+      "ns": 0,
+      "title": "Lutani IX"
+    },
+    {
+      "pageid": 313280,
+      "ns": 0,
+      "title": "Lutani X"
+    },
+    {
+      "pageid": 313273,
+      "ns": 0,
+      "title": "Lutani IV"
+    },
+    {
+      "pageid": 8640,
+      "ns": 0,
+      "title": "Lya III"
+    },
+    {
+      "pageid": 73683,
+      "ns": 0,
+      "title": "Lya IV"
+    },
+    {
+      "pageid": 297882,
+      "ns": 0,
+      "title": "Lyrek"
+    },
+    {
+      "pageid": 317900,
+      "ns": 0,
+      "title": "Lyshan"
+    },
+    {
+      "pageid": 29460,
+      "ns": 0,
+      "title": "Lysia"
+    },
+    {
+      "pageid": 312675,
+      "ns": 0,
+      "title": "M'Kroon (planet)"
+    },
+    {
+      "pageid": 288261,
+      "ns": 0,
+      "title": "M'talas IV"
+    },
+    {
+      "pageid": 12456,
+      "ns": 0,
+      "title": "M'talas Prime"
+    },
+    {
+      "pageid": 224890,
+      "ns": 0,
+      "title": "M-11"
+    },
+    {
+      "pageid": 7202,
+      "ns": 0,
+      "title": "M-113"
+    },
+    {
+      "pageid": 162374,
+      "ns": 0,
+      "title": "Maarek III"
+    },
+    {
+      "pageid": 11878,
+      "ns": 0,
+      "title": "Mab-Bu VI"
+    },
+    {
+      "pageid": 323901,
+      "ns": 0,
+      "title": "Madena V"
+    },
+    {
+      "pageid": 86969,
+      "ns": 0,
+      "title": "Magus III"
+    },
+    {
+      "pageid": 281336,
+      "ns": 0,
+      "title": "Majalis"
+    },
+    {
+      "pageid": 11034,
+      "ns": 0,
+      "title": "Makus III"
+    },
+    {
+      "pageid": 10359,
+      "ns": 0,
+      "title": "Malaya IV"
+    },
+    {
+      "pageid": 19530,
+      "ns": 0,
+      "title": "Malcor III"
+    },
+    {
+      "pageid": 13145,
+      "ns": 0,
+      "title": "Malindi VII"
+    },
+    {
+      "pageid": 12765,
+      "ns": 0,
+      "title": "Malkus IX"
+    },
+    {
+      "pageid": 306747,
+      "ns": 0,
+      "title": "Malman V"
+    },
+    {
+      "pageid": 13273,
+      "ns": 0,
+      "title": "Malon Prime"
+    },
+    {
+      "pageid": 291104,
+      "ns": 0,
+      "title": "Man-us II"
+    },
+    {
+      "pageid": 11036,
+      "ns": 0,
+      "title": "Manark IV"
+    },
+    {
+      "pageid": 13367,
+      "ns": 0,
+      "title": "Mantilles"
+    },
+    {
+      "pageid": 22807,
+      "ns": 0,
+      "title": "Manu III"
+    },
+    {
+      "pageid": 10714,
+      "ns": 0,
+      "title": "Maranga IV"
+    },
+    {
+      "pageid": 153957,
+      "ns": 0,
+      "title": "Maravel"
+    },
+    {
+      "pageid": 11035,
+      "ns": 0,
+      "title": "Marcos XII"
+    },
+    {
+      "pageid": 24250,
+      "ns": 0,
+      "title": "Marcus II"
+    },
+    {
+      "pageid": 49883,
+      "ns": 0,
+      "title": "Marejaretus VI"
+    },
+    {
+      "pageid": 10536,
+      "ns": 0,
+      "title": "Mariah IV"
+    },
+    {
+      "pageid": 50940,
+      "ns": 0,
+      "title": "Marijne VII"
+    },
+    {
+      "pageid": 23429,
+      "ns": 0,
+      "title": "Mariposa (planet)"
+    },
+    {
+      "pageid": 27612,
+      "ns": 0,
+      "title": "Marlonia"
+    },
+    {
+      "pageid": 683,
+      "ns": 0,
+      "title": "Mars"
+    },
+    {
+      "pageid": 305125,
+      "ns": 0,
+      "title": "Martin's Planet"
+    },
+    {
+      "pageid": 8426,
+      "ns": 0,
+      "title": "Marva IV"
+    },
+    {
+      "pageid": 323105,
+      "ns": 0,
+      "title": "Mat'Aar XII"
+    },
+    {
+      "pageid": 20866,
+      "ns": 0,
+      "title": "Mataline II"
+    },
+    {
+      "pageid": 205234,
+      "ns": 0,
+      "title": "Matiovsky IV"
+    },
+    {
+      "pageid": 267767,
+      "ns": 0,
+      "title": "Mavok Prime"
+    },
+    {
+      "pageid": 307222,
+      "ns": 0,
+      "title": "Maxia Zeta I"
+    },
+    {
+      "pageid": 307223,
+      "ns": 0,
+      "title": "Maxia Zeta II"
+    },
+    {
+      "pageid": 48772,
+      "ns": 0,
+      "title": "Maxia Zeta III"
+    },
+    {
+      "pageid": 48771,
+      "ns": 0,
+      "title": "Maxia Zeta IV"
+    },
+    {
+      "pageid": 307225,
+      "ns": 0,
+      "title": "Maxia Zeta V"
+    },
+    {
+      "pageid": 307227,
+      "ns": 0,
+      "title": "Maxia Zeta VI"
+    },
+    {
+      "pageid": 307229,
+      "ns": 0,
+      "title": "Maxia Zeta VII"
+    },
+    {
+      "pageid": 17040,
+      "ns": 0,
+      "title": "Mazar"
+    },
+    {
+      "pageid": 13378,
+      "ns": 0,
+      "title": "McKnight's Planet"
+    },
+    {
+      "pageid": 8733,
+      "ns": 0,
+      "title": "Meezan IV"
+    },
+    {
+      "pageid": 28904,
+      "ns": 0,
+      "title": "Megas-Tu"
+    },
+    {
+      "pageid": 21910,
+      "ns": 0,
+      "title": "Meldrar I"
+    },
+    {
+      "pageid": 37477,
+      "ns": 0,
+      "title": "Meles II"
+    },
+    {
+      "pageid": 10551,
+      "ns": 0,
+      "title": "Melina II"
+    },
+    {
+      "pageid": 45481,
+      "ns": 0,
+      "title": "Melnos IV"
+    },
+    {
+      "pageid": 25786,
+      "ns": 0,
+      "title": "Melona IV"
+    },
+    {
+      "pageid": 42509,
+      "ns": 0,
+      "title": "Merak II"
+    },
+    {
+      "pageid": 12754,
+      "ns": 0,
+      "title": "Mercury (planet)"
+    },
+    {
+      "pageid": 14492,
+      "ns": 0,
+      "title": "Meridian"
+    },
+    {
+      "pageid": 68701,
+      "ns": 0,
+      "title": "Merik III"
+    },
+    {
+      "pageid": 281764,
+      "ns": 0,
+      "title": "Meslah V"
+    },
+    {
+      "pageid": 61762,
+      "ns": 0,
+      "title": "Midos V"
+    },
+    {
+      "pageid": 80455,
+      "ns": 0,
+      "title": "Mikah"
+    },
+    {
+      "pageid": 22808,
+      "ns": 0,
+      "title": "Milika III"
+    },
+    {
+      "pageid": 11980,
+      "ns": 0,
+      "title": "Minara II"
+    },
+    {
+      "pageid": 287783,
+      "ns": 0,
+      "title": "Minas V"
+    },
+    {
+      "pageid": 57756,
+      "ns": 0,
+      "title": "Minnobia"
+    },
+    {
+      "pageid": 12897,
+      "ns": 0,
+      "title": "Minos"
+    },
+    {
+      "pageid": 268163,
+      "ns": 0,
+      "title": "Minos Korva (planet)"
+    },
+    {
+      "pageid": 10481,
+      "ns": 0,
+      "title": "Mintaka III"
+    },
+    {
+      "pageid": 30587,
+      "ns": 0,
+      "title": "Miri (planet)"
+    },
+    {
+      "pageid": 15245,
+      "ns": 0,
+      "title": "Miridian VI"
+    },
+    {
+      "pageid": 9389,
+      "ns": 0,
+      "title": "Mislen"
+    },
+    {
+      "pageid": 10790,
+      "ns": 0,
+      "title": "Mithren"
+    },
+    {
+      "pageid": 259425,
+      "ns": 0,
+      "title": "Mixtus II"
+    },
+    {
+      "pageid": 259424,
+      "ns": 0,
+      "title": "Mixtus III"
+    },
+    {
+      "pageid": 12474,
+      "ns": 0,
+      "title": "Mizar II"
+    },
+    {
+      "pageid": 13081,
+      "ns": 0,
+      "title": "M'kemas III"
+    },
+    {
+      "pageid": 189773,
+      "ns": 0,
+      "title": "Moab I"
+    },
+    {
+      "pageid": 189774,
+      "ns": 0,
+      "title": "Moab II"
+    },
+    {
+      "pageid": 189775,
+      "ns": 0,
+      "title": "Moab III"
+    },
+    {
+      "pageid": 24476,
+      "ns": 0,
+      "title": "Moab IV"
+    },
+    {
+      "pageid": 189776,
+      "ns": 0,
+      "title": "Moab V"
+    },
+    {
+      "pageid": 189777,
+      "ns": 0,
+      "title": "Moab VI"
+    },
+    {
+      "pageid": 318958,
+      "ns": 0,
+      "title": "Modean"
+    },
+    {
+      "pageid": 276415,
+      "ns": 0,
+      "title": "Molmol's homeworld"
+    },
+    {
+      "pageid": 3260,
+      "ns": 0,
+      "title": "Monac IV"
+    },
+    {
+      "pageid": 128717,
+      "ns": 0,
+      "title": "Mora V"
+    },
+    {
+      "pageid": 11263,
+      "ns": 0,
+      "title": "Mordan IV"
+    },
+    {
+      "pageid": 120914,
+      "ns": 0,
+      "title": "Moreyworld"
+    },
+    {
+      "pageid": 22806,
+      "ns": 0,
+      "title": "Morikin VII"
+    },
+    {
+      "pageid": 229623,
+      "ns": 0,
+      "title": "Morska"
+    },
+    {
+      "pageid": 35077,
+      "ns": 0,
+      "title": "Motherlode"
+    },
+    {
+      "pageid": 1124,
+      "ns": 0,
+      "title": "Mudd"
+    },
+    {
+      "pageid": 13030,
+      "ns": 0,
+      "title": "Mudor V"
+    },
+    {
+      "pageid": 10398,
+      "ns": 0,
+      "title": "Mundahla"
+    },
+    {
+      "pageid": 274030,
+      "ns": 0,
+      "title": "Murder Planet"
+    },
+    {
+      "pageid": 10395,
+      "ns": 0,
+      "title": "Myrmidon"
+    },
+    {
+      "pageid": 225421,
+      "ns": 0,
+      "title": "N'Vak"
+    },
+    {
+      "pageid": 291097,
+      "ns": 0,
+      "title": "Na'rel"
+    },
+    {
+      "pageid": 14076,
+      "ns": 0,
+      "title": "Nahmi IV"
+    },
+    {
+      "pageid": 258868,
+      "ns": 0,
+      "title": "Nanibia Prime"
+    },
+    {
+      "pageid": 318961,
+      "ns": 0,
+      "title": "Napea"
+    },
+    {
+      "pageid": 33359,
+      "ns": 0,
+      "title": "Napinne"
+    },
+    {
+      "pageid": 3594,
+      "ns": 0,
+      "title": "Narendra III"
+    },
+    {
+      "pageid": 120345,
+      "ns": 0,
+      "title": "Narita's Planet"
+    },
+    {
+      "pageid": 64280,
+      "ns": 0,
+      "title": "Narva"
+    },
+    {
+      "pageid": 44119,
+      "ns": 0,
+      "title": "Nasreldine"
+    },
+    {
+      "pageid": 3904,
+      "ns": 0,
+      "title": "Nausicaa"
+    },
+    {
+      "pageid": 10550,
+      "ns": 0,
+      "title": "Nel III"
+    },
+    {
+      "pageid": 189682,
+      "ns": 0,
+      "title": "Nelvana I"
+    },
+    {
+      "pageid": 189683,
+      "ns": 0,
+      "title": "Nelvana II"
+    },
+    {
+      "pageid": 8639,
+      "ns": 0,
+      "title": "Nelvana III"
+    },
+    {
+      "pageid": 189685,
+      "ns": 0,
+      "title": "Nelvana IV"
+    },
+    {
+      "pageid": 189686,
+      "ns": 0,
+      "title": "Nelvana V"
+    },
+    {
+      "pageid": 253037,
+      "ns": 0,
+      "title": "Nepenthe"
+    },
+    {
+      "pageid": 20850,
+      "ns": 0,
+      "title": "Neptune"
+    },
+    {
+      "pageid": 13961,
+      "ns": 0,
+      "title": "Nervala IV"
+    },
+    {
+      "pageid": 44957,
+      "ns": 0,
+      "title": "Neubilia Prime"
+    },
+    {
+      "pageid": 22377,
+      "ns": 0,
+      "title": "Neural"
+    },
+    {
+      "pageid": 294755,
+      "ns": 0,
+      "title": "New Axton"
+    },
+    {
+      "pageid": 9717,
+      "ns": 0,
+      "title": "New Bajor"
+    },
+    {
+      "pageid": 25021,
+      "ns": 0,
+      "title": "New Brooklyn IX"
+    },
+    {
+      "pageid": 41224,
+      "ns": 0,
+      "title": "New Earth"
+    },
+    {
+      "pageid": 317683,
+      "ns": 0,
+      "title": "New France"
+    },
+    {
+      "pageid": 68798,
+      "ns": 0,
+      "title": "New Gaul"
+    },
+    {
+      "pageid": 13152,
+      "ns": 0,
+      "title": "New Halana"
+    },
+    {
+      "pageid": 37067,
+      "ns": 0,
+      "title": "New Kentanna"
+    },
+    {
+      "pageid": 35083,
+      "ns": 0,
+      "title": "New Mecca"
+    },
+    {
+      "pageid": 317783,
+      "ns": 0,
+      "title": "New Melona"
+    },
+    {
+      "pageid": 50873,
+      "ns": 0,
+      "title": "New Paris"
+    },
+    {
+      "pageid": 317556,
+      "ns": 0,
+      "title": "New Qo'noS"
+    },
+    {
+      "pageid": 233836,
+      "ns": 0,
+      "title": "New Sydney"
+    },
+    {
+      "pageid": 117471,
+      "ns": 0,
+      "title": "New Vulcan"
+    },
+    {
+      "pageid": 323040,
+      "ns": 0,
+      "title": "New Xindus"
+    },
+    {
+      "pageid": 701,
+      "ns": 0,
+      "title": "Ni'Var"
+    },
+    {
+      "pageid": 12518,
+      "ns": 0,
+      "title": "Nibia"
+    },
+    {
+      "pageid": 174693,
+      "ns": 0,
+      "title": "Nibiru"
+    },
+    {
+      "pageid": 7448,
+      "ns": 0,
+      "title": "Nimbus III"
+    },
+    {
+      "pageid": 10855,
+      "ns": 0,
+      "title": "Ninipia Prime"
+    },
+    {
+      "pageid": 12978,
+      "ns": 0,
+      "title": "Nivoch"
+    },
+    {
+      "pageid": 285348,
+      "ns": 0,
+      "title": "Noble Isle"
+    },
+    {
+      "pageid": 120915,
+      "ns": 0,
+      "title": "Nollman's Planet"
+    },
+    {
+      "pageid": 12817,
+      "ns": 0,
+      "title": "Norcadia Prime"
+    },
+    {
+      "pageid": 4297,
+      "ns": 0,
+      "title": "Norellus"
+    },
+    {
+      "pageid": 317883,
+      "ns": 0,
+      "title": "Norpin"
+    },
+    {
+      "pageid": 12894,
+      "ns": 0,
+      "title": "Norpin V"
+    },
+    {
+      "pageid": 27569,
+      "ns": 0,
+      "title": "Nyria III"
+    },
+    {
+      "pageid": 70857,
+      "ns": 0,
+      "title": "Nyria V"
+    },
+    {
+      "pageid": 48668,
+      "ns": 0,
+      "title": "Oby VI"
+    },
+    {
+      "pageid": 5950,
+      "ns": 0,
+      "title": "Ocampa (planet)"
+    },
+    {
+      "pageid": 17397,
+      "ns": 0,
+      "title": "Oceanus IV"
+    },
+    {
+      "pageid": 284430,
+      "ns": 0,
+      "title": "Ockmenic 9"
+    },
+    {
+      "pageid": 43512,
+      "ns": 0,
+      "title": "Ogat"
+    },
+    {
+      "pageid": 11575,
+      "ns": 0,
+      "title": "Ogus II"
+    },
+    {
+      "pageid": 27360,
+      "ns": 0,
+      "title": "Ohniaka III"
+    },
+    {
+      "pageid": 302750,
+      "ns": 0,
+      "title": "Okuda Prime"
+    },
+    {
+      "pageid": 294760,
+      "ns": 0,
+      "title": "Old Axton"
+    },
+    {
+      "pageid": 11037,
+      "ns": 0,
+      "title": "Omega IV"
+    },
+    {
+      "pageid": 168756,
+      "ns": 0,
+      "title": "Omega Centus I"
+    },
+    {
+      "pageid": 11008,
+      "ns": 0,
+      "title": "Omega Cygni"
+    },
+    {
+      "pageid": 7901,
+      "ns": 0,
+      "title": "Omekla III"
+    },
+    {
+      "pageid": 25963,
+      "ns": 0,
+      "title": "Omicron IV"
+    },
+    {
+      "pageid": 289527,
+      "ns": 0,
+      "title": "Omicron Ceti III"
+    },
+    {
+      "pageid": 281466,
+      "ns": 0,
+      "title": "Omicron Lyrae"
+    },
+    {
+      "pageid": 3748,
+      "ns": 0,
+      "title": "Omicron Theta"
+    },
+    {
+      "pageid": 7763,
+      "ns": 0,
+      "title": "Ophiucus III"
+    },
+    {
+      "pageid": 49330,
+      "ns": 0,
+      "title": "Ophiucus VI"
+    },
+    {
+      "pageid": 4305,
+      "ns": 0,
+      "title": "Oran'taku (planet)"
+    },
+    {
+      "pageid": 15039,
+      "ns": 0,
+      "title": "Orelious IX"
+    },
+    {
+      "pageid": 214708,
+      "ns": 0,
+      "title": "Orellius"
+    },
+    {
+      "pageid": 12982,
+      "ns": 0,
+      "title": "Orendal V"
+    },
+    {
+      "pageid": 229742,
+      "ns": 0,
+      "title": "Organia"
+    },
+    {
+      "pageid": 7897,
+      "ns": 0,
+      "title": "Orias III"
+    },
+    {
+      "pageid": 189633,
+      "ns": 0,
+      "title": "Orion (planet)"
+    },
+    {
+      "pageid": 11517,
+      "ns": 0,
+      "title": "Orion I"
+    },
+    {
+      "pageid": 69928,
+      "ns": 0,
+      "title": "Orion III"
+    },
+    {
+      "pageid": 20520,
+      "ns": 0,
+      "title": "Ornara"
+    },
+    {
+      "pageid": 93811,
+      "ns": 0,
+      "title": "O'Ryan's Planet"
+    },
+    {
+      "pageid": 13112,
+      "ns": 0,
+      "title": "Oshionian Prime"
+    },
+    {
+      "pageid": 172588,
+      "ns": 0,
+      "title": "Osinar VI"
+    },
+    {
+      "pageid": 319613,
+      "ns": 0,
+      "title": "Osnullus homeworld"
+    },
+    {
+      "pageid": 12632,
+      "ns": 0,
+      "title": "Otar II"
+    },
+    {
+      "pageid": 301761,
+      "ns": 0,
+      "title": "Ovidia IV"
+    },
+    {
+      "pageid": 310455,
+      "ns": 0,
+      "title": "P'Jem"
+    },
+    {
+      "pageid": 1091,
+      "ns": 0,
+      "title": "Pacifica"
+    },
+    {
+      "pageid": 230084,
+      "ns": 0,
+      "title": "Pahvo"
+    },
+    {
+      "pageid": 271790,
+      "ns": 0,
+      "title": "Pakled Planet"
+    },
+    {
+      "pageid": 88464,
+      "ns": 0,
+      "title": "Paksor III"
+    },
+    {
+      "pageid": 30075,
+      "ns": 0,
+      "title": "Pandro"
+    },
+    {
+      "pageid": 8409,
+      "ns": 0,
+      "title": "Panora"
+    },
+    {
+      "pageid": 4181,
+      "ns": 0,
+      "title": "Paraagan II"
+    },
+    {
+      "pageid": 47471,
+      "ns": 0,
+      "title": "Parada II"
+    },
+    {
+      "pageid": 47472,
+      "ns": 0,
+      "title": "Parada IV"
+    },
+    {
+      "pageid": 1038,
+      "ns": 0,
+      "title": "Parliament"
+    },
+    {
+      "pageid": 292742,
+      "ns": 0,
+      "title": "Parnassus Beta"
+    },
+    {
+      "pageid": 46920,
+      "ns": 0,
+      "title": "Parsion III"
+    },
+    {
+      "pageid": 18339,
+      "ns": 0,
+      "title": "Peliar Zel II"
+    },
+    {
+      "pageid": 36927,
+      "ns": 0,
+      "title": "Pelleus V"
+    },
+    {
+      "pageid": 282946,
+      "ns": 0,
+      "title": "Pellex II"
+    },
+    {
+      "pageid": 11169,
+      "ns": 0,
+      "title": "Pendari (planet)"
+    },
+    {
+      "pageid": 215046,
+      "ns": 0,
+      "title": "Pendi II"
+    },
+    {
+      "pageid": 33624,
+      "ns": 0,
+      "title": "Pentarus II"
+    },
+    {
+      "pageid": 33626,
+      "ns": 0,
+      "title": "Pentarus III"
+    },
+    {
+      "pageid": 33620,
+      "ns": 0,
+      "title": "Pentarus V"
+    },
+    {
+      "pageid": 7895,
+      "ns": 0,
+      "title": "Pentath III"
+    },
+    {
+      "pageid": 27955,
+      "ns": 0,
+      "title": "Penthara IV"
+    },
+    {
+      "pageid": 29889,
+      "ns": 0,
+      "title": "Pernaia Prime"
+    },
+    {
+      "pageid": 291095,
+      "ns": 0,
+      "title": "Perrican (planet)"
+    },
+    {
+      "pageid": 280617,
+      "ns": 0,
+      "title": "Persephone I"
+    },
+    {
+      "pageid": 280619,
+      "ns": 0,
+      "title": "Persephone II"
+    },
+    {
+      "pageid": 280518,
+      "ns": 0,
+      "title": "Persephone III"
+    },
+    {
+      "pageid": 280620,
+      "ns": 0,
+      "title": "Persephone IV"
+    },
+    {
+      "pageid": 37543,
+      "ns": 0,
+      "title": "Persephone V"
+    },
+    {
+      "pageid": 280628,
+      "ns": 0,
+      "title": "Persephone VI"
+    },
+    {
+      "pageid": 280648,
+      "ns": 0,
+      "title": "Persephone VII"
+    },
+    {
+      "pageid": 280653,
+      "ns": 0,
+      "title": "Persephone VIII"
+    },
+    {
+      "pageid": 294752,
+      "ns": 0,
+      "title": "Persioff IX"
+    },
+    {
+      "pageid": 83038,
+      "ns": 0,
+      "title": "Phanos"
+    },
+    {
+      "pageid": 11004,
+      "ns": 0,
+      "title": "Phylos"
+    },
+    {
+      "pageid": 274812,
+      "ns": 0,
+      "title": "Pijar"
+    },
+    {
+      "pageid": 305926,
+      "ns": 0,
+      "title": "Piskes IX"
+    },
+    {
+      "pageid": 24425,
+      "ns": 0,
+      "title": "Platonius"
+    },
+    {
+      "pageid": 4851,
+      "ns": 0,
+      "title": "Pluto"
+    },
+    {
+      "pageid": 294423,
+      "ns": 0,
+      "title": "Plymeria"
+    },
+    {
+      "pageid": 312690,
+      "ns": 0,
+      "title": "Polaris XII"
+    },
+    {
+      "pageid": 11038,
+      "ns": 0,
+      "title": "Pollux IV"
+    },
+    {
+      "pageid": 42553,
+      "ns": 0,
+      "title": "Pollux V"
+    },
+    {
+      "pageid": 72677,
+      "ns": 0,
+      "title": "Porakas IV"
+    },
+    {
+      "pageid": 276673,
+      "ns": 0,
+      "title": "Porathia"
+    },
+    {
+      "pageid": 8407,
+      "ns": 0,
+      "title": "Portas V"
+    },
+    {
+      "pageid": 189533,
+      "ns": 0,
+      "title": "Posell VI"
+    },
+    {
+      "pageid": 69907,
+      "ns": 0,
+      "title": "Potak III"
+    },
+    {
+      "pageid": 312691,
+      "ns": 0,
+      "title": "Praetorian"
+    },
+    {
+      "pageid": 248984,
+      "ns": 0,
+      "title": "Pragine 63"
+    },
+    {
+      "pageid": 85586,
+      "ns": 0,
+      "title": "Prakal II"
+    },
+    {
+      "pageid": 305681,
+      "ns": 0,
+      "title": "Praxon IV"
+    },
+    {
+      "pageid": 10760,
+      "ns": 0,
+      "title": "Preenos"
+    },
+    {
+      "pageid": 8600,
+      "ns": 0,
+      "title": "Prema II"
+    },
+    {
+      "pageid": 232781,
+      "ns": 0,
+      "title": "Priors World"
+    },
+    {
+      "pageid": 12042,
+      "ns": 0,
+      "title": "Procyon V"
+    },
+    {
+      "pageid": 281340,
+      "ns": 0,
+      "title": "Prospect VII"
+    },
+    {
+      "pageid": 292353,
+      "ns": 0,
+      "title": "Prospero Alpha"
+    },
+    {
+      "pageid": 313245,
+      "ns": 0,
+      "title": "Pshurru"
+    },
+    {
+      "pageid": 4344,
+      "ns": 0,
+      "title": "Psi 2000"
+    },
+    {
+      "pageid": 193613,
+      "ns": 0,
+      "title": "Psi Epsilon III"
+    },
+    {
+      "pageid": 193608,
+      "ns": 0,
+      "title": "Psi Epsilon IV"
+    },
+    {
+      "pageid": 33642,
+      "ns": 0,
+      "title": "Psi Upsilon IV"
+    },
+    {
+      "pageid": 7899,
+      "ns": 0,
+      "title": "Pullock V"
+    },
+    {
+      "pageid": 313318,
+      "ns": 0,
+      "title": "Purmantee III"
+    },
+    {
+      "pageid": 232002,
+      "ns": 0,
+      "title": "Purmata VI"
+    },
+    {
+      "pageid": 214345,
+      "ns": 0,
+      "title": "Putak VIII"
+    },
+    {
+      "pageid": 11039,
+      "ns": 0,
+      "title": "Pyris VII"
+    },
+    {
+      "pageid": 57354,
+      "ns": 0,
+      "title": "Pythro V"
+    },
+    {
+      "pageid": 8285,
+      "ns": 0,
+      "title": "Planet Q"
+    },
+    {
+      "pageid": 297866,
+      "ns": 0,
+      "title": "Q'mau"
+    },
+    {
+      "pageid": 11041,
+      "ns": 0,
+      "title": "Qo'noS"
+    },
+    {
+      "pageid": 229645,
+      "ns": 0,
+      "title": "Qu'Vat"
+    },
+    {
+      "pageid": 13303,
+      "ns": 0,
+      "title": "Quadra Sigma III"
+    },
+    {
+      "pageid": 14364,
+      "ns": 0,
+      "title": "Qualor II"
+    },
+    {
+      "pageid": 307521,
+      "ns": 0,
+      "title": "Qualor III"
+    },
+    {
+      "pageid": 14565,
+      "ns": 0,
+      "title": "Quarra"
+    },
+    {
+      "pageid": 8410,
+      "ns": 0,
+      "title": "Quatal Prime"
+    },
+    {
+      "pageid": 12764,
+      "ns": 0,
+      "title": "Quazulu VIII"
+    },
+    {
+      "pageid": 7887,
+      "ns": 0,
+      "title": "Quinor VII"
+    },
+    {
+      "pageid": 7885,
+      "ns": 0,
+      "title": "Raatooras"
+    },
+    {
+      "pageid": 39307,
+      "ns": 0,
+      "title": "Rahm-Izad"
+    },
+    {
+      "pageid": 7890,
+      "ns": 0,
+      "title": "Rakal (planet)"
+    },
+    {
+      "pageid": 12979,
+      "ns": 0,
+      "title": "Rakella Prime"
+    },
+    {
+      "pageid": 24666,
+      "ns": 0,
+      "title": "Rakhar"
+    },
+    {
+      "pageid": 8484,
+      "ns": 0,
+      "title": "Rakosa V"
+    },
+    {
+      "pageid": 29406,
+      "ns": 0,
+      "title": "Ramatis III"
+    },
+    {
+      "pageid": 22457,
+      "ns": 0,
+      "title": "Ramura"
+    },
+    {
+      "pageid": 3765,
+      "ns": 0,
+      "title": "Rana IV"
+    },
+    {
+      "pageid": 85686,
+      "ns": 0,
+      "title": "Ranuos VI"
+    },
+    {
+      "pageid": 277553,
+      "ns": 0,
+      "title": "Raritan IV"
+    },
+    {
+      "pageid": 61740,
+      "ns": 0,
+      "title": "Rator III"
+    },
+    {
+      "pageid": 318292,
+      "ns": 0,
+      "title": "Planet Ray"
+    },
+    {
+      "pageid": 13146,
+      "ns": 0,
+      "title": "Razna V"
+    },
+    {
+      "pageid": 7888,
+      "ns": 0,
+      "title": "Regulak IV"
+    },
+    {
+      "pageid": 189367,
+      "ns": 0,
+      "title": "Regulus (planet)"
+    },
+    {
+      "pageid": 10631,
+      "ns": 0,
+      "title": "Regulus III"
+    },
+    {
+      "pageid": 10439,
+      "ns": 0,
+      "title": "Regulus V"
+    },
+    {
+      "pageid": 236584,
+      "ns": 0,
+      "title": "Regulus II"
+    },
+    {
+      "pageid": 262899,
+      "ns": 0,
+      "title": "Reilling VII"
+    },
+    {
+      "pageid": 54155,
+      "ns": 0,
+      "title": "Rekag-Seronia"
+    },
+    {
+      "pageid": 11403,
+      "ns": 0,
+      "title": "Relva VII"
+    },
+    {
+      "pageid": 44121,
+      "ns": 0,
+      "title": "Remmil VI"
+    },
+    {
+      "pageid": 1186,
+      "ns": 0,
+      "title": "Remus"
+    },
+    {
+      "pageid": 59215,
+      "ns": 0,
+      "title": "Renavi"
+    },
+    {
+      "pageid": 317895,
+      "ns": 0,
+      "title": "Rhaandar (planet)"
+    },
+    {
+      "pageid": 22805,
+      "ns": 0,
+      "title": "Rhymus Major"
+    },
+    {
+      "pageid": 247871,
+      "ns": 0,
+      "title": "Ricktor Prime"
+    },
+    {
+      "pageid": 7549,
+      "ns": 0,
+      "title": "Rigel II"
+    },
+    {
+      "pageid": 5680,
+      "ns": 0,
+      "title": "Rigel III"
+    },
+    {
+      "pageid": 7544,
+      "ns": 0,
+      "title": "Rigel IV"
+    },
+    {
+      "pageid": 1929,
+      "ns": 0,
+      "title": "Rigel V"
+    },
+    {
+      "pageid": 205206,
+      "ns": 0,
+      "title": "Rigel VI"
+    },
+    {
+      "pageid": 4031,
+      "ns": 0,
+      "title": "Rigel VII"
+    },
+    {
+      "pageid": 3708,
+      "ns": 0,
+      "title": "Rigel X"
+    },
+    {
+      "pageid": 7404,
+      "ns": 0,
+      "title": "Rigel XII"
+    },
+    {
+      "pageid": 6010,
+      "ns": 0,
+      "title": "Risa"
+    },
+    {
+      "pageid": 54334,
+      "ns": 0,
+      "title": "Rivos V"
+    },
+    {
+      "pageid": 8674,
+      "ns": 0,
+      "title": "Rochani III"
+    },
+    {
+      "pageid": 111928,
+      "ns": 0,
+      "title": "Romulus"
+    },
+    {
+      "pageid": 8423,
+      "ns": 0,
+      "title": "Ronara Prime"
+    },
+    {
+      "pageid": 68438,
+      "ns": 0,
+      "title": "Rondac III"
+    },
+    {
+      "pageid": 212834,
+      "ns": 0,
+      "title": "Rooseworld"
+    },
+    {
+      "pageid": 40812,
+      "ns": 0,
+      "title": "Rosseau V"
+    },
+    {
+      "pageid": 45579,
+      "ns": 0,
+      "title": "Ruah IV"
+    },
+    {
+      "pageid": 1040,
+      "ns": 0,
+      "title": "Rubicun III"
+    },
+    {
+      "pageid": 20871,
+      "ns": 0,
+      "title": "Rutia IV"
+    },
+    {
+      "pageid": 165579,
+      "ns": 0,
+      "title": "Sahndara (planet)"
+    },
+    {
+      "pageid": 52280,
+      "ns": 0,
+      "title": "Sakura Prime"
+    },
+    {
+      "pageid": 37248,
+      "ns": 0,
+      "title": "Salina Prime"
+    },
+    {
+      "pageid": 281834,
+      "ns": 0,
+      "title": "Salius VI"
+    },
+    {
+      "pageid": 321349,
+      "ns": 0,
+      "title": "Salon (planet)"
+    },
+    {
+      "pageid": 65784,
+      "ns": 0,
+      "title": "Saltah'na (planet)"
+    },
+    {
+      "pageid": 8405,
+      "ns": 0,
+      "title": "Salva II"
+    },
+    {
+      "pageid": 261272,
+      "ns": 0,
+      "title": "Sanctuary Four"
+    },
+    {
+      "pageid": 233835,
+      "ns": 0,
+      "title": "Sappora VII"
+    },
+    {
+      "pageid": 287369,
+      "ns": 0,
+      "title": "Sarnia Prime"
+    },
+    {
+      "pageid": 11055,
+      "ns": 0,
+      "title": "Sarona VIII"
+    },
+    {
+      "pageid": 526,
+      "ns": 0,
+      "title": "Sarpedion V"
+    },
+    {
+      "pageid": 22562,
+      "ns": 0,
+      "title": "Sarpeidon"
+    },
+    {
+      "pageid": 44456,
+      "ns": 0,
+      "title": "Sarthong V"
+    },
+    {
+      "pageid": 3125,
+      "ns": 0,
+      "title": "Saturn"
+    },
+    {
+      "pageid": 317888,
+      "ns": 0,
+      "title": "Sauria (planet)"
+    },
+    {
+      "pageid": 28575,
+      "ns": 0,
+      "title": "Scalos"
+    },
+    {
+      "pageid": 10792,
+      "ns": 0,
+      "title": "Secarus IV"
+    },
+    {
+      "pageid": 37071,
+      "ns": 0,
+      "title": "Sefalla Prime"
+    },
+    {
+      "pageid": 166077,
+      "ns": 0,
+      "title": "Seiji Major"
+    },
+    {
+      "pageid": 810,
+      "ns": 0,
+      "title": "Selay (planet)"
+    },
+    {
+      "pageid": 205212,
+      "ns": 0,
+      "title": "Selcundi Drema"
+    },
+    {
+      "pageid": 156284,
+      "ns": 0,
+      "title": "Seldonis IV"
+    },
+    {
+      "pageid": 12974,
+      "ns": 0,
+      "title": "Selek IV"
+    },
+    {
+      "pageid": 259835,
+      "ns": 0,
+      "title": "Sendu IV"
+    },
+    {
+      "pageid": 1246,
+      "ns": 0,
+      "title": "Sentinel Minor IV"
+    },
+    {
+      "pageid": 3259,
+      "ns": 0,
+      "title": "Septimus III"
+    },
+    {
+      "pageid": 14047,
+      "ns": 0,
+      "title": "Seros"
+    },
+    {
+      "pageid": 280546,
+      "ns": 0,
+      "title": "Setlik II"
+    },
+    {
+      "pageid": 8355,
+      "ns": 0,
+      "title": "Setlik III"
+    },
+    {
+      "pageid": 315272,
+      "ns": 0,
+      "title": "Setlik I"
+    },
+    {
+      "pageid": 11359,
+      "ns": 0,
+      "title": "Sha Ka Ree (planet)"
+    },
+    {
+      "pageid": 13149,
+      "ns": 0,
+      "title": "Shantil III"
+    },
+    {
+      "pageid": 302219,
+      "ns": 0,
+      "title": "Shatanari"
+    },
+    {
+      "pageid": 294759,
+      "ns": 0,
+      "title": "Sherbal V"
+    },
+    {
+      "pageid": 8916,
+      "ns": 0,
+      "title": "Sherman's Planet"
+    },
+    {
+      "pageid": 7829,
+      "ns": 0,
+      "title": "Sheva II"
+    },
+    {
+      "pageid": 32166,
+      "ns": 0,
+      "title": "Shiralea VI"
+    },
+    {
+      "pageid": 165218,
+      "ns": 0,
+      "title": "Sigma Draconis I"
+    },
+    {
+      "pageid": 165219,
+      "ns": 0,
+      "title": "Sigma Draconis II"
+    },
+    {
+      "pageid": 10941,
+      "ns": 0,
+      "title": "Sigma Draconis III"
+    },
+    {
+      "pageid": 10942,
+      "ns": 0,
+      "title": "Sigma Draconis IV"
+    },
+    {
+      "pageid": 165220,
+      "ns": 0,
+      "title": "Sigma Draconis V"
+    },
+    {
+      "pageid": 19510,
+      "ns": 0,
+      "title": "Sigma Draconis VI"
+    },
+    {
+      "pageid": 165221,
+      "ns": 0,
+      "title": "Sigma Draconis VII"
+    },
+    {
+      "pageid": 165222,
+      "ns": 0,
+      "title": "Sigma Draconis VIII"
+    },
+    {
+      "pageid": 165223,
+      "ns": 0,
+      "title": "Sigma Draconis IX"
+    },
+    {
+      "pageid": 212899,
+      "ns": 0,
+      "title": "Sigma Iotia II"
+    },
+    {
+      "pageid": 189741,
+      "ns": 0,
+      "title": "Sigma Tama IV"
+    },
+    {
+      "pageid": 274435,
+      "ns": 0,
+      "title": "Sigma X"
+    },
+    {
+      "pageid": 6112,
+      "ns": 0,
+      "title": "Sikaris"
+    },
+    {
+      "pageid": 7886,
+      "ns": 0,
+      "title": "Simperia"
+    },
+    {
+      "pageid": 546,
+      "ns": 0,
+      "title": "Sirius IX"
+    },
+    {
+      "pageid": 128718,
+      "ns": 0,
+      "title": "Sirrie IV"
+    },
+    {
+      "pageid": 313609,
+      "ns": 0,
+      "title": "Skygowan"
+    },
+    {
+      "pageid": 307254,
+      "ns": 0,
+      "title": "Snickmik V"
+    },
+    {
+      "pageid": 12622,
+      "ns": 0,
+      "title": "Sobras"
+    },
+    {
+      "pageid": 29407,
+      "ns": 0,
+      "title": "Solais V"
+    },
+    {
+      "pageid": 9725,
+      "ns": 0,
+      "title": "Solarion IV"
+    },
+    {
+      "pageid": 47615,
+      "ns": 0,
+      "title": "Solosos III"
+    },
+    {
+      "pageid": 8415,
+      "ns": 0,
+      "title": "Soltok IV"
+    },
+    {
+      "pageid": 273652,
+      "ns": 0,
+      "title": "Solum"
+    },
+    {
+      "pageid": 232004,
+      "ns": 0,
+      "title": "Sorna Prime"
+    },
+    {
+      "pageid": 35432,
+      "ns": 0,
+      "title": "Sothis III"
+    },
+    {
+      "pageid": 7828,
+      "ns": 0,
+      "title": "Soukara"
+    },
+    {
+      "pageid": 317892,
+      "ns": 0,
+      "title": "Spica"
+    },
+    {
+      "pageid": 64338,
+      "ns": 0,
+      "title": "Stakoron II"
+    },
+    {
+      "pageid": 12462,
+      "ns": 0,
+      "title": "Stameris"
+    },
+    {
+      "pageid": 24125,
+      "ns": 0,
+      "title": "Straleb"
+    },
+    {
+      "pageid": 808,
+      "ns": 0,
+      "title": "Styris IV"
+    },
+    {
+      "pageid": 312867,
+      "ns": 0,
+      "title": "Sullivan's Planet"
+    },
+    {
+      "pageid": 27700,
+      "ns": 0,
+      "title": "Suvin IV"
+    },
+    {
+      "pageid": 74795,
+      "ns": 0,
+      "title": "Sumiko III"
+    },
+    {
+      "pageid": 23065,
+      "ns": 0,
+      "title": "Sumiko IV"
+    },
+    {
+      "pageid": 25031,
+      "ns": 0,
+      "title": "Surata IV"
+    },
+    {
+      "pageid": 92779,
+      "ns": 0,
+      "title": "T'Khut"
+    },
+    {
+      "pageid": 7343,
+      "ns": 0,
+      "title": "Tagra IV"
+    },
+    {
+      "pageid": 16552,
+      "ns": 0,
+      "title": "Tagus III"
+    },
+    {
+      "pageid": 7489,
+      "ns": 0,
+      "title": "Takara"
+    },
+    {
+      "pageid": 6306,
+      "ns": 0,
+      "title": "Talax"
+    },
+    {
+      "pageid": 81594,
+      "ns": 0,
+      "title": "Talaxia"
+    },
+    {
+      "pageid": 165161,
+      "ns": 0,
+      "title": "Talos I"
+    },
+    {
+      "pageid": 165162,
+      "ns": 0,
+      "title": "Talos II"
+    },
+    {
+      "pageid": 125041,
+      "ns": 0,
+      "title": "Talos III"
+    },
+    {
+      "pageid": 816,
+      "ns": 0,
+      "title": "Talos IV"
+    },
+    {
+      "pageid": 165163,
+      "ns": 0,
+      "title": "Talos V"
+    },
+    {
+      "pageid": 244249,
+      "ns": 0,
+      "title": "Talos IV (mirror)"
+    },
+    {
+      "pageid": 41273,
+      "ns": 0,
+      "title": "Tamaal"
+    },
+    {
+      "pageid": 4198,
+      "ns": 0,
+      "title": "Tandar Prime"
+    },
+    {
+      "pageid": 7563,
+      "ns": 0,
+      "title": "Tantalus V"
+    },
+    {
+      "pageid": 64874,
+      "ns": 0,
+      "title": "Tanuga IV"
+    },
+    {
+      "pageid": 34609,
+      "ns": 0,
+      "title": "Tarakis"
+    },
+    {
+      "pageid": 16350,
+      "ns": 0,
+      "title": "Tarchannen III"
+    },
+    {
+      "pageid": 10727,
+      "ns": 0,
+      "title": "Tarella"
+    },
+    {
+      "pageid": 9691,
+      "ns": 0,
+      "title": "Taresia"
+    },
+    {
+      "pageid": 305487,
+      "ns": 0,
+      "title": "Targalus IX"
+    },
+    {
+      "pageid": 13200,
+      "ns": 0,
+      "title": "Taris Seti IV"
+    },
+    {
+      "pageid": 20756,
+      "ns": 0,
+      "title": "Tarkalea"
+    },
+    {
+      "pageid": 71002,
+      "ns": 0,
+      "title": "Tarod IX"
+    },
+    {
+      "pageid": 97049,
+      "ns": 0,
+      "title": "Tarsas III"
+    },
+    {
+      "pageid": 193555,
+      "ns": 0,
+      "title": "Tarsas IV"
+    },
+    {
+      "pageid": 8294,
+      "ns": 0,
+      "title": "Tarsus IV"
+    },
+    {
+      "pageid": 10400,
+      "ns": 0,
+      "title": "Tartaras V"
+    },
+    {
+      "pageid": 241880,
+      "ns": 0,
+      "title": "Tartus IV"
+    },
+    {
+      "pageid": 240090,
+      "ns": 0,
+      "title": "Tau Alpha C"
+    },
+    {
+      "pageid": 11059,
+      "ns": 0,
+      "title": "Tau Ceti Prime"
+    },
+    {
+      "pageid": 165399,
+      "ns": 0,
+      "title": "Tau Ceti III"
+    },
+    {
+      "pageid": 11057,
+      "ns": 0,
+      "title": "Tau Ceti IV"
+    },
+    {
+      "pageid": 12153,
+      "ns": 0,
+      "title": "Tau Cygna V"
+    },
+    {
+      "pageid": 189991,
+      "ns": 0,
+      "title": "Taurus II"
+    },
+    {
+      "pageid": 317600,
+      "ns": 0,
+      "title": "Taurus VII"
+    },
+    {
+      "pageid": 12631,
+      "ns": 0,
+      "title": "Tavela Minor"
+    },
+    {
+      "pageid": 318270,
+      "ns": 0,
+      "title": "Taygeta I"
+    },
+    {
+      "pageid": 318271,
+      "ns": 0,
+      "title": "Taygeta IV"
+    },
+    {
+      "pageid": 210996,
+      "ns": 0,
+      "title": "Teenax"
+    },
+    {
+      "pageid": 27838,
+      "ns": 0,
+      "title": "Teerza Prime"
+    },
+    {
+      "pageid": 62836,
+      "ns": 0,
+      "title": "Telemarius IV"
+    },
+    {
+      "pageid": 69908,
+      "ns": 0,
+      "title": "Telfas Prime"
+    },
+    {
+      "pageid": 700,
+      "ns": 0,
+      "title": "Tellar Prime"
+    },
+    {
+      "pageid": 226846,
+      "ns": 0,
+      "title": "Tellun"
+    },
+    {
+      "pageid": 11706,
+      "ns": 0,
+      "title": "Telsius Prime"
+    },
+    {
+      "pageid": 12976,
+      "ns": 0,
+      "title": "Teluridian IV"
+    },
+    {
+      "pageid": 6207,
+      "ns": 0,
+      "title": "Terlina III"
+    },
+    {
+      "pageid": 13163,
+      "ns": 0,
+      "title": "Terosa Prime"
+    },
+    {
+      "pageid": 20419,
+      "ns": 0,
+      "title": "Terra 10"
+    },
+    {
+      "pageid": 702,
+      "ns": 0,
+      "title": "Terra Nova"
+    },
+    {
+      "pageid": 242832,
+      "ns": 0,
+      "title": "Terralysium"
+    },
+    {
+      "pageid": 317881,
+      "ns": 0,
+      "title": "Terrellia"
+    },
+    {
+      "pageid": 83805,
+      "ns": 0,
+      "title": "Tesnia"
+    },
+    {
+      "pageid": 32162,
+      "ns": 0,
+      "title": "Tessen III"
+    },
+    {
+      "pageid": 61435,
+      "ns": 0,
+      "title": "Tessik Prime"
+    },
+    {
+      "pageid": 313310,
+      "ns": 0,
+      "title": "Tezaar"
+    },
+    {
+      "pageid": 15252,
+      "ns": 0,
+      "title": "Thalos VI"
+    },
+    {
+      "pageid": 15251,
+      "ns": 0,
+      "title": "Thalos VII"
+    },
+    {
+      "pageid": 284587,
+      "ns": 0,
+      "title": "Thalos V"
+    },
+    {
+      "pageid": 49542,
+      "ns": 0,
+      "title": "Thanatos VII"
+    },
+    {
+      "pageid": 7396,
+      "ns": 0,
+      "title": "Thasus"
+    },
+    {
+      "pageid": 166066,
+      "ns": 0,
+      "title": "Thasus IV"
+    },
+    {
+      "pageid": 20869,
+      "ns": 0,
+      "title": "Thelka IV"
+    },
+    {
+      "pageid": 189992,
+      "ns": 0,
+      "title": "Therbia"
+    },
+    {
+      "pageid": 11040,
+      "ns": 0,
+      "title": "Theta III"
+    },
+    {
+      "pageid": 35803,
+      "ns": 0,
+      "title": "Theta VII"
+    },
+    {
+      "pageid": 727,
+      "ns": 0,
+      "title": "Theta VIII"
+    },
+    {
+      "pageid": 13050,
+      "ns": 0,
+      "title": "Theta Cygni XII"
+    },
+    {
+      "pageid": 274815,
+      "ns": 0,
+      "title": "Theta Helios"
+    },
+    {
+      "pageid": 7354,
+      "ns": 0,
+      "title": "Theta Omicron IV"
+    },
+    {
+      "pageid": 264257,
+      "ns": 0,
+      "title": "Theta Zeta"
+    },
+    {
+      "pageid": 174564,
+      "ns": 0,
+      "title": "Theta Zibal III"
+    },
+    {
+      "pageid": 16026,
+      "ns": 0,
+      "title": "Tethys III"
+    },
+    {
+      "pageid": 29359,
+      "ns": 0,
+      "title": "Tholia"
+    },
+    {
+      "pageid": 14755,
+      "ns": 0,
+      "title": "Tiburon"
+    },
+    {
+      "pageid": 15450,
+      "ns": 0,
+      "title": "Tilonus IV"
+    },
+    {
+      "pageid": 10365,
+      "ns": 0,
+      "title": "Timor II"
+    },
+    {
+      "pageid": 45135,
+      "ns": 0,
+      "title": "Titus IV"
+    },
+    {
+      "pageid": 18368,
+      "ns": 0,
+      "title": "T'Lani III"
+    },
+    {
+      "pageid": 52009,
+      "ns": 0,
+      "title": "T'Lani Prime"
+    },
+    {
+      "pageid": 53463,
+      "ns": 0,
+      "title": "T'lli Beta"
+    },
+    {
+      "pageid": 19854,
+      "ns": 0,
+      "title": "Tohvun III"
+    },
+    {
+      "pageid": 232494,
+      "ns": 0,
+      "title": "Tonnata VII"
+    },
+    {
+      "pageid": 26759,
+      "ns": 0,
+      "title": "Torad V"
+    },
+    {
+      "pageid": 81936,
+      "ns": 0,
+      "title": "Toranius Prime"
+    },
+    {
+      "pageid": 16366,
+      "ns": 0,
+      "title": "Torga IV"
+    },
+    {
+      "pageid": 46414,
+      "ns": 0,
+      "title": "Torman V"
+    },
+    {
+      "pageid": 47439,
+      "ns": 0,
+      "title": "Torna IV"
+    },
+    {
+      "pageid": 171128,
+      "ns": 0,
+      "title": "Torona IV"
+    },
+    {
+      "pageid": 16723,
+      "ns": 0,
+      "title": "Torros III"
+    },
+    {
+      "pageid": 9674,
+      "ns": 0,
+      "title": "Totoro"
+    },
+    {
+      "pageid": 8412,
+      "ns": 0,
+      "title": "Tracken II"
+    },
+    {
+      "pageid": 317006,
+      "ns": 0,
+      "title": "TRAPPIST 1e"
+    },
+    {
+      "pageid": 302122,
+      "ns": 0,
+      "title": "Trebus"
+    },
+    {
+      "pageid": 8231,
+      "ns": 0,
+      "title": "Trelka V"
+    },
+    {
+      "pageid": 37995,
+      "ns": 0,
+      "title": "Trelkis III"
+    },
+    {
+      "pageid": 16485,
+      "ns": 0,
+      "title": "Triacus"
+    },
+    {
+      "pageid": 11937,
+      "ns": 0,
+      "title": "Trialas IV"
+    },
+    {
+      "pageid": 5595,
+      "ns": 0,
+      "title": "Triannon (planet)"
+    },
+    {
+      "pageid": 3897,
+      "ns": 0,
+      "title": "Trillius Prime"
+    },
+    {
+      "pageid": 9008,
+      "ns": 0,
+      "title": "Triskelion"
+    },
+    {
+      "pageid": 205208,
+      "ns": 0,
+      "title": "Triskelion Prime"
+    },
+    {
+      "pageid": 9097,
+      "ns": 0,
+      "title": "Troyius"
+    },
+    {
+      "pageid": 322299,
+      "ns": 0,
+      "title": "Tulaxar"
+    },
+    {
+      "pageid": 258438,
+      "ns": 0,
+      "title": "Tulgana IV"
+    },
+    {
+      "pageid": 6810,
+      "ns": 0,
+      "title": "Turkana IV"
+    },
+    {
+      "pageid": 234099,
+      "ns": 0,
+      "title": "Planet Two"
+    },
+    {
+      "pageid": 9160,
+      "ns": 0,
+      "title": "Tycho IV"
+    },
+    {
+      "pageid": 313246,
+      "ns": 0,
+      "title": "Tychus (planet)"
+    },
+    {
+      "pageid": 10794,
+      "ns": 0,
+      "title": "Tyree (planet)"
+    },
+    {
+      "pageid": 42886,
+      "ns": 0,
+      "title": "Tyrellia"
+    },
+    {
+      "pageid": 189792,
+      "ns": 0,
+      "title": "Tyrus VII"
+    },
+    {
+      "pageid": 12739,
+      "ns": 0,
+      "title": "Tzenketh"
+    },
+    {
+      "pageid": 308051,
+      "ns": 0,
+      "title": "T'Zhay"
+    },
+    {
+      "pageid": 23454,
+      "ns": 0,
+      "title": "Ufandi III"
+    },
+    {
+      "pageid": 318981,
+      "ns": 0,
+      "title": "Ukeck"
+    },
+    {
+      "pageid": 323098,
+      "ns": 0,
+      "title": "Ulget"
+    },
+    {
+      "pageid": 10537,
+      "ns": 0,
+      "title": "Ultima Thule"
+    },
+    {
+      "pageid": 85592,
+      "ns": 0,
+      "title": "Umoth VIII"
+    },
+    {
+      "pageid": 7894,
+      "ns": 0,
+      "title": "Unefra III"
+    },
+    {
+      "pageid": 18763,
+      "ns": 0,
+      "title": "Uranus"
+    },
+    {
+      "pageid": 262628,
+      "ns": 0,
+      "title": "Urna"
+    },
+    {
+      "pageid": 323872,
+      "ns": 0,
+      "title": "Vaardan"
+    },
+    {
+      "pageid": 10845,
+      "ns": 0,
+      "title": "Vacca VI"
+    },
+    {
+      "pageid": 312225,
+      "ns": 0,
+      "title": "Vadia IX"
+    },
+    {
+      "pageid": 10399,
+      "ns": 0,
+      "title": "Vadris III"
+    },
+    {
+      "pageid": 712,
+      "ns": 0,
+      "title": "Vagra II"
+    },
+    {
+      "pageid": 12454,
+      "ns": 0,
+      "title": "Valakis"
+    },
+    {
+      "pageid": 281709,
+      "ns": 0,
+      "title": "Valeo Beta V"
+    },
+    {
+      "pageid": 9724,
+      "ns": 0,
+      "title": "Valo I"
+    },
+    {
+      "pageid": 9723,
+      "ns": 0,
+      "title": "Valo II"
+    },
+    {
+      "pageid": 9721,
+      "ns": 0,
+      "title": "Valo III"
+    },
+    {
+      "pageid": 25001,
+      "ns": 0,
+      "title": "Valt Minor"
+    },
+    {
+      "pageid": 305135,
+      "ns": 0,
+      "title": "Van Over's Planet"
+    },
+    {
+      "pageid": 39454,
+      "ns": 0,
+      "title": "Vanden Prime"
+    },
+    {
+      "pageid": 9326,
+      "ns": 0,
+      "title": "Vandros IV"
+    },
+    {
+      "pageid": 54338,
+      "ns": 0,
+      "title": "Varala"
+    },
+    {
+      "pageid": 252218,
+      "ns": 0,
+      "title": "Vashti"
+    },
+    {
+      "pageid": 168757,
+      "ns": 0,
+      "title": "Vaytan I"
+    },
+    {
+      "pageid": 13225,
+      "ns": 0,
+      "title": "Vega IX"
+    },
+    {
+      "pageid": 24863,
+      "ns": 0,
+      "title": "Velara III"
+    },
+    {
+      "pageid": 8235,
+      "ns": 0,
+      "title": "Velos VII"
+    },
+    {
+      "pageid": 8406,
+      "ns": 0,
+      "title": "Veloz Prime"
+    },
+    {
+      "pageid": 12339,
+      "ns": 0,
+      "title": "Vendikar"
+    },
+    {
+      "pageid": 21308,
+      "ns": 0,
+      "title": "Vendor Prime"
+    },
+    {
+      "pageid": 259636,
+      "ns": 0,
+      "title": "Vendu"
+    },
+    {
+      "pageid": 213529,
+      "ns": 0,
+      "title": "Vener VII"
+    },
+    {
+      "pageid": 15948,
+      "ns": 0,
+      "title": "Ventax II"
+    },
+    {
+      "pageid": 12757,
+      "ns": 0,
+      "title": "Venus"
+    },
+    {
+      "pageid": 66669,
+      "ns": 0,
+      "title": "Verdanis"
+    },
+    {
+      "pageid": 10938,
+      "ns": 0,
+      "title": "Verex III"
+    },
+    {
+      "pageid": 252670,
+      "ns": 0,
+      "title": "Vergessen"
+    },
+    {
+      "pageid": 62591,
+      "ns": 0,
+      "title": "Veridian I"
+    },
+    {
+      "pageid": 62595,
+      "ns": 0,
+      "title": "Veridian II"
+    },
+    {
+      "pageid": 5050,
+      "ns": 0,
+      "title": "Veridian III"
+    },
+    {
+      "pageid": 5043,
+      "ns": 0,
+      "title": "Veridian IV"
+    },
+    {
+      "pageid": 62593,
+      "ns": 0,
+      "title": "Veridian V"
+    },
+    {
+      "pageid": 62596,
+      "ns": 0,
+      "title": "Veridian VI"
+    },
+    {
+      "pageid": 11520,
+      "ns": 0,
+      "title": "Vico V"
+    },
+    {
+      "pageid": 8366,
+      "ns": 0,
+      "title": "Vilmor II"
+    },
+    {
+      "pageid": 297993,
+      "ns": 0,
+      "title": "Vintar IV"
+    },
+    {
+      "pageid": 54327,
+      "ns": 0,
+      "title": "Vissia"
+    },
+    {
+      "pageid": 8418,
+      "ns": 0,
+      "title": "Volan II"
+    },
+    {
+      "pageid": 8417,
+      "ns": 0,
+      "title": "Volan III"
+    },
+    {
+      "pageid": 12763,
+      "ns": 0,
+      "title": "Volchok Prime"
+    },
+    {
+      "pageid": 115323,
+      "ns": 0,
+      "title": "Vulcan (alternate reality)"
+    },
+    {
+      "pageid": 165863,
+      "ns": 0,
+      "title": "Wenselworld"
+    },
+    {
+      "pageid": 305134,
+      "ns": 0,
+      "title": "West's World"
+    },
+    {
+      "pageid": 13232,
+      "ns": 0,
+      "title": "Wrigley's pleasure planet"
+    },
+    {
+      "pageid": 232006,
+      "ns": 0,
+      "title": "Wurna Minor"
+    },
+    {
+      "pageid": 177842,
+      "ns": 0,
+      "title": "Wynsdey III"
+    },
+    {
+      "pageid": 13190,
+      "ns": 0,
+      "title": "Wysanti (planet)"
+    },
+    {
+      "pageid": 239632,
+      "ns": 0,
+      "title": "Xahea"
+    },
+    {
+      "pageid": 12630,
+      "ns": 0,
+      "title": "Xanthras III"
+    },
+    {
+      "pageid": 30161,
+      "ns": 0,
+      "title": "Xantoras (planet)"
+    },
+    {
+      "pageid": 205209,
+      "ns": 0,
+      "title": "Xendi Sabu IX"
+    },
+    {
+      "pageid": 313221,
+      "ns": 0,
+      "title": "Xenius"
+    },
+    {
+      "pageid": 12760,
+      "ns": 0,
+      "title": "Xerxes VII"
+    },
+    {
+      "pageid": 178104,
+      "ns": 0,
+      "title": "Xindus"
+    },
+    {
+      "pageid": 318783,
+      "ns": 0,
+      "title": "Yadalla IV"
+    },
+    {
+      "pageid": 12628,
+      "ns": 0,
+      "title": "Yadalla Prime"
+    },
+    {
+      "pageid": 10012,
+      "ns": 0,
+      "title": "Yadera Prime"
+    },
+    {
+      "pageid": 53227,
+      "ns": 0,
+      "title": "Yadera II"
+    },
+    {
+      "pageid": 249847,
+      "ns": 0,
+      "title": "Yonada Prime"
+    },
+    {
+      "pageid": 317905,
+      "ns": 0,
+      "title": "Yridia (planet)"
+    },
+    {
+      "pageid": 249662,
+      "ns": 0,
+      "title": "Yridia I"
+    },
+    {
+      "pageid": 322476,
+      "ns": 0,
+      "title": "Yrti"
+    },
+    {
+      "pageid": 301771,
+      "ns": 0,
+      "title": "Ysida"
+    },
+    {
+      "pageid": 9675,
+      "ns": 0,
+      "title": "Yuri"
+    },
+    {
+      "pageid": 37365,
+      "ns": 0,
+      "title": "Zadar IV"
+    },
+    {
+      "pageid": 317906,
+      "ns": 0,
+      "title": "Zakdorn (planet)"
+    },
+    {
+      "pageid": 12693,
+      "ns": 0,
+      "title": "Zalkon"
+    },
+    {
+      "pageid": 16523,
+      "ns": 0,
+      "title": "Zayra IV"
+    },
+    {
+      "pageid": 12694,
+      "ns": 0,
+      "title": "Zeon (planet)"
+    },
+    {
+      "pageid": 166075,
+      "ns": 0,
+      "title": "Zeon Minor"
+    },
+    {
+      "pageid": 10108,
+      "ns": 0,
+      "title": "Zeta Alpha II"
+    },
+    {
+      "pageid": 166052,
+      "ns": 0,
+      "title": "Zeta Antaras IV"
+    },
+    {
+      "pageid": 312376,
+      "ns": 0,
+      "title": "Zeta Borealis"
+    },
+    {
+      "pageid": 23989,
+      "ns": 0,
+      "title": "Zetar"
+    },
+    {
+      "pageid": 254854,
+      "ns": 0,
+      "title": "Zimja"
+    },
+    {
+      "pageid": 302780,
+      "ns": 0,
+      "title": "Zimmerman's World"
+    },
+    {
+      "pageid": 249661,
+      "ns": 0,
+      "title": "Zoraster II"
+    },
+    {
+      "pageid": 5665,
+      "ns": 0,
+      "title": "Zytchin III"
+    }
+  ],
+  "dune": [
+    {
+      "pageid": 4470,
+      "ns": 0,
+      "title": "Planet"
+    },
+    {
+      "pageid": 2340,
+      "ns": 0,
+      "title": "Acline"
+    },
+    {
+      "pageid": 11763,
+      "ns": 0,
+      "title": "Al Dhanab"
+    },
+    {
+      "pageid": 3318,
+      "ns": 0,
+      "title": "Al-Dhifar"
+    },
+    {
+      "pageid": 2324,
+      "ns": 0,
+      "title": "Andioyu"
+    },
+    {
+      "pageid": 7336,
+      "ns": 0,
+      "title": "Aramanli"
+    },
+    {
+      "pageid": 2331,
+      "ns": 0,
+      "title": "Arbelough"
+    },
+    {
+      "pageid": 6,
+      "ns": 0,
+      "title": "Arrakis"
+    },
+    {
+      "pageid": 4366,
+      "ns": 0,
+      "title": "Arrakis/DE"
+    },
+    {
+      "pageid": 5078,
+      "ns": 0,
+      "title": "Arrakis/XD"
+    },
+    {
+      "pageid": 6565,
+      "ns": 0,
+      "title": "Artisia"
+    },
+    {
+      "pageid": 2880,
+      "ns": 0,
+      "title": "Balut"
+    },
+    {
+      "pageid": 2803,
+      "ns": 0,
+      "title": "Beakkal"
+    },
+    {
+      "pageid": 4999,
+      "ns": 0,
+      "title": "Bela Tegeuse"
+    },
+    {
+      "pageid": 5113,
+      "ns": 0,
+      "title": "Bela Tegeuse/DE"
+    },
+    {
+      "pageid": 1754,
+      "ns": 0,
+      "title": "Bela Tegeuse/XD"
+    },
+    {
+      "pageid": 16587,
+      "ns": 0,
+      "title": "Borhees"
+    },
+    {
+      "pageid": 2347,
+      "ns": 0,
+      "title": "Buzzell"
+    },
+    {
+      "pageid": 101,
+      "ns": 0,
+      "title": "Caladan"
+    },
+    {
+      "pageid": 4990,
+      "ns": 0,
+      "title": "Caladan/DE"
+    },
+    {
+      "pageid": 2652,
+      "ns": 0,
+      "title": "Caladan/Featured"
+    },
+    {
+      "pageid": 4944,
+      "ns": 0,
+      "title": "Caladan/XD"
+    },
+    {
+      "pageid": 2327,
+      "ns": 0,
+      "title": "Cerbol"
+    },
+    {
+      "pageid": 3871,
+      "ns": 0,
+      "title": "Ceres"
+    },
+    {
+      "pageid": 7337,
+      "ns": 0,
+      "title": "Chalcedony"
+    },
+    {
+      "pageid": 2105,
+      "ns": 0,
+      "title": "Chapterhouse"
+    },
+    {
+      "pageid": 5009,
+      "ns": 0,
+      "title": "Chapterhouse/XD"
+    },
+    {
+      "pageid": 5566,
+      "ns": 0,
+      "title": "Chusuk"
+    },
+    {
+      "pageid": 1822,
+      "ns": 0,
+      "title": "Chusuk/XD"
+    },
+    {
+      "pageid": 93,
+      "ns": 0,
+      "title": "Corrin"
+    },
+    {
+      "pageid": 3663,
+      "ns": 0,
+      "title": "Corrin quasi-nebula"
+    },
+    {
+      "pageid": 4126,
+      "ns": 0,
+      "title": "Corrin/DE"
+    },
+    {
+      "pageid": 4946,
+      "ns": 0,
+      "title": "Corrin/XD"
+    },
+    {
+      "pageid": 2312,
+      "ns": 0,
+      "title": "Crompton"
+    },
+    {
+      "pageid": 4900,
+      "ns": 0,
+      "title": "Culat"
+    },
+    {
+      "pageid": 1981,
+      "ns": 0,
+      "title": "Dan"
+    },
+    {
+      "pageid": 3833,
+      "ns": 0,
+      "title": "Dendros"
+    },
+    {
+      "pageid": 5414,
+      "ns": 0,
+      "title": "Draconis IV"
+    },
+    {
+      "pageid": 2508,
+      "ns": 0,
+      "title": "Dur"
+    },
+    {
+      "pageid": 5329,
+      "ns": 0,
+      "title": "Duvalle"
+    },
+    {
+      "pageid": 4953,
+      "ns": 0,
+      "title": "Earth"
+    },
+    {
+      "pageid": 44,
+      "ns": 0,
+      "title": "Earth/XD"
+    },
+    {
+      "pageid": 1639,
+      "ns": 0,
+      "title": "Ecaz"
+    },
+    {
+      "pageid": 7234,
+      "ns": 0,
+      "title": "Ecaz/XD"
+    },
+    {
+      "pageid": 5770,
+      "ns": 0,
+      "title": "Eluzai"
+    },
+    {
+      "pageid": 2222,
+      "ns": 0,
+      "title": "Enfeil"
+    },
+    {
+      "pageid": 4367,
+      "ns": 0,
+      "title": "Extaris"
+    },
+    {
+      "pageid": 4352,
+      "ns": 0,
+      "title": "Galacia/XD"
+    },
+    {
+      "pageid": 5486,
+      "ns": 0,
+      "title": "Gallatin"
+    },
+    {
+      "pageid": 3515,
+      "ns": 0,
+      "title": "Gamma Vertis VII"
+    },
+    {
+      "pageid": 2137,
+      "ns": 0,
+      "title": "Gamont"
+    },
+    {
+      "pageid": 6182,
+      "ns": 0,
+      "title": "Gamont/DE"
+    },
+    {
+      "pageid": 4963,
+      "ns": 0,
+      "title": "Giedi Prime"
+    },
+    {
+      "pageid": 6041,
+      "ns": 0,
+      "title": "Giedi Prime/DE"
+    },
+    {
+      "pageid": 1616,
+      "ns": 0,
+      "title": "Giedi Prime/XD"
+    },
+    {
+      "pageid": 1849,
+      "ns": 0,
+      "title": "Ginaz"
+    },
+    {
+      "pageid": 16994,
+      "ns": 0,
+      "title": "Gollimar"
+    },
+    {
+      "pageid": 4899,
+      "ns": 0,
+      "title": "Grand Hain"
+    },
+    {
+      "pageid": 1647,
+      "ns": 0,
+      "title": "Grumman"
+    },
+    {
+      "pageid": 7229,
+      "ns": 0,
+      "title": "Grumman/XD"
+    },
+    {
+      "pageid": 1951,
+      "ns": 0,
+      "title": "Hagal"
+    },
+    {
+      "pageid": 7244,
+      "ns": 0,
+      "title": "Hagal/DE"
+    },
+    {
+      "pageid": 4980,
+      "ns": 0,
+      "title": "Harmonthep"
+    },
+    {
+      "pageid": 5112,
+      "ns": 0,
+      "title": "Harmonthep/DE"
+    },
+    {
+      "pageid": 1820,
+      "ns": 0,
+      "title": "Harmonthep/XD"
+    },
+    {
+      "pageid": 5343,
+      "ns": 0,
+      "title": "Hassika V"
+    },
+    {
+      "pageid": 2756,
+      "ns": 0,
+      "title": "Hessra"
+    },
+    {
+      "pageid": 3807,
+      "ns": 0,
+      "title": "Hestia"
+    },
+    {
+      "pageid": 2227,
+      "ns": 0,
+      "title": "III Delta Kaising"
+    },
+    {
+      "pageid": 4543,
+      "ns": 0,
+      "title": "Ipyr"
+    },
+    {
+      "pageid": 5266,
+      "ns": 0,
+      "title": "Ishia"
+    },
+    {
+      "pageid": 3338,
+      "ns": 0,
+      "title": "Ishkal"
+    },
+    {
+      "pageid": 1648,
+      "ns": 0,
+      "title": "Ix"
+    },
+    {
+      "pageid": 4455,
+      "ns": 0,
+      "title": "Ix/DE"
+    },
+    {
+      "pageid": 4925,
+      "ns": 0,
+      "title": "Ix/XD"
+    },
+    {
+      "pageid": 13886,
+      "ns": 0,
+      "title": "Jaddua"
+    },
+    {
+      "pageid": 5187,
+      "ns": 0,
+      "title": "Jericha"
+    },
+    {
+      "pageid": 1761,
+      "ns": 0,
+      "title": "Junction"
+    },
+    {
+      "pageid": 5064,
+      "ns": 0,
+      "title": "Junction/XD"
+    },
+    {
+      "pageid": 4055,
+      "ns": 0,
+      "title": "Jupiter"
+    },
+    {
+      "pageid": 3319,
+      "ns": 0,
+      "title": "Juzzubal"
+    },
+    {
+      "pageid": 7938,
+      "ns": 0,
+      "title": "Kadesh"
+    },
+    {
+      "pageid": 1803,
+      "ns": 0,
+      "title": "Kaitain"
+    },
+    {
+      "pageid": 5677,
+      "ns": 0,
+      "title": "Kaitain/DE"
+    },
+    {
+      "pageid": 5061,
+      "ns": 0,
+      "title": "Kaitain/XD"
+    },
+    {
+      "pageid": 3446,
+      "ns": 0,
+      "title": "Kirana III"
+    },
+    {
+      "pageid": 2732,
+      "ns": 0,
+      "title": "Kolhar"
+    },
+    {
+      "pageid": 3591,
+      "ns": 0,
+      "title": "Komider"
+    },
+    {
+      "pageid": 2402,
+      "ns": 0,
+      "title": "Kronin"
+    },
+    {
+      "pageid": 2408,
+      "ns": 0,
+      "title": "Lampadas"
+    },
+    {
+      "pageid": 4970,
+      "ns": 0,
+      "title": "Lankiveil"
+    },
+    {
+      "pageid": 1854,
+      "ns": 0,
+      "title": "Lankiveil/XD"
+    },
+    {
+      "pageid": 2138,
+      "ns": 0,
+      "title": "Lernaeus"
+    },
+    {
+      "pageid": 5247,
+      "ns": 0,
+      "title": "Liesco II"
+    },
+    {
+      "pageid": 4376,
+      "ns": 0,
+      "title": "Lishash"
+    },
+    {
+      "pageid": 3605,
+      "ns": 0,
+      "title": "Maktiun III"
+    },
+    {
+      "pageid": 2330,
+      "ns": 0,
+      "title": "Markon"
+    },
+    {
+      "pageid": 4323,
+      "ns": 0,
+      "title": "Menaris"
+    },
+    {
+      "pageid": 17289,
+      "ns": 0,
+      "title": "Molitor"
+    },
+    {
+      "pageid": 2223,
+      "ns": 0,
+      "title": "Naraj"
+    },
+    {
+      "pageid": 7310,
+      "ns": 0,
+      "title": "Neta-class"
+    },
+    {
+      "pageid": 2139,
+      "ns": 0,
+      "title": "Niushe"
+    },
+    {
+      "pageid": 3972,
+      "ns": 0,
+      "title": "Norstrilia"
+    },
+    {
+      "pageid": 11996,
+      "ns": 0,
+      "title": "Nossus"
+    },
+    {
+      "pageid": 3161,
+      "ns": 0,
+      "title": "Novebruns"
+    },
+    {
+      "pageid": 11997,
+      "ns": 0,
+      "title": "Otorio"
+    },
+    {
+      "pageid": 2343,
+      "ns": 0,
+      "title": "Palma"
+    },
+    {
+      "pageid": 3626,
+      "ns": 0,
+      "title": "Parlon"
+    },
+    {
+      "pageid": 18707,
+      "ns": 0,
+      "title": "Pedmiot"
+    },
+    {
+      "pageid": 3332,
+      "ns": 0,
+      "title": "Peridot Colony"
+    },
+    {
+      "pageid": 4168,
+      "ns": 0,
+      "title": "Pilargo"
+    },
+    {
+      "pageid": 3439,
+      "ns": 0,
+      "title": "Pincknon"
+    },
+    {
+      "pageid": 5332,
+      "ns": 0,
+      "title": "Pital"
+    },
+    {
+      "pageid": 4794,
+      "ns": 0,
+      "title": "Planet of the Handlers"
+    },
+    {
+      "pageid": 4959,
+      "ns": 0,
+      "title": "Poritrin"
+    },
+    {
+      "pageid": 5262,
+      "ns": 0,
+      "title": "Poritrin/DE"
+    },
+    {
+      "pageid": 1742,
+      "ns": 0,
+      "title": "Poritrin/XD"
+    },
+    {
+      "pageid": 1829,
+      "ns": 0,
+      "title": "Prison planet"
+    },
+    {
+      "pageid": 4739,
+      "ns": 0,
+      "title": "Qelso"
+    },
+    {
+      "pageid": 77,
+      "ns": 0,
+      "title": "Quadra"
+    },
+    {
+      "pageid": 2403,
+      "ns": 0,
+      "title": "Reenol"
+    },
+    {
+      "pageid": 3320,
+      "ns": 0,
+      "title": "Relicon"
+    },
+    {
+      "pageid": 2338,
+      "ns": 0,
+      "title": "Renditai"
+    },
+    {
+      "pageid": 4372,
+      "ns": 0,
+      "title": "Revona"
+    },
+    {
+      "pageid": 3083,
+      "ns": 0,
+      "title": "Rhisso"
+    },
+    {
+      "pageid": 1766,
+      "ns": 0,
+      "title": "Richese"
+    },
+    {
+      "pageid": 3555,
+      "ns": 0,
+      "title": "Richese/DE"
+    },
+    {
+      "pageid": 4928,
+      "ns": 0,
+      "title": "Richese/XD"
+    },
+    {
+      "pageid": 4124,
+      "ns": 0,
+      "title": "Rikka's Planet"
+    },
+    {
+      "pageid": 5361,
+      "ns": 0,
+      "title": "Roc"
+    },
+    {
+      "pageid": 20058,
+      "ns": 0,
+      "title": "Romo"
+    },
+    {
+      "pageid": 5331,
+      "ns": 0,
+      "title": "Ronto"
+    },
+    {
+      "pageid": 2882,
+      "ns": 0,
+      "title": "Ros-Jal"
+    },
+    {
+      "pageid": 4960,
+      "ns": 0,
+      "title": "Rossak"
+    },
+    {
+      "pageid": 4047,
+      "ns": 0,
+      "title": "Rossak/DE"
+    },
+    {
+      "pageid": 1815,
+      "ns": 0,
+      "title": "Rossak/XD"
+    },
+    {
+      "pageid": 1610,
+      "ns": 0,
+      "title": "Salusa Secundus"
+    },
+    {
+      "pageid": 4290,
+      "ns": 0,
+      "title": "Salusa Secundus/DE"
+    },
+    {
+      "pageid": 4926,
+      "ns": 0,
+      "title": "Salusa Secundus/XD"
+    },
+    {
+      "pageid": 3511,
+      "ns": 0,
+      "title": "Sarash-Zillish"
+    },
+    {
+      "pageid": 4324,
+      "ns": 0,
+      "title": "Seban"
+    },
+    {
+      "pageid": 2883,
+      "ns": 0,
+      "title": "Seneca"
+    },
+    {
+      "pageid": 2213,
+      "ns": 0,
+      "title": "Sikun"
+    },
+    {
+      "pageid": 1825,
+      "ns": 0,
+      "title": "Stars"
+    },
+    {
+      "pageid": 3685,
+      "ns": 0,
+      "title": "Synchrony"
+    },
+    {
+      "pageid": 7334,
+      "ns": 0,
+      "title": "Tantalos"
+    },
+    {
+      "pageid": 7934,
+      "ns": 0,
+      "title": "Tarahell"
+    },
+    {
+      "pageid": 3325,
+      "ns": 0,
+      "title": "The Stars and Planets of Frank Herbert's Dune: A Gazetteer"
+    },
+    {
+      "pageid": 7335,
+      "ns": 0,
+      "title": "Thuestes"
+    },
+    {
+      "pageid": 5030,
+      "ns": 0,
+      "title": "Tleilax"
+    },
+    {
+      "pageid": 7472,
+      "ns": 0,
+      "title": "Tleilax/DE"
+    },
+    {
+      "pageid": 37,
+      "ns": 0,
+      "title": "Tleilax/XD"
+    },
+    {
+      "pageid": 46,
+      "ns": 0,
+      "title": "Tupile"
+    },
+    {
+      "pageid": 3834,
+      "ns": 0,
+      "title": "Tupile/DE"
+    },
+    {
+      "pageid": 3334,
+      "ns": 0,
+      "title": "Tyndall"
+    },
+    {
+      "pageid": 3015,
+      "ns": 0,
+      "title": "Ularda"
+    },
+    {
+      "pageid": 11392,
+      "ns": 0,
+      "title": "Ulurda"
+    },
+    {
+      "pageid": 4370,
+      "ns": 0,
+      "title": "Ven"
+    },
+    {
+      "pageid": 3012,
+      "ns": 0,
+      "title": "Vertree Colony"
+    },
+    {
+      "pageid": 2184,
+      "ns": 0,
+      "title": "Walgis"
+    },
+    {
+      "pageid": 1797,
+      "ns": 0,
+      "title": "Wallach IX"
+    },
+    {
+      "pageid": 7280,
+      "ns": 0,
+      "title": "Wallach IX/DE"
+    },
+    {
+      "pageid": 4948,
+      "ns": 0,
+      "title": "Wallach IX/XD"
+    },
+    {
+      "pageid": 11625,
+      "ns": 0,
+      "title": "Wallach VI"
+    },
+    {
+      "pageid": 4141,
+      "ns": 0,
+      "title": "Xuttah"
+    },
+    {
+      "pageid": 2228,
+      "ns": 0,
+      "title": "Zabulon"
+    },
+    {
+      "pageid": 2958,
+      "ns": 0,
+      "title": "Zanbar"
+    },
+    {
+      "pageid": 2178,
+      "ns": 0,
+      "title": "Zanovar"
+    },
+    {
+      "title": "IV Anbus",
+      "ns": 0
+    },
+    {
+      "title": "Alpha Corvus",
+      "ns": 0
+    },
+    {
+      "title": "Rakis",
+      "ns": 0
+    },
+    {
+      "title": "Dune",
+      "ns": 0
+    },
+    {
+      "title": "Atar",
+      "ns": 0
+    },
+    {
+      "title": "Barandiko",
+      "ns": 0
+    },
+    {
+      "title": "Biarek",
+      "ns": 0
+    },
+    {
+      "title": "III Delta Pavonis",
+      "ns": 0
+    },
+    {
+      "title": "Cedon",
+      "ns": 0
+    },
+    {
+      "title": "Enfiel",
+      "ns": 0
+    },
+    {
+      "title": "Gaar",
+      "ns": 0
+    },
+    {
+      "title": "Galicia",
+      "ns": 0
+    },
+    {
+      "title": "Gansireed",
+      "ns": 0
+    },
+    {
+      "title": "Gammu",
+      "ns": 0
+    },
+    {
+      "title": "Parella",
+      "ns": 0
+    },
+    {
+      "title": "Parmentier",
+      "ns": 0
+    },
+    {
+      "title": "Ponciard",
+      "ns": 0
+    },
+    {
+      "title": "Semboule",
+      "ns": 0
+    },
+    {
+      "title": "Seprek",
+      "ns": 0
+    },
+    {
+      "title": "Souci",
+      "ns": 0
+    },
+    {
+      "title": "Wallach VII",
+      "ns": 0
+    },
+    {
+      "title": "Yardin",
+      "ns": 0
+    }
+  ]
+}

@@ -1,5 +1,27 @@
 [
   {
+    "version": "0.115.0",
+    "date": "2026-10-14",
+    "title": "World charters, expanded quest offices and the Spacing Bank Collective",
+    "synopsis": "Discover unique worlds, exclusive interfaces, detailed rewards, a finite universal resource exchange and a clearer staff portal.",
+    "changes": [
+      "Final charter confirmation uses two columns: identity and controls on the left, planet artwork and full stats on the right.",
+      "The mobile confirmation stacks both panels and remains scrollable. Planet assignment and entered values stay unchanged.",
+      "Round-reset wording now reflects removal of planets followed by new charter registration.",
+      "Planet Overview displays the same assigned-world artwork as colonial registration, with type, habitability, growth modifier and starting housing.",
+      "Planet register: named Star Trek and Dune worlds, twenty once-per-round Borg/Undine worlds, Earth, Ultimate Arrakis and Unimatrix999 Homeworld. Lore-inspired ecology and generated gameplay survey values are labelled.",
+      "Registration stays fixed across refresh and permits three server-counted rerolls. Unique names and reservations prevent duplicate world charters. Ordinary worlds at 60% habitability or lower leave new selection; special worlds are exempt.",
+      "Arrakis has −1 tick fleet travel for the round; Earth receives 20% bonus salvage from destroyed attackers and defenders when it participates. Unique charter broadcasts conceal the holder and coordinates.",
+      "Exclusive Silver, Borg, Undine, Legendary, Ultimate and Unimatrix999 styles apply automatically and appear only for the corresponding holder and staff.",
+      "Every achievement office offers at least fifteen supported goals, in an ordered upper menu. The summary tab contains statistics. New rewards include resources, CU, RP, settlers and research-gated structures; blocked structures convert to their CU cost.",
+      "Spaceport adds the finite Spacing Bank Collective, starting at one million of each resource per round. Staff controls tax, values and limits; admins configure next-round starting reserves. Exchange receipts settle atomically.",
+      "Five-character read-only account IDs appear on profiles and command cards. Staff workspaces operate without a planet, and round settings display an inline saved timestamp.",
+      "Staff overview and the new portal Staff page show a full personnel roster and duties. Staff and the placeholder Round history page are linked in the top menu.",
+      "Galaxy Browser initially opens the player’s own galaxy and includes a Go to 1:1 button. Leading Of is omitted in the planetary command display.",
+      "Site management retains the news editor and adds global toggles for Round history demo examples and the simulated battle lab. Real completed round archives automatically replace fictional examples."
+    ]
+  },
+  {
     "version": "0.114.0",
     "date": "2026-10-14",
     "title": "Planetary charters, population development and Astra Nexus",
