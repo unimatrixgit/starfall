@@ -1,7 +1,14 @@
 {
   "minimumTasks": 5,
   "maximumTasks": 10,
-  "completed": [],
+  "completed": [
+    {
+      "id": "SF-067",
+      "title": "Proportional navigation artwork across game themes",
+      "priority": "P2",
+      "completedAt": "2026-10-14T18:12:22.609Z"
+    }
+  ],
   "published": [
     {
       "version": "0.120.0",

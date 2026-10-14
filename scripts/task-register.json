@@ -567,6 +567,13 @@
       "status": "live",
       "release": "0.120.6",
       "validation": "241 release tests,105 page audit zero findings"
+    },
+    {
+      "id": "SF-067",
+      "priority": "P2",
+      "title": "Preserve proportions of development navigation artwork across themes",
+      "status": "live",
+      "sourceSha": "78e0b3799fdf4b257073cf7b4010f6eca29ea9dc"
     }
   ],
   "nextId": 67,
