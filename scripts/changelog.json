@@ -1,5 +1,32 @@
 [
   {
+    "version": "0.119.0",
+    "date": "2026-10-14",
+    "title": "Alliance planning and staff control",
+    "synopsis": "Five completed improvements: faster public pages, configurable staff permissions, clearer fleet panels, pa-tools attack planning and the in-game General forum.",
+    "taskIds": [
+      "minute-cache",
+      "staff-permission-nodes",
+      "network-fleet-spacing",
+      "pa-tools-attack-planner",
+      "general-game-forum"
+    ],
+    "promptIds": [
+      "SF-000",
+      "SF-005",
+      "SF-006",
+      "SF-016",
+      "SF-017"
+    ],
+    "changes": [
+      "One-minute caches reduce repeated public asset decoding and public data requests. Private profiles, permissions and gameplay writes retain fresh authorisation.",
+      "Support and Multihunter permission nodes are configurable on Account ranks. Saves are audited and revision-checked; only Administrators can edit the matrix or grant Administrator rank.",
+      "Network Hub fleet panels and intel controls have consistent spacing across themes, with wrapped controls and scrollable tables.",
+      "The alliance attack tool now adapts pa-tools operations, scheduled openings, prereleases, consecutive wave bookings and shared ownership. Existing claims are imported; revisions prevent conflicting claims. The full Battlegroup page remains queued under SF-032.",
+      "General forum is available inside the game alongside the private galaxy and alliance forums. Private membership checks remain in place."
+    ]
+  },
+  {
     "version": "0.117.2",
     "date": "2026-10-14",
     "title": "Bugfix · Research bonuses finish the active project",

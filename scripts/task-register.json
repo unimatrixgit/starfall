@@ -34,14 +34,14 @@
       "id": "SF-005",
       "priority": "P0",
       "title": "Staff permission nodes",
-      "status": "ready-to-publish",
+      "status": "live",
       "release": "0.118.0"
     },
     {
       "id": "SF-006",
       "priority": "P0",
       "title": "Fleet page spacing",
-      "status": "ready-to-publish",
+      "status": "live",
       "release": "0.118.0"
     },
     {
@@ -84,7 +84,7 @@
       "id": "SF-013",
       "priority": "P1",
       "title": "Unique prompt IDs; report completed IDs on pushes and display task list",
-      "status": "ready-to-publish",
+      "status": "live",
       "release": "0.118.0"
     },
     {
@@ -103,13 +103,15 @@
       "id": "SF-016",
       "priority": "P1",
       "title": "Replace alliance attack tool with pa-tools port",
-      "status": "open"
+      "status": "ready-to-publish",
+      "release": "0.119.0"
     },
     {
       "id": "SF-017",
       "priority": "P2",
       "title": "General forum for all players",
-      "status": "open"
+      "status": "ready-to-publish",
+      "release": "0.119.0"
     },
     {
       "id": "SF-018",
@@ -150,8 +152,8 @@
     {
       "id": "SF-024",
       "priority": "P3",
-      "title": "Fork to 4 of 7 with agreements and GitHub push status",
-      "status": "open"
+      "title": "Fork to 4 of 7 with complete handoff",
+      "status": "done"
     },
     {
       "id": "SF-025",
@@ -171,6 +173,76 @@
       "title": "Transfer agreements and identity to Project Dune colleague",
       "status": "done",
       "target": "01a13409-6a7a-77f2-8f1c-0d80f84db60c"
+    },
+    {
+      "id": "SF-028",
+      "priority": "P1",
+      "title": "Apply and print common colleague priority rules",
+      "status": "done"
+    },
+    {
+      "id": "SF-029",
+      "priority": "P2",
+      "title": "End colleague messages with einde prompt",
+      "status": "done"
+    },
+    {
+      "id": "SF-030",
+      "priority": "P0",
+      "title": "Display the current ordered task list",
+      "status": "done"
+    },
+    {
+      "id": "SF-031",
+      "priority": "P2",
+      "title": "Final act: 3 of 7 tribute ghost planet",
+      "status": "open"
+    },
+    {
+      "id": "SF-032",
+      "priority": "P2",
+      "title": "Port battlegroup system and add Alliance Battlegroup page",
+      "status": "open"
+    },
+    {
+      "id": "SF-033",
+      "priority": "P2",
+      "title": "Tribute ghost planet must be at 1:1:11",
+      "status": "open"
+    },
+    {
+      "id": "SF-034",
+      "priority": "P2",
+      "title": "Expand only galaxy 1:1 stronghold capacity to twenty",
+      "status": "open",
+      "layout": {
+        "galaxy": "1:1",
+        "playerSlots": [
+          1,
+          10
+        ],
+        "ghostSlots": [
+          11,
+          15
+        ],
+        "structureSlots": [
+          16,
+          20
+        ]
+      },
+      "note": "User typed overlapping slot15; notified that ghost11–15 and structure16–20 avoid overlap."
+    },
+    {
+      "id": "SF-000",
+      "priority": "P0",
+      "title": "One-minute cache (retrospective ID)",
+      "status": "live",
+      "release": "0.117.0"
     }
+  ],
+  "nextId": 35,
+  "finalActionIds": [
+    "SF-031",
+    "SF-033"
   ]
 }

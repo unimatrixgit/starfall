@@ -1,4 +1,4 @@
-const STARFALL_VERSION='0.118.0';
+const STARFALL_VERSION='0.119.0';
 const TYPES=new Set(['planet','landing','development','unit','news','incoming','jumpgate','advanced']);
 const RETENTION=14*24*60*60*1000;
 function json(value,status=200){return Response.json(value,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});}
@@ -74,6 +74,7 @@ async function serveRequest(request,env){
   if(url.pathname==='/api/alliance-fleets'){try{return await allianceFleetAPI(request,env);}catch{return json({error:'The alliance fleet service is unavailable.'},503);}}
   if(url.pathname==='/api/tickets'){try{return await ticketAPI(request,env);}catch{return json({error:'The support system could not complete this request.'},503);}}
   if(url.pathname==='/api/forums'){try{return await forumAPI(request,env);}catch{return json({error:'The forum could not complete this request.'},503);}}
+  if(url.pathname==='/api/alliance-operations'){try{return await attackOperationsAPI(request,env);}catch{return json({error:'Attack planner unavailable.'},503);}}
   if(url.pathname==='/api/alliance-attack'){try{return await allianceAttackAPI(request,env);}catch{return json({error:'Attack board unavailable.'},503);}}
   if(url.pathname.startsWith('/api/alliance-control/')){try{return await allianceControlAPI(request,env);}catch{return json({error:'The alliance could not complete this operation.'},503);}}
   if(['/api/mail','/api/diplomacy','/api/admin/key-reveal','/api/colony','/api/civil-covert'].includes(url.pathname)){try{return await (url.pathname==='/api/mail'?mailAPI:url.pathname==='/api/diplomacy'?diplomacyAPI:url.pathname==='/api/colony'?colonyAPI:url.pathname==='/api/civil-covert'?civilCovertAPI:forceKeyAPI)(request,env);}catch{return json({error:'The communication service could not complete this request.'},503);}}
