@@ -471,10 +471,17 @@
       "id": "SF-060",
       "priority": "BUGFIX",
       "title": "Galaxy-scoped elections and ministers",
-      "status": "verified"
+      "status": "live"
+    },
+    {
+      "id": "SF-062",
+      "priority": "BUGFIX",
+      "title": "Correct production and development formulae",
+      "status": "verified",
+      "release": "0.120.5"
     }
   ],
-  "nextId": 61,
+  "nextId": 63,
   "finalActionIds": [
     "SF-031",
     "SF-033"
