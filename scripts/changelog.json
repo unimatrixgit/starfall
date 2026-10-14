@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.119.1",
+    "date": "2026-10-14",
+    "title": "Bugfix · Reserve galaxy 1:1 for staff",
+    "synopsis": "Ordinary new players no longer enrol in galaxy1:1. Existing staff planets remain where they are.",
+    "promptIds": [
+      "SF-044"
+    ],
+    "changes": [
+      "New Player accounts begin outside galaxy1:1; staff accounts retain access to its registration slots.",
+      "The existing Multihunter planet at1:1:2 remains in place after checking its account role. No planet is moved or reset.",
+      "Existing planetary assets and alliance membership are preserved."
+    ]
+  },
+  {
     "version": "0.119.0",
     "date": "2026-10-14",
     "title": "Alliance planning and staff control",
