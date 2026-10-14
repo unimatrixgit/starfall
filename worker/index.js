@@ -74,14 +74,19 @@ async function serveRequest(request,env){
   if(url.pathname==='/api/alliance-attack'){try{return await allianceAttackAPI(request,env);}catch{return json({error:'Attack board unavailable.'},503);}}
   if(url.pathname.startsWith('/api/alliance-control/')){try{return await allianceControlAPI(request,env);}catch{return json({error:'The alliance could not complete this operation.'},503);}}
   if(['/api/mail','/api/diplomacy','/api/admin/key-reveal','/api/colony','/api/civil-covert'].includes(url.pathname)){try{return await (url.pathname==='/api/mail'?mailAPI:url.pathname==='/api/diplomacy'?diplomacyAPI:url.pathname==='/api/colony'?colonyAPI:url.pathname==='/api/civil-covert'?civilCovertAPI:forceKeyAPI)(request,env);}catch{return json({error:'The communication service could not complete this request.'},503);}}
-  if(url.pathname==='/api/version')return json({version:'0.111.0',serverTime:Date.now()});
+  if(url.pathname==='/api/galaxy-development'){try{return await galaxyDevelopmentAPI(request,env);}catch{return json({error:'Galaxy development unavailable.'},503);}}
+  if(url.pathname==='/api/planet-enrolment')return planetEnrolmentAPI(request,env);
+  if(url.pathname==='/api/admin/shuffle')return galaxyShuffleAPI(request,env);
+  if(url.pathname==='/api/alliance-applications')return allianceApplicationsAPI(request,env);
+  if(url.pathname==='/api/alliance-economy')return allianceEconomyAPI(request,env);
+  if(url.pathname==='/api/version')return json({version:'0.114.0',serverTime:Date.now()});
   if(['/api/planets','/api/alliance-intel','/api/alliance-settings'].includes(url.pathname)){try{return await (url.pathname==='/api/planets'?planetDirectoryAPI:url.pathname==='/api/alliance-settings'?allianceSettingsAPI:allianceIntelAPI)(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid request.':'The central planet database is unavailable.'},error instanceof SyntaxError?400:503);}}
   if(url.pathname.startsWith('/api/portal/')){try{return await portalAPI(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid request.':'The portal could not complete this request. Try again.'},error instanceof SyntaxError?400:503);}}
   if(url.pathname.startsWith('/api/miday/')){try{return await api(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid JSON request.':'The scan database could not complete this request. Try again.'},error instanceof SyntaxError?400:503);}}
   if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405});
   if(['/profile.html','/staff.html','/forums.html'].includes(url.pathname)){const user=await portalUser(request,env);if(!user)return Response.redirect(url.origin+'/login.html',302);if(url.pathname==='/staff.html'&&!isPortalStaff(user))return new Response('Staff access required',{status:403});}
   const game=['/game','/game/','/index.html'].includes(url.pathname);
-  if(game&&!await portalUser(request,env))return Response.redirect(url.origin+'/login.html',302);
+  if(game||url.pathname==='/onboarding.html'){const user=await portalUser(request,env);if(!user)return Response.redirect(url.origin+'/login.html',302);if(game&&!(user.role==='admin'&&(url.searchParams.get('staff')==='1'||url.searchParams.get('legacy_staff')==='1'))){const owned=await env.DB.prepare("SELECT id FROM planet_directory WHERE owner_id=? AND kind='planet' LIMIT 1").bind(user.id).first();if(!owned)return Response.redirect(url.origin+'/onboarding.html',302);}}
   const path=url.pathname==='/'?'/portal.html':game?'/index.html':url.pathname;
   const asset=ASSETS[path];if(!asset)return new Response('Not found',{status:404});
   const bytes=Uint8Array.from(atob(asset.data),c=>c.charCodeAt(0));

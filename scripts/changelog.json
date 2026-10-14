@@ -1,5 +1,39 @@
 [
   {
+    "version": "0.114.0",
+    "date": "2026-10-14",
+    "title": "Planetary charters, population development and Astra Nexus",
+    "synopsis": "A new round begins with 36 worlds, confirmed planetary registration, population taxes, galaxy redistribution and a redesigned alliance command.",
+    "changes": [
+      "Every reset removes all planets, dummies and placeholders; accounts return to a confirmed identity, race, theme and assigned-world charter. Ticks begin stopped.",
+      "Thirty-six illustrated world types set 500–1,000 starting residents and environmental population-growth modifiers from −75% to +50%.",
+      "Biodomes generate settlers gradually; Population Development research adds five +20% levels. Research and population milestones reward CU/RP under Secretary of Development.",
+      "Minister of Development controls 0–5% population levy. Equal shares retain fractional debt; each collected resident funds 6 Metal, 4 Crystal and 2 Eonium. Politics and Government show statistics and graphs.",
+      "Spaceport hosts a separate Galaxy Fund module with centrally recorded deposits and eligible payouts.",
+      "Players begin in starting galaxies. Tick 12 redistributes players once, allocating galaxies and clusters; Admin Control provides confirmed manual shuffle.",
+      "Unaffiliated commands receive Join, Create and Recover modules. All known alliances are listed; recruitment requests appear as pending Recruits.",
+      "Alliance overview prioritises news and resource-income reports, with refinery, finance and population contributions.",
+      "Achievement categories have individual tabs. Shared page spacing, compact layouts and consistent theme fonts apply throughout the game.",
+      "Astra Nexus adds holographic command artwork, cyan-magenta lighting and a futuristic interface.",
+      "Ticker and planet status are merged into one command module, with Simulate Tick and Reset controls at the side. All news reports include lore, recorded outcomes and available event context. Internal links and anchors were audited and corrected."
+    ]
+  },
+  {
+    "version": "0.112.0",
+    "date": "2026-10-14",
+    "title": "Balanced ship tables and confirmed Havoc presets",
+    "synopsis": "Clearer structure and ship statistics, percentage-based population damage and a race-aware ten-ship Havoc matrix.",
+    "changes": [
+      "Current Structures has balanced columns, larger icons, resource-by-resource costs and compact structure artwork. Narrow screens use cards.",
+      "Public Shipstats and the staff Stats Editor have compact fixed-width columns and a Pop dmg% field.",
+      "Cruisers and Battleships deal 0.1% of defender starting population per surviving ship by default. Percentages sum up to 100%; other ship classes remain blank. Older overrides migrate once.",
+      "Havoc replaces class totals with ten ship quantities mapped to the corresponding named ships in each race.",
+      "Confirm setup validates all requested racial ships before applying. Invalid or missing matches block the complete application without partial changes.",
+      "Each confirmation saves the full Havoc form. The latest five browser-local setups are available in a dropdown; the sixth replaces the oldest. Loading requires a fresh confirmation before application.",
+      "Race colours distinguish Helion, Velari, Nexari, Kryth and Auralis in the editor and the Havoc matrix."
+    ]
+  },
+  {
     "version": "0.111.0",
     "date": "2026-10-14",
     "title": "Government, Biodomes and diplomatic mail",
