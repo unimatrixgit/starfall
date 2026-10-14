@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS player_mail(id TEXT PRIMARY KEY,sender_id TEXT NOT NULL,recipient_id TEXT NOT NULL,subject TEXT NOT NULL,body TEXT NOT NULL,created_at INTEGER NOT NULL,read_at INTEGER NOT NULL DEFAULT 0);
+CREATE INDEX IF NOT EXISTS mail_recipient ON player_mail(recipient_id,created_at);
+CREATE TABLE IF NOT EXISTS alliance_signals(id TEXT PRIMARY KEY,source_alliance TEXT NOT NULL,target_alliance TEXT NOT NULL,actor_id TEXT NOT NULL,action TEXT NOT NULL,created_at INTEGER NOT NULL,start_tick INTEGER NOT NULL,expires_tick INTEGER NOT NULL,capture_bonus INTEGER NOT NULL,xp_bonus INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS alliance_key_audit(id TEXT PRIMARY KEY,admin_id TEXT NOT NULL,admin_name TEXT NOT NULL,alliance_id TEXT NOT NULL,owner_id TEXT NOT NULL,mode TEXT NOT NULL,created_at INTEGER NOT NULL);

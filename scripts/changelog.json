@@ -1,5 +1,22 @@
 [
   {
+    "version": "0.111.0",
+    "date": "2026-10-14",
+    "title": "Government, Biodomes and diplomatic mail",
+    "synopsis": "Population habitats, battle casualties, private player mail and clearer alliance operations.",
+    "changes": [
+      "Government receives a colony register, housing cap, population income bonus and explicit workforce Confirm/Reset controls.",
+      "Biodomes house 50 residents, feature original artwork and lore, and add a balanced CU/RU quest line.",
+      "Cruisers and Battleships also target population. Structure killers damage Biodomes and their occupants; battle calculator and reports show both effects.",
+      "Diplomacy alerts both alliances, with target-player Mail, narrative reports and Planetarion-style capture/XP bonuses.",
+      "Private player Mail includes inbox, sent messages, replies and pagination. Admin force key reveal is audited without recording secrets.",
+      "Fleet roster is transposed; launch bay, fleet readiness and structure tables are compact. Universe adds largest planets and population growth/loss rankings.",
+      "Private intel affiliations and nicknames no longer inherit public membership data.",
+      "Worker bribery triggers a six-tick mining strike; Biodome sabotage destroys habitats and occupants, with dedicated successful-operation quests.",
+      "Population adds 1 CU and 1 RP per complete 100 residents; income shows separate refinery and Finance Centre contributions."
+    ]
+  },
+  {
     "version": "0.110.0",
     "date": "2026-10-14",
     "title": "Order refresh, fleet roster and achievement receipts",
