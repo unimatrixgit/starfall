@@ -1,5 +1,21 @@
 [
   {
+    "version": "0.115.1",
+    "date": "2026-10-14",
+    "title": "Bugfix · Faster loading and staff access corrections",
+    "synopsis": "Fixes slow and temporarily unstyled portal pages, reduces unnecessary database work, and separates privileged documentation by staff role.",
+    "changes": [
+      "Portal typography uses immediate theme-matched fallback fonts; external blocking font imports are removed. Large videos load only when played, with preload disabled.",
+      "Access auditing runs after the response through the Worker execution context. Schema and authenticated-request lookups are reused, and binary assets decode without per-byte array callbacks.",
+      "Players’ manual removes staff-only chapters, controls and editorial modules. Staff manual is served only after authentication and staff-role checks.",
+      "Administrator, Support and Multihunter manuals expose procedures relevant to that role, with a common permissions matrix and evidence-handling guide.",
+      "Spacing Bank policy and Site management remain Administrator responsibilities. Support has tickets and read-only staff audit; Multihunters has access, fleet investigation and read-only audit.",
+      "Staff tools continue to work without a personal planet. This documentation update does not reset the round again."
+    ],
+    "category": "Bugfix",
+    "type": "bugfix"
+  },
+  {
     "version": "0.115.0",
     "date": "2026-10-14",
     "title": "World charters, expanded quest offices and the Spacing Bank Collective",
