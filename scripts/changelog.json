@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.120.6",
+    "date": "2026-10-14",
+    "title": "Bugfix · Spacing Bank stays visible",
+    "synopsis": "The Spacing Bank Collective remains available when the Galaxy Fund refreshes instead of briefly appearing and disappearing.",
+    "promptIds": [
+      "SF-066"
+    ],
+    "changes": [
+      "Ordinary game updates preserve the bank module and its entered exchange values.",
+      "Bank loading is guarded against stale account or page responses, and load failures remain visible with retry.",
+      "The fix preserves transaction permissions and revision checks. No round reset."
+    ]
+  },
+  {
     "version": "0.120.5",
     "date": "2026-10-14",
     "title": "Bugfix · Correct production and development timing",

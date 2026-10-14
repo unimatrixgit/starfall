@@ -50,7 +50,8 @@
       "title": "Spacing across all themes",
       "status": "open",
       "groups": [
-        "G-001"
+        "G-001",
+        "G-013"
       ]
     },
     {
@@ -59,7 +60,8 @@
       "title": "Spacing across all game pages",
       "status": "open",
       "groups": [
-        "G-001"
+        "G-001",
+        "G-013"
       ]
     },
     {
@@ -68,7 +70,8 @@
       "title": "Compact or expand game page spacing appropriately",
       "status": "open",
       "groups": [
-        "G-001"
+        "G-001",
+        "G-013"
       ]
     },
     {
@@ -93,7 +96,10 @@
       "id": "SF-012",
       "priority": "P2",
       "title": "Info module beside Planet Settings across themes",
-      "status": "open"
+      "status": "open",
+      "groups": [
+        "G-013"
+      ]
     },
     {
       "id": "SF-013",
@@ -246,7 +252,8 @@
       "title": "Port battlegroup system and add Alliance Battlegroup page",
       "status": "open",
       "groups": [
-        "G-006"
+        "G-006",
+        "G-012"
       ]
     },
     {
@@ -280,7 +287,8 @@
       },
       "note": "User typed overlapping slot15; notified that ghost11–15 and structure16–20 avoid overlap.",
       "groups": [
-        "G-005"
+        "G-005",
+        "G-012"
       ]
     },
     {
@@ -297,7 +305,8 @@
       "status": "open",
       "position": 9,
       "groups": [
-        "G-005"
+        "G-005",
+        "G-012"
       ]
     },
     {
@@ -314,7 +323,8 @@
       "status": "open",
       "position": 10,
       "groups": [
-        "G-008"
+        "G-008",
+        "G-012"
       ]
     },
     {
@@ -323,7 +333,8 @@
       "title": "After ticker start, personal reset waits72h and also clears own alliance membership",
       "status": "open",
       "groups": [
-        "G-008"
+        "G-008",
+        "G-012"
       ]
     },
     {
@@ -348,7 +359,10 @@
       "id": "SF-041",
       "priority": "P2",
       "title": "Separate portal/game/shared sources on GitHub",
-      "status": "open"
+      "status": "open",
+      "groups": [
+        "G-014"
+      ]
     },
     {
       "id": "SF-042",
@@ -379,7 +393,10 @@
       "id": "SF-046",
       "priority": "P2",
       "title": "Stronghold conflict policy",
-      "status": "approved"
+      "status": "approved",
+      "groups": [
+        "G-012"
+      ]
     },
     {
       "id": "SF-047",
@@ -398,7 +415,10 @@
       "id": "SF-049",
       "priority": "P2",
       "title": "Implement approved stronghold policy with delegated help",
-      "status": "open"
+      "status": "open",
+      "groups": [
+        "G-012"
+      ]
     },
     {
       "id": "SF-050",
@@ -419,7 +439,10 @@
       "priority": "P2",
       "title": "Joint portal/game efficiency audit and improvements",
       "status": "reviewed",
-      "analysis": "https://github.com/unimatrixgit/mcdune/blob/1a6fb6a/docs/STARFALL-EFFICIENCY-REVIEW.md"
+      "analysis": "https://github.com/unimatrixgit/mcdune/blob/1a6fb6a/docs/STARFALL-EFFICIENCY-REVIEW.md",
+      "groups": [
+        "G-014"
+      ]
     },
     {
       "id": "SF-053",
@@ -440,7 +463,10 @@
       "id": "SF-055",
       "priority": "P2",
       "title": "Smooth game theme transitions without mixed themes",
-      "status": "open"
+      "status": "open",
+      "groups": [
+        "G-013"
+      ]
     },
     {
       "id": "SF-056",
@@ -465,23 +491,61 @@
       "id": "SF-059",
       "priority": "P2",
       "title": "Three independent resource exchange modules",
-      "status": "open"
+      "status": "open",
+      "groups": [
+        "G-013"
+      ]
     },
     {
       "id": "SF-060",
       "priority": "BUGFIX",
-      "title": "Galaxy-scoped elections and ministers",
-      "status": "live"
+      "title": "Galaxy-scoped elections and minister appointments",
+      "status": "live",
+      "release": "0.120.4"
+    },
+    {
+      "id": "SF-061",
+      "priority": "P2",
+      "title": "Remove duplicate Planet sidebar section",
+      "status": "prepared",
+      "groups": [
+        "G-013"
+      ]
     },
     {
       "id": "SF-062",
       "priority": "BUGFIX",
-      "title": "Correct production and development formulae",
-      "status": "verified",
-      "release": "0.120.5"
+      "title": "Correct production, construction and research formulae",
+      "status": "live",
+      "release": "0.120.5",
+      "validation": "237 release tests; 328 integrated feature tests; audit104pages0findings"
+    },
+    {
+      "id": "SF-063",
+      "priority": "P2",
+      "title": "Alliance events in alliance news and delivery to all members",
+      "status": "open"
+    },
+    {
+      "id": "SF-064",
+      "priority": "P2",
+      "title": "Display current task list",
+      "status": "done"
+    },
+    {
+      "id": "SF-065",
+      "priority": "P0",
+      "title": "Group related tasks and reorder dependencies to avoid duplicate work",
+      "status": "done"
+    },
+    {
+      "id": "SF-066",
+      "priority": "BUGFIX",
+      "title": "Keep Spacing Bank Collective visible across galaxy fund updates",
+      "status": "in_progress"
     }
   ],
-  "nextId": 63,
+  "nextId": 67,
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -608,23 +672,65 @@
         "SF-049"
       ],
       "status": "in_progress"
+    },
+    {
+      "id": "G-012",
+      "title": "Shared galaxy and alliance foundation",
+      "members": [
+        "SF-046",
+        "SF-049",
+        "SF-034",
+        "SF-035",
+        "SF-032",
+        "SF-037",
+        "SF-038"
+      ],
+      "subgroups": [
+        "G-011",
+        "G-005",
+        "G-008"
+      ],
+      "status": "in_progress",
+      "note": "Integrate stronghold claims and galaxy slots before battlegroups and reset guards; share generation and permission checks."
+    },
+    {
+      "id": "G-013",
+      "title": "Single game layout and theme pass",
+      "members": [
+        "SF-007",
+        "SF-008",
+        "SF-009",
+        "SF-012",
+        "SF-055",
+        "SF-059",
+        "SF-061"
+      ],
+      "subgroups": [
+        "G-001"
+      ],
+      "status": "in_progress",
+      "note": "Remove duplicate menu and place actual Info box before one spacing/theme verification pass."
+    },
+    {
+      "id": "G-014",
+      "title": "Build structure and efficiency integration",
+      "members": [
+        "SF-041",
+        "SF-052"
+      ],
+      "status": "in_progress",
+      "note": "Set source ownership and build paths together; evaluate manifest/cache once after layout and new modules."
     }
   ],
-  "nextGroupId": 12,
+  "nextGroupId": 15,
   "openOrder": [
-    "SF-060",
-    "G-001",
+    "SF-066",
     "G-002",
-    "SF-012",
-    "SF-032",
-    "G-005",
-    "G-008",
-    "SF-041",
+    "G-012",
+    "G-013",
+    "G-014",
     "SF-043",
-    "G-011",
-    "SF-052",
-    "SF-055",
-    "SF-059",
+    "SF-063",
     "G-004"
   ],
   "colleagueReviews": {
@@ -632,5 +738,6 @@
     "repoSplit": "https://github.com/unimatrixgit/mcdune/blob/c767de6/docs/STARFALL-PORTAL-GAME-MIGRATION.md",
     "stronghold": "https://github.com/unimatrixgit/mcdune/tree/da7d21e/proposals/stronghold-policy"
   },
-  "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match."
+  "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
+  "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final."
 }
