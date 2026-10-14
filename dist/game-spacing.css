@@ -1,0 +1,13 @@
+/* Shared geometry; race themes retain their colours and artwork. */
+#networkHubContent{display:grid;gap:14px;min-width:0}
+#networkHubContent>.panel{margin:0!important}
+.network-fleet-layout{display:grid;gap:14px;min-width:0}
+.network-fleet-layout>.network-fleet-box{margin:0!important;min-width:0}
+.network-intel-policy .controls{display:flex;align-items:center;flex-wrap:wrap;gap:10px 18px;padding:14px 16px}
+.network-intel-policy .controls label{display:inline-flex;align-items:center;gap:8px;margin:0}
+.network-intel-policy .controls input[type=checkbox]{margin:0;flex:0 0 auto}
+.network-intel-policy .note{margin:0 16px 14px!important}
+.network-fleet-box .ph{padding:12px 16px;gap:12px;flex-wrap:wrap}
+.network-fleet-box .table th,.network-fleet-box .table td{padding:10px 14px;vertical-align:middle}
+.network-fleet-box .table-wrap{margin:0;overflow-x:auto}
+@media(max-width:650px){#networkHubContent,.network-fleet-layout{gap:10px}.network-intel-policy .controls{padding:12px}.network-intel-policy .note{margin:0 12px 12px!important}.network-fleet-box .ph{padding:10px 12px}.network-fleet-box .table th,.network-fleet-box .table td{padding:8px 10px}}

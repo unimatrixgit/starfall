@@ -1,0 +1,45 @@
+{
+  "minimumTasks": 5,
+  "maximumTasks": 10,
+  "completed": [
+    {
+      "id": "minute-cache",
+      "priority": "P0",
+      "completedAt": "2026-10-14T12:17:20.746Z",
+      "title": "One-minute website cache",
+      "changes": [
+        "Public website files use a 60-second browser cache with versioned ETags; unchanged files revalidate without another download.",
+        "Decoded assets are reused in a bounded 16 MiB Worker cache for one minute, reducing repeated base64 decoding.",
+        "Public universe statistics, the staff directory and paged world surveys use a one-minute response cache, including simultaneous-request coalescing. Successful writes invalidate Worker public-data caches.",
+        "Protected HTML, personal profiles, game mutations and staff APIs retain live authorisation and no-store responses."
+      ],
+      "tests": 205
+    },
+    {
+      "id": "staff-permission-nodes",
+      "promptIds": [
+        "SF-005"
+      ],
+      "priority": "P0",
+      "completedAt": "2026-10-14T12:55:16.648Z",
+      "title": "Configurable staff permission nodes",
+      "changes": [
+        "Support and Multihunter permission matrices on Account ranks; immutable Administrator grants; audited saves with revision checks.",
+        "Menus and API routes use the same fresh permissions, without needing a planet. Only Administrators can grant Administrator rank or edit the matrix."
+      ],
+      "tests": 209
+    },
+    {
+      "id": "network-fleet-spacing",
+      "promptIds": [
+        "SF-006"
+      ],
+      "priority": "P0",
+      "completedAt": "2026-10-14T12:55:16.650Z",
+      "title": "Network Hub fleet spacing",
+      "changes": [
+        "Separate fleet panels and intel controls receive consistent theme-independent spacing, wrapped controls and horizontal table scrolling."
+      ]
+    }
+  ]
+}

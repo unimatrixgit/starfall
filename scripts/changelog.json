@@ -1,5 +1,88 @@
 [
   {
+    "version": "0.117.2",
+    "date": "2026-10-14",
+    "title": "Bugfix · Research bonuses finish the active project",
+    "synopsis": "Allocating enough bonus RP completes the slotted research level and frees its project slot.",
+    "changes": [
+      "Bonus RP now clears the active research slot when that level completes, including levels below the branch maximum.",
+      "Surplus allocated RP remains attached to the next level; unspent bonus points remain in the bonus bank.",
+      "The current round is preserved."
+    ]
+  },
+  {
+    "version": "0.117.1",
+    "date": "2026-10-14",
+    "title": "Bugfix · Empty founding fleets and restored ministerial navigation",
+    "synopsis": "New colonies begin without demonstration ships. The ministerial register opens correctly, followed by the requested round reset.",
+    "changes": [
+      "Founding ships, the base fleet and all four fleets start empty. Ships must be built or granted through an explicit game action.",
+      "The Government ministerial-register button uses the game navigation handler.",
+      "The requested reset renews the round and registration drafts while preserving accounts and stored diagnostic reports."
+    ]
+  },
+  {
+    "version": "0.116.2",
+    "date": "2026-10-14",
+    "title": "Bugfix · Accurate diagnostics and progress feedback",
+    "synopsis": "Fixes repeated historic errors, false layout warnings and incorrect report versions; shows real inspection progress.",
+    "changes": [
+      "Current-page errors and historical errors are stored separately. Reloading no longer adds another timestamp to old errors.",
+      "Diagnostic samples report new errors from that page load. Closed disclosures, hidden controls and transparent elements no longer produce false viewport warnings.",
+      "Layout warnings identify the visible controls involved. Reports record the deployed version.",
+      "A progress bar advances after each completed browser page check and after the report is saved, with the current stage and completed count.",
+      "The current round is preserved."
+    ],
+    "category": "Bugfix",
+    "type": "bugfix"
+  },
+  {
+    "version": "0.116.1",
+    "date": "2026-10-14",
+    "title": "Bugfix · Editable planet names",
+    "synopsis": "Reference-world holders can edit their personal planet name during registration and in Planet Settings.",
+    "changes": [
+      "The registration name field is editable for every world. A reference name is used as its initial suggestion.",
+      "The server keeps the entered player name instead of forcing the reference name. Planet Settings can rename an existing reference-world colony.",
+      "World type, artwork, unique reservation and special bonuses remain attached to the same world; naming cannot create a second copy.",
+      "The current round is preserved."
+    ],
+    "category": "Bugfix",
+    "type": "bugfix"
+  },
+  {
+    "version": "0.116.0",
+    "date": "2026-10-14",
+    "title": "Staff diagnostics and ancestral world charters",
+    "synopsis": "Adds a protected inspection console with stored reports, twenty Frontier environments, five Ultimate race capitals and recoverable scan sharing.",
+    "changes": [
+      "Staff can run system diagnostics, inspect saved reports and export JSON. Checks cover internal links, anchors, missing assets, metadata and sampled browser runtime/layout observations.",
+      "All staff ranks may inspect reports without owning a planet; players cannot open the page or its API. Reports survive round resets.",
+      "Frontier Worlds now includes twenty active original environments. Five once-per-round Ancestral Thrones apply their racial theme and grant 10% ship resource discounts, multiplied with government discounts.",
+      "Catalogue families use generic names, and paged requests retrieve only the visible surveys. Assignment changes that alter a theme reload the game once.",
+      "Scan sharing retries a failed initial connection and offers a visible retry control. Confirmed server settings remain authoritative.",
+      "The user-requested reset removes active planets, renews registration and rerolls, releases world reservations and stops the ticker. Accounts, Owner recovery keys and diagnostic reports remain.",
+      "A general visual polish pass and expanded family artwork await explicit user authorisation after the reset."
+    ],
+    "category": "Features",
+    "type": "feature"
+  },
+  {
+    "version": "0.115.2",
+    "date": "2026-10-14",
+    "title": "Bugfix · Reliable game startup and restored modules",
+    "synopsis": "Loads the ship catalogue and game modules together, restoring quests, workforce controls and unfolded navigation when individual scripts failed to load.",
+    "changes": [
+      "The game loads one ordered runtime instead of seventeen separate scripts; failed downloads retry automatically without applying a partial startup.",
+      "Rendering starts after the complete runtime is initialised. The connection panel provides a retry button when downloads remain unavailable.",
+      "The browser receives a versioned runtime URL. Error logs identify failed files and JavaScript source locations.",
+      "The game loads a small world seed and receives the actual planet surveys with its directory, rather than parsing the complete reference catalogue on every visit.",
+      "Background polls pause when the page is hidden. This bugfix preserves the current round and does not perform another reset."
+    ],
+    "category": "Bugfix",
+    "type": "bugfix"
+  },
+  {
     "version": "0.115.1",
     "date": "2026-10-14",
     "title": "Bugfix · Faster loading and staff access corrections",

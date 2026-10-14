@@ -610,5 +610,107 @@
     "lore": "Surface conditions cannot sustain unprotected life. Engineered Green Arks are the colony’s lifeline.",
     "family": "Original",
     "rarity": "Standard"
+  },
+  {
+    "id": "planet-37",
+    "name": "Aurora Steppe",
+    "habitability": 76,
+    "biodiversity": 70,
+    "moisture": 32,
+    "rockiness": 42,
+    "basePopulation": 880,
+    "growthPercent": 20,
+    "colors": [
+      "#24415e",
+      "#bbca9b"
+    ],
+    "lore": "Charged polar curtains illuminate rolling grasslands. Sheltered river settlements thrive beneath clear night skies.",
+    "family": "Original",
+    "rarity": "Standard"
+  },
+  {
+    "id": "planet-38",
+    "name": "Sapphire Archipelago",
+    "habitability": 94,
+    "biodiversity": 91,
+    "moisture": 86,
+    "rockiness": 19,
+    "basePopulation": 970,
+    "growthPercent": 42.5,
+    "colors": [
+      "#0b5b9c",
+      "#80cdb1"
+    ],
+    "lore": "Sapphire oceans cradle fertile islands, coral shelves and protected colonial ports.",
+    "family": "Original",
+    "rarity": "Standard"
+  },
+  {
+    "id": "planet-39",
+    "name": "Cloudforest Highlands",
+    "habitability": 86,
+    "biodiversity": 93,
+    "moisture": 72,
+    "rockiness": 51,
+    "basePopulation": 930,
+    "growthPercent": 32.5,
+    "colors": [
+      "#304f74",
+      "#88b18a"
+    ],
+    "lore": "Mist-fed forests cross high mountain terraces, combining rich ecology with sheltered upland cities.",
+    "family": "Original",
+    "rarity": "Standard"
+  },
+  {
+    "id": "planet-40",
+    "name": "Twilight Oasis",
+    "habitability": 68,
+    "biodiversity": 58,
+    "moisture": 24,
+    "rockiness": 66,
+    "basePopulation": 840,
+    "growthPercent": 10,
+    "colors": [
+      "#423564",
+      "#d7a57c"
+    ],
+    "lore": "Permanent twilight shelters a chain of spring-fed settlements between copper ridges.",
+    "family": "Original",
+    "rarity": "Standard"
+  },
+  {
+    "id": "planet-41",
+    "name": "Luminescent Reef",
+    "habitability": 89,
+    "biodiversity": 96,
+    "moisture": 91,
+    "rockiness": 28,
+    "basePopulation": 945,
+    "growthPercent": 36.25,
+    "colors": [
+      "#12516a",
+      "#80f2da"
+    ],
+    "lore": "Bioluminescent reefs illuminate shallow seas and provide a rich foundation for habitat districts.",
+    "family": "Original",
+    "rarity": "Standard"
+  },
+  {
+    "id": "planet-42",
+    "name": "Cedar Basin",
+    "habitability": 82,
+    "biodiversity": 88,
+    "moisture": 55,
+    "rockiness": 34,
+    "basePopulation": 910,
+    "growthPercent": 27.5,
+    "colors": [
+      "#214b55",
+      "#93b675"
+    ],
+    "lore": "Deep cedar forests surround inland lakes and fertile basins suited to steady colonial expansion.",
+    "family": "Original",
+    "rarity": "Standard"
   }
 ]

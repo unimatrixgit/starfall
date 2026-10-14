@@ -1,3 +1,4 @@
+const STARFALL_VERSION='0.118.0';
 const TYPES=new Set(['planet','landing','development','unit','news','incoming','jumpgate','advanced']);
 const RETENTION=14*24*60*60*1000;
 function json(value,status=200){return Response.json(value,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});}
@@ -61,8 +62,10 @@ async function api(request,env){
 }
 async function serveRequest(request,env){
   const url=new URL(request.url);
+  if(url.pathname==='/api/staff/diagnostics')return diagnosticsAPI(request,env);
+  if(url.pathname==='/diagnostics.html'){const user=await portalUser(request,env);if(!user)return Response.redirect(url.origin+'/login.html',302);if(!portalStaffPermission(user,'diagnostics'))return json({error:'Diagnostics permission required.'},403);}
   if(url.pathname.startsWith('/botfiles/')){try{return await gameDumpAPI(request,env);}catch{return json({error:'The gamedump is temporarily unavailable.'},503);}}
-  if(['/game','/game/','/index.html'].includes(url.pathname)&&url.searchParams.get('staff_workspace')==='1'){const user=await portalUser(request,env);if(!(user?.role==='admin'||url.searchParams.get('staff_tool')==='bank'&&portalStaffPermission(user,'bank')||url.searchParams.get('staff_tool')==='multihunters'&&portalStaffPermission(user,'multihunter')))return json({error:'Staff access required.'},403);}
+  if(['/game','/game/','/index.html'].includes(url.pathname)&&url.searchParams.get('staff_workspace')==='1'){const user=await portalUser(request,env);if(!portalStaffPermission(user,({control:'adminControl',alliances:'allianceAdmin',multihunters:'multihunter',bank:'bank'})[url.searchParams.get('staff_tool')]||'adminControl'))return json({error:'Staff access required.'},403);}
   if(url.pathname==='/api/admin/planet-audit')return staffPlanetAuditAPI(request,env);
   if(url.pathname==='/api/admin/account-ranks')return accountRanksAPI(request,env);
   if(url.pathname==='/api/portal/alliance-manager'){try{return await portalAllianceManagerAPI(request,env);}catch{return json({error:'Alliance manager could not complete this request.'},503);}}
@@ -76,6 +79,7 @@ async function serveRequest(request,env){
   if(['/api/mail','/api/diplomacy','/api/admin/key-reveal','/api/colony','/api/civil-covert'].includes(url.pathname)){try{return await (url.pathname==='/api/mail'?mailAPI:url.pathname==='/api/diplomacy'?diplomacyAPI:url.pathname==='/api/colony'?colonyAPI:url.pathname==='/api/civil-covert'?civilCovertAPI:forceKeyAPI)(request,env);}catch{return json({error:'The communication service could not complete this request.'},503);}}
   if(url.pathname==='/api/galaxy-development'){try{return await galaxyDevelopmentAPI(request,env);}catch{return json({error:'Galaxy development unavailable.'},503);}}
   if(/^\/staff-manual(?:-(admin|support|multihunter))?\.html$/.test(url.pathname)){const staff=await portalUser(request,env);if(!staff)return Response.redirect(url.origin+'/login.html',302);if(!isPortalStaff(staff))return new Response('Staff access required',{status:403});const requested=url.pathname.match(/staff-manual-(admin|support|multihunter)/)?.[1];if(requested&&requested!==staff.role&&staff.role!=='admin')return new Response('This manual is outside your staff role',{status:403});const file=ASSETS['/staff-manual-'+(requested||staff.role)+'.html'];return file?new Response(Uint8Array.from(atob(file.data),c=>c.charCodeAt(0)),{headers:{'Content-Type':file.type,'Cache-Control':'private, no-store','Vary':'Cookie'}}):new Response('Staff manual unavailable',{status:404});}
+  if(url.pathname==='/api/planet-catalog')return planetCatalogueAPI(request);
   if(url.pathname==='/api/site-management')return siteManagementAPI(request,env);
   if(url.pathname==='/api/round-history')return roundHistoryAPI(request,env);
   if(url.pathname==='/api/staff-directory')return staffDirectoryAPI(request,env);
@@ -86,7 +90,7 @@ async function serveRequest(request,env){
   if(url.pathname==='/api/admin/shuffle')return galaxyShuffleAPI(request,env);
   if(url.pathname==='/api/alliance-applications')return allianceApplicationsAPI(request,env);
   if(url.pathname==='/api/alliance-economy')return allianceEconomyAPI(request,env);
-  if(url.pathname==='/api/version')return json({version:'0.115.1',serverTime:Date.now()});
+  if(url.pathname==='/api/version')return json({version:STARFALL_VERSION,serverTime:Date.now()});
   if(['/api/planets','/api/alliance-intel','/api/alliance-settings'].includes(url.pathname)){try{return await (url.pathname==='/api/planets'?planetDirectoryAPI:url.pathname==='/api/alliance-settings'?allianceSettingsAPI:allianceIntelAPI)(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid request.':'The central planet database is unavailable.'},error instanceof SyntaxError?400:503);}}
   if(url.pathname.startsWith('/api/portal/')){try{return await portalAPI(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid request.':'The portal could not complete this request. Try again.'},error instanceof SyntaxError?400:503);}}
   if(url.pathname.startsWith('/api/miday/')){try{return await api(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid JSON request.':'The scan database could not complete this request. Try again.'},error instanceof SyntaxError?400:503);}}
@@ -96,11 +100,11 @@ async function serveRequest(request,env){
   if(game||url.pathname==='/onboarding.html'){const user=await portalUser(request,env);if(!user)return Response.redirect(url.origin+'/login.html',302);if(game&&!(isPortalStaff(user)&&(url.searchParams.get('staff')==='1'||url.searchParams.get('legacy_staff')==='1'||url.searchParams.get('staff_workspace')==='1'))){const owned=await env.DB.prepare("SELECT id FROM planet_directory WHERE owner_id=? AND kind='planet' LIMIT 1").bind(user.id).first();if(!owned)return Response.redirect(url.origin+'/onboarding.html',302);}}
   const path=url.pathname==='/'?'/portal.html':game?'/index.html':url.pathname;
   const asset=ASSETS[path];if(!asset)return new Response('Not found',{status:404});
-  const bytes=decodeAssetBytes(asset.data);
-  if(asset.type==='video/mp4'){const range=request.headers.get('Range');if(range){const match=/^bytes=(\d*)-(\d*)$/.exec(range);if(!match||(!match[1]&&!match[2]))return new Response(null,{status:416,headers:{'Content-Range':'bytes */'+bytes.length}});const start=match[1]?Number(match[1]):Math.max(0,bytes.length-Number(match[2])),end=match[1]?(match[2]?Math.min(bytes.length-1,Number(match[2])):bytes.length-1):bytes.length-1;if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start>=bytes.length||end<start)return new Response(null,{status:416,headers:{'Content-Range':'bytes */'+bytes.length}});return new Response(request.method==='HEAD'?null:bytes.slice(start,end+1),{status:206,headers:{'Content-Type':'video/mp4','Accept-Ranges':'bytes','Content-Range':'bytes '+start+'-'+end+'/'+bytes.length,'Content-Length':String(end-start+1),'Cache-Control':'public, max-age=86400'}});}return new Response(request.method==='HEAD'?null:bytes,{headers:{'Content-Type':'video/mp4','Accept-Ranges':'bytes','Content-Length':String(bytes.length),'Cache-Control':'public, max-age=86400'}});}
-  return new Response(request.method==='HEAD'?null:bytes,{headers:{'Content-Type':asset.type,'Cache-Control':path.endsWith('.html')||path.endsWith('.js')||path.endsWith('.css')?'no-cache':'public, max-age=86400','X-Content-Type-Options':'nosniff'}});
+  const protectedPage=game||['/onboarding.html','/profile.html','/staff.html','/diagnostics.html'].includes(path),headers=staticAssetHeaders(path,asset,protectedPage);if(!protectedPage&&request.headers.get('If-None-Match')===headers.ETag)return new Response(null,{status:304,headers});const bytes=cachedAssetBytes(path,asset);
+  if(asset.type==='video/mp4'){const range=request.headers.get('Range');if(range){const match=/^bytes=(\d*)-(\d*)$/.exec(range);if(!match||(!match[1]&&!match[2]))return new Response(null,{status:416,headers:{'Content-Range':'bytes */'+bytes.length}});const start=match[1]?Number(match[1]):Math.max(0,bytes.length-Number(match[2])),end=match[1]?(match[2]?Math.min(bytes.length-1,Number(match[2])):bytes.length-1):bytes.length-1;if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start>=bytes.length||end<start)return new Response(null,{status:416,headers:{'Content-Range':'bytes */'+bytes.length}});return new Response(request.method==='HEAD'?null:bytes.slice(start,end+1),{status:206,headers:{'Content-Type':'video/mp4','Accept-Ranges':'bytes','Content-Range':'bytes '+start+'-'+end+'/'+bytes.length,'Content-Length':String(end-start+1),'Cache-Control':'public, max-age=60, must-revalidate'}});}return new Response(request.method==='HEAD'?null:bytes,{headers:{'Content-Type':'video/mp4','Accept-Ranges':'bytes','Content-Length':String(bytes.length),'Cache-Control':'public, max-age=60, must-revalidate'}});}
+  return new Response(request.method==='HEAD'?null:bytes,{headers});
 }
-export default {async fetch(request,env,ctx){const response=await serveRequest(request,env);const audit=recordAccountAccess(request,response,env).catch(()=>{});if(ctx?.waitUntil)ctx.waitUntil(audit);else await audit;return response;}};
+export default {async fetch(request,env,ctx){const response=await cachedServeRequest(request,env);const audit=recordAccountAccess(request,response,env).catch(()=>{});if(ctx?.waitUntil)ctx.waitUntil(audit);else await audit;return response;}};
 function decodeAssetBytes(encoded){if(typeof Uint8Array.fromBase64==='function')return Uint8Array.fromBase64(encoded);const binary=atob(encoded),bytes=new Uint8Array(binary.length);for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);return bytes;}
 export {sanitizeScan,calculateRetention};
 function calculateRetention(){return RETENTION;}
