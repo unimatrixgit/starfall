@@ -64,6 +64,7 @@ async function serveRequest(request,env){
   const url=new URL(request.url);
   if(url.pathname==='/api/battlegroups')return battlegroupsAPI(request,env);
   if(url.pathname==='/api/planet-reset')return planetResetAPI(request,env);
+  if(url.pathname==='/api/tribute-ghost/activate')return tributeGhostActivationAPI(request,env);
   if(url.pathname==='/api/alliance-events')return allianceEventsAPI(request,env);
   if(url.pathname==='/api/alliance-policy')return alliancePolicyAPI(request,env);
   if(url.pathname==='/api/strongholds')return strongholdAPI(request,env);

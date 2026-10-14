@@ -48,7 +48,7 @@
       "id": "SF-007",
       "priority": "P2",
       "title": "Spacing across all themes",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-001",
         "G-013"
@@ -59,7 +59,7 @@
       "id": "SF-008",
       "priority": "P2",
       "title": "Spacing across all game pages",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-001",
         "G-013"
@@ -70,7 +70,7 @@
       "id": "SF-009",
       "priority": "P2",
       "title": "Compact or expand game page spacing appropriately",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-001",
         "G-013"
@@ -81,7 +81,7 @@
       "id": "SF-010",
       "priority": "P2",
       "title": "Research queue four; construction queue four",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-002"
       ],
@@ -91,7 +91,7 @@
       "id": "SF-011",
       "priority": "P2",
       "title": "Queue projects while another project runs",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-002"
       ],
@@ -101,7 +101,7 @@
       "id": "SF-012",
       "priority": "P2",
       "title": "Info module beside Planet Settings across themes",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-013"
       ],
@@ -247,16 +247,17 @@
       "id": "SF-031",
       "priority": "P2",
       "title": "Final act: 3 of 7 tribute ghost planet",
-      "status": "open",
+      "status": "live",
       "groups": [
         "G-004"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-032",
       "priority": "P2",
       "title": "Port battlegroup system and add Alliance Battlegroup page",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-006",
         "G-012"
@@ -267,16 +268,17 @@
       "id": "SF-033",
       "priority": "P2",
       "title": "Tribute ghost planet must be at 1:1:11",
-      "status": "open",
+      "status": "live",
       "groups": [
         "G-004"
-      ]
+      ],
+      "release": "0.121.0"
     },
     {
       "id": "SF-034",
       "priority": "P2",
       "title": "Expand only galaxy 1:1 stronghold capacity to twenty",
-      "status": "verified",
+      "status": "live",
       "layout": {
         "galaxy": "1:1",
         "playerSlots": [
@@ -310,7 +312,7 @@
       "id": "SF-035",
       "priority": "P2",
       "title": "Show expanded 1:1 slots only while 1:1 is a stronghold",
-      "status": "verified",
+      "status": "live",
       "position": 9,
       "groups": [
         "G-005",
@@ -329,7 +331,7 @@
       "id": "SF-037",
       "priority": "P2",
       "title": "Personal Planet reset module; keep alliance intact",
-      "status": "verified",
+      "status": "live",
       "position": 10,
       "groups": [
         "G-008",
@@ -341,7 +343,7 @@
       "id": "SF-038",
       "priority": "P2",
       "title": "After ticker start, personal reset waits72h and also clears own alliance membership",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-008",
         "G-012"
@@ -370,7 +372,7 @@
       "id": "SF-041",
       "priority": "P2",
       "title": "Separate portal/game/shared sources on GitHub",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-014"
       ],
@@ -386,7 +388,7 @@
       "id": "SF-043",
       "priority": "P2",
       "title": "Resemble the shared Planetarion battle calculator",
-      "status": "verified",
+      "status": "live",
       "release": "0.121.0"
     },
     {
@@ -406,7 +408,7 @@
       "id": "SF-046",
       "priority": "P2",
       "title": "Stronghold conflict policy",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-012"
       ],
@@ -429,7 +431,7 @@
       "id": "SF-049",
       "priority": "P2",
       "title": "Implement approved stronghold policy with delegated help",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-012"
       ],
@@ -453,7 +455,7 @@
       "id": "SF-052",
       "priority": "P2",
       "title": "Joint portal/game efficiency audit and improvements",
-      "status": "verified",
+      "status": "live",
       "analysis": "https://github.com/unimatrixgit/mcdune/blob/1a6fb6a/docs/STARFALL-EFFICIENCY-REVIEW.md",
       "groups": [
         "G-014"
@@ -479,7 +481,7 @@
       "id": "SF-055",
       "priority": "P2",
       "title": "Smooth game theme transitions without mixed themes",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-013"
       ],
@@ -508,7 +510,7 @@
       "id": "SF-059",
       "priority": "P2",
       "title": "Three independent resource exchange modules",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-013"
       ],
@@ -525,7 +527,7 @@
       "id": "SF-061",
       "priority": "P2",
       "title": "Remove duplicate Planet sidebar section",
-      "status": "verified",
+      "status": "live",
       "groups": [
         "G-013"
       ],
@@ -543,7 +545,7 @@
       "id": "SF-063",
       "priority": "P2",
       "title": "Alliance events in alliance news and delivery to all members",
-      "status": "verified",
+      "status": "live",
       "release": "0.121.0"
     },
     {
@@ -581,7 +583,7 @@
         "SF-008",
         "SF-009"
       ],
-      "status": "verified",
+      "status": "live",
       "release": "0.121.0"
     },
     {
@@ -591,7 +593,7 @@
         "SF-010",
         "SF-011"
       ],
-      "status": "verified",
+      "status": "live",
       "release": "0.121.0"
     },
     {
@@ -612,9 +614,10 @@
         "SF-031",
         "SF-033"
       ],
-      "status": "open",
+      "status": "live",
       "finalAction": true,
-      "coords": "1:1:11"
+      "coords": "1:1:11",
+      "release": "0.121.0"
     },
     {
       "id": "G-005",
@@ -623,7 +626,7 @@
         "SF-034",
         "SF-035"
       ],
-      "status": "verified",
+      "status": "live",
       "layout": {
         "playerSlots": [
           1,
@@ -648,7 +651,7 @@
         "SF-016",
         "SF-032"
       ],
-      "status": "verified",
+      "status": "live",
       "release": "0.121.0"
     },
     {
@@ -673,7 +676,7 @@
         "SF-037",
         "SF-038"
       ],
-      "status": "verified",
+      "status": "live",
       "beforeFirstTick": "instant, preserve alliance membership",
       "afterFirstTick": "72hours from request, clear own alliance membership; preserve shared alliance",
       "release": "0.121.0"
@@ -698,7 +701,7 @@
         "SF-046",
         "SF-049"
       ],
-      "status": "verified",
+      "status": "live",
       "release": "0.121.0"
     },
     {
@@ -718,7 +721,7 @@
         "G-005",
         "G-008"
       ],
-      "status": "verified",
+      "status": "live",
       "note": "Integrate stronghold claims and galaxy slots before battlegroups and reset guards; share generation and permission checks.",
       "release": "0.121.0"
     },
@@ -737,7 +740,7 @@
       "subgroups": [
         "G-001"
       ],
-      "status": "verified",
+      "status": "live",
       "note": "Remove duplicate menu and place actual Info box before one spacing/theme verification pass.",
       "release": "0.121.0"
     },
@@ -748,15 +751,13 @@
         "SF-041",
         "SF-052"
       ],
-      "status": "verified",
+      "status": "live",
       "note": "Set source ownership and build paths together; evaluate manifest/cache once after layout and new modules.",
       "release": "0.121.0"
     }
   ],
   "nextGroupId": 15,
-  "openOrder": [
-    "G-004"
-  ],
+  "openOrder": [],
   "colleagueReviews": {
     "battlegroups": "https://github.com/unimatrixgit/mcdune/blob/5f02adf/docs/STARFALL-BATTLEGROUP-ANALYSIS.md",
     "repoSplit": "https://github.com/unimatrixgit/mcdune/blob/c767de6/docs/STARFALL-PORTAL-GAME-MIGRATION.md",
@@ -766,11 +767,19 @@
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
     "release": "0.121.0",
-    "tests": 362,
+    "tests": 371,
     "pages": 107,
     "linksAndAssets": 3203,
     "findings": 0,
     "sourceFolders": 12,
-    "omittedRuntimeBytes": 1337507
-  }
+    "omittedRuntimeBytes": 1337507,
+    "liveSourceSha": "3a902408d97e70247ccb64baebe3f4c398fb47d9",
+    "ghost": {
+      "id": "tribute-3-of-7",
+      "coords": "1:1:11",
+      "activated": true,
+      "nonCombat": true
+    }
+  },
+  "colleagueStatus": "Paused at user request; root continues. No new delegation or routine messages until user resumes colleague."
 }

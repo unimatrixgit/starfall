@@ -112,9 +112,7 @@
           ]
         }
       ]
-    }
-  ],
-  "prepared": [
+    },
     {
       "version": "0.121.0",
       "part": 1,
@@ -181,7 +179,8 @@
           "title": "Battlegroup membership, approvals, leadership and attack-booking linkage with current permission and revision guards.",
           "priority": "P2"
         }
-      ]
+      ],
+      "publishedAt": "2026-10-14T17:41:54.883915Z"
     },
     {
       "version": "0.121.0",
@@ -243,7 +242,9 @@
           "title": "Tax and central stronghold changes deliver atomic alliance news and mail to current members, including the actor.",
           "priority": "P2"
         }
-      ]
+      ],
+      "publishedAt": "2026-10-14T17:41:54.883915Z"
     }
-  ]
+  ],
+  "prepared": []
 }
