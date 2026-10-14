@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.109.0",
+    "date": "2026-10-14",
+    "title": "Alliance fleet readiness and command interface",
+    "synopsis": "Prioritised alliance fleets, clearer ticker status and refreshed diplomacy, treasury and navigation.",
+    "changes": [
+      "Alliance Fleet is shown first. Player fleets 1–3 are collapsed behind a plus; fleets reported on a mission are hidden.",
+      "Fleet tables separate ship class and three target priorities; same-galaxy alliance defence shows ETA 5.",
+      "Ticker information displays state, current tick, interval, next tick, schedule and last processed tick, with visible action confirmations.",
+      "Galaxy Browser totals span the complete roster and optional intel columns.",
+      "Galaxy Politics uses a council briefing and clearer policy forms. Galaxy Fund shows reserve allocation and treasury cards.",
+      "Similar submenus share rounded theme-aware buttons and a clear selected state."
+    ]
+  },
+  {
     "version": "0.108.0",
     "date": "2026-10-13",
     "title": "Alliance attack claims and fleet worksheet",
