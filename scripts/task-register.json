@@ -425,10 +425,24 @@
       "id": "SF-053",
       "priority": "BUGFIX",
       "title": "Unfolded sidebar footer overlap",
+      "status": "live",
+      "release": "0.120.2"
+    },
+    {
+      "id": "SF-054",
+      "priority": "BUGFIX",
+      "originalPriority": "P2",
+      "title": "Account registration feedback and safe form startup",
       "status": "verified"
+    },
+    {
+      "id": "SF-055",
+      "priority": "P2",
+      "title": "Smooth game theme transitions without mixed themes",
+      "status": "open"
     }
   ],
-  "nextId": 54,
+  "nextId": 56,
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -559,7 +573,7 @@
   ],
   "nextGroupId": 12,
   "openOrder": [
-    "SF-053",
+    "SF-054",
     "G-001",
     "G-002",
     "SF-012",
@@ -570,6 +584,7 @@
     "SF-043",
     "G-011",
     "SF-052",
+    "SF-055",
     "G-004"
   ],
   "colleagueReviews": {

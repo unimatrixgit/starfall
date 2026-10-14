@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.120.3",
+    "date": "2026-10-14",
+    "title": "Bugfix · Clear account registration feedback",
+    "synopsis": "Registration now shows progress, a visible success confirmation and the next step, while preventing duplicate submissions.",
+    "promptIds": [
+      "SF-054"
+    ],
+    "changes": [
+      "Register remains disabled until the form handler is ready; the form uses POST instead of the default GET.",
+      "REGISTERING… and an account-creation message remain visible during the request.",
+      "Success clears password fields and offers Continue to planet registration. Errors and required-field validation remain visible."
+    ]
+  },
+  {
     "version": "0.120.2",
     "date": "2026-10-14",
     "title": "Bugfix · Unfolded navigation stays accessible",
