@@ -1,36 +1,7 @@
 {
   "minimumTasks": 5,
   "maximumTasks": 10,
-  "completed": [
-    {
-      "id": "SF-124",
-      "priority": "P2",
-      "title": "Narrower, shorter and readable right sidebar redesign",
-      "release": "0.126.3",
-      "completedAt": "2026-10-15T06:42:00.888Z"
-    },
-    {
-      "id": "SF-125",
-      "priority": "P2",
-      "title": "Remove unnecessary number-field spinners",
-      "release": "0.126.3",
-      "completedAt": "2026-10-15T06:42:00.888Z"
-    },
-    {
-      "id": "SF-126",
-      "priority": "P2",
-      "title": "Contextual persistent Recent Signals module with planet category settings",
-      "release": "0.126.4",
-      "completedAt": "2026-10-15T06:57:29.480Z"
-    },
-    {
-      "id": "SF-128",
-      "priority": "P2",
-      "title": "Illustrated Recent Signals carousel with twenty news tabs",
-      "release": "0.126.5",
-      "completedAt": "2026-10-15T07:09:41.763Z"
-    }
-  ],
+  "completed": [],
   "published": [
     {
       "version": "0.120.0",
@@ -593,6 +564,64 @@
           "title": "Compact shared right column with Info above resources and signals, widening centre",
           "priority": "P2",
           "completedAt": "2026-10-15T06:17:57.680Z"
+        }
+      ]
+    },
+    {
+      "version": "0.126.6",
+      "date": "2026-10-15",
+      "tasks": [
+        {
+          "id": "SF-124",
+          "priority": "P2",
+          "title": "Narrower, shorter and readable right sidebar redesign",
+          "release": "0.126.3",
+          "completedAt": "2026-10-15T06:42:00.888Z"
+        },
+        {
+          "id": "SF-125",
+          "priority": "P2",
+          "title": "Remove unnecessary number-field spinners",
+          "release": "0.126.3",
+          "completedAt": "2026-10-15T06:42:00.888Z"
+        },
+        {
+          "id": "SF-126",
+          "priority": "P2",
+          "title": "Contextual persistent Recent Signals module with planet category settings",
+          "release": "0.126.4",
+          "completedAt": "2026-10-15T06:57:29.480Z"
+        },
+        {
+          "id": "SF-128",
+          "priority": "P2",
+          "title": "Illustrated Recent Signals carousel with twenty news tabs",
+          "release": "0.126.5",
+          "completedAt": "2026-10-15T07:09:41.763Z"
+        },
+        {
+          "id": "SF-130",
+          "priority": "P2",
+          "title": "Smaller resource cards in right sidebar",
+          "status": "implemented",
+          "release": "0.126.6",
+          "completedAt": "2026-10-15T07:49:55.837Z"
+        },
+        {
+          "id": "SF-131",
+          "priority": "BUGFIX",
+          "title": "Deliver Havoc to already active player sessions including 1:1:1",
+          "status": "implemented",
+          "release": "0.126.6",
+          "completedAt": "2026-10-15T07:49:55.838Z"
+        },
+        {
+          "id": "SF-132",
+          "priority": "BUGFIX",
+          "title": "Alliance Fund trading waits for colony synchronization and retries settlement conflicts",
+          "status": "implemented",
+          "release": "0.126.6",
+          "completedAt": "2026-10-15T07:49:55.839Z"
         }
       ]
     }

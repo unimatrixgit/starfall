@@ -376,3 +376,6 @@ body:not(.staff-workspace) .shell>.content{margin-top:16px!important}
 @media(max-width:760px){.signals-header{grid-template-columns:minmax(0,1fr) auto;gap:4px 6px}.signals-heading{display:none}.signal-slide{padding:6px 5px 6px 8px;min-height:62px}.signal-slide-art{width:78px;opacity:.3}.signal-slide .signal-message-text{font-size:11px}.signal-slide .signal-slide-category{font-size:8px}.signal-tabs{gap:4px}.signal-tabs button{flex-basis:28px;height:22px}}
 
 @media(min-width:761px){.signal-tabs button{flex-basis:44px;height:28px}.signal-tabs button span{font-size:11px}}
+
+/* Compact reserve cards retain readable amounts and per-resource asteroid rings. */
+@media(min-width:1001px){.command-rail .rail-resources{gap:4px!important}.command-rail .res{min-height:50px!important;padding:4px 39px 4px 32px!important}.command-rail .res-icon{left:4px!important;top:14px!important;width:22px!important;height:22px!important}.command-rail .res-val{margin-top:1px!important}.command-rail .res-rate{margin-top:1px!important}.command-rail .res-roids{top:10px!important;width:30px!important;height:30px!important}}

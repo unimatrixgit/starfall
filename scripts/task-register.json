@@ -1057,9 +1057,43 @@
       "release": "0.126.5",
       "completedAt": "2026-10-15T07:09:41.763Z",
       "liveAt": "2026-10-15T07:11:53.303368Z"
+    },
+    {
+      "id": "SF-129",
+      "priority": "BUGFIX",
+      "title": "Portal and game transient 500 investigation",
+      "status": "closed",
+      "resolution": "User confirmed resolved and explicitly stopped investigation. No repair claimed."
+    },
+    {
+      "id": "SF-130",
+      "priority": "P2",
+      "title": "Smaller resource cards in right sidebar",
+      "status": "live",
+      "release": "0.126.6",
+      "completedAt": "2026-10-15T07:51:38.726Z",
+      "liveAt": "2026-10-15T07:53:55.148154Z"
+    },
+    {
+      "id": "SF-131",
+      "priority": "BUGFIX",
+      "title": "Deliver Havoc to already active player sessions including 1:1:1",
+      "status": "live",
+      "release": "0.126.6",
+      "completedAt": "2026-10-15T07:51:38.727Z",
+      "liveAt": "2026-10-15T07:53:55.148154Z"
+    },
+    {
+      "id": "SF-132",
+      "priority": "BUGFIX",
+      "title": "Alliance Fund trading waits for colony synchronization and retries settlement conflicts",
+      "status": "live",
+      "release": "0.126.6",
+      "completedAt": "2026-10-15T07:51:38.727Z",
+      "liveAt": "2026-10-15T07:53:55.148154Z"
     }
   ],
-  "nextId": "SF-129",
+  "nextId": "SF-133",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1316,14 +1350,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.126.5",
-    "tests": 571,
-    "pages": 120,
-    "linksAndAssets": 3656,
+    "release": "0.126.6",
+    "tests": 577,
+    "pages": 121,
+    "linksAndAssets": 3685,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "1d55825936c6e62d2d6864ea520617aea66a26ae",
+    "liveSourceSha": "1a2e3a5714a82bb3b84f320a03cd432a79b2fa33",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",

@@ -1,5 +1,28 @@
 [
   {
+    "version": "0.126.6",
+    "date": "2026-10-15",
+    "title": "Reliable Havoc delivery, smoother treasury trading and compact command information",
+    "promptIds": [
+      "SF-124",
+      "SF-125",
+      "SF-126",
+      "SF-128",
+      "SF-130",
+      "SF-131",
+      "SF-132"
+    ],
+    "synopsis": "Havoc reaches active players, treasury trading waits for synchronization, and command information takes less space.",
+    "changes": [
+      "SF-124/SF-130: A narrower, readable right sidebar with compact reserve cards and asteroid counters. Connection details stay in a disclosure.",
+      "SF-125: Removed unnecessary numeric spinners while keeping useful tax and stepped controls.",
+      "SF-126/SF-128: Recent Signals is a contextual header module with category preferences, artwork and navigation through the latest twenty enabled reports.",
+      "SF-131: Havoc configurations are delivered once to each planet owner, including active sessions at 1:1:1. Stale colony reports cannot overwrite a pending delivery. Other fleet slots and missions are retained. Existing failed distributions are not retrospectively recreated.",
+      "SF-132: Personal Alliance Fund trading waits for an in-flight colony report and refreshes/retries settlement conflicts before submitting the exchange. Persistent failures show the actual reason.",
+      "Audit: the 240-tick population surplus simulation and prior defect reproductions pass. Shared exile voting and delayed alliance donations remain open audit items."
+    ]
+  },
+  {
     "version": "0.126.2",
     "date": "2026-10-15",
     "title": "Compact command column, complete planet editor and diplomacy repairs",

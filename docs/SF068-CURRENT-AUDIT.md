@@ -1,5 +1,13 @@
 # SF-068 current audit — v0.125.1
 
+## Resumed simulation pass — 2026-10-15, source v0.126.5
+
+The ten original offline reproductions were rerun against current canonical source: zero of those ten defects were observed. This does not close the separate shared-workflow findings below.
+
+A new real-Worker/in-memory-SQLite integration case runs 240 full-housing ticks in ten batches of 24, with zero Biodomes and zero ordinary levy. After every batch it verifies cumulative fractional growth conversion, the exact 6 Metal / 4 Crystal / 2 Eonium per converted unit, unchanged residents, persisted tick, and a duplicate submission with no additional fund credit. The fixture explicitly marks galaxy distribution complete so the independent tick-12 shuffle does not move the test planet to a different treasury. Existing three-tick, invalid-input and failed-settlement retry cases also pass.
+
+No production gameplay, deployment, reset, trade or fleet movement was performed. Havoc's prior five-race browser apply/restore evidence remains in SF119-HAVOC-RESULTS.json; this pass reruns its existing regression coverage rather than claiming a new live Havoc exercise. SOC01 delayed alliance donations and SOC02 shared exile voting remain open, as do broader concurrent-session and long-content coverage. Full-audit completion is not established.
+
 Read-only audit of canonical source against the shipped player manual. Offline isolated reproductions use fake DOM and in-memory saves. No live scans, spending, government changes, resets or fleet movements were performed. This report records defects; it does not claim they have been fixed.
 
 ## Reconfirmed functional findings
