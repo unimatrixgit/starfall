@@ -1,5 +1,33 @@
 [
   {
+    "version": "0.123.0",
+    "date": "2026-10-15",
+    "title": "Fresh game data without reloading command",
+    "synopsis": "Page navigation refreshes game data while keeping the site and theme in place. Loading recovery, compact reports and treasury settlement improve command operations.",
+    "promptIds": [
+      "SF-092",
+      "SF-083",
+      "SF-084",
+      "SF-085",
+      "SF-086",
+      "SF-087",
+      "SF-089",
+      "SF-090",
+      "SF-088"
+    ],
+    "changes": [
+      "SF-092: Each game-page opening reads fresh central data. Concurrent navigation shares a read; stale account, reset and navigation responses are rejected. Local tick, resources and pending projects remain intact. Site and theme caches retain their previous settings, superseding SF-091.",
+      "SF-083: Adjacent game stylesheets are bundled without changing their cascade order, the runtime download starts earlier, and hidden-page planet artwork loads lazily. Initial directory reads recover one transient failure, stalled reads have a bounded timeout, and directory retry avoids reloading the document. The release now includes its database migration beside the hosting manifest.",
+      "SF-084: The current-structures register uses content-sized rows, smaller icons and compact costs while retaining all effect text.",
+      "SF-085: Construction order reports use readable full-width news cards in a bounded scrollable modal.",
+      "SF-086: Spaceport has a third Alliance Fund tab for personal resource exchange with finite alliance reserves.",
+      "SF-087: The alliance-page exchange is reserved for Owner, HC and Officer exchanges between alliance reserves and the Universal Bank. Atomic settlement, rank, reserve and revision checks protect shared balances.",
+      "SF-089: Fees from personal fund exchanges are deposited in the Universal Bank in the received resource, atomically with the exchange.",
+      "SF-090: Galaxy Fund exchange charges 1%, rounded up to whole resource units. Alliance personal exchange retains 2.5%; direct bank exchanges follow the configured standard 5%.",
+      "SF-088: Quartus Relay joins the original worlds with its own survey and artwork, the same 20% battle-salvage eligibility as Earth, and no separate interface theme. Existing planets are not reassigned."
+    ]
+  },
+  {
     "version": "0.122.0",
     "date": "2026-10-15",
     "title": "Compact treasuries, population history and action reports",

@@ -683,9 +683,79 @@
       "title": "Compact responsive Planet Settings layout",
       "status": "live",
       "release": "0.122.0"
+    },
+    {
+      "id": "SF-083",
+      "priority": "BUGFIX",
+      "title": "Slow or stalled game reload and transient resource failures",
+      "status": "live",
+      "release": "0.123.0"
+    },
+    {
+      "id": "SF-084",
+      "priority": "P2",
+      "title": "Compact Current Structures and Bonuses table",
+      "status": "live",
+      "release": "0.123.0"
+    },
+    {
+      "id": "SF-085",
+      "priority": "P2",
+      "title": "Readable construction order report modal",
+      "status": "live",
+      "release": "0.123.0"
+    },
+    {
+      "id": "SF-086",
+      "priority": "P2",
+      "title": "Alliance Fund tab on Spaceport",
+      "status": "live",
+      "release": "0.123.0"
+    },
+    {
+      "id": "SF-087",
+      "priority": "P2",
+      "title": "Officer Alliance Fund exchange with Universal Bank",
+      "status": "live",
+      "release": "0.123.0"
+    },
+    {
+      "id": "SF-088",
+      "priority": "P4",
+      "title": "Quartus Relay original contributor world with Earth-equivalent bonus",
+      "status": "live",
+      "release": "0.123.0"
+    },
+    {
+      "id": "SF-089",
+      "priority": "P2",
+      "title": "Fund trading fees deposited in Universal Bank",
+      "status": "live",
+      "release": "0.123.0"
+    },
+    {
+      "id": "SF-090",
+      "priority": "P2",
+      "title": "Galaxy Fund exchange fee 1%",
+      "status": "live",
+      "release": "0.123.0"
+    },
+    {
+      "id": "SF-091",
+      "priority": "P2",
+      "title": "Lower cache time to 10 seconds",
+      "status": "superseded",
+      "supersededBy": "SF-092"
+    },
+    {
+      "id": "SF-092",
+      "priority": "P0",
+      "title": "Refresh current game data on each page opening without reloading site or theme",
+      "status": "live",
+      "release": "0.123.0"
     }
   ],
-  "nextId": "SF-083",
+  "nextId": "SF-093",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -915,9 +985,22 @@
       ],
       "status": "live",
       "release": "0.122.0"
+    },
+    {
+      "id": "G-019",
+      "priority": "P2",
+      "title": "Spaceport alliance trading and Universal Bank fee settlement",
+      "members": [
+        "SF-086",
+        "SF-087",
+        "SF-089",
+        "SF-090"
+      ],
+      "status": "live",
+      "release": "0.123.0"
     }
   ],
-  "nextGroupId": "G-019",
+  "nextGroupId": "G-020",
   "openOrder": [
     "SF-068"
   ],
@@ -929,14 +1012,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.122.0",
-    "tests": 416,
-    "pages": 112,
-    "linksAndAssets": 3442,
+    "release": "0.123.0",
+    "tests": 450,
+    "pages": 113,
+    "linksAndAssets": 3453,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "94e350fab3157387fd17df8ad0241ec47940d5da",
+    "liveSourceSha": "851f18e0c508119406b9ffd3fe0514b2561bbd5a",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",
@@ -944,5 +1027,6 @@
       "nonCombat": true
     }
   },
-  "colleagueStatus": "Paused at user request; root continues. No new delegation or routine messages until user resumes colleague."
+  "colleagueStatus": "Paused at user request; root continues. No new delegation or routine messages until user resumes colleague.",
+  "priorityOverride": "SF-092 is top priority by explicit user instruction, ahead of SF-083."
 }

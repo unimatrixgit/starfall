@@ -303,6 +303,60 @@
       ],
       "status": "published",
       "publishedAt": "2026-10-15T02:06:42.379222Z"
+    },
+    {
+      "version": "0.123.0",
+      "promptIds": [
+        "SF-092",
+        "SF-083",
+        "SF-084",
+        "SF-085",
+        "SF-086",
+        "SF-087",
+        "SF-089",
+        "SF-090",
+        "SF-088"
+      ],
+      "tasks": [
+        {
+          "id": "SF-092",
+          "title": "Refresh current game data on each page opening without reloading site or theme"
+        },
+        {
+          "id": "SF-083",
+          "title": "Slow or stalled game reload and transient resource failures"
+        },
+        {
+          "id": "SF-084",
+          "title": "Compact Current Structures and Bonuses table"
+        },
+        {
+          "id": "SF-085",
+          "title": "Readable construction order report modal"
+        },
+        {
+          "id": "SF-086",
+          "title": "Alliance Fund tab on Spaceport"
+        },
+        {
+          "id": "SF-087",
+          "title": "Officer Alliance Fund exchange with Universal Bank"
+        },
+        {
+          "id": "SF-089",
+          "title": "Fund trading fees deposited in Universal Bank"
+        },
+        {
+          "id": "SF-090",
+          "title": "Galaxy Fund exchange fee 1%"
+        },
+        {
+          "id": "SF-088",
+          "title": "Quartus Relay original contributor world with Earth-equivalent bonus"
+        }
+      ],
+      "status": "published",
+      "publishedAt": "2026-10-15T02:38:57.052528Z"
     }
   ],
   "prepared": []

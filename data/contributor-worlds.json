@@ -1,0 +1,22 @@
+[
+  {
+    "id": "quartus-relay",
+    "name": "Quartus Relay",
+    "canonicalName": "Quartus Relay",
+    "family": "Original",
+    "rarity": "Special",
+    "uniquePerRound": true,
+    "uniqueKey": "quartus-relay",
+    "habitability": 89,
+    "biodiversity": 84,
+    "moisture": 67,
+    "rockiness": 41,
+    "basePopulation": 945,
+    "growthPercent": 36.25,
+    "travelEtaBonus": 0,
+    "salvageBonusPercent": 20,
+    "colors": ["#183c59", "#79d4c0"],
+    "statsOrigin": "Original contributor world · fixed discovery survey",
+    "lore": "Four silver relay arcs rise above Quartus Relay's turquoise seas and basalt island chains. Its recovery crews preserve what the frontier would otherwise lose: eligible battles grant the holder the same 20% bonus salvage as Earth. The registry honours 4 of 7 · Primary Unimatrix001 with an original world and one charter per round; its holder keeps their chosen interface theme."
+  }
+]
