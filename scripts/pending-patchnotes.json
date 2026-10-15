@@ -396,6 +396,45 @@
       ],
       "status": "published",
       "publishedAt": "2026-10-15T03:27:55.045990Z"
+    },
+    {
+      "version": "0.125.0",
+      "promptIds": [
+        "SF-100",
+        "SF-101",
+        "SF-102",
+        "SF-103",
+        "SF-104",
+        "SF-105"
+      ],
+      "tasks": [
+        {
+          "id": "SF-100",
+          "title": "Alliance Shipyards matrix linked to existing Launch Bay fleet"
+        },
+        {
+          "id": "SF-101",
+          "title": "Universe alliance top ten and member details with submenu"
+        },
+        {
+          "id": "SF-102",
+          "title": "Transparent complete moving header surface"
+        },
+        {
+          "id": "SF-103",
+          "title": "Workforce allocation quest chain with escalating rewards"
+        },
+        {
+          "id": "SF-104",
+          "title": "Single alliance cooperation forum post objective"
+        },
+        {
+          "id": "SF-105",
+          "title": "Alliance defence quest chain and matching rewards"
+        }
+      ],
+      "status": "published",
+      "publishedAt": "2026-10-15T03:59:13.428144Z"
     }
   ],
   "prepared": []

@@ -1,5 +1,27 @@
 [
   {
+    "version": "0.125.0",
+    "date": "2026-10-15",
+    "title": "Alliance Shipyards and cooperation milestones",
+    "synopsis": "Shared production uses the existing Alliance Fleet; Universe alliance statistics, transparent navigation and rewarded quest chains improve command.",
+    "promptIds": [
+      "SF-100",
+      "SF-101",
+      "SF-102",
+      "SF-103",
+      "SF-104",
+      "SF-105"
+    ],
+    "changes": [
+      "SF-100: Owner, HC and Officer can fund mixed member-race ship orders through Alliance Shipyards using combined member factories. A race-column matrix allocates hulls to a member’s existing fourth fleet and Launch Bay. Alliance Ships cannot transfer to Base or personal fleets. Sales return 50% catalog resources to Alliance Fund after 12 ticks; delivery, loss and sale counters reconcile once with launch and readiness fences.",
+      "SF-101: Universe offers Total overview, Planets and Alliances submenus. The total view stacks the original statistics with the top ten alliances and selected alliance member details: ruler, planet, asteroids, score, population and XP. Missing reports remain unknown.",
+      "SF-102 and SF-098 correction: The complete header follows the viewport without clipping or internal scrolling. Its wrapper background is transparent, while navigation cards and Info retain readable surfaces.",
+      "SF-103: Education adds saved workforce assignment goals at 60%, 70%, 80%, 90% and 100%. Capacity research alone does not complete these goals. Every step has escalating resources, CU and RP rewards in the existing reward treasury.",
+      "SF-104: Alliance cooperation replaces the repeated forum dispatch ladder with one rewarded alliance-forum post objective. Existing claim history is retained.",
+      "SF-105: Alliance cooperation counts real Defence departures to current alliance members, starting at zero. The first fleet matches the existing defence quest reward; 5, 10, 25, 50 and 100 fleets grant increasing resources, CU and RP. Fake Defence, rejected launches and cancelled scheduled departures do not count."
+    ]
+  },
+  {
     "version": "0.124.0",
     "date": "2026-10-15",
     "title": "Population levies and quiet order confirmations",

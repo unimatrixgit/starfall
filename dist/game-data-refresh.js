@@ -57,6 +57,7 @@
     renderPage(page);save();
    }
    // These modules already fence their own account/generation and current DOM.
+   if(typeof syncAllianceShips==='function'&&state.centralPlayerId&&state.alliance?.name!=='Unaffiliated')await syncAllianceShips();
    if(['alliance','galaxyFund'].includes(page)&&typeof loadAllianceTreasuryQuote==='function')await loadAllianceTreasuryQuote();
    if(token!==sequence||!same(c))return false;
    if(page==='mail'&&typeof renderMail==='function')void renderMail();

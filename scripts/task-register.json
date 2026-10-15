@@ -798,7 +798,9 @@
       "priority": "P2",
       "title": "Keep development navigation and Info on top",
       "status": "live",
-      "release": "0.124.0"
+      "release": "0.124.0",
+      "correction": "Whole header follows viewport without clipping or internal scrolling.",
+      "correctedRelease": "0.125.0"
     },
     {
       "id": "SF-099",
@@ -811,22 +813,59 @@
       "id": "SF-100",
       "priority": "P2",
       "title": "Alliance Shipyards matrix linked to existing Launch Bay fleet",
-      "status": "in_progress",
+      "status": "live",
       "clarifications": [
         "Fund costs and sale proceeds use Alliance Fund.",
         "Combined member factories determine speed.",
         "Reuse Havoc distribution matrix and existing Launch Bay f4; no second fleet.",
         "Alliance Ships cannot move to personal fleets or base."
-      ]
+      ],
+      "release": "0.125.0"
     },
     {
       "id": "SF-101",
       "priority": "P2",
       "title": "Universe alliance top ten and member details with submenu",
-      "status": "in_progress"
+      "status": "live",
+      "release": "0.125.0"
+    },
+    {
+      "id": "SF-102",
+      "priority": "P2",
+      "title": "Transparent complete moving header surface",
+      "status": "live",
+      "release": "0.125.0"
+    },
+    {
+      "id": "SF-103",
+      "priority": "P2",
+      "title": "Workforce allocation quest chain with escalating rewards",
+      "status": "live",
+      "release": "0.125.0"
+    },
+    {
+      "id": "SF-104",
+      "priority": "P2",
+      "title": "Single alliance cooperation forum post objective",
+      "status": "live",
+      "release": "0.125.0"
+    },
+    {
+      "id": "SF-105",
+      "priority": "P2",
+      "title": "Alliance defence quest chain and matching rewards",
+      "status": "live",
+      "release": "0.125.0"
+    },
+    {
+      "id": "SF-106",
+      "priority": "P2",
+      "title": "Verify full-population surplus with zero Biodomes",
+      "status": "checked_as_designed",
+      "note": "Live browser Sakura Prime tick3:910/910,0Biodomes,demography1,potentialgrowth0. No unused growth exists; research multiplies Biodome growth and does not create a base rate. No gameplay mutation performed."
     }
   ],
-  "nextId": "SF-102",
+  "nextId": "SF-107",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1073,9 +1112,7 @@
   ],
   "nextGroupId": "G-020",
   "openOrder": [
-    "SF-068",
-    "SF-100",
-    "SF-101"
+    "SF-068"
   ],
   "colleagueReviews": {
     "battlegroups": "https://github.com/unimatrixgit/mcdune/blob/5f02adf/docs/STARFALL-BATTLEGROUP-ANALYSIS.md",
@@ -1085,14 +1122,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.124.0",
-    "tests": 488,
-    "pages": 114,
-    "linksAndAssets": 3482,
+    "release": "0.125.0",
+    "tests": 525,
+    "pages": 115,
+    "linksAndAssets": 3511,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "a80ff83e45863b1377df4bc9178279a26bbb118c",
+    "liveSourceSha": "bd0ec0cc6a17370c16d46be152e1107b08a19b7d",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",
