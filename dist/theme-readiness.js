@@ -2,7 +2,7 @@
 (()=>{
   const root=document.documentElement;
   if(root.dataset.commandBoot!=='pending')return;
-  let runtime=false,theme=false,phase='pending',panel,message,retryButton,timer,epoch=0;
+  let runtime=false,theme=false,phase='pending',panel,message,retryButton,timer,epoch=0,failureKind='',failureReason='';
   const retry=()=>location.reload();
   function mount(){
     if(panel||phase==='ready')return;
@@ -15,12 +15,12 @@
     card.append(mark,title,message,retryButton);panel.append(card);document.body.append(panel);root.dataset.commandBootUi='true';
     const app=document.querySelector('.app');if(app){app.inert=true;app.setAttribute('aria-busy','true');}paint();
   }
-  function paint(){if(!message)return;message.textContent=phase==='error'?'Command could not connect. Your saved game is retained. Retry to load the current command theme.':theme?'Preparing command interface…':'Connecting and loading your command theme…';retryButton.hidden=phase!=='error';}
-  function error(){if(phase==='ready')return;epoch++;phase='error';root.dataset.commandBoot='error';clearTimeout(timer);paint();}
+  function paint(){if(!message)return;message.textContent=phase==='error'?'Command could not connect. Your saved game is retained. '+failureReason+' Retry connection.':theme?'Preparing command interface…':'Connecting and loading your command theme…';retryButton.hidden=phase!=='error';}
+  function error(reason,kind='failure'){if(phase==='ready')return;epoch++;failureKind=kind;failureReason=typeof reason==='string'?reason.slice(0,240):'Command initialisation failed.';phase='error';root.dataset.commandBoot='error';clearTimeout(timer);window.starfallErrorLog?.record('Command startup: '+failureReason);paint();}
   function ready(){
-    if(!runtime||!theme||phase==='ready'||phase==='error')return;
+    if(!runtime||!theme||phase==='ready'||phase==='error'&&failureKind!=='timeout')return;if(phase==='error'){phase='pending';root.dataset.commandBoot='pending';}
     const attempt=++epoch;
-    requestAnimationFrame(()=>requestAnimationFrame(()=>{if(attempt!==epoch||phase!=='pending')return;phase='ready';clearTimeout(timer);root.dataset.commandBoot='ready';const app=document.querySelector('.app');if(app){app.inert=false;app.removeAttribute('aria-busy');}if(panel)panel.remove();}));
+    const reveal=()=>{if(attempt!==epoch||phase!=='pending')return;phase='ready';clearTimeout(timer);root.dataset.commandBoot='ready';const app=document.querySelector('.app');if(app){app.inert=false;app.removeAttribute('aria-busy');}if(panel)panel.remove();};if(window.isStaffWorkspace)reveal();else requestAnimationFrame(()=>requestAnimationFrame(reveal));
   }
   window.starfallThemeReadiness=Object.freeze({
     runtimeReady(){runtime=true;ready();},
@@ -28,6 +28,6 @@
     failed:error,
     get phase(){return phase;}
   });
-  timer=setTimeout(error,20000);
+  timer=setTimeout(()=>error('Timed out waiting for '+(!runtime?'command files':!theme?'the planet directory':'the first visible frame')+'.','timeout'),20000);
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();
 })();

@@ -1,5 +1,20 @@
 [
   {
+    "version": "0.121.2",
+    "date": "2026-10-15",
+    "title": "Bugfix · Staff connection recovery",
+    "synopsis": "Staff workspaces render independently of player screens and recover when a slow connection completes after the startup timeout.",
+    "promptIds": [
+      "SF-069",
+      "SF-070"
+    ],
+    "changes": [
+      "Staff controlcenters render their own content without running every player-page renderer or reloading for a player-theme change.",
+      "Hidden staff frames do not wait for animation frames to become usable. A late successful connection can recover a timeout; actual failed scripts remain blocked.",
+      "The connection panel and error log identify which startup stage failed instead of showing only a generic theme message."
+    ]
+  },
+  {
     "version": "0.121.1",
     "date": "2026-10-15",
     "title": "Bugfix · Shared staff controlcenter startup",
