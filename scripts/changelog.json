@@ -1,5 +1,20 @@
 [
   {
+    "version": "0.125.1",
+    "date": "2026-10-15",
+    "title": "Ecological base growth at full housing",
+    "urgent": true,
+    "promptIds": [
+      "SF-107",
+      "SF-108"
+    ],
+    "synopsis": "A targeted population correction creates positive base growth without Biodomes and supplies the Galaxy Fund at full housing. The moving navigation bar is substantially shallower.",
+    "changes": [
+      "SF-107: Ecological base growth uses habitability, biodiversity, moisture, inverse rockiness and founding population. Biodomes add growth; research and the existing planet growth modifier multiply the result. Even a zero-Biodome planet has positive potential growth. At full housing this growth converts to Galaxy Fund resources, including ordinary levy zero, with fractions carried forward and no extra residents removed. Frontend, settlement, projections and manual use the same base calculation.",
+      "SF-108: Desktop development tiles are 56 pixels high. The full-size Info panel overlays the right rail instead of making all five tiles tall. The moving banner remains transparent."
+    ]
+  },
+  {
     "version": "0.125.0",
     "date": "2026-10-15",
     "title": "Alliance Shipyards and cooperation milestones",

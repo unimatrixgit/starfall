@@ -862,10 +862,29 @@
       "priority": "P2",
       "title": "Verify full-population surplus with zero Biodomes",
       "status": "checked_as_designed",
-      "note": "Live browser Sakura Prime tick3:910/910,0Biodomes,demography1,potentialgrowth0. No unused growth exists; research multiplies Biodome growth and does not create a base rate. No gameplay mutation performed."
+      "note": "Live browser Sakura Prime tick3:910/910,0Biodomes,demography1,potentialgrowth0. No unused growth exists; research multiplies Biodome growth and does not create a base rate. No gameplay mutation performed.",
+      "supersededBy": "SF-107"
+    },
+    {
+      "id": "SF-107",
+      "priority": "BUGFIX",
+      "title": "Positive ecological base growth and full-housing Galaxy Fund surplus",
+      "status": "live",
+      "clarifications": [
+        "Use habitability, biodiversity, moisture, rockiness, founding population and existing growth modifier.",
+        "Base growth remains positive without Biodomes; full-housing growth converts even at ordinary levy zero."
+      ],
+      "release": "0.125.1"
+    },
+    {
+      "id": "SF-108",
+      "priority": "P2",
+      "title": "Shallow header menu with Info overlaying the right rail",
+      "status": "live",
+      "release": "0.125.1"
     }
   ],
-  "nextId": "SF-107",
+  "nextId": "SF-109",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1122,14 +1141,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.125.0",
-    "tests": 525,
-    "pages": 115,
-    "linksAndAssets": 3511,
+    "release": "0.125.1",
+    "tests": 529,
+    "pages": 116,
+    "linksAndAssets": 3540,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "bd0ec0cc6a17370c16d46be152e1107b08a19b7d",
+    "liveSourceSha": "ea5502a9addca1aa4e737afd0717f752fb752413",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",

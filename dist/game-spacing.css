@@ -235,3 +235,16 @@ body:not(.staff-workspace) .shell>.topbar .topbar-meta{min-height:44px!important
 /* SF-102: the page remains visible through the moving header surface. */
 body:not(.staff-workspace) .shell>.topbar,body:not(.staff-workspace) .shell>.topbar .topbar-meta,body:not(.staff-workspace) .shell>.topbar .development-banner{background:transparent!important;box-shadow:none!important;backdrop-filter:none!important}
 body:not(.staff-workspace) .shell>.topbar:before,body:not(.staff-workspace) .shell>.topbar:after,body:not(.staff-workspace) .shell>.topbar .development-banner:before,body:not(.staff-workspace) .shell>.topbar .development-banner:after,body:not(.staff-workspace) .shell>.topbar .development-art{display:none!important}
+/* SF-108: shallow navigation leaves the page readable; Info overlays the rail. */
+@media(min-width:1001px){
+ body:not(.staff-workspace) .shell>.topbar .development-banner{position:relative;overflow:visible!important;padding:8px 16px!important;min-height:0!important}
+ body:not(.staff-workspace) .shell>.topbar .development-links{grid-template-columns:repeat(5,minmax(0,1fr));padding-right:288px;align-items:start!important}
+ body:not(.staff-workspace) .shell>.topbar .development-links>.dev-art-link{height:56px!important;min-height:56px!important;max-height:56px!important;padding:7px!important;gap:6px!important;align-self:start!important}
+ body:not(.staff-workspace) .shell>.topbar .development-links>.development-info{position:absolute!important;right:16px;top:36px;width:280px!important;min-width:0!important;max-width:280px!important;grid-column:auto!important;display:block!important}
+ body:not(.staff-workspace) .shell>.topbar .development-heading{margin-bottom:6px!important}
+}
+@media(min-width:1001px){
+ body:not(.staff-workspace) .shell>.topbar .topbar-meta{height:36px!important;min-height:36px!important;padding:2px 16px!important}
+ body:not(.staff-workspace) .shell>.topbar .topbar-theme-art{height:24px!important;min-height:0!important;border:0!important}
+ body:not(.staff-workspace) .shell>.topbar .command-side-actions .btn{min-height:28px!important;height:28px;padding:4px 9px!important;font-size:9px!important}
+}

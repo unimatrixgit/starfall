@@ -435,6 +435,27 @@
       ],
       "status": "published",
       "publishedAt": "2026-10-15T03:59:13.428144Z"
+    },
+    {
+      "version": "0.125.1",
+      "urgent": true,
+      "reason": "User requested correction of full-housing surplus behaviour without Biodomes.",
+      "promptIds": [
+        "SF-107",
+        "SF-108"
+      ],
+      "tasks": [
+        {
+          "id": "SF-107",
+          "title": "Positive ecological base growth and full-housing Galaxy Fund surplus"
+        },
+        {
+          "id": "SF-108",
+          "title": "Shallow header menu with Info overlaying the right rail"
+        }
+      ],
+      "status": "published",
+      "publishedAt": "2026-10-15T04:13:47.768326Z"
     }
   ],
   "prepared": []
