@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.125.2",
+    "date": "2026-10-15",
+    "title": "Keep galaxy 1:1 outside redistribution",
+    "urgent": true,
+    "promptIds": [
+      "SF-109"
+    ],
+    "synopsis": "Manual and automatic shuffle preserve all planets already in galaxy 1:1. The user-requested round reset starts a fresh charter generation.",
+    "changes": [
+      "SF-109: Galaxy 1:1 is excluded before randomisation and temporary coordinate staging. Its planets keep their exact coordinates and data during both manual shuffle and automatic tick-12 distribution.",
+      "The explicitly requested round reset clears current colonies and shared round state and prepares new charters. Accounts, ownership keys, memorials and historical generation-scoped receipts remain."
+    ]
+  },
+  {
     "version": "0.125.1",
     "date": "2026-10-15",
     "title": "Ecological base growth at full housing",

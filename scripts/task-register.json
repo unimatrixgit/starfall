@@ -580,7 +580,14 @@
       "id": "SF-068",
       "priority": "P2",
       "title": "Audit all game functions against the manual with reproducible evidence",
-      "status": "pending"
+      "status": "in_progress",
+      "auditCheckpoint": {
+        "release": "0.125.1",
+        "observedDefects": 10,
+        "report": "docs/SF068-CURRENT-AUDIT.md",
+        "next": "Construction corruption, bonus capacity and gates, then grouped scan corrections and shared governance."
+      },
+      "layoutScope": "Verify tables, text, labels and controls stay within their frames on wide and narrow screens; intentional scroll containers and the right Info overlay are distinguished from defects."
     },
     {
       "id": "SF-069",
@@ -882,9 +889,22 @@
       "title": "Shallow header menu with Info overlaying the right rail",
       "status": "live",
       "release": "0.125.1"
+    },
+    {
+      "id": "SF-109",
+      "priority": "BUGFIX",
+      "title": "Protect galaxy 1:1 from both shuffles and perform requested round reset",
+      "status": "live",
+      "resetExplicitlyRequested": true,
+      "release": "0.125.2",
+      "resetVerified": {
+        "generation": 26,
+        "planetsAfter": 0,
+        "pendingCharters": 5
+      }
     }
   ],
-  "nextId": "SF-109",
+  "nextId": "SF-110",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1141,14 +1161,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.125.1",
-    "tests": 529,
-    "pages": 116,
-    "linksAndAssets": 3540,
+    "release": "0.125.2",
+    "tests": 531,
+    "pages": 117,
+    "linksAndAssets": 3569,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "ea5502a9addca1aa4e737afd0717f752fb752413",
+    "liveSourceSha": "cc0ce572622c85fe688f38ff8e77b646594916e2",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",

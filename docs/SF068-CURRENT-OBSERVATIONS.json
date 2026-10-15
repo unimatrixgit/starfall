@@ -1,0 +1,143 @@
+{
+  "audit": "SF-068",
+  "scope": "offline canonical economy, scans and galaxy governance; no network, account, or persisted save writes",
+  "defectsObserved": 10,
+  "observations": [
+    {
+      "id": "SF068-E01",
+      "name": "Rendering construction preserves work",
+      "defectObserved": true,
+      "before": {
+        "id": "biodome",
+        "total": 250,
+        "remaining": 250,
+        "cost": {
+          "metal": 300,
+          "crystal": 200,
+          "eonium": 100
+        }
+      },
+      "after": {
+        "id": "biodome",
+        "total": 0,
+        "remaining": 0,
+        "cost": {
+          "metal": 300,
+          "crystal": 200,
+          "eonium": 100
+        },
+        "factoryAssignments": {},
+        "factoryWork": {},
+        "formulaVersion": 2
+      }
+    },
+    {
+      "id": "SF068-E02",
+      "name": "Bonus construction respects reserved facility slots",
+      "defectObserved": true,
+      "setup": {
+        "built": 19,
+        "pending": 1,
+        "limit": 20,
+        "allocateCU": 250
+      },
+      "after": {
+        "built": 20,
+        "pending": 1,
+        "limit": 20,
+        "unusedCU": 0
+      }
+    },
+    {
+      "id": "SF068-E03",
+      "name": "Completed hull research unlocks corresponding bonus structures",
+      "defectObserved": true,
+      "after": {
+        "hullLevel": 3,
+        "branches": [
+          "demography",
+          "travel",
+          "construction",
+          "fighter",
+          "scans",
+          "core",
+          "covert",
+          "cargo",
+          "population"
+        ],
+        "mediumFactory": false,
+        "heavyFactory": false,
+        "structureDefense": false
+      }
+    },
+    {
+      "id": "SF068-M01",
+      "name": "Galaxy sweep respects special fleet eligibility",
+      "defectObserved": true,
+      "after": {
+        "chargedEach": 36000,
+        "landing": true,
+        "incoming": true,
+        "missions": 0
+      }
+    },
+    {
+      "id": "SF068-M02",
+      "name": "Jumpgate reports travelling fleets rather than docked ships",
+      "defectObserved": true,
+      "after": {
+        "missionsAtScan": 0,
+        "dockedLumen": 99,
+        "reportedDockedComposition": true
+      }
+    },
+    {
+      "id": "SF068-M03",
+      "name": "Incoming report includes known incoming composition",
+      "defectObserved": true,
+      "after": {
+        "knownIncomingLumen": 17,
+        "reportsSeventeen": false,
+        "reportsZero": true
+      }
+    },
+    {
+      "id": "SF068-M04",
+      "name": "Generated reports contain actual line breaks",
+      "defectObserved": true,
+      "after": {
+        "actualLineBreaks": false
+      }
+    },
+    {
+      "id": "SF068-M05",
+      "name": "Planet report includes promised known guards",
+      "defectObserved": true,
+      "after": {
+        "knownGuards": 77,
+        "reportsGuards": false
+      }
+    },
+    {
+      "id": "SF068-SOC03",
+      "name": "Exile funding debits Galaxy Fund",
+      "defectObserved": true,
+      "after": {
+        "allianceMetal": 900,
+        "galaxyMetal": 5000,
+        "votes": 1
+      }
+    },
+    {
+      "id": "SF068-SOC05",
+      "name": "Only authorised minister changes donation policy",
+      "defectObserved": true,
+      "after": {
+        "ordinaryPlayerChangedPolicy": true
+      }
+    }
+  ],
+  "release": "0.125.1",
+  "sourceCommit": "ea5502a9addca1aa4e737afd0717f752fb752413",
+  "recordedAt": "2026-10-15T04:18:27.802Z"
+}

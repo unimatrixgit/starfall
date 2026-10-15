@@ -456,6 +456,21 @@
       ],
       "status": "published",
       "publishedAt": "2026-10-15T04:13:47.768326Z"
+    },
+    {
+      "version": "0.125.2",
+      "urgent": true,
+      "promptIds": [
+        "SF-109"
+      ],
+      "tasks": [
+        {
+          "id": "SF-109",
+          "title": "Protect galaxy 1:1 from both shuffles and perform requested round reset"
+        }
+      ],
+      "status": "published",
+      "publishedAt": "2026-10-15T04:25:18.800914Z"
     }
   ],
   "prepared": []
