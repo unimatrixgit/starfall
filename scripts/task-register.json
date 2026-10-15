@@ -604,9 +604,16 @@
       "title": "Restore compact game development navigation and Info layout",
       "status": "live",
       "note": "User clarified: no sticky menu."
+    },
+    {
+      "id": "SF-072",
+      "priority": "BUGFIX",
+      "title": "Recover transient stylesheet/image failures and gate runtime on staff bootstrap",
+      "status": "live",
+      "release": "0.121.3"
     }
   ],
-  "nextId": "SF-072",
+  "nextId": "SF-073",
   "finalActionIds": [
     "SF-031",
     "SF-033"

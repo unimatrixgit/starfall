@@ -12,7 +12,7 @@ async function persistAllianceSettings(settings){if(!planetDirectoryReady)return
 async function refreshSharedPlanets(){if(!planetDirectoryReady||planetDirectorySaving)return;try{const data=await centralDirectoryRequest('/api/planets');if((data.resetGeneration||0)!==(state.centralResetGeneration||0)){applySharedDirectory(data);return;}if(data.revision!==planetDirectoryRevision){const dirty=JSON.stringify(canonicalDirectory(directorySnapshot()))!==planetDirectoryBaseline;if(dirty&&planetDirectoryEditable){await syncPlanetDirectory();return;}applySharedDirectory(data);}}catch(error){directoryStatus(error.message);}}
 initializePlanetDirectory();setInterval(()=>{if(!document.hidden)refreshSharedPlanets();},15000);
 
-setInterval(async()=>{try{const data=await centralDirectoryRequest('/api/version');const button=document.getElementById('versionReload');if(button&&data.version!=='0.121.2')button.hidden=false;}catch{}},60000);document.addEventListener('click',e=>{if(e.target.id==='versionReload')location.reload();});
+setInterval(async()=>{try{const data=await centralDirectoryRequest('/api/version');const button=document.getElementById('versionReload');if(button&&data.version!=='0.121.3')button.hidden=false;}catch{}},60000);document.addEventListener('click',e=>{if(e.target.id==='versionReload')location.reload();});
 
 async function centralSetFortress(){
  if(window.strongholdRequestBusy)return;

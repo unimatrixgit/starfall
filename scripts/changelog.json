@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.121.3",
+    "date": "2026-10-15",
+    "title": "Bugfix · Recover interrupted command assets",
+    "synopsis": "Transient stylesheet, artwork and workspace-bootstrap failures now receive bounded recovery attempts.",
+    "promptIds": [
+      "SF-072"
+    ],
+    "changes": [
+      "Same-origin stylesheets and public artwork retry up to twice after a network load failure. Successful recovery is recorded in the error log.",
+      "The game runtime waits for the workspace bootstrap. If that script cannot load after three attempts, startup stops visibly rather than using the wrong browser save.",
+      "Existing runtime retries remain bounded; unrelated scripts, external resources and private image endpoints are not generically retried."
+    ]
+  },
+  {
     "version": "0.121.2",
     "date": "2026-10-15",
     "title": "Bugfix · Staff connection recovery",
