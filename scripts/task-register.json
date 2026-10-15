@@ -1032,9 +1032,25 @@
       "release": "0.126.3",
       "completedAt": "2026-10-15T06:42:00.888Z",
       "liveAt": "2026-10-15T06:44:20.134257Z"
+    },
+    {
+      "id": "SF-126",
+      "priority": "P2",
+      "title": "Contextual persistent Recent Signals module with planet category settings",
+      "status": "live",
+      "release": "0.126.4",
+      "completedAt": "2026-10-15T06:57:29.480Z",
+      "liveAt": "2026-10-15T06:59:26.237122Z"
+    },
+    {
+      "id": "SF-127",
+      "priority": "P2",
+      "title": "Verify planet base growth participates in next tick population growth",
+      "status": "verified",
+      "resolution": "Already implemented: ecology base + Biodomes, research and planet growth multiplier; next tick caps by housing and carries fractions. Same potential rate is used by central surplus assessment. No code change required."
     }
   ],
-  "nextId": "SF-126",
+  "nextId": "SF-128",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1291,14 +1307,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.126.3",
-    "tests": 565,
+    "release": "0.126.4",
+    "tests": 569,
     "pages": 120,
     "linksAndAssets": 3656,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "ba0e123e9f2d402624a47dac4f6a13d7d357c374",
+    "liveSourceSha": "2062a11a44cf7a9efa2e13dad2afc9e40e672670",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",
@@ -1309,7 +1325,6 @@
     "responsiveWidths": [
       390,
       760,
-      980,
       1024,
       1440
     ],
@@ -1323,7 +1338,11 @@
     ],
     "sidebarWidth": 208,
     "sidebarInfoHeight": 241,
-    "browserErrors": 0
+    "browserErrors": 0,
+    "signalThemes": [
+      "Neutral",
+      "Borg"
+    ]
   },
   "colleagueStatus": "Paused at user request; root continues. No new delegation or routine messages until user resumes colleague.",
   "priorityOverride": "SF-092 is top priority by explicit user instruction, ahead of SF-083."

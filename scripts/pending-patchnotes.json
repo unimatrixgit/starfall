@@ -15,6 +15,13 @@
       "title": "Remove unnecessary number-field spinners",
       "release": "0.126.3",
       "completedAt": "2026-10-15T06:42:00.888Z"
+    },
+    {
+      "id": "SF-126",
+      "priority": "P2",
+      "title": "Contextual persistent Recent Signals module with planet category settings",
+      "release": "0.126.4",
+      "completedAt": "2026-10-15T06:57:29.480Z"
     }
   ],
   "published": [

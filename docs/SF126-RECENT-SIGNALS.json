@@ -1,0 +1,186 @@
+{
+  "release": "0.126.4",
+  "module": "dist/recent-signals.js",
+  "tests": 569,
+  "visibility": [
+    {
+      "page": "overview",
+      "visible": true
+    },
+    {
+      "page": "construction",
+      "visible": true
+    },
+    {
+      "page": "research",
+      "visible": true
+    },
+    {
+      "page": "fleets",
+      "visible": true
+    },
+    {
+      "page": "galaxyFund",
+      "visible": true
+    },
+    {
+      "page": "alliance",
+      "visible": true
+    },
+    {
+      "page": "news",
+      "visible": false
+    },
+    {
+      "page": "forums",
+      "visible": false
+    },
+    {
+      "page": "galaxyBrowser",
+      "visible": false
+    },
+    {
+      "page": "planetSettings",
+      "visible": false
+    },
+    {
+      "page": "admin",
+      "visible": false
+    }
+  ],
+  "rows": [
+    {
+      "skin": "Neutral",
+      "width": 1440,
+      "overflow": 0,
+      "headerBottom": 189.984375,
+      "signals": {
+        "x": 244,
+        "y": 134.1875,
+        "width": 1163,
+        "height": 45.796875,
+        "top": 134.1875,
+        "right": 1407,
+        "bottom": 179.984375,
+        "left": 244
+      }
+    },
+    {
+      "skin": "Neutral",
+      "width": 1024,
+      "overflow": 0,
+      "headerBottom": 189.984375,
+      "signals": {
+        "x": 244,
+        "y": 134.1875,
+        "width": 747,
+        "height": 45.796875,
+        "top": 134.1875,
+        "right": 991,
+        "bottom": 179.984375,
+        "left": 244
+      }
+    },
+    {
+      "skin": "Neutral",
+      "width": 760,
+      "overflow": 0,
+      "headerBottom": 987.875,
+      "signals": {
+        "x": 30,
+        "y": 937.484375,
+        "width": 701,
+        "height": 42.390625,
+        "top": 937.484375,
+        "right": 731,
+        "bottom": 979.875,
+        "left": 30
+      }
+    },
+    {
+      "skin": "Neutral",
+      "width": 390,
+      "overflow": 0,
+      "headerBottom": 1075.859375,
+      "signals": {
+        "x": 11,
+        "y": 1025.46875,
+        "width": 369,
+        "height": 42.390625,
+        "top": 1025.46875,
+        "right": 380,
+        "bottom": 1067.859375,
+        "left": 11
+      }
+    },
+    {
+      "skin": "Borg",
+      "width": 1440,
+      "overflow": 0,
+      "headerBottom": 188.1875,
+      "signals": {
+        "x": 244,
+        "y": 134.1875,
+        "width": 1163,
+        "height": 44,
+        "top": 134.1875,
+        "right": 1407,
+        "bottom": 178.1875,
+        "left": 244
+      }
+    },
+    {
+      "skin": "Borg",
+      "width": 1024,
+      "overflow": 0,
+      "headerBottom": 188.1875,
+      "signals": {
+        "x": 244,
+        "y": 134.1875,
+        "width": 747,
+        "height": 44,
+        "top": 134.1875,
+        "right": 991,
+        "bottom": 178.1875,
+        "left": 244
+      }
+    },
+    {
+      "skin": "Borg",
+      "width": 760,
+      "overflow": 0,
+      "headerBottom": 971.484375,
+      "signals": {
+        "x": 30,
+        "y": 921.484375,
+        "width": 701,
+        "height": 42,
+        "top": 921.484375,
+        "right": 731,
+        "bottom": 963.484375,
+        "left": 30
+      }
+    },
+    {
+      "skin": "Borg",
+      "width": 390,
+      "overflow": 0,
+      "headerBottom": 1028.46875,
+      "signals": {
+        "x": 11,
+        "y": 978.46875,
+        "width": 369,
+        "height": 42,
+        "top": 978.46875,
+        "right": 380,
+        "bottom": 1020.46875,
+        "left": 11
+      }
+    }
+  ],
+  "preferenceReload": true,
+  "systemExcluded": true,
+  "sidebarRemoved": true,
+  "errors": [],
+  "policy": "Visible only on Overview, Mining, Construction, Research, Production, Fleets, Spaceport, Waves, Covert Ops, Alliance, Politics and Population. Hidden on browsing, journal, communications, settings and staff pages. Category choices are separate from journal filters; system messages remain excluded. Newest signals appear unless the user is deliberately browsing an older signal."
+}
