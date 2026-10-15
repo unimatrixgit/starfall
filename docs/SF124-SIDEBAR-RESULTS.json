@@ -1,0 +1,44 @@
+{
+  "release": "0.126.3",
+  "desktop": {
+    "width": 208,
+    "infoHeight": 240.578125,
+    "contentHeight": 615.859375,
+    "detailsClosed": true,
+    "overflow": 0
+  },
+  "rows": [
+    {
+      "width": 1440,
+      "overflow": 0,
+      "host": true
+    },
+    {
+      "width": 1024,
+      "overflow": 0,
+      "host": true
+    },
+    {
+      "width": 980,
+      "overflow": 0,
+      "host": true
+    },
+    {
+      "width": 760,
+      "overflow": 0,
+      "host": true
+    },
+    {
+      "width": 390,
+      "overflow": 0,
+      "host": true
+    }
+  ],
+  "field": {
+    "appearance": "textfield",
+    "type": "number",
+    "value": "12345"
+  },
+  "errors": [],
+  "scope": "Sidebar layout and input presentation only. Numeric input types, values and validation retained; tax and short-duration steppers remain. Details remain accessible through a native disclosure. Existing game logic regression results are from v0.126.2."
+}

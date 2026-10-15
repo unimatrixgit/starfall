@@ -312,3 +312,39 @@ body:not(.staff-workspace) .shell>.content{margin-top:48px!important}
  .command-rail .planet-command-box .command-time-box>div:not(.tick-time-progress){margin:0!important;gap:2px!important}
  .command-rail>.rail-frame-top,.command-rail>.rail-head,.command-rail .resources-section>.rail-section-heading{display:none!important}
 }
+
+/* SF-124: readable, compact command sidebar. */
+@media(min-width:1001px){
+ body:not(.staff-workspace) .shell{grid-template-columns:minmax(0,1fr) 220px!important}
+ body:not(.staff-workspace) .shell>.command-rail{gap:10px!important;scrollbar-width:thin}
+ .command-rail>.development-info{padding:10px!important;line-height:1.25!important}
+ .command-rail .development-info-title{font-size:11px!important}.command-rail .development-info-title small{display:none}
+ .command-rail .planet-command-heading{margin:6px 0!important;padding-bottom:6px!important}.command-rail .planet-command-heading>strong{font-size:13px!important}
+ .command-rail .planet-command-coordinates,.command-rail .planet-command-ruler{font-size:11px!important;line-height:1.3!important;padding:2px 0!important}
+ .command-rail .planet-command-coordinates span,.command-rail .planet-command-ruler span{font-size:8px!important;letter-spacing:.04em!important}
+ .command-rail .planet-command-coordinates>b,.command-rail .planet-command-ruler>strong{font-size:11px!important;letter-spacing:0!important}
+ .command-rail .planet-command-metrics{gap:3px!important;padding-top:6px!important}.command-rail .planet-command-metrics>div{padding:5px 3px!important}.command-rail .planet-command-metrics span{font-size:8px!important}.command-rail .planet-command-metrics b{font-size:11px!important}
+ .command-rail #pilotRaceLabel{font-size:8px!important;margin-top:5px!important;padding:0!important}
+ .command-rail .planet-command-box .command-time-box{grid-template-columns:1fr!important;gap:4px!important}
+ .command-rail .planet-command-box .command-time-box>div:not(.tick-time-progress){flex-direction:row!important;align-items:center!important;justify-content:space-between!important}
+ .command-rail .command-time-box span{font-size:9px!important}.command-rail .command-time-box b{font-size:12px!important}
+ .command-rail .tick-time-progress{height:5px!important;margin:0!important}.command-rail .tick-time-progress span{display:none!important}
+ .command-rail .rail-section{padding:7px!important;border-radius:5px!important}
+ .command-rail .res{min-height:62px!important;padding:7px 43px 6px 37px!important;border-radius:4px!important}
+ .command-rail .res-icon{left:5px!important;top:17px!important;width:26px!important;height:26px!important}.command-rail .res-head{font-size:9px!important;letter-spacing:.05em!important}
+ .command-rail .res-val{font-size:16px!important;margin-top:3px!important;letter-spacing:-.04em!important;line-height:1.2!important}
+ .command-rail .res-rate{font-size:8px!important;margin-top:2px!important;line-height:1.2!important}
+ .command-rail .res-roids{right:4px!important;top:14px!important;width:34px!important;height:34px!important;gap:0!important}.command-rail .res-roids b{font-size:10px!important;max-width:32px}.command-rail .res-roids small{font-size:6px!important;letter-spacing:0}
+ .command-rail .rail-section-heading{margin-bottom:6px!important;padding-bottom:6px!important;gap:5px!important}.command-rail .rail-section-heading b{font-size:10px!important}.command-rail .rail-section-heading i{display:none}
+ .command-rail .rail-news-item{padding:6px!important;grid-template-columns:18px minmax(0,1fr)!important;gap:5px!important;min-height:0!important}.command-rail .rail-news-item:nth-child(n+4){display:none}
+ .command-rail .rail-news-item p{font-size:10px!important;line-height:1.4!important;margin:0!important;overflow-wrap:anywhere}.command-rail .rail-news-meta{font-size:7px!important;letter-spacing:0!important;margin-top:3px!important}
+ .command-rail .rail-log-button{font-size:9px!important;padding:7px!important;margin-top:6px!important}.command-rail .rail-footer{display:none}
+}
+.rail-details{margin-top:6px;border-top:1px solid var(--skin-edge);padding-top:6px;font-size:10px;line-height:1.4}
+.rail-details summary{cursor:pointer;color:var(--skin-accent);font-size:10px;list-style-position:inside}
+.rail-details>div{display:flex;justify-content:space-between;gap:6px;margin-top:5px;font-size:10px}.rail-details .page-time-metrics{margin-top:5px;display:flex;flex-direction:column;gap:3px;font-size:8px}
+/* SF-125: type large amounts directly; retain deliberate small-step controls. */
+input[type=number]:not([id*=Tax]):not([id*=tax]):not([id*=Encouragement]):not([step="0.5"]):not([step=".5"]):not([max="12"]):not([max="24"]){appearance:textfield;-moz-appearance:textfield}
+input[type=number]:not([id*=Tax]):not([id*=tax]):not([id*=Encouragement]):not([step="0.5"]):not([step=".5"]):not([max="12"]):not([max="24"])::-webkit-inner-spin-button,input[type=number]:not([id*=Tax]):not([id*=tax]):not([id*=Encouragement]):not([step="0.5"]):not([step=".5"]):not([max="12"]):not([max="24"])::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+
+@media(min-width:1001px){.command-rail>.development-info{padding:8px!important}.command-rail .development-info-title em{display:inline-flex!important;align-items:center;justify-content:center;width:14px!important;height:14px!important;font-size:11px!important}.command-rail .planet-command-heading{margin:4px 0!important}}

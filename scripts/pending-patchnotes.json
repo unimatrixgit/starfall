@@ -1,7 +1,22 @@
 {
   "minimumTasks": 5,
   "maximumTasks": 10,
-  "completed": [],
+  "completed": [
+    {
+      "id": "SF-124",
+      "priority": "P2",
+      "title": "Narrower, shorter and readable right sidebar redesign",
+      "release": "0.126.3",
+      "completedAt": "2026-10-15T06:42:00.888Z"
+    },
+    {
+      "id": "SF-125",
+      "priority": "P2",
+      "title": "Remove unnecessary number-field spinners",
+      "release": "0.126.3",
+      "completedAt": "2026-10-15T06:42:00.888Z"
+    }
+  ],
   "published": [
     {
       "version": "0.120.0",

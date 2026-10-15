@@ -1014,9 +1014,27 @@
       "release": "0.126.2",
       "completedAt": "2026-10-15T06:17:57.680Z",
       "liveAt": "2026-10-15T06:20:41.022379Z"
+    },
+    {
+      "id": "SF-124",
+      "priority": "P2",
+      "title": "Narrower, shorter and readable right sidebar redesign",
+      "status": "live",
+      "release": "0.126.3",
+      "completedAt": "2026-10-15T06:42:00.888Z",
+      "liveAt": "2026-10-15T06:44:20.134257Z"
+    },
+    {
+      "id": "SF-125",
+      "priority": "P2",
+      "title": "Remove unnecessary number-field spinners",
+      "status": "live",
+      "release": "0.126.3",
+      "completedAt": "2026-10-15T06:42:00.888Z",
+      "liveAt": "2026-10-15T06:44:20.134257Z"
     }
   ],
-  "nextId": "SF-124",
+  "nextId": "SF-126",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1273,14 +1291,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.126.2",
+    "release": "0.126.3",
     "tests": 565,
     "pages": 120,
     "linksAndAssets": 3656,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "b3b946ff6fc86d8db2331842f4016865ba4c4266",
+    "liveSourceSha": "ba0e123e9f2d402624a47dac4f6a13d7d357c374",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",
@@ -1295,7 +1313,17 @@
       1024,
       1440
     ],
-    "migrations": 42
+    "migrations": 42,
+    "browserWidths": [
+      390,
+      760,
+      980,
+      1024,
+      1440
+    ],
+    "sidebarWidth": 208,
+    "sidebarInfoHeight": 241,
+    "browserErrors": 0
   },
   "colleagueStatus": "Paused at user request; root continues. No new delegation or routine messages until user resumes colleague.",
   "priorityOverride": "SF-092 is top priority by explicit user instruction, ahead of SF-083."
