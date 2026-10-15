@@ -1,11 +1,18 @@
-#spacingBankModule .bank-exchange-panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}
-#spacingBankModule .bank-exchange-panel{display:flex;flex-direction:column;gap:12px;min-width:0;padding:16px;border:1px solid var(--line,rgba(150,195,210,.45));border-radius:8px;background:var(--panel,rgba(0,12,20,.2))}
-#spacingBankModule .bank-exchange-panel h3,#spacingBankModule .bank-exchange-panel p{margin:0}
-#spacingBankModule .bank-offer-label{font-size:12px;opacity:.8}
-#spacingBankModule .bank-exchange-fields{display:grid;grid-template-columns:minmax(0,1fr) minmax(100px,.7fr);gap:10px}
-#spacingBankModule .bank-exchange-fields .field{min-width:0}
-#spacingBankModule .bank-exchange-fields input,#spacingBankModule .bank-exchange-fields select{width:100%;min-width:0;box-sizing:border-box}
-#spacingBankModule .bank-exchange-quote{padding:12px;line-height:1.6;flex:1}
-#spacingBankModule .bank-exchange-panel .btn{width:100%;white-space:normal}
-#spacingBankModule .bank-exchange-message:empty{display:none}
-@media(max-width:1000px){#spacingBankModule .bank-exchange-panels{grid-template-columns:1fr}}
+/* G-016: identical resource rows for the bank, fund deposits and authorised aid. */
+.resource-transfer-list{display:grid!important;grid-template-columns:1fr!important;gap:8px;margin:12px!important;container-type:inline-size}
+.resource-transfer-list .resource-transfer-row{display:grid!important;grid-template-columns:minmax(90px,1fr) minmax(70px,.7fr) minmax(100px,1.1fr) minmax(85px,.8fr) minmax(120px,1.4fr) minmax(94px,.9fr);align-items:center;gap:10px;min-width:0;padding:12px!important;margin:0;border:1px solid var(--skin-edge,#52758a);border-radius:5px;background:linear-gradient(110deg,#12303b88,#08192388)}
+.resource-transfer-row .resource-transfer-type{display:flex;align-items:center;gap:8px;min-width:0;margin:0!important;font-size:11px!important}
+.resource-transfer-icon{display:inline-block;flex:0 0 28px;width:28px;height:28px;background:url('/assets/resources.webp') no-repeat;background-size:300% 100%}
+.resource-transfer-icon[data-resource=metal]{background-position:0 50%}.resource-transfer-icon[data-resource=crystal]{background-position:50% 50%}.resource-transfer-icon[data-resource=eonium]{background-position:100% 50%}
+.resource-transfer-stock{min-width:0;overflow-wrap:anywhere}.resource-transfer-stock small{display:block;font-size:8px;color:var(--skin-accent,#a6c9da);margin-bottom:5px}.resource-transfer-stock b{font-size:12px}
+.resource-transfer-row .field{display:flex;flex-direction:column;gap:5px;min-width:0;margin:0!important}
+.resource-transfer-row .field label{font-size:8px!important;letter-spacing:.05em;margin:0!important}
+.resource-transfer-row input,.resource-transfer-row select{box-sizing:border-box;width:100%!important;min-width:0!important;margin:0!important;padding:8px!important;min-height:34px!important;font-size:11px!important}
+.resource-transfer-destination{display:flex;align-items:center;min-height:34px;font-size:11px}
+.resource-transfer-list .resource-transfer-result{min-width:0;padding:0!important;margin:0!important;font-size:10px!important;line-height:1.5!important;overflow-wrap:anywhere}
+.resource-transfer-action{min-width:0}.resource-transfer-row .btn{width:100%;min-height:34px;font-size:9px!important;padding:8px!important;white-space:normal}
+.resource-transfer-action p{font-size:10px;margin:5px 0 0}.resource-transfer-action p:empty{display:none}
+.spaceport-fund-module>.alliance-grid{grid-template-columns:1fr!important;gap:12px!important;margin:12px!important}
+#spacingBankModule .bank-exchange-panels{margin:12px 0!important}
+@container(max-width:760px){.resource-transfer-list .resource-transfer-row{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 12px}.resource-transfer-row .resource-transfer-type{grid-column:1}.resource-transfer-row .resource-transfer-stock{grid-column:2}.resource-transfer-row .resource-transfer-action{grid-column:3;grid-row:1}.resource-transfer-row .field{grid-row:2}.resource-transfer-row .resource-transfer-result{grid-row:2}}
+@container(max-width:420px){.resource-transfer-list .resource-transfer-row{grid-template-columns:repeat(2,minmax(0,1fr))}.resource-transfer-row .resource-transfer-type{grid-column:1;grid-row:1}.resource-transfer-row .resource-transfer-stock{grid-column:2;grid-row:1}.resource-transfer-row .field{grid-row:2}.resource-transfer-row .resource-transfer-result{grid-column:1;grid-row:3}.resource-transfer-row .resource-transfer-action{grid-column:2;grid-row:3}}

@@ -13,6 +13,12 @@
       "priority": "P2",
       "title": "Compact responsive game navigation with Info aligned beside Planet Settings",
       "completedAt": "2026-10-15T01:10:39.128Z"
+    },
+    {
+      "id": "SF-074",
+      "priority": "P2",
+      "title": "Matching resource-row layouts for Galaxy Fund and Spacing Bank",
+      "completedAt": "2026-10-15T01:28:56.914Z"
     }
   ],
   "published": [

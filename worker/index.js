@@ -1,4 +1,4 @@
-const STARFALL_VERSION='0.121.3';
+const STARFALL_VERSION='0.121.4';
 const TYPES=new Set(['planet','landing','development','unit','news','incoming','jumpgate','advanced']);
 const RETENTION=14*24*60*60*1000;
 function json(value,status=200){return Response.json(value,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});}
@@ -90,7 +90,7 @@ async function serveRequest(request,env){
   if(url.pathname==='/api/site-management')return siteManagementAPI(request,env);
   if(url.pathname==='/api/round-history')return roundHistoryAPI(request,env);
   if(url.pathname==='/api/staff-directory')return staffDirectoryAPI(request,env);
-  if(url.pathname==='/api/spacing-bank')return spacingBankAPI(request,env);
+  if(url.pathname==='/api/spacing-bank'){try{return await spacingBankAPI(request,env);}catch(error){console.error('Spacing Bank request failed',error?.name||'Error');return json({error:error instanceof SyntaxError?'Invalid bank request.':'The bank is temporarily unavailable. Retry loading the bank. If you submitted an exchange, check your receipts before trying again.'},error instanceof SyntaxError?400:503);}}
   if(url.pathname==='/api/earth-salvage')return earthSalvageAPI(request,env);
   if(url.pathname==='/api/world-announcements')return worldAnnouncementsAPI(request,env);
   if(url.pathname==='/api/planet-enrolment')return planetEnrolmentAPI(request,env);

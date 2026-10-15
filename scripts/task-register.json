@@ -611,9 +611,23 @@
       "title": "Recover transient stylesheet/image failures and gate runtime on staff bootstrap",
       "status": "live",
       "release": "0.121.3"
+    },
+    {
+      "id": "SF-073",
+      "priority": "BUGFIX",
+      "title": "Bank receives HTML instead of JSON",
+      "status": "live",
+      "release": "0.121.4"
+    },
+    {
+      "id": "SF-074",
+      "priority": "P2",
+      "title": "Match Galaxy Fund and Spacing Bank resource-row transaction layouts",
+      "status": "live",
+      "release": "0.121.4"
     }
   ],
-  "nextId": "SF-073",
+  "nextId": "SF-075",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -809,9 +823,20 @@
       "status": "live",
       "release": "0.121.2",
       "userConfirmed": true
+    },
+    {
+      "id": "G-016",
+      "priority": "BUGFIX",
+      "title": "Bank data recovery and matching treasury resource rows",
+      "members": [
+        "SF-073",
+        "SF-074"
+      ],
+      "status": "live",
+      "release": "0.121.4"
     }
   ],
-  "nextGroupId": "G-016",
+  "nextGroupId": "G-017",
   "openOrder": [
     "SF-068"
   ],

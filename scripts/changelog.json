@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.121.4",
+    "date": "2026-10-15",
+    "title": "Bugfix · Reliable bank data responses",
+    "synopsis": "The bank handles interrupted or HTML responses safely and keeps exchange submissions separate from data retries.",
+    "promptIds": [
+      "SF-073"
+    ],
+    "changes": [
+      "Bank reads validate response type and session status before parsing data. A transient read failure receives one bounded retry; sign-in errors offer a sign-in link.",
+      "Bank endpoint failures return controlled JSON errors, and normal bank reads no longer issue schema-creation statements or redundant reserve initialization writes.",
+      "Exchange submissions are never automatically repeated by read recovery. Existing revision checks, transaction receipts and duplicate protection remain in place."
+    ]
+  },
+  {
     "version": "0.121.3",
     "date": "2026-10-15",
     "title": "Bugfix · Recover interrupted command assets",
