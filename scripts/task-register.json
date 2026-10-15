@@ -586,15 +586,17 @@
       "priority": "BUGFIX",
       "requestedPriority": "P0",
       "title": "Admin Controlcenter opens blank",
-      "status": "live_awaiting_confirmation",
-      "release": "0.121.2"
+      "status": "live",
+      "release": "0.121.2",
+      "userConfirmed": true
     },
     {
       "id": "SF-070",
       "priority": "BUGFIX",
       "title": "Alliance Controlcenter opens blank",
-      "status": "live_awaiting_confirmation",
-      "release": "0.121.2"
+      "status": "live",
+      "release": "0.121.2",
+      "userConfirmed": true
     }
   ],
   "nextId": "SF-071",
@@ -790,13 +792,13 @@
         "SF-069",
         "SF-070"
       ],
-      "status": "live_awaiting_confirmation",
-      "release": "0.121.2"
+      "status": "live",
+      "release": "0.121.2",
+      "userConfirmed": true
     }
   ],
   "nextGroupId": "G-016",
   "openOrder": [
-    "G-015",
     "SF-068"
   ],
   "colleagueReviews": {
