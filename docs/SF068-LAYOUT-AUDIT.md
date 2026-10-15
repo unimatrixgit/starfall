@@ -7,3 +7,7 @@ Confirmed common issue L01: the decorative .rail-decoration circle has right:-38
 Candidates requiring visual confirmation L02: at768px, the population survey panel reports clipped horizontal content in Neutral/Borg; the Borg population-detail panel also reports clipping. These are geometry signals, not yet certified text-loss defects. Inspect longest survey lore, the growth formula and header labels at this breakpoint before selecting a fix.
 
 No other unscrollable frame escape was detected by this first pass. That is a bounded observation, not an all-pages/layout guarantee. Full raw results are in SF068-LAYOUT-OBSERVATIONS.json.
+
+## v0.126.1 follow-up
+
+Repeated all 144 cases after the rail decoration, population wrapping and compact tax-panel container fixes. No page-width, unscrollable frame escape or clipped-content flags remain in the current fixture. The resource circles and additional 24px desktop/18px mobile page gap were separately browser checked. This does not certify every long-content or theme combination.

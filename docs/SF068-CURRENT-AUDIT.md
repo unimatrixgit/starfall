@@ -55,3 +55,7 @@ The user explicitly added table/text frame fitting to the audit. SF068-LAYOUT-AU
 ## v0.126.0 remediation
 
 SF068-E01 is fixed: construction rendering uses constructionRate and preserves active/queued order work. SF068-E02 and E03 are fixed under SF-115: bonus construction reserves pending slots and matches ordinary building eligibility without obsolete research gates. Dedicated allocation/render regressions verify these paths. Other findings remain open; the full audit is not complete.
+
+## v0.126.1 remediation
+
+M01–M05 have dedicated regression coverage for actual eligible billing, fleet selection/composition, known/unknown guards and new/historical line breaks. SOC03 now charges the practice Galaxy Fund. SOC04 galaxy name/message and SOC05 Development Minister donation policy persist centrally and enforce current roles at the API; two-account regressions verify sharing and denied writes. SOC06 staff slots follow canonical active-claim policy. L01 decoration no longer extends the page; L02 wrapping and compact contribution control geometry were repaired. Full shared exile voting (SOC02) and delayed alliance donations (SOC01) remain open. This is a partial remediation, not audit completion.

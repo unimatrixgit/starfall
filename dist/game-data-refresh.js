@@ -53,7 +53,7 @@
     const requestedGalaxy=homeGalaxy(),development=await centralDirectoryRequest('/api/galaxy-development');
     if(token!==sequence||!same(c)||homeGalaxy()!==requestedGalaxy||development.galaxy!==requestedGalaxy||development.generation!==c.generation)return false;
     state.populationTax=development;state.galaxyFundTradeReceipts=development.trades||[];state.galaxyFund={...development.fund,log:(development.log||[]).map(x=>({text:x.text,tick:state.tick}))};
-    state.politics.gc=development.gc;state.politics.ministers={communication:'',development:'',war:'',economics:'',scanner:'',...development.ministers};state.politics.votes={};for(const name of Object.values(development.votes||{}))state.politics.votes[name]=(state.politics.votes[name]||0)+1;
+    state.politics.banner=development.banner||'Galaxy '+displayCoords(homeGalaxy());state.politics.message=development.message||'';state.politics.allowedFund={metal:true,crystal:true,eonium:true,...(development.allowedFund||{})};state.politics.gc=development.gc;state.politics.ministers={communication:'',development:'',war:'',economics:'',scanner:'',...development.ministers};state.politics.votes={};for(const name of Object.values(development.votes||{}))state.politics.votes[name]=(state.politics.votes[name]||0)+1;
     renderPage(page);save();
    }
    // These modules already fence their own account/generation and current DOM.

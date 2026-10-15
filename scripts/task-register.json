@@ -951,9 +951,23 @@
       "title": "Settle real recorded population growth ticks in batches so skipped colony reports do not lose full-housing surplus",
       "status": "live",
       "release": "0.126.0"
+    },
+    {
+      "id": "SF-117",
+      "priority": "P2",
+      "title": "Show each resource asteroid count inside the resource rail circle",
+      "status": "live",
+      "release": "0.126.1"
+    },
+    {
+      "id": "SF-118",
+      "priority": "P2",
+      "title": "More vertical breathing room between command header and page content",
+      "status": "live",
+      "release": "0.126.1"
     }
   ],
-  "nextId": "SF-117",
+  "nextId": "SF-119",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1210,14 +1224,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.126.0",
-    "tests": 550,
-    "pages": 118,
-    "linksAndAssets": 3598,
+    "release": "0.126.1",
+    "tests": 560,
+    "pages": 119,
+    "linksAndAssets": 3627,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "f18d062af69bd3a28ddd48dc3112e850acf0d887",
+    "liveSourceSha": "994eec0a64e67a2b0dafba7e9886eece61470af1",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",

@@ -1,6 +1,6 @@
 /* Runtime loading is ordered: the workspace bootstrap must succeed first. */
 (()=>{
- const runtimeVersion=new URL(document.currentScript?.src||location.href,location.href).searchParams.get('v')||'0.126.0';
+ const runtimeVersion=new URL(document.currentScript?.src||location.href,location.href).searchParams.get('v')||'0.126.1';
  let runtimeAttempts=0,bootstrapAttempts=0;
  const status=document.createElement('div');status.setAttribute('role','status');status.className='note';status.textContent='Connecting to planetary command…';document.getElementById('page-overview')?.prepend(status);
  function fail(message){window.starfallThemeReadiness?.failed(message);status.textContent=message;const button=document.createElement('button');button.className='btn';button.textContent='RELOAD COMMAND';button.onclick=()=>location.reload();status.append(button);}

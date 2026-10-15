@@ -1,5 +1,21 @@
 [
   {
+    "version": "0.126.1",
+    "date": "2026-10-15",
+    "title": "Audit repairs for scans, galaxy controls and layout",
+    "urgent": true,
+    "promptIds": [
+      "SF-068"
+    ],
+    "synopsis": "Galaxy sweeps charge eligible scans only, fleet reports show actual known movements, and galaxy controls persist and enforce their roles.",
+    "changes": [
+      "SF068-M01–M05: Single scans and sweeps share eligibility checks. Sweeps skip ineligible target/type pairs before charging. Incoming scans target home once per sweep; Jumpgate uses travelling fleets rather than docked ships. Unknown composition/guards stay unknown. New reports use real line breaks; historical escaped breaks remain readable.",
+      "SF068-SOC03–SOC05: Practice exile voting charges Galaxy Fund, not Alliance Fund. GC galaxy name/message and Development Minister donation-resource policy are centrally persisted. The deposit endpoint enforces disabled resources. Shared exile approvals and central delayed alliance donations remain open audit work.",
+      "SF068-SOC06: Staff structure placement follows active claim slot policy, including slots 16–20 for galaxy 1:1, and retains existing assets.",
+      "SF068-L01/L02: Repositioned the decorative rail circle to avoid document overflow. Population survey content and compact tax controls can shrink and wrap at intermediate widths."
+    ]
+  },
+  {
     "version": "0.126.0",
     "date": "2026-10-15",
     "title": "Alliance income controls and cleaner galaxy navigation",

@@ -1,7 +1,22 @@
 {
   "minimumTasks": 5,
   "maximumTasks": 10,
-  "completed": [],
+  "completed": [
+    {
+      "id": "SF-117",
+      "priority": "P2",
+      "title": "Show each resource asteroid count inside the resource rail circle",
+      "release": "0.126.1",
+      "completedAt": "2026-10-15T05:33:37.768Z"
+    },
+    {
+      "id": "SF-118",
+      "priority": "P2",
+      "title": "More vertical breathing room between command header and page content",
+      "release": "0.126.1",
+      "completedAt": "2026-10-15T05:33:37.769Z"
+    }
+  ],
   "published": [
     {
       "version": "0.120.0",
