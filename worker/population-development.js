@@ -29,16 +29,25 @@ function assessPlanetPopulationTax(planet,rate,tick,previousTick=0,priorPlanet=n
  if(rate>0){const due=Math.max(0,Math.min(5,rate))/24+(Number(ledger.carry)||0),whole=Math.floor(due+1e-9);base.removed=Math.min(population,Math.max(0,5-windowRemoved),whole);ledger.carry=Math.max(0,due-whole);if(base.removed)ledger.removals.push({tick,amount:base.removed});}
  base.population=population-base.removed;base.converted=base.removed+base.overflowConverted;base.income={metal:base.converted*6,crystal:base.converted*4,eonium:base.converted*2};return base;
 }
+function populationIncomeTickInputs(value,planet,tick){
+ if(value===undefined)return {receipts:[]};
+ if(!Array.isArray(value)||value.length>10000)return {error:'Invalid population tick receipts.'};
+ const receipts=[],seen=new Set();
+ for(const input of value){if(!input||!['tick','population','biodomes','demography','biodomeDamage'].every(k=>Number.isSafeInteger(input[k])&&input[k]>=0)||input.tick>tick||seen.has(input.tick)||input.biodomes>1000000||input.demography>5||input.biodomeDamage>999||input.population>planetBasePopulation(planet)+input.biodomes*50-Math.floor(input.biodomeDamage/20))return {error:'Invalid population tick receipt.'};seen.add(input.tick);receipts.push(Object.fromEntries(['tick','population','biodomes','demography','biodomeDamage'].map(k=>[k,input[k]])));}
+ return {receipts:receipts.sort((a,b)=>a.tick-b.tick)};
+}
 async function settleGalaxyPopulationTax(user,env,tick,previousTick=0,priorPlanet=null){
  for(let attempt=0;attempt<3;attempt++){
   const c=await galaxyDevelopmentContext(user,env);if(!c)return;
   const planet=JSON.parse(c.own.data_json);if(tick!==(planet.publicTick||0))return;
-  const pending=planet.pendingPopulationTaxReport;if(pending&&pending.tick===tick){previousTick=pending.previousTick;priorPlanet=pending.priorPlanet;}const report=assessPlanetPopulationTax(planet,c.data.tax,tick,previousTick,priorPlanet);if(report.duplicate)return;
-  delete planet.pendingPopulationTaxReport;planet.populationTaxLedger=report.ledger;planet.population=report.population;planet.publicPopulation=report.population;planet.populationTaxTotal=(planet.populationTaxTotal||0)+report.removed;planet.populationTaxOverflowTotal=(planet.populationTaxOverflowTotal||0)+report.overflowConverted;
+  const pending=planet.pendingPopulationTaxReport;if(pending&&pending.tick===tick){previousTick=pending.previousTick;priorPlanet=pending.priorPlanet;}
+  const reports=[],inputs=(pending?.receipts||[]).filter(r=>r.tick>(planet.populationTaxLedger?.lastTick??previousTick)&&r.tick<=tick);
+  if(inputs.length){for(const input of inputs){const snapshot={...planet,publicTick:input.tick,population:input.population,publicPopulation:input.population,buildings:{biodome:input.biodomes},research:{demography:input.demography},biodomeDamage:input.biodomeDamage},before={...snapshot,publicTick:input.tick-1},report=assessPlanetPopulationTax(snapshot,c.data.tax,input.tick,input.tick-1,before);if(report.duplicate)continue;planet.populationTaxLedger=report.ledger;reports.push({...report,tick:input.tick});}}
+  else {const report=assessPlanetPopulationTax(planet,c.data.tax,tick,previousTick,priorPlanet);if(report.duplicate)return;planet.populationTaxLedger=report.ledger;reports.push({...report,tick});}
+  if(!reports.length)return;
+  delete planet.pendingPopulationTaxReport;const removed=reports.reduce((n,r)=>n+r.removed,0),overflow=reports.reduce((n,r)=>n+r.overflowConverted,0);planet.population=Math.max(0,(planet.population??planet.publicPopulation??0)-removed);planet.publicPopulation=planet.population;planet.populationTaxTotal=(planet.populationTaxTotal||0)+removed;planet.populationTaxOverflowTotal=(planet.populationTaxOverflowTotal||0)+overflow;
   c.data.populationTaxPolicyVersion=2;c.data.carry={};c.data.lastTick=Math.max(c.data.lastTick||0,tick);
-  for(const k of ['metal','crystal','eonium'])c.data.fund[k]=(c.data.fund[k]||0)+report.income[k];
-  const entry={policyVersion:2,planetId:planet.id||c.own.id,tick,rate:c.data.tax,removed:report.removed,overflowConverted:report.overflowConverted,converted:report.converted,income:report.income,population:report.population,skippedTicks:report.skippedTicks,potentialGrowth:report.potentialGrowth,fullHousing:report.fullHousing};
-  c.data.history=[entry,...(c.data.history||[])].slice(0,48);
+  for(const report of reports){for(const k of ['metal','crystal','eonium'])c.data.fund[k]=(c.data.fund[k]||0)+report.income[k];const entry={policyVersion:2,planetId:planet.id||c.own.id,tick:report.tick,rate:c.data.tax,removed:report.removed,overflowConverted:report.overflowConverted,converted:report.converted,income:report.income,population:planet.population,skippedTicks:report.skippedTicks,potentialGrowth:report.potentialGrowth,fullHousing:report.fullHousing};c.data.history=[entry,...(c.data.history||[])].slice(0,48);}
   if(await storeGalaxyDevelopment(env,c,[op=>env.DB.prepare('UPDATE planet_directory SET data_json=?,updated_at=? WHERE id=? AND owner_id=? AND EXISTS(SELECT 1 FROM planet_directory_meta WHERE operation_id=?)').bind(JSON.stringify(planet),Date.now(),c.own.id,user.id,op)]))return;
  }
  throw Error('Population levy changed concurrently. Retry the colony report.');

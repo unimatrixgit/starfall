@@ -1,22 +1,7 @@
 {
   "minimumTasks": 5,
   "maximumTasks": 10,
-  "completed": [
-    {
-      "id": "SF-110",
-      "priority": "P2",
-      "title": "Hide System messages from Recent Signals; keep full journal",
-      "release": "0.125.3",
-      "completedAt": "2026-10-15T04:34:50.975Z"
-    },
-    {
-      "id": "SF-111",
-      "priority": "P2",
-      "title": "Round reset clears every ingame forum including General; clean existing posts",
-      "release": "0.125.3",
-      "completedAt": "2026-10-15T04:36:47.276Z"
-    }
-  ],
+  "completed": [],
   "published": [
     {
       "version": "0.120.0",
@@ -95,7 +80,7 @@
             "SF-006"
           ],
           "priority": "P0",
-          "completedAt": "2026-10-14T12:55:16.650Z",
+          "completedAt": "2026-10-14T12:55:16.65Z",
           "title": "Network Hub fleet spacing",
           "changes": [
             "Separate fleet panels and intel controls receive consistent theme-independent spacing, wrapped controls and horizontal table scrolling."
@@ -120,7 +105,7 @@
             "SF-017"
           ],
           "priority": "P2",
-          "completedAt": "2026-10-14T13:25:45.670Z",
+          "completedAt": "2026-10-14T13:25:45.67Z",
           "title": "General forum inside the game",
           "changes": [
             "The game Forums navigation exposes General forum to all authenticated players, while private galaxy/alliance forums retain membership checks."
@@ -410,7 +395,7 @@
         }
       ],
       "status": "published",
-      "publishedAt": "2026-10-15T03:27:55.045990Z"
+      "publishedAt": "2026-10-15T03:27:55.04599Z"
     },
     {
       "version": "0.125.0",
@@ -486,6 +471,53 @@
       ],
       "status": "published",
       "publishedAt": "2026-10-15T04:25:18.800914Z"
+    },
+    {
+      "version": "0.126.0",
+      "tasks": [
+        {
+          "id": "SF-110",
+          "title": "Hide System messages from Recent Signals only",
+          "priority": "P2",
+          "completedAt": "2026-10-15T05:03:01.786Z"
+        },
+        {
+          "id": "SF-111",
+          "title": "Round reset clears every ingame forum including General; clean existing posts",
+          "priority": "P2",
+          "completedAt": "2026-10-15T05:03:01.787Z"
+        },
+        {
+          "id": "SF-112",
+          "title": "Alliance tax preview, Strong Encouragement and separate income ledger; structure costs use ordinary tax only",
+          "priority": "P2",
+          "completedAt": "2026-10-15T05:03:01.787Z"
+        },
+        {
+          "id": "SF-113",
+          "title": "Every alliance tab has a configurable rank permission and hides when denied",
+          "priority": "P2",
+          "completedAt": "2026-10-15T05:03:01.787Z"
+        },
+        {
+          "id": "SF-114",
+          "title": "Hide unused galaxy slots, unpad coordinate display, restrict Galaxy Browser and Alliance Intel to existing galaxies",
+          "priority": "P2",
+          "completedAt": "2026-10-15T05:03:01.787Z"
+        },
+        {
+          "id": "SF-115",
+          "title": "Bonus CU follows normal construction eligibility: remove obsolete research gates including refineries and retain reserved building slots",
+          "priority": "BUGFIX",
+          "completedAt": "2026-10-15T05:03:01.787Z"
+        },
+        {
+          "id": "SF-116",
+          "title": "Record and settle real population growth ticks in batches",
+          "priority": "BUGFIX",
+          "completedAt": "2026-10-15T05:20:40.925Z"
+        }
+      ]
     }
   ],
   "prepared": []

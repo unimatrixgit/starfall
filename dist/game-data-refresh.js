@@ -17,7 +17,7 @@
   if(page==='production'){html('productionQueue',productionHTML);html('shipCards',shipCards);}
   if(page==='overview'){html('activeOrders',activeOrderHTML);}
   if(page==='population'){text('popTotal',nfmt(state.population)+' / '+nfmt(populationCapacity()));html('governmentPanel',governmentHTML);html('populationSliders',populationHTML);html('workforceEffects',workforceEffectsHTML);html('populationDetailBlock',()=>populationDetailHTML()+(typeof governmentTaxRegisterHTML==='function'?governmentTaxRegisterHTML():''));}
-  if(page==='galaxy'&&typeof renderGalaxyBrowser==='function')renderGalaxyBrowser();
+  if(['galaxy','galaxyBrowser'].includes(page)&&typeof renderGalaxyBrowser==='function')renderGalaxyBrowser();
   if(page==='universe'&&typeof renderUniverse==='function')renderUniverse();
   if(page==='politics'&&typeof renderPolitics==='function')renderPolitics();
   if(page==='galaxyFund'&&typeof renderGalaxyFund==='function')renderGalaxyFund();
@@ -33,7 +33,7 @@
   const token=++sequence,c=context();latestPage=page;if(!c.user||!planetDirectoryReady)return false;
   save();status('Refreshing game data…');
   try{
-   const data=await readDirectory(c);if(token!==sequence||!same(c))return false;
+   if(['population','politics','galaxyFund'].includes(page)&&(state.populationIncomeTicks||[]).length&&typeof syncOwnedColony==='function')await syncOwnedColony(true);if(token!==sequence||!same(c))return false;const data=await readDirectory(c);if(token!==sequence||!same(c))return false;
    if(data.userId!==c.user){applySharedDirectory(data);status('Account changed; its current planet was loaded.');return true;}
    const generation=data.resetGeneration||0,own=(data.planets||[]).find(p=>p.player);
    if(generation!==c.generation||(own?.resetEpoch||0)>c.epoch){applySharedDirectory(data);status('Planet reset reconciled with the central game.');return true;}
@@ -74,3 +74,5 @@
  const host=document.getElementById('crumb')?.parentElement;
  if(host){const message=document.createElement('span');message.id='gameDataRefreshStatus';message.setAttribute('role','status');message.setAttribute('aria-live','polite');message.className='meta';host.append(message);}
 })();
+
+

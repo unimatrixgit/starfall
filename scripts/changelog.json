@@ -1,5 +1,31 @@
 [
   {
+    "version": "0.126.0",
+    "date": "2026-10-15",
+    "title": "Alliance income controls and cleaner galaxy navigation",
+    "promptIds": [
+      "SF-110",
+      "SF-111",
+      "SF-112",
+      "SF-113",
+      "SF-114",
+      "SF-115",
+      "SF-116"
+    ],
+    "synopsis": "Separate stronghold bribes from ordinary alliance tax, configure access to each tab, browse occupied galaxies and allocate refinery bonus CU without obsolete research gates.",
+    "changes": [
+      "SF-116: Real population tick observations are retained until central settlement. Several ticks between colony reports now convert their recorded full-housing surplus once, instead of treating those observed ticks as missing history. No unrecorded past growth is fabricated.",
+      "SF-068 (partial audit repair): Rendering construction no longer treats building projects as ship orders or erases their remaining work. The broader manual audit remains in progress.",
+      "SF-115: Bonus CU uses the same building eligibility as ordinary construction. Refineries and other facilities no longer require obsolete research gates. Active and queued projects retain their reserved slots.",
+      "SF-112: Alliance tax shows projected revenue before saving. Strong Encouragement charges own members in the active stronghold galaxy at 0–7.5% in half-percent steps, with a separate configurable rank permission. Ordinary tax and bribes settle once with each recorded colony tick.",
+      "SF-112: The alliance income ledger separates ordinary tax, bribes and total. Structure prices use only projected ordinary tax, never bribes. Projections identify how many members have reported income; historical missing ticks are not invented.",
+      "SF-113: Each alliance tab has its own configurable rank permission. Inaccessible tabs are hidden and a revoked active tab falls back to an allowed tab. Existing server action permissions remain enforced.",
+      "SF-114: Galaxy Browser and Alliance Intel show occupied planets, structures and memorials only. Navigation uses existing galaxies and stops at the ends; coordinate display uses 1:1:1 while internal directory keys remain stable.",
+      "SF-110: System messages stay in the journal but are excluded from Recent Signals.",
+      "SF-111: Round reset clears every ingame forum scope. The previously requested one-time forum cleanup has already completed; this release performs no further reset."
+    ]
+  },
+  {
     "version": "0.125.2",
     "date": "2026-10-15",
     "title": "Keep galaxy 1:1 outside redistribution",

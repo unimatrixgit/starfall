@@ -1,0 +1,2 @@
+function mayAllianceTab(tab){return isAllianceMember('A. Commander')&&(state.alliance.rankPermissions?.[currentAllianceRank()]?.['tab:'+tab]??ALLIANCE_TAB_RANK_DEFAULTS[tab]?.includes(currentAllianceRank())??false);}
+function applyAllianceTabAccess(){const tabs=[...document.querySelectorAll('[data-atab]')];for(const b of tabs)b.hidden=!mayAllianceTab(b.dataset.atab);if(!mayAllianceTab(allianceTab)){const first=tabs.find(b=>!b.hidden);allianceTab=first?.dataset.atab||'';}return !!allianceTab;}

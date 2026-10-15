@@ -916,9 +916,44 @@
       "title": "Round reset clears every ingame forum including General; clean existing posts",
       "status": "live",
       "release": "0.125.3"
+    },
+    {
+      "id": "SF-112",
+      "priority": "P2",
+      "title": "Alliance tax preview, Strong Encouragement and separate income ledger; structure costs use ordinary tax only",
+      "status": "live",
+      "release": "0.126.0"
+    },
+    {
+      "id": "SF-113",
+      "priority": "P2",
+      "title": "Every alliance tab has a configurable rank permission and hides when denied",
+      "status": "live",
+      "release": "0.126.0"
+    },
+    {
+      "id": "SF-114",
+      "priority": "P2",
+      "title": "Hide unused galaxy slots, unpad coordinate display, restrict Galaxy Browser and Alliance Intel to existing galaxies",
+      "status": "live",
+      "release": "0.126.0"
+    },
+    {
+      "id": "SF-115",
+      "priority": "BUGFIX",
+      "title": "Bonus CU follows normal construction eligibility: remove obsolete research gates including refineries and retain reserved building slots",
+      "status": "live",
+      "release": "0.126.0"
+    },
+    {
+      "id": "SF-116",
+      "priority": "BUGFIX",
+      "title": "Settle real recorded population growth ticks in batches so skipped colony reports do not lose full-housing surplus",
+      "status": "live",
+      "release": "0.126.0"
     }
   ],
-  "nextId": "SF-112",
+  "nextId": "SF-117",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1175,14 +1210,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.125.3",
-    "tests": 533,
-    "pages": 117,
-    "linksAndAssets": 3569,
+    "release": "0.126.0",
+    "tests": 550,
+    "pages": 118,
+    "linksAndAssets": 3598,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "2a45e0cc4daa72df9bd2668d1d243e38b9541627",
+    "liveSourceSha": "f18d062af69bd3a28ddd48dc3112e850acf0d887",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",

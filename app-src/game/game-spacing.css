@@ -248,3 +248,16 @@ body:not(.staff-workspace) .shell>.topbar:before,body:not(.staff-workspace) .she
  body:not(.staff-workspace) .shell>.topbar .topbar-theme-art{height:24px!important;min-height:0!important;border:0!important}
  body:not(.staff-workspace) .shell>.topbar .command-side-actions .btn{min-height:28px!important;height:28px;padding:4px 9px!important;font-size:9px!important}
 }
+/* SF-112: compact, independent tax previews and a three-row income ledger. */
+.alliance-tabs [hidden]{display:none!important}
+.alliance-fund-compact .alliance-income-panel{min-width:0}
+.alliance-tax-controls{display:grid;grid-template-columns:minmax(140px,180px) minmax(0,1fr);gap:12px;padding:12px;align-items:center}
+.alliance-tax-controls .field{display:grid;gap:6px;min-width:0}
+.alliance-tax-controls input[type=number]{width:100%;max-width:140px;min-height:38px;font-variant-numeric:tabular-nums}
+.alliance-tax-preview{min-width:0;padding:10px;border:1px solid var(--line);border-radius:5px;background:rgba(6,24,34,.45)}
+.alliance-tax-preview small{display:block;margin-bottom:8px;overflow-wrap:anywhere}
+.alliance-income-amounts{display:flex;flex-wrap:wrap;gap:5px 12px;font-variant-numeric:tabular-nums}
+.alliance-income-amounts span{white-space:nowrap}
+.alliance-income-ledger th,.alliance-income-ledger td{white-space:normal;overflow-wrap:anywhere;padding:9px}
+.alliance-income-ledger{min-width:490px}
+@media(max-width:600px){.alliance-tax-controls{grid-template-columns:1fr}.alliance-tax-controls .field{grid-template-columns:minmax(90px,1fr) minmax(100px,140px);align-items:center}.alliance-tax-controls .field label{grid-column:1/-1}.alliance-tax-controls .btn{min-width:0}}

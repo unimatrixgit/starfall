@@ -51,3 +51,7 @@ SF-068 remains in progress. No production source was changed in this audit pass.
 ## Added layout scope and first pass
 
 The user explicitly added table/text frame fitting to the audit. SF068-LAYOUT-AUDIT.md records144isolated browser cases and separates one confirmed shared decorative overflow from medium-width population clipping candidates requiring visual confirmation. Long-content stress and additional themes remain open.
+
+## v0.126.0 remediation
+
+SF068-E01 is fixed: construction rendering uses constructionRate and preserves active/queued order work. SF068-E02 and E03 are fixed under SF-115: bonus construction reserves pending slots and matches ordinary building eligibility without obsolete research gates. Dedicated allocation/render regressions verify these paths. Other findings remain open; the full audit is not complete.
