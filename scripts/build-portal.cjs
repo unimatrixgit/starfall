@@ -146,3 +146,6 @@ require('./build-diagnostic-page.cjs');
 
 // Staff adjudication lives in the portal and does not require an enrolled colony.
 {const target=path.join(root,'dist/staff.html');let html=fs.readFileSync(target,'utf8');html=html.replace('<section class="manual-section staff-workspace-section" data-staff-section="alliances" hidden>','<section class="manual-section staff-workspace-section" data-staff-section="alliances" hidden><div id="strongholdControls" aria-live="polite"></div>').replace('</head>','<link rel="stylesheet" href="/stronghold-controls.css"></head>').replace('</body>','<script src="/stronghold-controls.js"></script></body>');fs.writeFileSync(target,html);}
+
+// G-015: share staff initialization across generated portal pages.
+for(const file of fs.readdirSync(path.join(root,'dist')).filter(f=>f.endsWith('.html'))){const target=path.join(root,'dist',file);let html=fs.readFileSync(target,'utf8');if(/<script src="\/portal\.js(?:\?[^" ]*)?"/.test(html)&&!html.includes('src="/staff-workspace.js')){html=html.replace(/<script src="\/portal\.js/, '<script src="/staff-workspace.js?v=G015"></script><script src="/portal.js');fs.writeFileSync(target,html);}}

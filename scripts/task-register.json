@@ -574,9 +574,30 @@
       "title": "Preserve proportions of development navigation artwork across themes",
       "status": "live",
       "sourceSha": "78e0b3799fdf4b257073cf7b4010f6eca29ea9dc"
+    },
+    {
+      "id": "SF-068",
+      "priority": "P2",
+      "title": "Audit all game functions against the manual with reproducible evidence",
+      "status": "pending"
+    },
+    {
+      "id": "SF-069",
+      "priority": "BUGFIX",
+      "requestedPriority": "P0",
+      "title": "Admin Controlcenter opens blank",
+      "status": "live",
+      "release": "0.121.1"
+    },
+    {
+      "id": "SF-070",
+      "priority": "BUGFIX",
+      "title": "Alliance Controlcenter opens blank",
+      "status": "live",
+      "release": "0.121.1"
     }
   ],
-  "nextId": 67,
+  "nextId": "SF-071",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -761,10 +782,22 @@
       "status": "live",
       "note": "Set source ownership and build paths together; evaluate manifest/cache once after layout and new modules.",
       "release": "0.121.0"
+    },
+    {
+      "id": "G-015",
+      "title": "Shared staff workspace startup and legacy preference isolation",
+      "members": [
+        "SF-069",
+        "SF-070"
+      ],
+      "status": "live",
+      "release": "0.121.1"
     }
   ],
-  "nextGroupId": 15,
-  "openOrder": [],
+  "nextGroupId": "G-016",
+  "openOrder": [
+    "SF-068"
+  ],
   "colleagueReviews": {
     "battlegroups": "https://github.com/unimatrixgit/mcdune/blob/5f02adf/docs/STARFALL-BATTLEGROUP-ANALYSIS.md",
     "repoSplit": "https://github.com/unimatrixgit/mcdune/blob/c767de6/docs/STARFALL-PORTAL-GAME-MIGRATION.md",
