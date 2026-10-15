@@ -360,3 +360,19 @@ input[type=number]:not([id*=Tax]):not([id*=tax]):not([id*=Encouragement]):not([s
 body:not(.staff-workspace) .shell>.content{margin-top:16px!important}
 @media(min-width:1001px){body:not(.staff-workspace) .shell>.command-rail{margin-top:16px!important;top:calc(var(--command-header-height,180px) + 12px)!important;max-height:calc(100dvh - var(--command-header-height,180px) - 24px)!important}}
 @media(max-width:760px){.signals-header{gap:6px;padding:6px;width:calc(100% - 16px);margin:0 8px 6px}.signals-heading{flex-basis:auto}.signals-heading strong{display:none}.signal-category-icon{display:none}.signal-message-text{font-size:11px}.signals-open-log{font-size:0!important;min-width:27px!important}.signals-open-log:after{content:'↗';font-size:14px}.signal-controls{gap:2px}.signal-controls button{min-width:24px;padding:3px 5px}.signal-category-settings{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* SF-128: illustrated news slides and direct-access tabs for the latest twenty. */
+.signals-header{display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:5px 10px;padding:7px 10px}
+.signal-slide{position:relative;isolation:isolate;box-sizing:border-box;min-height:58px;padding:7px 10px 7px 104px;overflow:hidden;border-radius:3px;background:#06131b66;animation:signal-slide-in .18s ease-out}
+.signal-slide-art{position:absolute;inset:0 auto 0 0;width:128px;height:100%;object-fit:cover;opacity:.85;z-index:-1;mask-image:linear-gradient(90deg,#000 35%,transparent)}
+.signal-slide .signal-message-text{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:12px;line-height:1.4}
+.signal-slide .signal-slide-category{margin:0 0 4px;font-size:9px;color:var(--skin-accent,#a7c9d5)}
+.signal-tabs{grid-column:1/-1;display:flex;gap:5px;min-width:0;overflow-x:auto;padding:3px 0 1px;scrollbar-width:thin;scroll-snap-type:x proximity}
+.signal-tabs button{position:relative;isolation:isolate;flex:0 0 32px;height:23px;padding:0;border:1px solid var(--skin-edge,#536b75);border-radius:3px;overflow:hidden;background:#07121c;color:#fff;cursor:pointer;scroll-snap-align:start;opacity:.55}
+.signal-tabs button img{position:absolute;inset:0;z-index:-1;width:100%;height:100%;object-fit:cover;opacity:.55}.signal-tabs button span{font:600 10px var(--mono);text-shadow:0 1px 3px #000,0 0 5px #000}
+.signal-tabs button[aria-selected=true]{opacity:1;border-color:var(--skin-accent,#a7c9d5);box-shadow:inset 0 -2px var(--skin-accent,#a7c9d5)}.signal-tabs button:hover,.signal-tabs button:focus-visible{opacity:1;outline:1px solid var(--skin-accent,#a7c9d5);outline-offset:1px}
+@keyframes signal-slide-in{from{opacity:.5;transform:translateX(5px)}to{opacity:1;transform:translateX(0)}}
+@media(prefers-reduced-motion:reduce){.signal-slide{animation:none}}
+@media(max-width:760px){.signals-header{grid-template-columns:minmax(0,1fr) auto;gap:4px 6px}.signals-heading{display:none}.signal-slide{padding:6px 5px 6px 8px;min-height:62px}.signal-slide-art{width:78px;opacity:.3}.signal-slide .signal-message-text{font-size:11px}.signal-slide .signal-slide-category{font-size:8px}.signal-tabs{gap:4px}.signal-tabs button{flex-basis:28px;height:22px}}
+
+@media(min-width:761px){.signal-tabs button{flex-basis:44px;height:28px}.signal-tabs button span{font-size:11px}}

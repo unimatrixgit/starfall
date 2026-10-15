@@ -22,6 +22,13 @@
       "title": "Contextual persistent Recent Signals module with planet category settings",
       "release": "0.126.4",
       "completedAt": "2026-10-15T06:57:29.480Z"
+    },
+    {
+      "id": "SF-128",
+      "priority": "P2",
+      "title": "Illustrated Recent Signals carousel with twenty news tabs",
+      "release": "0.126.5",
+      "completedAt": "2026-10-15T07:09:41.763Z"
     }
   ],
   "published": [

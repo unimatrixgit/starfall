@@ -1048,9 +1048,18 @@
       "title": "Verify planet base growth participates in next tick population growth",
       "status": "verified",
       "resolution": "Already implemented: ecology base + Biodomes, research and planet growth multiplier; next tick caps by housing and carries fractions. Same potential rate is used by central surplus assessment. No code change required."
+    },
+    {
+      "id": "SF-128",
+      "priority": "P2",
+      "title": "Illustrated Recent Signals carousel with twenty news tabs",
+      "status": "live",
+      "release": "0.126.5",
+      "completedAt": "2026-10-15T07:09:41.763Z",
+      "liveAt": "2026-10-15T07:11:53.303368Z"
     }
   ],
-  "nextId": "SF-128",
+  "nextId": "SF-129",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1307,14 +1316,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.126.4",
-    "tests": 569,
+    "release": "0.126.5",
+    "tests": 571,
     "pages": 120,
     "linksAndAssets": 3656,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "2062a11a44cf7a9efa2e13dad2afc9e40e672670",
+    "liveSourceSha": "1d55825936c6e62d2d6864ea520617aea66a26ae",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",
@@ -1342,7 +1351,8 @@
     "signalThemes": [
       "Neutral",
       "Borg"
-    ]
+    ],
+    "signalCarouselEntries": 20
   },
   "colleagueStatus": "Paused at user request; root continues. No new delegation or routine messages until user resumes colleague.",
   "priorityOverride": "SF-092 is top priority by explicit user instruction, ahead of SF-083."
