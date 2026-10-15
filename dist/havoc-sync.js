@@ -18,6 +18,6 @@ function applyCentralHavocOverride(planet){
  }
  for(const [local,remote] of [['appliedBankTrades','bankTradeTotal'],['appliedAllianceIncomeTax','allianceIncomeTaxTotal'],['appliedEarthSalvage','earthSalvageTotal'],['appliedGalaxyAid','galaxyAidTotal']])state[local]=copy(command[remote]||{});
  state.appliedPopulationTaxTotal=command.populationTaxTotal||0;
- state.appliedHavocOverride=command.id;
+ state.appliedAllianceStructures=copy(command.allianceStructureTotal||{});state.appliedHavocOverride=command.id;
  save();return true;
 }

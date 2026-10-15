@@ -1,0 +1,356 @@
+[
+  {
+    "documentWidth": 1265,
+    "page": "overview",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "construction",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "research",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "population",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "production",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "fleets",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "covert",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "waves",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "galaxyBrowser",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "politics",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "galaxyFund",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "alliance",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "universe",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "miday",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "news",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "forums",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "quests",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "support",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 1265,
+    "page": "planetSettings",
+    "visible": true,
+    "width": 1280
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "overview",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "population",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "construction",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "research",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "production",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "fleets",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "covert",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "waves",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "galaxyBrowser",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 797,
+    "longPlanetName": true,
+    "page": "politics",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "galaxyFund",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "alliance",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "universe",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "news",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 753,
+    "longPlanetName": true,
+    "page": "quests",
+    "theme": "Classic",
+    "visible": true,
+    "width": 768
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "overview",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "population",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "construction",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "research",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "production",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "fleets",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "covert",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "waves",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "galaxyBrowser",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "politics",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "galaxyFund",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "alliance",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "universe",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "news",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  },
+  {
+    "documentWidth": 375,
+    "longPlanetName": true,
+    "page": "quests",
+    "theme": "Classic",
+    "visible": true,
+    "width": 390
+  }
+]

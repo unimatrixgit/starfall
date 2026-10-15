@@ -580,14 +580,24 @@
       "id": "SF-068",
       "priority": "P2",
       "title": "Audit all game functions against the manual with reproducible evidence",
-      "status": "in_progress",
+      "status": "live",
       "auditCheckpoint": {
-        "release": "0.125.1",
-        "observedDefects": 10,
-        "report": "docs/SF068-CURRENT-AUDIT.md",
-        "next": "Construction corruption, bonus capacity and gates, then grouped scan corrections and shared governance."
+        "release": "0.126.7",
+        "phase": "repairs_published",
+        "testsPassed": 588,
+        "report": "docs/SF068-FINAL-AUDIT.md",
+        "fixedFindings": [
+          "SOC01",
+          "SOC02",
+          "SOC07",
+          "L03"
+        ],
+        "limitations": "Pre-existing legacy donations without durable order IDs are retained, not replayed automatically.",
+        "sourceCommit": "a7b69b3752a3348a0effb292ba2c9c71a65f7046",
+        "deploymentId": "appgdep_6ad09463ee108191adb36e437e95ea2d"
       },
-      "layoutScope": "Verify tables, text, labels and controls stay within their frames on wide and narrow screens; intentional scroll containers and the right Info overlay are distinguished from defects."
+      "layoutScope": "Verify tables, text, labels and controls stay within their frames on wide and narrow screens; intentional scroll containers and the right Info overlay are distinguished from defects.",
+      "release": "0.126.7"
     },
     {
       "id": "SF-069",
@@ -1091,9 +1101,17 @@
       "release": "0.126.6",
       "completedAt": "2026-10-15T07:51:38.727Z",
       "liveAt": "2026-10-15T07:53:55.148154Z"
+    },
+    {
+      "id": "SF-133",
+      "priority": "P2",
+      "title": "Redesign every Universe view using Bream PA player lookup as reference, including population statistics",
+      "status": "queued",
+      "reference": "https://breampatools.ddns.net/PA/player_lookup.php?plid=643",
+      "ordering": "After SF-068 audit, explicitly requested by user"
     }
   ],
-  "nextId": "SF-133",
+  "nextId": 134,
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1340,7 +1358,7 @@
   ],
   "nextGroupId": "G-020",
   "openOrder": [
-    "SF-068"
+    "SF-133"
   ],
   "colleagueReviews": {
     "battlegroups": "https://github.com/unimatrixgit/mcdune/blob/5f02adf/docs/STARFALL-BATTLEGROUP-ANALYSIS.md",

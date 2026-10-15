@@ -1,0 +1,8 @@
+{
+  "audit": "SF-068",
+  "sourceVersion": "0.126.7",
+  "scope": "Isolated central treasury and two-minister exile regression tests",
+  "passed": true,
+  "output": "✔ donation debits once, arrives after eight ticks and never changes ordinary income ledger (61.1495ms)\n✔ donation allowance and rank permission are checked centrally (18.8242ms)\n✔ structure uses ordinary tax, reserves slot, completes after three ticks, expires once (18.4037ms)\n✔ building-grant structure applies five buildings once with a durable owner counter (15.5256ms)\n✔ failed treasury commit rolls back personal debit and receipt (16.3415ms)\n✔ directory revision conflict cannot debit or create a receipt (16.7248ms)\n✔ same identifier cannot change donation amount and stale round cannot spend (12.3751ms)\n✔ owner applies central building grants exactly once and acknowledges them (1.3107ms)\n✔ two distinct ministers share one proposal, pay once and persist exile (71.0004ms)\n✔ proposal rejects stale round, duplicate target and reused identifier with a changed body (16.6178ms)\n✔ failed shared write rolls back both proposal and treasury debit (14.2908ms)\nℹ tests 11\nℹ suites 0\nℹ pass 11\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 347.2622\n",
+  "error": ""
+}

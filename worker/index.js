@@ -1,4 +1,4 @@
-const STARFALL_VERSION='0.126.6';
+const STARFALL_VERSION='0.126.7';
 const TYPES=new Set(['planet','landing','development','unit','news','incoming','jumpgate','advanced']);
 const RETENTION=14*24*60*60*1000;
 function json(value,status=200){return Response.json(value,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});}
@@ -98,6 +98,7 @@ async function serveRequest(request,env){
   if(url.pathname==='/api/planet-enrolment')return planetEnrolmentAPI(request,env);
   if(url.pathname==='/api/admin/shuffle')return galaxyShuffleAPI(request,env);
   if(url.pathname==='/api/alliance-applications')return allianceApplicationsAPI(request,env);
+  if(url.pathname==='/api/alliance-treasury'){try{return await allianceTreasuryAPI(request,env);}catch{return json({error:'Treasury unavailable. Retry the same order.'},503);}}
   if(url.pathname==='/api/alliance-economy')return allianceEconomyAPI(request,env);
   if(url.pathname==='/api/version')return json({version:STARFALL_VERSION,serverTime:Date.now()});
   if(['/api/planets','/api/alliance-intel','/api/alliance-settings'].includes(url.pathname)){try{return await (url.pathname==='/api/planets'?planetDirectoryAPI:url.pathname==='/api/alliance-settings'?allianceSettingsAPI:allianceIntelAPI)(request,env);}catch(error){return json({error:error instanceof SyntaxError?'Invalid request.':'The central planet database is unavailable.'},error instanceof SyntaxError?400:503);}}

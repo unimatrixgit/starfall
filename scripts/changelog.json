@@ -1,5 +1,20 @@
 [
   {
+    "version": "0.126.7",
+    "date": "2026-10-15",
+    "title": "Shared treasury orders and galaxy exile votes",
+    "promptIds": [
+      "SF-068"
+    ],
+    "synopsis": "Audit repairs restore central donations and structure orders, shared minister approvals and tablet layout.",
+    "changes": [
+      "Alliance donations debit once and arrive after eight reported ticks, with central rank and allowance checks.",
+      "Alliance structure orders use ordinary-tax pricing, reserve their slots centrally and complete after three ticks. Building grants are acknowledged once by each owner.",
+      "Exile proposals and distinct minister approvals are shared; the Galaxy Fund pays once.",
+      "Long planet names stay within Politics cards at tablet widths."
+    ]
+  },
+  {
     "version": "0.126.6",
     "date": "2026-10-15",
     "title": "Reliable Havoc delivery, smoother treasury trading and compact command information",
