@@ -1,4 +1,4 @@
-const STARFALL_VERSION='0.126.1';
+const STARFALL_VERSION='0.126.2';
 const TYPES=new Set(['planet','landing','development','unit','news','incoming','jumpgate','advanced']);
 const RETENTION=14*24*60*60*1000;
 function json(value,status=200){return Response.json(value,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});}
@@ -88,7 +88,7 @@ async function serveRequest(request,env){
   if(['/api/mail','/api/diplomacy','/api/admin/key-reveal','/api/colony','/api/civil-covert'].includes(url.pathname)){try{return await (url.pathname==='/api/mail'?mailAPI:url.pathname==='/api/diplomacy'?diplomacyAPI:url.pathname==='/api/colony'?colonyAPI:url.pathname==='/api/civil-covert'?civilCovertAPI:forceKeyAPI)(request,env);}catch{return json({error:'The communication service could not complete this request.'},503);}}
   if(url.pathname==='/api/galaxy-development'){try{return await galaxyDevelopmentAPI(request,env);}catch{return json({error:'Galaxy development unavailable.'},503);}}
   if(/^\/staff-manual(?:-(admin|support|multihunter))?\.html$/.test(url.pathname)){const staff=await portalUser(request,env);if(!staff)return Response.redirect(url.origin+'/login.html',302);if(!isPortalStaff(staff))return new Response('Staff access required',{status:403});const requested=url.pathname.match(/staff-manual-(admin|support|multihunter)/)?.[1];if(requested&&requested!==staff.role&&staff.role!=='admin')return new Response('This manual is outside your staff role',{status:403});const file=ASSETS['/staff-manual-'+(requested||staff.role)+'.html'];return file?new Response(Uint8Array.from(atob(file.data),c=>c.charCodeAt(0)),{headers:{'Content-Type':file.type,'Cache-Control':'private, no-store','Vary':'Cookie'}}):new Response('Staff manual unavailable',{status:404});}
-  if(url.pathname==='/api/planet-catalog')return planetCatalogueAPI(request);
+  if(url.pathname==='/api/planet-catalog')return planetCatalogueAPI(request,env);
   if(url.pathname==='/api/site-management')return siteManagementAPI(request,env);
   if(url.pathname==='/api/round-history')return roundHistoryAPI(request,env);
   if(url.pathname==='/api/staff-directory')return staffDirectoryAPI(request,env);
@@ -117,3 +117,4 @@ export default {async fetch(request,env,ctx){const response=await cachedServeReq
 function decodeAssetBytes(encoded){if(typeof Uint8Array.fromBase64==='function')return Uint8Array.fromBase64(encoded);const binary=atob(encoded),bytes=new Uint8Array(binary.length);for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);return bytes;}
 export {sanitizeScan,calculateRetention};
 function calculateRetention(){return RETENTION;}
+

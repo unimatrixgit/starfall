@@ -1,0 +1,60 @@
+{
+  "release": "0.126.2",
+  "environment": "Isolated SQLite and real Edge browser; five account-owned planets, one per main race",
+  "checks": {
+    "directoryStatus": "CENTRAL PLANET DATABASE · SAVED",
+    "localAllResources": true,
+    "localAllRoids": true,
+    "localResearch": true,
+    "localBuildings": true,
+    "localSpeed": true,
+    "raceMatrix": true,
+    "centralResources": true,
+    "centralOwnResearch": true,
+    "centralOwnBuildings": true,
+    "restoreExact": true,
+    "centralRestore": true,
+    "railSpacing": {
+      "margin": "48px",
+      "infoBottom": 449.296875,
+      "resourceTop": 473.296875
+    },
+    "catalogueOptions": 1453,
+    "centralPlanetType": "quartus-relay",
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": 0,
+        "infoInCorrectHost": true
+      },
+      {
+        "width": 1024,
+        "overflow": 0,
+        "infoInCorrectHost": true
+      },
+      {
+        "width": 980,
+        "overflow": 0,
+        "infoInCorrectHost": true
+      },
+      {
+        "width": 760,
+        "overflow": 0,
+        "infoInCorrectHost": true
+      },
+      {
+        "width": 390,
+        "overflow": 0,
+        "infoInCorrectHost": true
+      }
+    ],
+    "pageRenderCount": 25,
+    "browserErrors": []
+  },
+  "automatedRegressionTests": 565,
+  "coverage": "Confirmation rejection, race matrix, resources, roids, research, construction, speed, central apply and restore; complete editor catalogue and saved world change; 25 page renders and five viewport widths. No live Havoc or reset triggered.",
+  "limitations": [
+    "Existing second-browser sessions and simultaneous player writes are not certified by this fixture.",
+    "SF-068 remains open for multi-account workflow verification, central delayed alliance donations and shared exile voting."
+  ]
+}

@@ -957,17 +957,66 @@
       "priority": "P2",
       "title": "Show each resource asteroid count inside the resource rail circle",
       "status": "live",
-      "release": "0.126.1"
+      "release": "0.126.2",
+      "completedAt": "2026-10-15T06:17:57.680Z",
+      "liveAt": "2026-10-15T06:20:41.022379Z"
     },
     {
       "id": "SF-118",
       "priority": "P2",
       "title": "More vertical breathing room between command header and page content",
       "status": "live",
-      "release": "0.126.1"
+      "release": "0.126.2",
+      "completedAt": "2026-10-15T06:17:57.680Z",
+      "liveAt": "2026-10-15T06:20:41.022379Z"
+    },
+    {
+      "id": "SF-119",
+      "priority": "P2",
+      "title": "Isolated Havoc and cross-system functional audit",
+      "status": "live",
+      "release": "0.126.2",
+      "completedAt": "2026-10-15T06:17:57.680Z",
+      "liveAt": "2026-10-15T06:20:41.022379Z"
+    },
+    {
+      "id": "SF-120",
+      "priority": "P2",
+      "title": "Alliance relations aligned with Planetarion manual and verified war bonuses",
+      "status": "live",
+      "release": "0.126.2",
+      "completedAt": "2026-10-15T06:17:57.680Z",
+      "liveAt": "2026-10-15T06:20:41.022379Z"
+    },
+    {
+      "id": "SF-121",
+      "priority": "BUGFIX",
+      "title": "Correct actual galaxy allocation to cluster:galaxy:planet, starting at 1:2",
+      "status": "live",
+      "release": "0.126.2",
+      "completedAt": "2026-10-15T06:17:57.680Z",
+      "liveAt": "2026-10-15T06:20:41.022379Z"
+    },
+    {
+      "id": "SF-122",
+      "priority": "P2",
+      "title": "Admin planet editor can assign all known catalogue worlds to a player",
+      "status": "live",
+      "release": "0.126.2",
+      "completedAt": "2026-10-15T06:17:57.680Z",
+      "liveAt": "2026-10-15T06:20:41.022379Z"
+    },
+    {
+      "id": "SF-123",
+      "priority": "P2",
+      "title": "Compact shared right column with Info above resources and signals, widening centre",
+      "status": "live",
+      "release": "0.126.2",
+      "completedAt": "2026-10-15T06:17:57.680Z",
+      "liveAt": "2026-10-15T06:20:41.022379Z"
     }
   ],
-  "nextId": "SF-119",
+  "nextId": "SF-124",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1224,20 +1273,29 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.126.1",
-    "tests": 560,
-    "pages": 119,
-    "linksAndAssets": 3627,
+    "release": "0.126.2",
+    "tests": 565,
+    "pages": 120,
+    "linksAndAssets": 3656,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "994eec0a64e67a2b0dafba7e9886eece61470af1",
+    "liveSourceSha": "b3b946ff6fc86d8db2331842f4016865ba4c4266",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",
       "activated": true,
       "nonCombat": true
-    }
+    },
+    "browserPages": 25,
+    "responsiveWidths": [
+      390,
+      760,
+      980,
+      1024,
+      1440
+    ],
+    "migrations": 42
   },
   "colleagueStatus": "Paused at user request; root continues. No new delegation or routine messages until user resumes colleague.",
   "priorityOverride": "SF-092 is top priority by explicit user instruction, ahead of SF-083."

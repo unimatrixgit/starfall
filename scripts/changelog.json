@@ -1,5 +1,28 @@
 [
   {
+    "version": "0.126.2",
+    "date": "2026-10-15",
+    "title": "Compact command column, complete planet editor and diplomacy repairs",
+    "promptIds": [
+      "SF-117",
+      "SF-118",
+      "SF-119",
+      "SF-120",
+      "SF-121",
+      "SF-122",
+      "SF-123"
+    ],
+    "synopsis": "Info, reserves and signals share a narrower right column. Staff can choose every known world. Galaxy allocation starts at 1:2; diplomacy and capture XP follow the documented war rules.",
+    "changes": [
+      "SF-117/SF-118/SF-123: Per-resource asteroid counters remain in their rings. The page keeps more space below the header. Info, resources and Recent Signals now share a 248px column, widening the centre; the Info card returns to the header on small screens.",
+      "SF-119: Isolated Havoc confirmation, per-race ships, resources, roids, research, construction, speed and central apply/restore checks passed. Fixed the owner research/building mirror and the research progress object; preserved stable legacy alliance identities across repeated staff saves.",
+      "SF-120: Alliance proposals require acceptance. Relations show war bonuses and remaining ticks. War requires a shuffled universe and five planets per side, permits one primary target with optional target allies, and lasts 48 ticks. First/higher-ranked targets gain +5 capture points / +25% capture XP; secondary cases gain +3 / +15%; other targets during war receive -5 / -25%. Undefended captures earn XP, ship destruction alone does not, and asteroid distribution cannot make a resource field negative.",
+      "SF-121: New shuffled galaxies begin at cluster 1, galaxy 2. Legacy shuffled galaxy keys are repaired atomically with planet slots, treasury and stronghold references preserved. Galaxy 1:1 stays pinned; this is not a reset or reshuffle.",
+      "SF-122: The planet editor loads all 1,453 current and retired catalogue worlds. Changing type updates the survey and bonuses while preserving other colony assets. Unknown worlds and duplicate unique worlds are rejected.",
+      "Validation: 565 automated tests passed; 25 game pages rendered without browser errors; five viewport widths had no document overflow. Concurrent sessions and the remaining SF-068 shared-workflow audit are not certified by this fixture."
+    ]
+  },
+  {
     "version": "0.126.1",
     "date": "2026-10-15",
     "title": "Audit repairs for scans, galaxy controls and layout",

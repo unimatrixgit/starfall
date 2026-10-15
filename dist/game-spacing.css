@@ -270,8 +270,45 @@ body:not(.staff-workspace) .shell>.topbar:before,body:not(.staff-workspace) .she
 .command-rail .res-roids small{font:6px var(--mono);letter-spacing:.08em;color:var(--muted)}
 .command-rail .res-val{overflow-wrap:anywhere}
 /* SF-118: breathing room below the pinned command header. */
-body:not(.staff-workspace) .shell>.content{margin-top:24px!important}
-@media(max-width:760px){body:not(.staff-workspace) .shell>.content{margin-top:18px!important}}
+body:not(.staff-workspace) .shell>.content{margin-top:48px!important}
+@media(max-width:760px){body:not(.staff-workspace) .shell>.content{margin-top:28px!important}}
 .alliance-income-panel{container-type:inline-size}
 .alliance-income-panel .ph>*{min-width:0;overflow-wrap:anywhere}
 @container(max-width:480px){.alliance-income-panel .alliance-tax-controls{grid-template-columns:minmax(0,1fr)}.alliance-income-panel .alliance-tax-controls .field{min-width:0}.alliance-income-panel .alliance-tax-controls .btn{max-width:100%}}
+
+
+@media(min-width:1001px){body:not(.staff-workspace) .shell>.command-rail{margin-top:36px!important}}
+
+/* SF-123: one compact column, with Info above reserves and signals. */
+@media(min-width:1001px){
+ body:not(.staff-workspace) .shell{grid-template-columns:minmax(0,1fr) 248px!important}
+ body:not(.staff-workspace) .shell>.topbar .development-links{padding-right:0!important}
+ body:not(.staff-workspace) .shell>.command-rail{position:sticky!important;top:150px!important;margin-top:48px!important;max-height:calc(100vh - 166px)!important;overflow-x:hidden!important;overflow-y:auto!important;padding:0!important;border:0!important;gap:14px;background:transparent!important;box-shadow:none!important}
+ .command-rail>.development-info{position:static!important;width:100%!important;max-width:none!important;min-width:0!important;box-sizing:border-box;padding:10px!important;background:#0c1c26ed;border:1px solid var(--skin-edge);border-radius:4px}
+ .command-rail .development-info-title{display:flex;align-items:center;gap:6px;font:10px var(--sans)}
+ .command-rail .development-info-title small{margin-left:auto;font-size:6px}
+ .command-rail .planet-command-heading{display:flex;align-items:center;justify-content:space-between;gap:5px;margin:7px 0;font-size:11px}
+ .command-rail .planet-command-tick{font-size:9px;padding:4px}
+ .command-rail .planet-command-coordinates,.command-rail .planet-command-ruler{display:flex;justify-content:space-between;gap:6px;padding:2px 0;font-size:9px;min-width:0}
+ .command-rail .planet-command-coordinates span,.command-rail .planet-command-ruler span{font-size:6px;letter-spacing:.12em}
+ .command-rail .planet-command-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin-top:7px}
+ .command-rail .planet-command-metrics>div{min-width:0;padding:5px}.command-rail .planet-command-metrics b{font-size:10px}.command-rail .planet-command-metrics small{font-size:6px}
+ .command-rail #pilotRaceLabel{font-size:6px;padding:5px 0}
+ .command-rail .command-time-box{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;min-width:0;padding-top:6px;font-size:7px}
+ .command-rail .command-time-box>div:not(.tick-time-progress){min-width:0;display:flex;flex-direction:column;gap:3px}
+ .command-rail .command-time-box span{font-size:5px}.command-rail .command-time-box b,.command-rail .command-time-box time{font-size:8px}
+ .command-rail .tick-time-progress,.command-rail .page-time-metrics{grid-column:1/-1}.command-rail .page-time-metrics{font-size:5px;display:flex;gap:5px;flex-wrap:wrap}
+ .command-rail .res-val{font-size:18px}.command-rail .res{padding-right:62px}.command-rail .res-roids{width:44px;height:44px;top:12px}
+}
+
+@media(min-width:1001px){
+ .command-rail>.development-info{font-size:10px!important;line-height:1.15!important;min-height:0!important;padding:8px!important}
+ .command-rail .development-info-title{line-height:1.2!important;min-height:0}
+ .command-rail .planet-command-heading{margin:5px 0!important;padding-bottom:5px!important;line-height:1.2!important}
+ .command-rail .planet-command-coordinates,.command-rail .planet-command-ruler{margin:0!important;padding:2px 0!important;line-height:1.15!important;min-height:0!important}
+ .command-rail .planet-command-metrics{margin-top:5px!important;padding-top:5px!important}
+ .command-rail #pilotRaceLabel{margin-top:4px!important;padding:3px 0!important;line-height:1.1!important}
+ .command-rail .planet-command-box .command-time-box{margin-top:5px!important;padding-top:5px!important;line-height:1.1!important}
+ .command-rail .planet-command-box .command-time-box>div:not(.tick-time-progress){margin:0!important;gap:2px!important}
+ .command-rail>.rail-frame-top,.command-rail>.rail-head,.command-rail .resources-section>.rail-section-heading{display:none!important}
+}

@@ -42,7 +42,7 @@
    if(planetDirectoryEditable&&JSON.stringify(canonicalDirectory(directorySnapshot()))!==planetDirectoryBaseline){status('Local directory changes are waiting to save; they were preserved.');return false;}
    // Local colony projects/tick/resources are authoritative in this practice model.
    // Apply only central directory state and idempotent settlement deltas.
-   state.galaxy=copy(data.planets);state.structurePlanets=copy(data.structures||[]);state.ghostPlanets=copy(data.ghostPlanets||[]);
+   for(const t of data.planetTypeSurveys||[])if(!PLANET_TYPES.some(p=>p.id===t.id))PLANET_TYPES.push(t);state.galaxy=copy(data.planets);state.structurePlanets=copy(data.structures||[]);state.ghostPlanets=copy(data.ghostPlanets||[]);
    const profile=(data.alliances||[]).find(a=>a.name===own.alliance);
    if(profile){const ui={intelRecords:state.alliance?.name===profile.name?state.alliance.intelRecords:{},intelBrowserCoords:state.alliance?.intelBrowserCoords,intelTarget:state.alliance?.intelTarget,intelSearch:state.alliance?.intelSearch};state.alliance={...state.alliance,...copy(profile),...ui};}else if(own.alliance==='Unaffiliated'){state.alliance={...(typeof freshState==='function'?copy(freshState().alliance):{}),name:'Unaffiliated',tag:'',members:[],applicants:[],fund:{metal:0,crystal:0,eonium:0},structures:{active:[],buildQueue:[],cooldowns:{},history:[]},fortress:{strongholdGalaxy:'',anarchyUntilTick:0},rankPermissions:{},intelRecords:{},log:[],wars:[]};}
    state.allianceDirectory=copy((data.alliances||[]).filter(a=>a.name!==profile?.name));
