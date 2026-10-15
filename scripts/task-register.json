@@ -597,9 +597,16 @@
       "status": "live",
       "release": "0.121.2",
       "userConfirmed": true
+    },
+    {
+      "id": "SF-071",
+      "priority": "P2",
+      "title": "Restore compact game development navigation and Info layout",
+      "status": "live",
+      "note": "User clarified: no sticky menu."
     }
   ],
-  "nextId": "SF-071",
+  "nextId": "SF-072",
   "finalActionIds": [
     "SF-031",
     "SF-033"

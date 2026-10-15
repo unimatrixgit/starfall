@@ -6,7 +6,13 @@
       "id": "SF-067",
       "title": "Proportional navigation artwork across game themes",
       "priority": "P2",
-      "completedAt": "2026-10-14T18:12:22.609Z"
+      "completedAt": "2026-10-14T18:12:22.607Z"
+    },
+    {
+      "id": "SF-071",
+      "priority": "P2",
+      "title": "Compact responsive game navigation with Info aligned beside Planet Settings",
+      "completedAt": "2026-10-15T01:10:39.128Z"
     }
   ],
   "published": [
