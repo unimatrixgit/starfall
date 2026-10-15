@@ -1,4 +1,4 @@
-const STARFALL_VERSION='0.125.2';
+const STARFALL_VERSION='0.125.3';
 const TYPES=new Set(['planet','landing','development','unit','news','incoming','jumpgate','advanced']);
 const RETENTION=14*24*60*60*1000;
 function json(value,status=200){return Response.json(value,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});}

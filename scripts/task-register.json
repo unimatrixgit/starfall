@@ -902,9 +902,23 @@
         "planetsAfter": 0,
         "pendingCharters": 5
       }
+    },
+    {
+      "id": "SF-110",
+      "priority": "P2",
+      "title": "Hide System messages from Recent Signals only",
+      "status": "live",
+      "release": "0.125.3"
+    },
+    {
+      "id": "SF-111",
+      "priority": "P2",
+      "title": "Round reset clears every ingame forum including General; clean existing posts",
+      "status": "live",
+      "release": "0.125.3"
     }
   ],
-  "nextId": "SF-110",
+  "nextId": "SF-112",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1161,14 +1175,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.125.2",
-    "tests": 531,
+    "release": "0.125.3",
+    "tests": 533,
     "pages": 117,
     "linksAndAssets": 3569,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "cc0ce572622c85fe688f38ff8e77b646594916e2",
+    "liveSourceSha": "2a45e0cc4daa72df9bd2668d1d243e38b9541627",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",

@@ -1,0 +1,1753 @@
+{
+  "release": "0.125.2",
+  "scope": "isolated fixture; current content, no production gameplay writes; intentional scroll wrappers excluded",
+  "cases": 144,
+  "results": [
+    {
+      "page": "overview",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "construction",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "research",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "production",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "fleets",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "population",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "planetSettings",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "galaxyFund",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "universe",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "politics",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "galaxyBrowser",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "news",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "quests",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "waves",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "covert",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "miday",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "forums",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:home",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:fund",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:ranks",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:structures",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:intel",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:launchbay",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:shipyards",
+      "width": 1440,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "overview",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "construction",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "research",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "production",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "fleets",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "population",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "planetSettings",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "galaxyFund",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "universe",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "politics",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "galaxyBrowser",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "news",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "quests",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "waves",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "covert",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "miday",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "forums",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:home",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:fund",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:ranks",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:structures",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:intel",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:launchbay",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "alliance:shipyards",
+      "width": 1440,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 1478,
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "page": "overview",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "construction",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "research",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "production",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "fleets",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "population",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        },
+        {
+          "kind": "clipped-content",
+          "element": "SECTION",
+          "class": "panel planet-type-register",
+          "text": "01 · PLANETARY SURVEY\nCOLONIAL DEVELOPMENT AUTHORITY\nSpecial · Fl"
+        }
+      ]
+    },
+    {
+      "page": "planetSettings",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "galaxyFund",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "universe",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "politics",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "galaxyBrowser",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "news",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "quests",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "waves",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "covert",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "miday",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "forums",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:home",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:fund",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:ranks",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:structures",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:intel",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:launchbay",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:shipyards",
+      "width": 768,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "overview",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "construction",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "research",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "production",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "fleets",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "population",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        },
+        {
+          "kind": "clipped-content",
+          "element": "SECTION",
+          "class": "panel planet-type-register",
+          "text": "01 · PLANETARY SURVEY\nCOLONIAL DEVELOPMENT AUTHORITY\nSpecial · Fl"
+        },
+        {
+          "kind": "clipped-content",
+          "element": "SECTION",
+          "class": "panel population-detail",
+          "text": "CIVIL POPULATION · COLONY REGISTER\nLIVE ECONOMY\nRESIDENTS\n1,019\nB"
+        }
+      ]
+    },
+    {
+      "page": "planetSettings",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "galaxyFund",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "universe",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "politics",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "galaxyBrowser",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "news",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "quests",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "waves",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "covert",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "miday",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "forums",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:home",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:fund",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:ranks",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:structures",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:intel",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:launchbay",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "alliance:shipyards",
+      "width": 768,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 806,
+          "viewport": 768
+        }
+      ]
+    },
+    {
+      "page": "overview",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "construction",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "research",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "production",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "fleets",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "population",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "planetSettings",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "galaxyFund",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "universe",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "politics",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "galaxyBrowser",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "news",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "quests",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "waves",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "covert",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "miday",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "forums",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:home",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:fund",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:ranks",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:structures",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:intel",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:launchbay",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:shipyards",
+      "width": 390,
+      "theme": "Neutral",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "overview",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "construction",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "research",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "production",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "fleets",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "population",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "planetSettings",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "galaxyFund",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "universe",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "politics",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "galaxyBrowser",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "news",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "quests",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "waves",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "covert",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "miday",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "forums",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:home",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:fund",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:ranks",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:structures",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:intel",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:launchbay",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    },
+    {
+      "page": "alliance:shipyards",
+      "width": 390,
+      "theme": "Borg",
+      "issues": [
+        {
+          "kind": "page-width",
+          "actual": 428,
+          "viewport": 390
+        }
+      ]
+    }
+  ]
+}

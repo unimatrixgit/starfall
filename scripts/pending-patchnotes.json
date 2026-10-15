@@ -1,7 +1,22 @@
 {
   "minimumTasks": 5,
   "maximumTasks": 10,
-  "completed": [],
+  "completed": [
+    {
+      "id": "SF-110",
+      "priority": "P2",
+      "title": "Hide System messages from Recent Signals; keep full journal",
+      "release": "0.125.3",
+      "completedAt": "2026-10-15T04:34:50.975Z"
+    },
+    {
+      "id": "SF-111",
+      "priority": "P2",
+      "title": "Round reset clears every ingame forum including General; clean existing posts",
+      "release": "0.125.3",
+      "completedAt": "2026-10-15T04:36:47.276Z"
+    }
+  ],
   "published": [
     {
       "version": "0.120.0",

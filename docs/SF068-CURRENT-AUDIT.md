@@ -47,3 +47,7 @@ The in-game field guide still describes two construction slots, mandatory100% wo
 Remediation order: construction work corruption first; then bonus capacity/gates; then scan eligibility/report correctness as one group; then central governance/fund operations as one group. Keep all findings under SF-068 and retain their sub-IDs. Passing529existing regression tests did not cover the defects above and is not a substitute for the manual audit.
 
 SF-068 remains in progress. No production source was changed in this audit pass.
+
+## Added layout scope and first pass
+
+The user explicitly added table/text frame fitting to the audit. SF068-LAYOUT-AUDIT.md records144isolated browser cases and separates one confirmed shared decorative overflow from medium-width population clipping candidates requiring visual confirmation. Long-content stress and additional themes remain open.
