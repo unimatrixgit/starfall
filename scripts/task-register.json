@@ -573,7 +573,8 @@
       "priority": "P2",
       "title": "Preserve proportions of development navigation artwork across themes",
       "status": "live",
-      "sourceSha": "78e0b3799fdf4b257073cf7b4010f6eca29ea9dc"
+      "sourceSha": "78e0b3799fdf4b257073cf7b4010f6eca29ea9dc",
+      "release": "0.122.0"
     },
     {
       "id": "SF-068",
@@ -603,7 +604,8 @@
       "priority": "P2",
       "title": "Restore compact game development navigation and Info layout",
       "status": "live",
-      "note": "User clarified: no sticky menu."
+      "note": "User clarified: no sticky menu.",
+      "release": "0.122.0"
     },
     {
       "id": "SF-072",
@@ -624,10 +626,66 @@
       "priority": "P2",
       "title": "Match Galaxy Fund and Spacing Bank resource-row transaction layouts",
       "status": "live",
-      "release": "0.121.4"
+      "release": "0.122.0"
+    },
+    {
+      "id": "SF-075",
+      "priority": "P2",
+      "title": "Compact Spaceport and restore Galaxy Fund exchange",
+      "status": "live",
+      "release": "0.122.0"
+    },
+    {
+      "id": "SF-076",
+      "priority": "BUGFIX",
+      "title": "Check reported website outage",
+      "status": "checked_no_outage",
+      "note": "Portal, version API, runtime and CSS returned 200. Unauthenticated game correctly redirects to login. No general outage reproduced."
+    },
+    {
+      "id": "SF-077",
+      "priority": "BUGFIX",
+      "title": "Spacing Bank standard fee 5%",
+      "status": "live",
+      "release": "0.122.0"
+    },
+    {
+      "id": "SF-078",
+      "priority": "P2",
+      "title": "Compact matching Alliance Fund rows and 2.5% exchange fee",
+      "status": "live",
+      "release": "0.122.0"
+    },
+    {
+      "id": "SF-079",
+      "priority": "P2",
+      "title": "Wait for action news reports before fallback refresh",
+      "status": "live",
+      "release": "0.122.0"
+    },
+    {
+      "id": "SF-080",
+      "priority": "P2",
+      "title": "Population history graph from tick 0 through present",
+      "status": "live",
+      "release": "0.122.0"
+    },
+    {
+      "id": "SF-081",
+      "priority": "P2",
+      "title": "Planet Reset confirmation checkbox styling",
+      "status": "live",
+      "release": "0.122.0"
+    },
+    {
+      "id": "SF-082",
+      "priority": "P2",
+      "title": "Compact responsive Planet Settings layout",
+      "status": "live",
+      "release": "0.122.0"
     }
   ],
-  "nextId": "SF-075",
+  "nextId": "SF-083",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -834,9 +892,32 @@
       ],
       "status": "live",
       "release": "0.121.4"
+    },
+    {
+      "id": "G-017",
+      "priority": "BUGFIX",
+      "title": "Compact treasury layouts and exchange settlement",
+      "members": [
+        "SF-075",
+        "SF-077",
+        "SF-078"
+      ],
+      "status": "live",
+      "release": "0.122.0"
+    },
+    {
+      "id": "G-018",
+      "priority": "P2",
+      "title": "Compact Planet Settings and reset confirmation",
+      "members": [
+        "SF-081",
+        "SF-082"
+      ],
+      "status": "live",
+      "release": "0.122.0"
     }
   ],
-  "nextGroupId": "G-017",
+  "nextGroupId": "G-019",
   "openOrder": [
     "SF-068"
   ],
@@ -848,14 +929,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.121.0",
-    "tests": 371,
-    "pages": 107,
-    "linksAndAssets": 3203,
+    "release": "0.122.0",
+    "tests": 416,
+    "pages": 112,
+    "linksAndAssets": 3442,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "3a902408d97e70247ccb64baebe3f4c398fb47d9",
+    "liveSourceSha": "94e350fab3157387fd17df8ad0241ec47940d5da",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",

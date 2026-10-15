@@ -1,26 +1,7 @@
 {
   "minimumTasks": 5,
   "maximumTasks": 10,
-  "completed": [
-    {
-      "id": "SF-067",
-      "title": "Proportional navigation artwork across game themes",
-      "priority": "P2",
-      "completedAt": "2026-10-14T18:12:22.607Z"
-    },
-    {
-      "id": "SF-071",
-      "priority": "P2",
-      "title": "Compact responsive game navigation with Info aligned beside Planet Settings",
-      "completedAt": "2026-10-15T01:10:39.128Z"
-    },
-    {
-      "id": "SF-074",
-      "priority": "P2",
-      "title": "Matching resource-row layouts for Galaxy Fund and Spacing Bank",
-      "completedAt": "2026-10-15T01:28:56.914Z"
-    }
-  ],
+  "completed": [],
   "published": [
     {
       "version": "0.120.0",
@@ -263,6 +244,65 @@
         }
       ],
       "publishedAt": "2026-10-14T17:41:54.883915Z"
+    },
+    {
+      "version": "0.122.0",
+      "promptIds": [
+        "SF-067",
+        "SF-071",
+        "SF-074",
+        "SF-075",
+        "SF-077",
+        "SF-078",
+        "SF-079",
+        "SF-080",
+        "SF-081",
+        "SF-082"
+      ],
+      "tasks": [
+        {
+          "id": "SF-067",
+          "title": "Preserve proportions of development navigation artwork across themes"
+        },
+        {
+          "id": "SF-071",
+          "title": "Restore compact game development navigation and Info layout"
+        },
+        {
+          "id": "SF-074",
+          "title": "Match Galaxy Fund and Spacing Bank resource-row transaction layouts"
+        },
+        {
+          "id": "SF-075",
+          "title": "Compact Spaceport and restore Galaxy Fund exchange"
+        },
+        {
+          "id": "SF-077",
+          "title": "Spacing Bank standard fee 5%"
+        },
+        {
+          "id": "SF-078",
+          "title": "Compact matching Alliance Fund rows and 2.5% exchange fee"
+        },
+        {
+          "id": "SF-079",
+          "title": "Wait for action news reports before fallback refresh"
+        },
+        {
+          "id": "SF-080",
+          "title": "Population history graph from tick 0 through present"
+        },
+        {
+          "id": "SF-081",
+          "title": "Planet Reset confirmation checkbox styling"
+        },
+        {
+          "id": "SF-082",
+          "title": "Compact responsive Planet Settings layout"
+        }
+      ],
+      "status": "published",
+      "publishedAt": "2026-10-15T02:06:42.379222Z"
     }
   ],
   "prepared": []
