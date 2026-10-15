@@ -357,6 +357,45 @@
       ],
       "status": "published",
       "publishedAt": "2026-10-15T02:38:57.052528Z"
+    },
+    {
+      "version": "0.124.0",
+      "promptIds": [
+        "SF-093",
+        "SF-094",
+        "SF-096",
+        "SF-097",
+        "SF-098",
+        "SF-099"
+      ],
+      "tasks": [
+        {
+          "id": "SF-093",
+          "title": "Population levy 0–5 residents per 24 ticks and full-housing growth conversion"
+        },
+        {
+          "id": "SF-094",
+          "title": "Audit trade receipts against Universal Bank fees"
+        },
+        {
+          "id": "SF-096",
+          "title": "Admin government override without anarchy"
+        },
+        {
+          "id": "SF-097",
+          "title": "Open Galaxy Browser at own galaxy"
+        },
+        {
+          "id": "SF-098",
+          "title": "Keep development navigation and Info on top"
+        },
+        {
+          "id": "SF-099",
+          "title": "Unified silent order confirmations including trades"
+        }
+      ],
+      "status": "published",
+      "publishedAt": "2026-10-15T03:27:55.045990Z"
     }
   ],
   "prepared": []

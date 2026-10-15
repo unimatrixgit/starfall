@@ -1,5 +1,27 @@
 [
   {
+    "version": "0.124.0",
+    "date": "2026-10-15",
+    "title": "Population levies and quiet order confirmations",
+    "synopsis": "Population conversion, fleet navigation and admin controls improve alongside an audited treasury and shared order receipts.",
+    "promptIds": [
+      "SF-093",
+      "SF-094",
+      "SF-096",
+      "SF-097",
+      "SF-098",
+      "SF-099"
+    ],
+    "changes": [
+      "SF-093: Ministers choose 0–5 residents per planet per 24 ticks, with a rolling five-resident cap. Verified unused growth at full housing converts into Galaxy Fund resources even at a zero ordinary levy. The population register separates actual levies, overflow conversions and next-tick projections; unobserved historical ticks are not invented.",
+      "SF-094: A read-only audit matched all nine round-24 trade receipts with Universal Bank collected fees: 3,850 metal, 2,620 crystal and 2,500 eonium. The older zero-fee direct-bank receipt predates the 5% default deployment.",
+      "SF-096: Authorised planet editors can apply a settled government immediately, clearing pending anarchy. Reset and command identifiers prevent stale replays from changing later player revolutions.",
+      "SF-097: The first Galaxy Browser opening follows the authenticated home galaxy rather than the practice seed; subsequent manual browsing is retained.",
+      "SF-098: Development navigation and Info stay together at the top while scrolling, with a bounded scrollable header on smaller screens.",
+      "SF-099: Accepted construction, research, asteroid, ship, fleet and trade orders share a persisted background confirmation ledger. They no longer open order popups or add order news; errors and ordinary completion or combat reports remain visible."
+    ]
+  },
+  {
     "version": "0.123.0",
     "date": "2026-10-15",
     "title": "Fresh game data without reloading command",

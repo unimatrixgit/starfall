@@ -661,7 +661,8 @@
       "priority": "P2",
       "title": "Wait for action news reports before fallback refresh",
       "status": "live",
-      "release": "0.122.0"
+      "release": "0.122.0",
+      "supersededBy": "SF-099"
     },
     {
       "id": "SF-080",
@@ -753,9 +754,79 @@
       "title": "Refresh current game data on each page opening without reloading site or theme",
       "status": "live",
       "release": "0.123.0"
+    },
+    {
+      "id": "SF-093",
+      "priority": "P2",
+      "title": "Population levy 0–5 residents per 24 ticks and full-housing growth conversion",
+      "status": "live",
+      "clarifications": [
+        "Minister selects 0–5 residents per planet per 24 ticks, not a percentage.",
+        "Full-housing potential growth is always converted, even when ordinary levy is zero."
+      ],
+      "release": "0.124.0"
+    },
+    {
+      "id": "SF-094",
+      "priority": "P2",
+      "title": "Audit trade receipts against Universal Bank fees",
+      "status": "live",
+      "release": "0.124.0"
+    },
+    {
+      "id": "SF-095",
+      "priority": "P2",
+      "title": "Check removal of password-change quest",
+      "status": "checked_already_absent"
+    },
+    {
+      "id": "SF-096",
+      "priority": "P2",
+      "title": "Admin government override without anarchy",
+      "status": "live",
+      "release": "0.124.0"
+    },
+    {
+      "id": "SF-097",
+      "priority": "P2",
+      "title": "Open Galaxy Browser at own galaxy",
+      "status": "live",
+      "release": "0.124.0"
+    },
+    {
+      "id": "SF-098",
+      "priority": "P2",
+      "title": "Keep development navigation and Info on top",
+      "status": "live",
+      "release": "0.124.0"
+    },
+    {
+      "id": "SF-099",
+      "priority": "P2",
+      "title": "Unified silent order confirmations including trades",
+      "status": "live",
+      "release": "0.124.0"
+    },
+    {
+      "id": "SF-100",
+      "priority": "P2",
+      "title": "Alliance Shipyards matrix linked to existing Launch Bay fleet",
+      "status": "in_progress",
+      "clarifications": [
+        "Fund costs and sale proceeds use Alliance Fund.",
+        "Combined member factories determine speed.",
+        "Reuse Havoc distribution matrix and existing Launch Bay f4; no second fleet.",
+        "Alliance Ships cannot move to personal fleets or base."
+      ]
+    },
+    {
+      "id": "SF-101",
+      "priority": "P2",
+      "title": "Universe alliance top ten and member details with submenu",
+      "status": "in_progress"
     }
   ],
-  "nextId": "SF-093",
+  "nextId": "SF-102",
   "finalActionIds": [
     "SF-031",
     "SF-033"
@@ -1002,7 +1073,9 @@
   ],
   "nextGroupId": "G-020",
   "openOrder": [
-    "SF-068"
+    "SF-068",
+    "SF-100",
+    "SF-101"
   ],
   "colleagueReviews": {
     "battlegroups": "https://github.com/unimatrixgit/mcdune/blob/5f02adf/docs/STARFALL-BATTLEGROUP-ANALYSIS.md",
@@ -1012,14 +1085,14 @@
   "branchAgreement": "Beta is shared integration work with scoped edits and pre-push notices; main receives reviewed tested releases. No force pushes. Branches need not match.",
   "executionPolicy": "BUGFIX first, then P0/P1/P2/P3; group related implementation preserving IDs, order dependencies to avoid repeated edits and checks; G-004 remains final.",
   "validation": {
-    "release": "0.123.0",
-    "tests": 450,
-    "pages": 113,
-    "linksAndAssets": 3453,
+    "release": "0.124.0",
+    "tests": 488,
+    "pages": 114,
+    "linksAndAssets": 3482,
     "findings": 0,
     "sourceFolders": 12,
     "omittedRuntimeBytes": 1337507,
-    "liveSourceSha": "851f18e0c508119406b9ffd3fe0514b2561bbd5a",
+    "liveSourceSha": "a80ff83e45863b1377df4bc9178279a26bbb118c",
     "ghost": {
       "id": "tribute-3-of-7",
       "coords": "1:1:11",

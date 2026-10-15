@@ -202,3 +202,34 @@ body[data-skin="Battlestar"]{--navigation-art:url("/assets/navigation-themes/bat
  .current-structures-panel .current-structures-table td:nth-child(6):before{margin:0}
 }
 #spaceportAllianceFund[hidden]{display:none!important}.alliance-treasury-trade .resource-transfer-row{grid-template-columns:minmax(90px,.8fr) minmax(110px,1fr) minmax(105px,.9fr) minmax(100px,.8fr) minmax(150px,1.4fr) auto;padding:9px;gap:8px}.alliance-treasury-trade .resource-transfer-row input,.alliance-treasury-trade .resource-transfer-row select{min-width:0;width:100%;box-sizing:border-box}.alliance-treasury-trade .treasury-status{margin:8px 12px;line-height:1.45}.alliance-treasury-trade .resource-transfer-result{min-width:0;margin:0;font-size:11px}@media(max-width:1150px){.alliance-treasury-trade .resource-transfer-row{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:600px){.alliance-treasury-trade .resource-transfer-row{grid-template-columns:repeat(2,minmax(0,1fr))}.alliance-treasury-trade .resource-transfer-result{grid-column:1/-1}}
+
+/* SF-098: keep the development navigation and Info together above the page. */
+body:not(.staff-workspace) .shell>.topbar{
+ position:sticky!important;
+ padding:0!important;
+ top:0!important;
+ z-index:15;
+ align-self:start;
+ max-height:min(500px,48vh);
+ max-height:min(500px,48svh);
+ overflow-y:auto;
+ overscroll-behavior-y:contain;
+ scrollbar-width:thin;
+ background-color:var(--skin-panel,#102431);
+ box-shadow:0 5px 14px #0008;
+}
+body:not(.staff-workspace) .shell>.topbar .topbar-meta{min-height:44px!important}
+@media(max-width:900px),(max-height:650px){
+ body:not(.staff-workspace) .shell>.topbar .development-links>.dev-art-link{height:64px!important;min-height:64px!important;padding:7px!important}
+ body:not(.staff-workspace) .shell>.topbar .development-heading{margin-bottom:6px}
+ body:not(.staff-workspace) .shell>.topbar .development-heading span{display:none}
+}
+@media(max-width:600px){
+ body:not(.staff-workspace) .shell>.topbar .development-banner{padding:6px!important}
+ body:not(.staff-workspace) .shell>.topbar .development-links{gap:4px}
+ body:not(.staff-workspace) .shell>.topbar .development-links>.dev-art-link{height:54px!important;min-height:54px!important;padding:5px!important;gap:4px!important}
+ body:not(.staff-workspace) .shell>.topbar .development-links>.dev-art-link em{width:18px!important;height:18px!important;flex-basis:18px!important}
+}
+
+/* Keep independent admin modules at their content height. */
+.planet-editor-modules>.planet-editor-module{align-self:start}

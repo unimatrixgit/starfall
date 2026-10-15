@@ -1,0 +1,244 @@
+{
+  "stable": true,
+  "currentGeneration": 24,
+  "rounds": [
+    {
+      "generation": 20,
+      "current": false,
+      "revision": 1,
+      "transactions": 0,
+      "feesFromReceipts": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "recordedTaxCollected": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "feeMatch": true,
+      "balances": {
+        "metal": 1000000,
+        "crystal": 1000000,
+        "eonium": 1000000
+      },
+      "netMovementsFromReceipts": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "inferredStartingBalances": {
+        "metal": 1000000,
+        "crystal": 1000000,
+        "eonium": 1000000
+      },
+      "actions": []
+    },
+    {
+      "generation": 21,
+      "current": false,
+      "revision": 1,
+      "transactions": 0,
+      "feesFromReceipts": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "recordedTaxCollected": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "feeMatch": true,
+      "balances": {
+        "metal": 1000000,
+        "crystal": 1000000,
+        "eonium": 1000000
+      },
+      "netMovementsFromReceipts": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "inferredStartingBalances": {
+        "metal": 1000000,
+        "crystal": 1000000,
+        "eonium": 1000000
+      },
+      "actions": []
+    },
+    {
+      "generation": 22,
+      "current": false,
+      "revision": 1,
+      "transactions": 0,
+      "feesFromReceipts": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "recordedTaxCollected": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "feeMatch": true,
+      "balances": {
+        "metal": 1000000,
+        "crystal": 1000000,
+        "eonium": 1000000
+      },
+      "netMovementsFromReceipts": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "inferredStartingBalances": {
+        "metal": 1000000,
+        "crystal": 1000000,
+        "eonium": 1000000
+      },
+      "actions": []
+    },
+    {
+      "generation": 23,
+      "current": false,
+      "revision": 1,
+      "transactions": 0,
+      "feesFromReceipts": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "recordedTaxCollected": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "feeMatch": true,
+      "balances": {
+        "metal": 1000000,
+        "crystal": 1000000,
+        "eonium": 1000000
+      },
+      "netMovementsFromReceipts": {
+        "metal": 0,
+        "crystal": 0,
+        "eonium": 0
+      },
+      "inferredStartingBalances": {
+        "metal": 1000000,
+        "crystal": 1000000,
+        "eonium": 1000000
+      },
+      "actions": []
+    },
+    {
+      "generation": 24,
+      "current": true,
+      "revision": 10,
+      "transactions": 9,
+      "feesFromReceipts": {
+        "metal": 3850,
+        "crystal": 2620,
+        "eonium": 2500
+      },
+      "recordedTaxCollected": {
+        "metal": 3850,
+        "crystal": 2620,
+        "eonium": 2500
+      },
+      "feeMatch": true,
+      "balances": {
+        "metal": 1003850,
+        "crystal": 902620,
+        "eonium": 1102500
+      },
+      "netMovementsFromReceipts": {
+        "metal": 3850,
+        "crystal": -97380,
+        "eonium": 102500
+      },
+      "inferredStartingBalances": {
+        "metal": 1000000,
+        "crystal": 1000000,
+        "eonium": 1000000
+      },
+      "actions": [
+        {
+          "type": "personalAllianceTrade",
+          "from": "eonium",
+          "to": "metal",
+          "amount": 100000,
+          "received": 97500,
+          "fee": 2500
+        },
+        {
+          "type": "trade",
+          "from": "eonium",
+          "to": "crystal",
+          "amount": 100000,
+          "received": 100000,
+          "fee": 0
+        },
+        {
+          "type": "personalAllianceTrade",
+          "from": "crystal",
+          "to": "eonium",
+          "amount": 100000,
+          "received": 97500,
+          "fee": 2500
+        },
+        {
+          "type": "personalAllianceTrade",
+          "from": "eonium",
+          "to": "metal",
+          "amount": 50000,
+          "received": 48750,
+          "fee": 1250
+        },
+        {
+          "type": "personalAllianceTrade",
+          "from": "metal",
+          "to": "crystal",
+          "amount": 100000,
+          "received": 97500,
+          "fee": 2500
+        },
+        {
+          "type": "Galaxy Fund",
+          "from": "metal",
+          "to": "crystal",
+          "amount": 1000,
+          "received": 990,
+          "fee": 10
+        },
+        {
+          "type": "Galaxy Fund",
+          "from": "metal",
+          "to": "crystal",
+          "amount": 1000,
+          "received": 990,
+          "fee": 10
+        },
+        {
+          "type": "Galaxy Fund",
+          "from": "metal",
+          "to": "crystal",
+          "amount": 10000,
+          "received": 9900,
+          "fee": 100
+        },
+        {
+          "type": "Galaxy Fund",
+          "from": "crystal",
+          "to": "metal",
+          "amount": 10000,
+          "received": 9900,
+          "fee": 100
+        }
+      ]
+    }
+  ]
+}
